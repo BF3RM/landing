@@ -18,14 +18,14 @@ layout: page
                     </h1>
                 </a>
                 <div class="tags">
-                    <span class="tag secondary">
-                        {{ post.date | date_to_string: "ordinal", "US" }}
-                    </span>
                     {% for category in post.categories %}
                         <a href="/{{ category|slugify }}" class="tag {{ category|slugify }}">
                             {{ category }}
                         </a>
                     {% endfor %}
+                    <span class="tag secondary">
+                        {{ post.date | date_to_string: "ordinal", "US" }}
+                    </span>
                 </div>
                 <p>
                     {{ post.excerpt }}

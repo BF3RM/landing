@@ -58,7 +58,7 @@ permalink: /
     </div>
 </header>
 
-<section id="play" class="content">
+<section id="play" class="content scrollspy">
     <div class="container">
         <h2 class="section-title">How to play</h2>
         <p>
@@ -117,7 +117,7 @@ permalink: /
     </div>
 </section>
 
-<section id="about" class="content">
+<section id="about" class="content scrollspy">
     <div class="container">
         <h2 class="section-title">About the mod</h2>
         <p>
@@ -238,7 +238,7 @@ permalink: /
     </div>
 </section>
 
-<section id="news" class="content">
+<section id="news" class="content scrollspy">
     <div class="container">
         <h2 class="section-title">LATEST NEWS</h2>
         <div class="filter">
@@ -274,14 +274,14 @@ permalink: /
                             </h1>
                         </a>
                         <div class="tags">
-                            <span class="tag secondary">
-                                {{ post.date | date_to_string: "ordinal", "US" }}
-                            </span>
                             {% for category in post.categories %}
                                 <a href="/{{ category|slugify }}" class="tag {{ category|slugify }}">
                                     {{ category }}
                                 </a>
                             {% endfor %}
+                            <span class="tag secondary">
+                                {{ post.date | date_to_string: "ordinal", "US" }}
+                            </span>
                         </div>
                         <p>
                             {{ post.excerpt }}

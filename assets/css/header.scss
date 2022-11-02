@@ -52,6 +52,7 @@
         font-size: 15px;
         text-decoration: none;
 
+        &.active,
         &:hover {
             color: rgba(255, 255, 255, 1);
         }
