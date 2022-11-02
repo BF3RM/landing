@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% assign content_array = page.content | split: site.excerpt_separator %}
+{% assign excerpt_only = content_array | first %}
+{% assign content_remainder = content_array | last %}
+
+<header class="sub-page" style="background-image: url('{{ page.image }}');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>{{ page.title | escape }}</h1>
+          {{ excerpt_only | append: '</p>' }}
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <p class="post-meta">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        - {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}</p>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    {{ content_remainder | remove_first: '</p>' }}
+    <div class="tags">
+      {% for category in page.categories %}
+          <a href="/{{ category|slugify }}" class="tag {{ category|slugify }}">
+              {{ category }}
+          </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+{%- endif -%}

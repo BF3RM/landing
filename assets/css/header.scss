@@ -1,0 +1,188 @@
+---
+---
+
+.main-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    display: flex;
+    flex-flow: row;
+
+    .logo {
+        display: flex;
+        width: 75px;
+        height: 75px;
+        background: rgba(255, 255, 255, .05);
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgba(255, 255, 255, .3);
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, .1);
+        }        
+    }
+
+    .menu-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1 1 auto;
+        padding: 0 20px;
+    }
+
+    .menu-right a,
+    .menu-left a {
+        position: relative;
+        color: rgba(255, 255, 255, .6);
+        padding: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        &.disabled {
+            color: rgba(255, 255, 255, .3);
+            pointer-events: none;
+        }
+    }
+    
+    .menu-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px 0 0;
+
+        a {
+            font-size: 22px;
+        }
+    }
+}
+
+header {
+    position: relative;
+    background: #000 url("../img/header.png") 50% 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+    &.sub-page {
+        height: 30vh;
+
+        h1 {
+            position: relative;
+            font-size: 56px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 75px 0 0;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0 0;
+        }
+    }
+    
+    .header-overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-flow: column;
+        backdrop-filter: saturate(0.85);
+
+        img.logo {
+            width: 500px;
+            margin-left: -35px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 300;
+            opacity: .8;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .header-box {
+        max-width: 775px;
+    }
+}
+
+#before_first_section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+
+    a {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        color: #f4efea;
+        text-decoration: none;
+
+        &:hover {
+            background: rgba(255, 255, 255, .05);
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        div {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            span.title {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 3px;
+                text-transform: uppercase;
+            }
+
+            span.desc {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 300;
+                opacity: .5;
+            }
+        }
+    }
+}

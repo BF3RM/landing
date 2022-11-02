@@ -1,0 +1,22 @@
+name: "Bf3: Reality Mod"
+title: "Bf3: Reality Mod"
+description: > # this means to ignore newlines until "show_excerpts:"
+  BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
+tagline: > # this means to ignore newlines until "show_excerpts:"
+  BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
+
+google_analytics: ""
+
+author:
+  name: kaloczikvn
+  email: kaloczi.kvn@gmail.com
+
+show_excerpts: true
+date_format: "%b %-d, %Y"
+excerpt_separator: <!--more-->
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-spaceship
