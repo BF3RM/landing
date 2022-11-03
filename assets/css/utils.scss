@@ -290,3 +290,19 @@ a.tag {
     max-width: 100%;
     height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .alert {
+        .alert-icon {
+            width: 45px;
+            max-width: 45px;
+            min-width: 45px;
+        }
+        
+        .alert-body {
+            font-size: .75rem;
+            line-height: 1.1rem;
+            font-weight: 500;
+        }
+    }    
+}

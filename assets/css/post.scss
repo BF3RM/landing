@@ -66,3 +66,20 @@
 .post-content-full {
     margin: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .post-details {
+        .post-meta {
+            font-size: .8rem;
+        }
+    }
+
+    .post-content-full,
+    .post-content {
+        a.lightbox-image {
+            img {
+                max-width: 80vw;
+            }
+        }
+    }
+}
