@@ -3,17 +3,33 @@
 
 .post-details {
     background: rgb(12, 13, 14);
-    padding: 8px 0;
+    padding: 14px 0;
+
+    .container {
+        max-width: 860px;
+    }
 
     .post-meta {
         margin: 0;
-        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+
+        time {
+            margin-bottom: 5px;
+            font-size: .85rem;
+            opacity: .8;
+        }
     }
 }
 
 .post-content-full,
 .post-content {
     margin: 45px 0;
+
+    .container {
+        max-width: 860px;
+    }
 
     .tags {
         margin-top: 30px;

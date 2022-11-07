@@ -16,18 +16,21 @@ layout: default
 </header>
 <section class="post-details">
   <div class="container">
-    <p class="post-meta">
+    <div class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-        - {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
+      <div class="authors">
+        {%- if page.author -%}
+          {% for author in page.author %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+              {%- if forloop.last == false %}, {% endif -%}
+          {% endfor %}
+        {%- endif -%}
+      </div>
+    </div>
   </div>
 </section>
 <section class="post-content">

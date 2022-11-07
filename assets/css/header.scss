@@ -11,8 +11,14 @@
     z-index: 50;
     backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(255, 255, 255, .3);
-    display: flex;
-    flex-flow: row;
+
+    .main-menu-container {
+        max-width: 2560px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+    }
 
     .logo {
         display: flex;
@@ -22,6 +28,8 @@
         align-items: center;
         justify-content: center;
         border-right: 1px solid rgba(255, 255, 255, .3);
+        border-left: 1px solid rgba(255, 255, 255, .3);
+        margin-left: -1px;
 
         img {
             width: 40px;
@@ -71,6 +79,25 @@
 
         a {
             font-size: 22px;
+
+            &.play {
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 15px;
+                text-decoration: none;
+                padding: 8px 24px;
+                margin-left: 20px;
+                color: #000;
+                background: var(--primary);
+                border: 1px solid var(--primary);
+
+                &:hover {
+                    color: var(--primary);
+                    background: rgba(0, 0, 0, 0.45);
+                    border: 1px solid var(--primary);
+                }
+            }
         }
     }
 }
@@ -124,29 +151,36 @@ header {
             line-height: 1.75rem;
             font-weight: 300;
             opacity: .8;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     }
     
     .header-box {
         max-width: 775px;
+
+        .btn:first-of-type {
+            margin-right: 20px;
+        }
     }
 }
 
-#before_first_section {
+#before_first_section_wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
     height: 90px;
     width: 100%;
+}
+
+#before_first_section {
     background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, .3);
     border-bottom: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0;
+    height: 100%;
 
     a {
         display: grid;
@@ -188,15 +222,16 @@ header {
     }
 }
 
-.mobile-menu {
-    display: none;
-}
-
+.mobile-menu,
 .mobile-menu-toggle {
     display: none;
 }
 
 @media only screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
     .main-menu {
         height: 50px;
 
@@ -245,7 +280,7 @@ header {
         justify-content: center;
 
         &.show {
-            display: flex;
+            display: flex !important;
         }
 
         .items {
@@ -324,6 +359,7 @@ header {
         }
     }
 
+    #before_first_section_wrapper,
     #before_first_section {
         display: none;
     }

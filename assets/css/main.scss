@@ -86,9 +86,14 @@ section#play {
         max-width: 75%;
     }
 
+    .btn:first-of-type {
+        margin-right: 20px;
+    }
+
     .how-to-play {
         display: flex;
         flex-flow: column;
+        margin-bottom: 25px;
 
         &-item {
             display: flex;
@@ -144,6 +149,14 @@ section#play {
                     height: 25px;
                     font-size: 25px;
                     transition: right 0.2s ease;
+                }
+
+                &.discord {
+                    &:before {
+                        content: "\f392";
+                        font-family: "Line Awesome Brands";
+                        font-weight: 400;
+                    }
                 }
 
                 &:hover {

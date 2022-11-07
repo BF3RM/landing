@@ -127,8 +127,8 @@ ul {
     display: flex;
 
     .alert-icon {
-        width: 50px;
-        max-width: 50px;
+        width: 75px;
+        max-width: 75px;
         flex: 1 1 auto;
         display: flex;
         align-items: center;
@@ -148,8 +148,8 @@ ul {
         border-color: var(--yellow);
 
         .alert-icon {
-            background: var(--yellow);
-            color: #000;
+            color: var(--yellow);
+            background: transparent;
         }
 
         .alert-body {
