@@ -267,7 +267,7 @@ permalink: /
             </div>
         </div>
         <div class="blog-posts-container">
-            {% for post in site.posts %}
+            {% for post in site.posts limit:4 %}
                 <div class="blog-post">
                     {%- if post.image -%}
                         <a href="{{ post.url }}" class="blog-post-image">
@@ -296,6 +296,11 @@ permalink: /
                     </div>
                 </div>
             {% endfor %}
+        </div>
+        <div>
+            <a href="/news" class="btn btn-primary">
+                More news
+            </a>
         </div>
     </div>
 </section>

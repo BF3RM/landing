@@ -75,13 +75,20 @@ section#how_it_all_started {
     background: #111212;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     section#team_details {
         .team-grid {
             grid-template-columns: repeat(1, 1fr);
             
             &-item {
-                border: 0 !important;
+                border-left: 0 !important;
+                border-right: 0 !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+                padding: 25px 0;
+
+                &:last-of-type {
+                    border: 0;
+                }
             }
         }
     }

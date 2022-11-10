@@ -1,5 +1,4 @@
-const API_URL = 'https://hera-prod.bf3reality.com/api/v1/player/rm-team';
-// const API_URL = 'https://raw.githubusercontent.com/kaloczikvn/Kollegiumi-Studio-Website-Data/main/team.json';
+const CREDITS_API_URL = 'https://hera-prod.bf3reality.com/api/v1/credits';
 
 renderCredits();
 
@@ -15,7 +14,7 @@ async function renderCredits() {
         return;
     }
 
-    const creditsByRole = getCreditsByRole(fetchedCredits.team);
+    const creditsByRole = getCreditsByRole(fetchedCredits);
     for (const [role, credits] of Object.entries(creditsByRole)) {
         const roleDiv = createRoleDiv(role, credits);
         creditsWrapper.append(roleDiv);
@@ -23,15 +22,14 @@ async function renderCredits() {
 }
 
 async function fetchCredits() {
-    const response = fetch(API_URL)
+    const response = fetch(CREDITS_API_URL)
         .then(resp => {
             return resp.json();
         })
         .catch(ex => {
             console.error(ex);
             return {};
-        })
-
+        });
     return response;
 }
 
@@ -60,7 +58,7 @@ function createRoleDiv(role, credits) {
         personDiv.classList.add('person');
 
         const personH3 = document.createElement('h3');
-        personH3.textContent = credit.name;
+        personH3.textContent = credit.username;
 
         personDiv.append(personH3);
         roleDiv.append(personDiv);

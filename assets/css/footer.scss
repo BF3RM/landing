@@ -42,6 +42,17 @@ footer {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    footer {
+        padding: 30px;
+    
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 40%;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     footer {
         padding: 30px;

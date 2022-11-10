@@ -17,8 +17,8 @@
 
         time {
             margin-bottom: 5px;
-            font-size: .85rem;
-            opacity: .8;
+            font-size: 0.85rem;
+            opacity: 0.8;
         }
     }
 }
@@ -41,61 +41,99 @@
     }
 
     h1 {
-        margin: 5rem 0 .5rem;
-        color: var(--yellow);
-        font-size: 2.75rem;
+        margin: 5rem 0 0.75rem;
+        color: var(--primary);
+        font-size: 2.4rem;
+        line-height: 2.75rem;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 
     h2 {
-        margin: 2.5rem 0 .5rem;
-        font-size: 1.5rem;
+        margin: 2.5rem 0 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
     }
 
     h3 {
-        margin: 2.5rem 0 .5rem;
-        font-size: 1.25rem;
-        color: var(--blue);
+        margin: 2.5rem 0 0.25rem;
+        font-size: 1.15rem;
+        color: var(--yellow);
+        font-weight: 500;
     }
 
-    a.lightbox-image {
-        margin: 3rem 0;
-        text-align: center;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-flow: column;
-        text-decoration: none !important;
+    ul li,
+    p {
+        opacity: 0.76;
+        line-height: 1.75rem;
+    }
 
-        img {
-            max-width: 700px;
+    .lightbox-wrapper {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 3rem 0;
+
+        a[data-fslightbox="gallery"] {
+            margin: 0 0 1rem;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            text-decoration: none !important;
+            opacity: 1;
+            transition: opacity 0.2s ease;
+    
+            img {
+                max-width: 700px;
+            }
+    
+            &:hover {
+                opacity: 0.75;
+                transition: opacity 0.2s ease;
+            }
         }
 
         small {
-            margin-top: .75rem;
+            margin-top: 0.85rem;
             color: #fff;
-            opacity: .7;
+            opacity: 0.5;
         }
     }
 }
-
 
 .post-content-full {
     margin: 0;
 }
 
+@media only screen and (max-width: 991px) {
+    .post-details .container,
+    .post-content-full .container,
+    .post-content .container {
+        max-width: 80vw;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .post-details {
         .post-meta {
-            font-size: .8rem;
+            font-size: 0.8rem;
         }
     }
 
     .post-content-full,
     .post-content {
-        a.lightbox-image {
+        a[data-fslightbox="gallery"] {
             img {
                 max-width: 80vw;
             }
         }
+    }
+
+    .post-details .container,
+    .post-content-full .container,
+    .post-content .container {
+        max-width: 90vw;
     }
 }

@@ -1,0 +1,40 @@
+---
+layout: page
+permalink: /news/
+title: News
+---
+
+<section id="category" class="content">
+    <div class="blog-posts-container">
+      {% for post in site.posts %}
+          <div class="blog-post">
+              {%- if post.image -%}
+                  <a href="{{ post.url }}" class="blog-post-image">
+                      <img src="{{ post.image }}" alt="" />
+                  </a>
+              {%- endif -%}
+              <div class="blog-post-body">
+                  <a href="{{ post.url }}">
+                      <h1>
+                          {{ post.title }}
+                      </h1>
+                  </a>
+                  <div class="tags">
+                      {% for category in post.categories %}
+                          <a href="/{{ category|slugify }}" class="tag {{ category|slugify }}">
+                              {{ category }}
+                          </a>
+                      {% endfor %}
+                      <span class="tag secondary">
+                          {{ post.date | date_to_string: "ordinal", "US" }}
+                      </span>
+                  </div>
+                  <p>
+                      {{ post.excerpt }}
+                  </p>
+              </div>
+          </div>
+      {% endfor %}
+    </div>
+  </section>
+  
