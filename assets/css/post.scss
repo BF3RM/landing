@@ -124,9 +124,11 @@
 
     .post-content-full,
     .post-content {
-        a[data-fslightbox="gallery"] {
-            img {
-                max-width: 80vw;
+        .lightbox-wrapper {
+            a[data-fslightbox="gallery"] {
+                img {
+                    max-width: 80vw;
+                }
             }
         }
     }
