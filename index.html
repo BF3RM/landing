@@ -130,25 +130,25 @@ permalink: /
         </p>
         <div class="grid">
             <div>
-                <h4>
+                <div class="h4 about-title">
                     SETTING
-                </h4>
+                </div>
                 <p>
                     BF3: RM is a BF3 modification with focus on team play, communication & combined arms. It's set in the real world starting from the end of the Cold War to modern day conflicts
                 </p>
             </div>
             <div>
-                <h4>
+                <div class="h4 about-title">
                     GAMEPLAY
-                </h4>
+                </div>
                 <p>
                     The mod draws most of its inspiration from the successful BF2 "Project Reality" mod, and offers a complete gameplay and UI overhaul that creates a more tactical and in-depth experience compared to vanilla BF3
                 </p>
             </div>
             <div>
-                <h4>
+                <div class="h4 about-title">
                     GOAL
-                </h4>
+                </div>
                 <p>
                     To create an immersive gameplay and a more realistic experience. We are designing and developing all aspects of the game around this goal.
                 </p>
@@ -270,15 +270,15 @@ permalink: /
             {% for post in site.posts limit:4 %}
                 <div class="blog-post">
                     {%- if post.image -%}
-                        <a href="{{ post.url }}" class="blog-post-image">
-                            <img src="{{ post.image }}" alt="" />
+                        <a href="{{ post.url }}" class="blog-post-image" title="{{ post.title }}">
+                            <img src="{{ post.image }}" alt="{{ post.title }}" />
                         </a>
                     {%- endif -%}
                     <div class="blog-post-body">
                         <a href="{{ post.url }}">
-                            <h1>
+                            <div class="post-title">
                                 {{ post.title }}
-                            </h1>
+                            </div>
                         </a>
                         <div class="tags">
                             {% for category in post.categories %}
@@ -290,9 +290,7 @@ permalink: /
                                 {{ post.date | date_to_string: "ordinal", "US" }}
                             </span>
                         </div>
-                        <p>
-                            {{ post.excerpt }}
-                        </p>
+                        {{ post.excerpt }}
                     </div>
                 </div>
             {% endfor %}

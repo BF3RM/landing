@@ -53,8 +53,21 @@ section#rm_spy {
                 &.server-name {
                     text-align: left;
                 }
+
+                .mobile-text {
+                    display: none;
+                }
             }
         }
+    }
+    
+    #launch_btn {
+        margin: 35px 0 0;
+    }
+
+    .credits {
+        font-size: 14px;
+        opacity: .85;
     }
 }
 
@@ -75,15 +88,26 @@ section#rm_spy {
             .server {
                 grid-template-columns: repeat(1, 1fr);
                 padding-bottom: 20px;
+                grid-gap: 10px;
 
                 img {
-                    max-height: 200px;
+                    height: 200px;
                     object-fit: cover;
                     width: 100%;
                 }
 
                 span {
-                    padding: 0 20px;
+                    padding: 0 15px;
+                    text-align: left;
+                    font-size: 15px;
+                    line-height: 20px;
+
+                    .mobile-text {
+                        display: block;
+                        opacity: .5;
+                        margin: 0 0 2px;
+                        font-size: 13px;
+                    }
                 }
             }
         }

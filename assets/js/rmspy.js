@@ -15,7 +15,7 @@ const RM_SPY_MAPS = {
     "MP_017": "Noshahr Canals",
     "MP_018": "Kharg Island",
     "MP_Subway": "Operation Metro",
-    "XP1_001": "Strike at Karkand",
+    "XP1_001": "Karkand",
     "XP1_002": "Gulf of Oman",
     "XP1_003": "Sharqi Peninsula",
     "XP1_004": "Wake Island",
@@ -24,23 +24,23 @@ const RM_SPY_MAPS = {
     "XP2_Factory": "Scrapmetal",
     "XP2_Skybar": "Ziba Tower",
     "XP3_Alborz": "Alborz Mountains",
-    "XP3_Shield": "Armored Shield",
+    "XP3_Shield": "Issue 226",
     "XP3_Desert": "Bandar Desert",
     "XP3_Valley": "Death Valley",
     "XP4_Parl": "Azadi Palace",
     "XP4_Quake": "Epicenter",
     "XP4_FD": "Markaz Monolith",
     "XP4_Rubble": "Talah Market",
-    "XP5_001": "Operation Riverside",
+    "XP5_001": "Riverside",
     "XP5_002": "Nebandan Flats",
-    "XP5_003": "Kiasar Railroad",
+    "XP5_003": "OP Lumberman",
     "XP5_004": "Sabalan Pipeline",
 };
 
 const RM_SPY_GAMEMODES = {
-    "ConquestLarge0": "Conquest Large",
-    "ConquestSmall0": "Conquest",
-    "ConquestAssaultLarge0": "Conquest Assault Large",
+    "ConquestLarge0": "AAS Standard",
+    "ConquestSmall0": "AAS Alternative",
+    "ConquestAssaultLarge0": "AAS Standard",
     "ConquestAssaultSmall0": "Conquest Assault",
     "ConquestAssaultSmall1": "Conquest Assault: Day 2",
     "RushLarge0": "Rush",
@@ -94,28 +94,41 @@ function createServerDiv(server) {
     
     const serverMapImage = document.createElement('img');
     serverMapImage.src = `https://s3.bf3reality.com/assets/loadingscreens/${server.roundLevelName.toLowerCase()}.png`;
+    serverMapImage.height = 95;
     serverDiv.append(serverMapImage);
+
+
 
     const serverName = document.createElement('span');
     serverName.classList.add('server-name');
     serverName.textContent = server.name;
+    prependMobileText(serverName, 'Name');
     serverDiv.append(serverName);
 
     const serverMap = document.createElement('span');
     serverMap.classList.add('server-map');
     serverMap.textContent = server.roundLevelName ? RM_SPY_MAPS[server.roundLevelName] : '';
+    prependMobileText(serverMap, 'Map');
     serverDiv.append(serverMap);
 
     const serverGameMode = document.createElement('span');
     serverGameMode.classList.add('server-gamemode');
     serverGameMode.textContent = server.roundGameMode ? RM_SPY_GAMEMODES[server.roundGameMode] : '';
+    prependMobileText(serverGameMode, 'Gamemode');
     serverDiv.append(serverGameMode);
 
     const serverPlayers = document.createElement('span');
     serverPlayers.classList.add('server-players');
     serverPlayers.textContent = server.roundPlayers;
+    prependMobileText(serverPlayers, 'Player count');
     serverDiv.append(serverPlayers);
 
-
     return serverDiv;
+};
+
+function prependMobileText(element, text) {
+    const mobileText = document.createElement('div');
+    mobileText.classList.add('mobile-text');
+    mobileText.textContent = `${text}: `;
+    element.prepend(mobileText);
 };

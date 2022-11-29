@@ -9,15 +9,15 @@ title: News
       {% for post in site.posts %}
           <div class="blog-post">
               {%- if post.image -%}
-                  <a href="{{ post.url }}" class="blog-post-image">
-                      <img src="{{ post.image }}" alt="" />
+                  <a href="{{ post.url }}" class="blog-post-image" title="{{ post.title }}">
+                      <img src="{{ post.image }}" alt="{{ post.title }}" />
                   </a>
               {%- endif -%}
               <div class="blog-post-body">
                   <a href="{{ post.url }}">
-                      <h1>
-                          {{ post.title }}
-                      </h1>
+                    <div class="post-title">
+                        {{ post.title }}
+                    </div>
                   </a>
                   <div class="tags">
                       {% for category in post.categories %}
@@ -29,9 +29,7 @@ title: News
                           {{ post.date | date_to_string: "ordinal", "US" }}
                       </span>
                   </div>
-                  <p>
-                      {{ post.excerpt }}
-                  </p>
+                  {{ post.excerpt }}
               </div>
           </div>
       {% endfor %}

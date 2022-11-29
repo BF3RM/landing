@@ -4,19 +4,39 @@ description: > # this means to ignore newlines until "show_excerpts:"
   BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
 tagline: > # this means to ignore newlines until "show_excerpts:"
   BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
-
-google_analytics: ""
+url: bf3reality.com
 
 author:
-  name: kaloczikvn
-  email: kaloczi.kvn@gmail.com
+  name: "Bf3: Reality Mod team"
 
 show_excerpts: true
 date_format: "%b %-d, %Y"
 excerpt_separator: <!--more-->
+permalink: /:categories/:slug
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-spaceship
+
+twitter:
+  username: Bf3RealityMod
+  card: summary
+
+social:
+  name: "Bf3: Reality Mod"
+  links:
+    - https://twitter.com/Bf3RealityMod
+    - https://www.youtube.com/channel/UCdx0YZzZrdwQty1CeQFyqhw
+    - https://www.patreon.com/bf3realitymod
+    - https://github.com/BF3RM
+    - https://discord.gg/realitymod
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-card.png
+
+google_analytics: ""

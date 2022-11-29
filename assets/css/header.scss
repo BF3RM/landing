@@ -81,12 +81,13 @@
             font-size: 22px;
 
             &.play {
+                font-family: 'Bebas Neue', sans-serif;
                 position: relative;
                 text-transform: uppercase;
-                font-weight: 600;
-                font-size: 15px;
+                font-size: 22px;
+                line-height: 1;
                 text-decoration: none;
-                padding: 8px 24px;
+                padding: 8px 20px 4px;
                 margin-left: 20px;
                 color: #000;
                 background: var(--primary);
@@ -114,8 +115,7 @@ header {
 
         h1 {
             position: relative;
-            font-size: 56px;
-            font-weight: 700;
+            font-size: 4rem;
             text-transform: uppercase;
             margin: 75px 0 0;
             text-align: center;
@@ -148,7 +148,7 @@ header {
 
         p {
             font-size: 1.25rem;
-            line-height: 1.75rem;
+            line-height: 1.95rem;
             font-weight: 300;
             opacity: .8;
             margin-bottom: 40px;
@@ -323,9 +323,8 @@ header {
             padding: 0;
     
             a.play {
-                font-weight: 800;
-                font-size: 14px;
-                padding: 7px 13px;
+                font-size: 22px;
+                padding: 7px 13px 4px;
                 margin-left: 0;
             }
 
@@ -422,9 +421,8 @@ header {
             padding: 0;
 
             a.play {
-                font-weight: 800;
-                font-size: 14px;
-                padding: 7px 13px;
+                font-size: 18px;
+                padding: 4px 8px 2px;
                 margin-left: 0;
             }
             
