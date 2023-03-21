@@ -42,6 +42,39 @@ footer {
     }
 }
 
+#scroll_to_top_button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+    color: #000;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    transform: translateY(100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.05s ease;
+
+    &:hover {
+        color: var(--primary);
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--primary);
+    }
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+        transition: all 0.05s ease;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     footer {
         padding: 30px;
