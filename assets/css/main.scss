@@ -249,6 +249,10 @@ section#about {
             margin: 0;
         }
     }
+
+    .btn:first-of-type {
+        margin-right: 20px;
+    }
 }
 
 section#roadmap {
@@ -257,7 +261,7 @@ section#roadmap {
 
     .roadmap-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 60px;
         margin: 40px 0;
 
@@ -309,6 +313,7 @@ section#roadmap {
             p {
                 margin: 0;
                 font-size: 18px;
+                font-weight: 600;
             }
 
             ul {
@@ -316,13 +321,34 @@ section#roadmap {
 
                 li {
                     margin-bottom: 12px;
+                    line-height: 1.5;
                     font-size: 18px;
                     opacity: .85;
                 }
             }
 
+            &.versionone {
+                border-color: #565656;
+                
+                .roadmap-item-image {
+                    border-color: #565656;
+                }
+
+                h4 {
+                    background: #565656;
+                }
+
+                p {
+                    color: #565656;
+                }
+            }
+
             &.versiontwo {
                 border-color: #69635a;
+                
+                .roadmap-item-image {
+                    border-color: #69635a;
+                }
 
                 h4 {
                     background: #69635a;
@@ -333,8 +359,12 @@ section#roadmap {
                 }
             }
 
-            &.vehicle {
+            &.versionthree {
                 border-color: #576975;
+
+                .roadmap-item-image {
+                    border-color: #576975;
+                }
 
                 h4 {
                     background: #576975;
@@ -342,6 +372,22 @@ section#roadmap {
 
                 p {
                     color: #576975;
+                }
+            }
+
+            &.versionfourplus {
+                border-color: #57756b;
+
+                .roadmap-item-image {
+                    border-color: #57756b;
+                }
+
+                h4 {
+                    background: #57756b;
+                }
+
+                p {
+                    color: #57756b;
                 }
             }
         }
