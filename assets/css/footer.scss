@@ -52,9 +52,9 @@ footer {
     text-decoration: none;
     padding: 10px;
     margin-left: 20px;
-    color: #000;
-    background: var(--primary);
-    border: 1px solid var(--primary);
+    border: 1px solid rgba(var(--color-red-rgb), 0.5);
+    background-color: rgba(var(--color-red-rgb), 0.05);
+    color: var(--color-red);
     cursor: pointer;
     transform: translateY(100px);
     opacity: 0;
@@ -62,9 +62,8 @@ footer {
     transition: all 0.05s ease;
 
     &:hover {
-        color: var(--primary);
-        background: rgba(0, 0, 0, 0.45);
-        border: 1px solid var(--primary);
+        background-color: rgba(var(--color-red-rgb), 0.2);
+        color: var(--color-red);
     }
 
     &.show {

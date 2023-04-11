@@ -40,3 +40,9 @@ defaults:
       image: /assets/img/og-card.png
 
 google_analytics: ""
+
+include:
+  - "team.json"
+  - ".htaccess"
+
+version: "1.0.0"

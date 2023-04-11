@@ -58,7 +58,7 @@ p {
 }
 
 a {
-    color: var(--primary);
+    color: var(--color-red);
 }
 
 ul {
@@ -124,7 +124,7 @@ ul {
     position: relative;
     background: rgba(211, 77, 64, 0.15);
     width: 100%;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--color-red);
     display: flex;
 
     .alert-icon {
@@ -134,27 +134,27 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--primary);
+        background: var(--color-red);
         font-size: 22px;
     }
 
     .alert-body {
         padding: 15px;
-        color: var(--primary);
+        color: var(--color-red);
         font-weight: 600;
     }
 
     &.warning {
-        background: rgba(211, 208, 64, 0.15);
-        border-color: var(--yellow);
+        background: rgba(var(--color-yellow-rgb), 0.15);
+        border-color: var(--color-yellow);
 
         .alert-icon {
-            color: var(--yellow);
+            color: var(--color-yellow);
             background: transparent;
         }
 
         .alert-body {
-            color: var(--yellow);
+            color: var(--color-yellow);
         }
     }
 }
@@ -163,7 +163,7 @@ ul {
     display: inline-block;
     font-weight: 400;
     font-size: 1.1rem;
-    border: 1px solid #fff;
+    border: 1px solid #F4E9DF;
     text-transform: uppercase;
     background-color: transparent;
     padding: 0.65rem 2rem;
@@ -185,26 +185,31 @@ ul {
     }
 
     &.btn-primary {
-        background: rgba(0, 0, 0, 0.45);
-        color: var(--primary);
-        border-color: var(--primary);
+        border: 1px solid rgba(var(--color-red-rgb), 0.5);
+        background-color: rgba(var(--color-red-rgb), 0.05);
+        color: var(--color-red);
 
         &:hover:not(.disabled) {
-            background-color: var(--primary);
-            color: #fff;
+            background-color: rgba(var(--color-red-rgb), 0.2);
+            color: var(--color-red);
         }
     }
 
     &.btn-secondary {
-        background: rgba(0, 0, 0, 0.45);
-        border-color: rgba(255, 255, 255, 0.7);
-        color: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(var(--color-primary-rgb), 0.5);
+        background-color: rgba(var(--color-primary-rgb), 0.05);
+        color: var(--color-primary);
+
+        &:hover:not(.disabled) {
+            background-color: rgba(var(--color-primary-rgb), 0.2);
+            color: var(--color-primary);
+        }
     }
 
     &.btn-link {
         background: transparent;
         border: none;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(var(--color-primary-rgb), 0.7);
     }
 
     &:hover:not(.disabled) {
@@ -230,42 +235,42 @@ ul {
     justify-content: center;
     font-weight: 800;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #9b9996;
+    background-color: rgba(var(--color-primary-rgb), 0.25);
+    color: rgba(var(--color-primary-rgb), 0.5);
 
     &.devblog {
-        background-color: var(--red);
-        color: #000;
+        background-color: var(--color-red);
+        color: var(--color-red-contrast);
     }
 
     &.announcement {
-        background-color: var(--green);
-        color: #000;
+        background-color: var(--color-green);
+        color: var(--color-green-contrast);
     }
 
     &.update {
-        background-color: var(--blue);
-        color: #000;
+        background-color: var(--color-blue);
+        color: var(--color-blue-contrast);
     }
 
     &.secondary {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #9b9996;
+        background-color: var(--color-primary);
+        color: var(--color-primary-contrast);
     }
 
     &.success {
-        background-color: var(--green);
-        color: #000;
+        background-color: var(--color-green);
+        color: var(--color-green-contrast);
     }
 
     &.danger {
-        background-color: var(--red);
-        color: #000;
+        background-color: var(--color-red);
+        color: var(--color-red-contrast);
     }
 
     &.warning {
-        background-color: var(--yellow);
-        color: #000;
+        background-color: var(--color-yellow);
+        color: var(--color-yellow-contrast);
     }
 }
 

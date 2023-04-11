@@ -5,11 +5,54 @@
 @import "./lightbox.css";
 
 :root {
-    --red: #d34d40;
-    --green: #40d346;
-    --blue: #70d0d0;
-    --yellow: #ffe757;
-    --primary: var(--red);
+    --color-primary: #F4E9DF;
+	--color-primary-rgb: 244,233,223;
+	--color-primary-contrast: #000000;
+	--color-primary-contrast-rgb: 0,0,0;
+	--color-primary-shade: #d7cdc4;
+	--color-primary-tint: #f5ebe2;
+
+    --color-green: #9EC985;
+	--color-green-rgb: 158,201,133;
+	--color-green-contrast: #000000;
+	--color-green-contrast-rgb: 0,0,0;
+	--color-green-shade: #8bb175;
+	--color-green-tint: #a8ce91;
+
+	--color-blue: #6DB2B2;
+	--color-blue-rgb: 109,178,178;
+	--color-blue-contrast: #000000;
+	--color-blue-contrast-rgb: 0,0,0;
+	--color-blue-shade: #609d9d;
+	--color-blue-tint: #7cbaba;
+
+    --color-red: #C15648;
+	--color-red-rgb: 193,86,72;
+	--color-red-contrast: #ffffff;
+	--color-red-contrast-rgb: 255,255,255;
+	--color-red-shade: #aa4c3f;
+	--color-red-tint: #c7675a;
+
+    --color-orange: #e58b5e;
+	--color-orange-rgb: 229,139,94;
+	--color-orange-contrast: #000000;
+	--color-orange-contrast-rgb: 0,0,0;
+	--color-orange-shade: #ca7a53;
+	--color-orange-tint: #e8976e;
+
+    --color-yellow: #c9b885;
+	--color-yellow-rgb: 201,184,133;
+	--color-yellow-contrast: #000000;
+	--color-yellow-contrast-rgb: 0,0,0;
+	--color-yellow-shade: #b1a275;
+	--color-yellow-tint: #cebf91;
+
+    --color-secondary: #d6ccae;
+	--color-secondary-rgb: 214,204,174;
+	--color-secondary-contrast: #000000;
+	--color-secondary-contrast-rgb: 0,0,0;
+	--color-secondary-shade: #bcb499;
+	--color-secondary-tint: #dad1b6;
 }
 
 html {
@@ -23,7 +66,7 @@ html {
 body {
     font-family: "Inter", sans-serif;
     background-color: #17191a;
-    color: #f4efea;
+    color: var(--color-primary);
     padding: 0;
     margin: 0;
     font-size: 1rem;
@@ -99,8 +142,7 @@ section#play {
 
         &-item {
             display: flex;
-            background: rgba(0, 0, 0, 0.45);
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(var(--color-primary-rgb), 0.75);
             margin-bottom: 10px;
             height: 75px;
             backdrop-filter: blur(2px);
@@ -108,9 +150,9 @@ section#play {
             &-step {
                 display: flex;
                 width: 75px;
-                background: rgba(211, 76, 64, 0.1);
-                color: var(--primary);
-                border: 1px solid rgba(211, 76, 64, 0.2);
+                color: var(--color-red);
+                background-color: rgba(var(--color-red-rgb), 0.05);
+                border: 1px solid rgba(var(--color-red-rgb), 0.5);
                 align-items: center;
                 justify-content: center;
                 font-size: 26px;
@@ -118,6 +160,8 @@ section#play {
             }
 
             &-content {
+                border: 1px solid rgba(var(--color-primary-rgb), 0.5);
+                background-color: rgba(var(--color-primary-rgb), 0.05);
                 position: relative;
                 display: flex;
                 flex: 1 1 auto;
@@ -126,20 +170,20 @@ section#play {
                 flex-flow: column;
                 font-size: 17px;
                 font-weight: 600;
-                border: 1px solid rgba(255, 255, 255, 0.2);
                 border-left: none;
 
                 .hint {
                     display: block;
                     margin-top: 4px;
                     font-size: 12px;
+                    font-weight: 300;
                     opacity: 0.7;
                 }
             }
 
             a {
-                color: rgba(255, 255, 255, 0.7);
-                background: rgba(255, 255, 255, .07);
+                color: rgba(var(--color-primary-rgb), 0.9);
+                background-color: rgba(var(--color-primary-rgb), 0.15);
                 text-decoration: none;
 
                 &:before {
@@ -226,7 +270,7 @@ section#about {
             width: 70px;
             height: 70px;
             display: flex;
-            background: #0e0e0e;
+            background: rgba(var(--color-primary-rgb), 0.15);
             margin-bottom: 20px;
             border-radius: 20px;
             align-items: center;
@@ -268,12 +312,12 @@ section#roadmap {
         .roadmap-item {
             padding: 20px;
             background: rgba(0, 0, 0, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(var(--color-primary-rgb), 0.3);
 
             &-image {
                 position: relative;
                 margin-bottom: 20px;
-                border: 1px solid rgba(255, 255, 255, 0.3);
+                border: 1px solid rgba(var(--color-primary-rgb), 0.3);
                 display: flex;
 
                 img {
@@ -290,11 +334,11 @@ section#roadmap {
                     font-weight: 400;
                     text-transform: uppercase;
                     background: rgba(0, 0, 0, 0.5);
-                    color: rgba(255, 255, 255, .85);
+                    color: rgba(var(--color-primary-rgb), .85);
                     padding: 5px 7px;
                     line-height: 1;
-                    border: 1px solid rgba(255, 255, 255, 0.3);
-                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(var(--color-primary-rgb), 0.3);
+                    backdrop-filter: blur(3px);
                 }
             }
     
@@ -302,7 +346,7 @@ section#roadmap {
                 position: relative;
                 font-size: 40px;
                 text-transform: uppercase;
-                background: var(--primary);
+                background: var(--color-red);
                 color: #0e0f0f;
                 display: inline-block;
                 padding: 5px 7px;
@@ -452,8 +496,7 @@ section#news {
                 padding: 0;
                 margin: 0 0 0.65rem 0;
                 font-size: 1.55rem;
-                opacity: 0.7;
-                color: #f4efea;
+                color: var(--color-primary);
                 text-transform: uppercase;
             }
 
@@ -469,7 +512,7 @@ section#news {
                 margin: 1em 0;
                 font-size: 1rem;
                 line-height: 1.55rem;
-                color: #9b9996;
+                color: rgba(var(--color-primary-rgb), .75)
             }
         }
 

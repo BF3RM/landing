@@ -11,17 +11,18 @@ section#team_details {
         grid-template-columns: repeat(4, 1fr);
     
         &-item {
-            border-right: 1px solid rgba(255, 255, 255, .075);
+            border-right: 1px solid rgba(var(--color-primary-rgb), .075);
             padding: 35px 30px;
 
             &:first-of-type {
-                border-left: 1px solid rgba(255, 255, 255, .1);
+                border-left: 1px solid rgba(var(--color-primary-rgb), .1);
             }
 
             &-title {
-                color: var(--primary);
+                color: var(--color-red);
                 font-size: 1.25rem;
                 margin-bottom: .75rem;
+                font-weight: 600;
             }
 
             p {
@@ -39,20 +40,26 @@ section#credits {
     #credits_wrapper {
         .role {
             margin-bottom: 3rem;
+            text-align: center;
 
             h2 {
-                color: var(--primary);
+                color: var(--color-red);
                 font-weight: 600;
-                font-size: 1.25rem;
+                font-size: 2rem;
                 margin: 0 0 .75rem;
             }
 
             .person {
-                margin: 0 0 .75rem;
+                margin: 0 0 0.85rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
                 
                 h3 {
+                    font-family: "Inter", sans-serif;
                     margin: 0;
-                    font-size: 1rem;
+                    font-size: 1.15rem;
                     opacity: .8;
                     font-weight: 400;
                 }
@@ -82,7 +89,7 @@ section#how_it_all_started {
             &-item {
                 border-left: 0 !important;
                 border-right: 0 !important;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+                border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.075);
                 padding: 25px 0;
 
                 &:last-of-type {

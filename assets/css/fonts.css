@@ -168,3 +168,12 @@
   src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
        url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'VCROSDMono';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/VCROSDMono.woff2") format("woff2"),
+       url("../fonts/VCROSDMono.woff") format("woff");
+}

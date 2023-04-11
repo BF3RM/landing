@@ -1,4 +1,5 @@
-const CREDITS_API_URL = 'https://hera-prod.bf3reality.com/api/v1/credits';
+// const CREDITS_API_URL = 'https://hera-prod.bf3reality.com/api/v1/credits';
+const CREDITS_API_URL = '/team.json';
 
 renderCredits();
 
@@ -22,15 +23,9 @@ async function renderCredits() {
 }
 
 async function fetchCredits() {
-    const response = fetch(CREDITS_API_URL)
-        .then(resp => {
-            return resp.json()?.team??[];
-        })
-        .catch(ex => {
-            console.error(ex);
-            return {};
-        });
-    return response;
+    const response = await fetch(CREDITS_API_URL);
+    const body = await response.json();
+    return body?.team??[];
 }
 
 function getCreditsByRole(credits) {
@@ -39,7 +34,7 @@ function getCreditsByRole(credits) {
         if (creditsByRole.hasOwnProperty(credit.name)) {
             creditsByRole[credit.name].push(credit.members);
         } else {
-            creditsByRole[credit.name] = [credit.members];
+            creditsByRole[credit.name] = credit.members;
         }
     });
     return creditsByRole;
@@ -58,9 +53,21 @@ function createRoleDiv(role, members) {
         personDiv.classList.add('person');
 
         const personH3 = document.createElement('h3');
-        personH3.textContent = `${member.firstName} "${member.username}" ${member.lastName} - ${member.countryCode}`;
+        // This one is going to be the finished one
+        // personH3.textContent = `${member.firstName} "${member.username}" ${member.lastName} - ${member.country}`;
+        personH3.textContent = `${member.firstName}`;
+
+        const personImg = document.createElement('img');
+        personImg.src = `https://flagcdn.com/w20/${member.country.toLowerCase()}.png`;
+        personImg.srcset = `https://flagcdn.com/w40/${member.country.toLowerCase()}.png 2x`;
+        personImg.alt = "";
+        personImg.width = 20;
 
         personDiv.append(personH3);
+        if (member.country) {
+            personDiv.append(personImg);
+        }
+
         roleDiv.append(personDiv);
     });
 
