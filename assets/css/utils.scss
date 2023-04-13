@@ -297,6 +297,23 @@ a.tag {
     height: auto;
 }
 
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+    grid-gap: 20px;
+
+    a {
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .alert {
         .alert-icon {

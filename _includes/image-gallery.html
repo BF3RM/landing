@@ -1,0 +1,9 @@
+<div class="image-gallery">
+  {% for file in site.static_files %}
+    {% if file.path contains include.folder %}
+        <a data-fslightbox="gallery" data-alt="" href="{{ file.path | relative_url }}">
+            <img src="{{ file.path | relative_url }}" alt="">
+        </a>
+    {% endif %}
+  {% endfor %}
+</div>
