@@ -146,6 +146,7 @@ section#play {
             margin-bottom: 10px;
             height: 75px;
             backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
 
             &-step {
                 display: flex;
@@ -339,6 +340,7 @@ section#roadmap {
                     line-height: 1;
                     border: 1px solid rgba(var(--color-primary-rgb), 0.3);
                     backdrop-filter: blur(3px);
+                    -webkit-backdrop-filter: blur(3px);
                 }
             }
     
@@ -606,6 +608,10 @@ section#news {
                     line-height: 1.2rem;
                     font-weight: 500;
                     padding: 10px 15px;
+                }
+
+                .how-to-play-item-content::before {
+                    display: none;
                 }
             }
         }

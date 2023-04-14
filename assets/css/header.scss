@@ -8,7 +8,8 @@
     right: 0;
     height: 75px;
     z-index: 50;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     background: rgba(var(--color-primary-rgb), 0.05);
     border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.5);
 
@@ -168,6 +169,7 @@ header {
 
         .btn {
             backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
         }
     }
 
@@ -192,6 +194,7 @@ header {
 #before_first_section {
     background: rgba(var(--color-primary-rgb), 0.05);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(var(--color-primary-rgb), 0.5);
     border-bottom: 0;
     display: grid;
@@ -253,6 +256,7 @@ header {
     z-index: 55;
     background: rgba(var(--color-primary-rgb), 0.05);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     touch-action: none;
     flex-flow: column;
     align-items: center;
