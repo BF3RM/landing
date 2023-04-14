@@ -54,6 +54,10 @@ const RM_SPY_GAMEMODES = {
     "Scavenger0": "Scavenger",
     "CaptureTheFlag0": "Capture the Flag",
     "AirSuperiority0": "Air Superiority",
+    "AdvanceAndSecureStd": "AAS Standard",
+    "AdvanceAndSecureAlt": "AAS Alternative",
+    "SkirmishStd": "Skirmish Standard",
+    "SkirmishAlt": "Skirmish Alternative"
 };
 
 renderRmSyp();
@@ -92,8 +96,10 @@ function createServerDiv(server) {
     const serverDiv = document.createElement('div');
     serverDiv.classList.add('server');
     
+    const levelName = server.roundLevelName.substring(server.roundLevelName.lastIndexOf("/") + 1);
+
     const serverMapImage = document.createElement('img');
-    serverMapImage.src = `https://s3.bf3reality.com/assets/loadingscreens/${server.roundLevelName.toLowerCase()}.png`;
+    serverMapImage.src = `https://s3.bf3reality.com/assets/loadingscreens/${levelName.toLowerCase()}.png`;
     serverMapImage.height = 95;
     serverDiv.append(serverMapImage);
 
@@ -107,7 +113,7 @@ function createServerDiv(server) {
 
     const serverMap = document.createElement('span');
     serverMap.classList.add('server-map');
-    serverMap.textContent = server.roundLevelName ? RM_SPY_MAPS[server.roundLevelName] : '';
+    serverMap.textContent = server.roundLevelName ? RM_SPY_MAPS[levelName] : '';
     prependMobileText(serverMap, 'Map');
     serverDiv.append(serverMap);
 
