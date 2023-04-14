@@ -39,7 +39,7 @@ defaults:
     values:
       image: /assets/img/og-card.png
 
-google_analytics: ""
+google_analytics: "G-9W8QTVD0NP"
 
 include:
   - "team.json"
