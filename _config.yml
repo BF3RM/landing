@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
   BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
 tagline: > # this means to ignore newlines until "show_excerpts:"
   BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms
-url: bf3reality.com
+url: "https://bf3reality.com"
 
 author:
   name: "Bf3: Reality Mod team"
@@ -22,7 +22,7 @@ plugins:
 
 twitter:
   username: Bf3RealityMod
-  card: summary
+  card: "BF3: RM is a BF3 modification with focus on teamplay, communication & combined arms"
 
 social:
   name: "Bf3: Reality Mod"
@@ -37,7 +37,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/og-card.png
+      image: "/assets/img/og-card.png"
 
 google_analytics: "G-9W8QTVD0NP"
 
