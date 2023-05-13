@@ -1,22 +1,22 @@
 {
   "team": [
     {
-      "name": "Project Management",
+      "name": "Founders",
       "members": [
         {
-          "firstName": "Stefan “3ti65“ Roos",
+          "firstName": "Stefan “3ti65” Roos",
           "lastName": "",
           "username": "",
           "country": "CH"
         },
         {
-          "firstName": "Mats “Powback“ Posti Bakken",
+          "firstName": "Mats “Powback” Posti Bakken",
           "lastName": "",
           "username": "",
           "country": "NO"
         },
         {
-          "firstName": "Fulgen “FoolHen“ Ruiz",
+          "firstName": "Fulgen “FoolHen” Ruiz",
           "lastName": "",
           "username": "",
           "country": "ES"
@@ -24,49 +24,61 @@
       ]
     },
     {
-      "name": "Development",
+      "name": "Project Management",
       "members": [
         {
-          "firstName": "Paul “paulhobbel“ Hobbel",
-          "lastName": "",
-          "username": "",
-          "country": "NL"
-        },
-        {
-          "firstName": "Marien “milk“ van der Lelij",
+          "firstName": "Cameron “Dumpy” Basham",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "Joe “Josephus“ Constable",
-          "lastName": "",
-          "username": "",
-          "country": "GB"
-        },
-        {
-          "firstName": "“Bree_Arnold“",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
-        },
-        {
-          "firstName": "Daniel “IllustrisJack“ Handayan Mayer",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
-        },
-        {
-          "firstName": "Dylan “Dyl.“ Duunk",
+          "firstName": "“BloodhoundNLD”",
           "lastName": "",
           "username": "",
           "country": "NL"
         },
         {
-          "firstName": "Apostolos “GreatApo“ Grammatopoulos",
+          "firstName": "Fulgen “FoolHen” Ruiz",
           "lastName": "",
           "username": "",
-          "country": "GR"
+          "country": "ES"
+        },
+        {
+          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
+          "lastName": "",
+          "username": "",
+          "country": "DE"
+        },
+        {
+          "firstName": "Paul “paulhobbel” Hobbel",
+          "lastName": "",
+          "username": "",
+          "country": "NL"
+        }
+
+      ]
+    },
+    {
+      "name": "Development",
+      "members": [
+        {
+          "firstName": "Marien “milk” van der Lelij",
+          "lastName": "",
+          "username": "",
+          "country": "US"
+        },
+        {
+          "firstName": "“Bree_Arnold”",
+          "lastName": "",
+          "username": "",
+          "country": "DE"
+        },
+        {
+          "firstName": "Dylan “Dyl.” Duunk",
+          "lastName": "",
+          "username": "",
+          "country": "NL"
         },
         {
           "firstName": "Tymur “Tymur” Pysarevych",
@@ -81,13 +93,37 @@
           "country": "HU"
         },
         {
-          "firstName": "Bence “senti180” Csizmadia ",
+          "firstName": "Ghaith “Chrisdashes”",
           "lastName": "",
           "username": "",
-          "country": "HU"
+          "country": "LB"
         },
         {
-          "firstName": "James “Survivalism” Doyle",
+          "firstName": "“Desertshadow”",
+          "lastName": "",
+          "username": "",
+          "country": "US"
+        },
+        {
+          "firstName": "“FortisFA”",
+          "lastName": "",
+          "username": "",
+          "country": "CY"
+        },
+        {
+          "firstName": "Michael “Furyo” Cabilao",
+          "lastName": "",
+          "username": "",
+          "country": "CA"
+        },
+        {
+          "firstName": "“TheAssassin71”",
+          "lastName": "",
+          "username": "",
+          "country": "FR"
+        },
+        {
+          "firstName": "Eric “PickleRicci” Ricci",
           "lastName": "",
           "username": "",
           "country": "US"
@@ -98,96 +134,43 @@
       "name": "Quality Assurance",
       "members": [
         {
-          "firstName": "Cameron “Dumpy“ Basham",
+          "firstName": "“TheMaxXHD”",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "C. “Wonder“ Kehayov",
-          "lastName": "",
-          "username": "",
-          "country": "GB"
-        },
-        {
-          "firstName": "Ghaith “Chrisdashes“",
-          "lastName": "",
-          "username": "",
-          "country": "LB"
-        },
-        {
-          "firstName": "Victor “Lapointe3“ Gillier",
-          "lastName": "",
-          "username": "",
-          "country": "FR"
-        },
-        {
-          "firstName": "“TheMaxXHD“",
-          "lastName": "",
-          "username": "",
-          "country": "US"
-        },
-        {
-          "firstName": "“E_Leader“",
-          "lastName": "",
-          "username": "",
-          "country": "US"
-        },
-        {
-          "firstName": "Kamil “MurasaS\" Brągiel",
+          "firstName": "Kamil “MurasaS” Brągiel",
           "lastName": "",
           "username": "",
           "country": "PL"
         },
         {
-          "firstName": "B. “Prophet“ Birol",
+          "firstName": "B. “Prophet” Birol",
           "lastName": "",
           "username": "",
           "country": "TR"
         },
         {
-          "firstName": "\"SassythSasqutch\"",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
-        },
-        {
-          "firstName": "\"Kappa007\"",
-          "lastName": "",
-          "username": "",
-          "country": "NL"
-        },
-        {
-          "firstName": "Shawn \"CyberViking\" Hodge",
-          "lastName": "",
-          "username": "",
-          "country": "US"
-        },
-        {
-          "firstName": "Seif \"Golden_Pilot \"El-Bakry",
+          "firstName": "Seif “Golden_Pilot” El-Bakry",
           "lastName": "",
           "username": "",
           "country": "EG"
         },
         {
-          "firstName": "\"STATIC\"",
+          "firstName": "“Envii”",
           "lastName": "",
           "username": "",
-          "country": "RO"
+          "country": "CA"
         },
         {
-          "firstName": "\"akilmaf\"",
+          "firstName": "“akilmaf”",
           "lastName": "",
           "username": "",
           "country": "TR"
-        }
-      ]
-    },
-    {
-      "name": "Community",
-      "members": [
+        },
         {
-          "firstName": "\"Funopoly\"",
+          "firstName": "Brandon “Sickcallranger” Gilbert",
           "lastName": "",
           "username": "",
           "country": "US"
@@ -198,10 +181,28 @@
       "name": "Marketing",
       "members": [
         {
-          "firstName": "“Litoralis“",
+          "firstName": "“akilmaf”",
+          "lastName": "",
+          "username": "",
+          "country": "TR"
+        },
+        {
+          "firstName": "Lincoln “lincolnlogs” Davis",
           "lastName": "",
           "username": "",
           "country": "US"
+        },
+        {
+          "firstName": "“Unicode”",
+          "lastName": "",
+          "username": "",
+          "country": "US"
+        },
+        {
+          "firstName": "“VividMind”",
+          "lastName": "",
+          "username": "",
+          "country": "NL"
         }
       ]
     },
@@ -209,13 +210,13 @@
       "name": "Venice Unleashed",
       "members": [
         {
-          "firstName": "Orfeas “NoFaTe“ Zafeiris",
+          "firstName": "Orfeas “NoFaTe” Zafeiris",
           "lastName": "",
           "username": "",
           "country": "GR"
         },
         {
-          "firstName": "Allen “kiwidog“ Thomas",
+          "firstName": "Allen “kiwidog” Thomas",
           "lastName": "",
           "username": "",
           "country": "US"
@@ -226,37 +227,37 @@
       "name": "Former Contributors",
       "members": [
         {
-          "firstName": "Tuur “Janssent“ Janssen",
+          "firstName": "Tuur “Janssent” Janssen",
           "lastName": "",
           "username": "",
           "country": "BE"
         },
         {
-          "firstName": "Lucas “Lukita“ Cerqueira",
+          "firstName": "Lucas “Lukita” Cerqueira",
           "lastName": "",
           "username": "",
           "country": "BR"
         },
         {
-          "firstName": "Jury “Snaiperskaya“ Verrigni",
+          "firstName": "Jury “Snaiperskaya” Verrigni",
           "lastName": "",
           "username": "",
           "country": "IT"
         },
         {
-          "firstName": "Stuart-Andrew “Platy“ Sulaski",
+          "firstName": "Stuart-Andrew “Platy” Sulaski",
           "lastName": "",
           "username": "",
           "country": "FR"
         },
         {
-          "firstName": "“Mitsu“",
+          "firstName": "“Mitsu”",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "Alexander “Morph“ Brookes",
+          "firstName": "Alexander “Morph” Brookes",
           "lastName": "",
           "username": "",
           "country": "GB"
@@ -268,73 +269,73 @@
           "country": "NL"
         },
         {
-          "firstName": "Omar “Omarito“ Chida",
+          "firstName": "Omar “Omarito” Chida",
           "lastName": "",
           "username": "",
           "country": "FR"
         },
         {
-          "firstName": "“Mayson12381“",
+          "firstName": "“Mayson12381”",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "“Zehtuka“",
+          "firstName": "“Zehtuka”",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "“Johan“",
+          "firstName": "“Johan”",
           "lastName": "",
           "username": "",
           "country": "SG"
         },
         {
-          "firstName": "Matti “Hattiwatti“ Hietanen",
+          "firstName": "Matti “Hattiwatti” Hietanen",
           "lastName": "",
           "username": "",
           "country": "FI"
         },
         {
-          "firstName": "Basheer “bashdash4“ Ammar",
+          "firstName": "Basheer “bashdash4” Ammar",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "Mattias “Zul“ P.",
+          "firstName": "Mattias “Zul” P.",
           "lastName": "",
           "username": "",
           "country": "DK"
         },
         {
-          "firstName": "Michael “Double_13“ Lammers",
+          "firstName": "Michael “Double_13” Lammers",
           "lastName": "",
           "username": "",
           "country": "NL"
         },
         {
-          "firstName": "José “Josefig“ Figueiras",
+          "firstName": "José “Josefig” Figueiras",
           "lastName": "",
           "username": "",
           "country": "PT"
         },
         {
-          "firstName": "“Odin“",
+          "firstName": "“Odin”",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "“Danesh_italiano“",
+          "firstName": "“Danesh_italiano”",
           "lastName": "",
           "username": "",
           "country": "IT"
         },
         {
-          "firstName": "“Reamz“",
+          "firstName": "“Reamz”",
           "lastName": "",
           "username": "",
           "country": "US"
@@ -346,107 +347,276 @@
           "country": "GB"
         },
         {
-          "firstName": "Rick “RickieAOM“ v. G.",
+          "firstName": "Rick “RickieAOM” v. G.",
           "lastName": "",
           "username": "",
           "country": "NL"
         },
         {
-          "firstName": "Peter “Simber“ Stather",
+          "firstName": "Peter “Simber” Stather",
           "lastName": "",
           "username": "",
           "country": "GB"
         },
         {
-          "firstName": "B. “NobleGhoxst“ M.",
+          "firstName": "B. “NobleGhoxst” M.",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "Lesley “Lesley“ Witkamp",
+          "firstName": "Lesley “Lesley” Witkamp",
           "lastName": "",
           "username": "",
           "country": "NL"
         },
         {
-          "firstName": "Saruhan “CmpingSmktrd48“ Karademir",
+          "firstName": "Saruhan “CmpingSmktrd48” Karademir",
           "lastName": "",
           "username": "",
           "country": "TR"
         },
         {
-          "firstName": "Guilherme “Raykan“ Santos",
+          "firstName": "Guilherme “Raykan” Santos",
           "lastName": "",
           "username": "",
           "country": "BR"
         },
         {
-          "firstName": "“Lhop“",
+          "firstName": "“Lhop”",
           "lastName": "",
           "username": "",
           "country": "SE"
         },
         {
-          "firstName": "“Ropkins“",
+          "firstName": "“Ropkins”",
           "lastName": "",
           "username": "",
           "country": "US"
         },
         {
-          "firstName": "“Mezz“",
+          "firstName": "“Mezz”",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "“GDUBMX“",
+          "firstName": "“GDUBMX”",
           "lastName": "",
           "username": "",
           "country": "GB"
         },
         {
-          "firstName": "“Sir Evergreen“",
+          "firstName": "“Sir Evergreen”",
           "lastName": "",
           "username": "",
           "country": "GB"
         },
         {
-          "firstName": "“xILENT“",
+          "firstName": "“xILENT”",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "Julian “Flare“ D.",
+          "firstName": "Julian “Flare” D.",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "Victor “DuckAndCover“ Toldov",
+          "firstName": "Victor “DuckAndCover” Toldov",
           "lastName": "",
           "username": "",
           "country": "RU"
         },
         {
-          "firstName": "Dennis “Alphacore“ L.",
+          "firstName": "Dennis “Alphacore” L.",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "\"Harakiri\"",
+          "firstName": "Harakiri",
           "lastName": "",
           "username": "",
           "country": "DE"
         },
         {
-          "firstName": "“Terra_Immortal“",
+          "firstName": "“Terra_Immortal”",
           "lastName": "",
           "username": "",
           "country": "LT"
+        },
+        {
+            "firstName": "“Lupus Reaper”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“Alx1f9k”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“breaknix”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“DevilPower”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“Double”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“Frankman”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "Apostolos “GreatApo” Grammatopoulos",
+            "lastName": "",
+            "username": "",
+            "country": "GR"
+        },
+        {
+            "firstName": "“Gudsawn”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“Invo”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "Joe “Josephus” Constable",
+            "lastName": "",
+            "username": "",
+            "country": "GB"
+        },
+        {
+            "firstName": "“kappa007”",
+            "lastName": "",
+            "username": "",
+            "country": "NL"
+        },
+        {
+            "firstName": "Victor “Lapointe3” Gillier",
+            "lastName": "",
+            "username": "",
+            "country": "FR"
+        },
+        {
+            "firstName": "“MCS”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“Mera_gg”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“RadX”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“E_Leader”",
+            "lastName": "",
+            "username": "",
+            "country": "US"
+        },
+        {
+            "firstName": "“SassythSasqutch”",
+            "lastName": "",
+            "username": "",
+            "country": "DE"
+        },
+        {
+            "firstName": "“Sebe”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "Bence “senti180” Csizmadia ",
+            "lastName": "",
+            "username": "",
+            "country": "HU"
+        },
+        {
+            "firstName": "“STATIC”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "James “Survivalism” Doyle",
+            "lastName": "",
+            "username": "",
+            "country": "US"
+        },
+        {
+            "firstName": "“TheLankySoldier”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "“TheMastro”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "C. “Wonder” Kehayov",
+            "lastName": "",
+            "username": "",
+            "country": "GB"
+        },
+        {
+            "firstName": "“ZabariYarin”",
+            "lastName": "",
+            "username": "",
+            "country": ""
+        },
+        {
+            "firstName": "Shawn “CyberViking” Hodge",
+            "lastName": "",
+            "username": "",
+            "country": "US"
+        },
+        {
+            "firstName": "“Funopoly”",
+            "lastName": "",
+            "username": "",
+            "country": "US"
+        },
+        {
+            "firstName": "“Litoralis”",
+            "lastName": "",
+            "username": "",
+            "country": "US"
         }
+
       ]
     },
     {
