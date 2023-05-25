@@ -568,6 +568,13 @@ section#news {
         }
     }
 
+    section#roadmap {
+        .roadmap-grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+        }
+    }
+
     .blog-posts-container {
         grid-template-columns: repeat(2, 1fr);
     }
