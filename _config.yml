@@ -28,8 +28,9 @@ social:
   name: "Bf3: Reality Mod"
   links:
     - https://twitter.com/Bf3RealityMod
-    - https://www.youtube.com/channel/UCdx0YZzZrdwQty1CeQFyqhw
+    - https://www.youtube.com/@bf3realitymod
     - https://www.patreon.com/bf3realitymod
+    - https://www.buymeacoffee.com/bf3reality
     - https://github.com/BF3RM
     - https://discord.gg/realitymod
 
@@ -45,4 +46,4 @@ include:
   - "team.json"
   - ".htaccess"
 
-version: "1.0.2"
+version: "1.0.3"
