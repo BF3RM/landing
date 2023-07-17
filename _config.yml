@@ -46,4 +46,4 @@ include:
   - "team.json"
   - ".htaccess"
 
-version: "1.0.3"
+version: "1.0.4"
