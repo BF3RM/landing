@@ -33,30 +33,11 @@
           "country": "US"
         },
         {
-          "firstName": "“BloodhoundNLD”",
-          "lastName": "",
-          "username": "",
-          "country": "NL"
-        },
-        {
-          "firstName": "Fulgen “FoolHen” Ruiz",
-          "lastName": "",
-          "username": "",
-          "country": "ES"
-        },
-        {
-          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
-        },
-        {
-          "firstName": "Paul “paulhobbel” Hobbel",
+          "firstName": "Max “BloodhoundNLD” de Groot",
           "lastName": "",
           "username": "",
           "country": "NL"
         }
-
       ]
     },
     {
@@ -67,6 +48,12 @@
           "lastName": "",
           "username": "",
           "country": "US"
+        },
+        {
+          "firstName": "Paul “paulhobbel” Hobbel",
+          "lastName": "",
+          "username": "",
+          "country": "NL"
         },
         {
           "firstName": "“Bree_Arnold”",
@@ -158,12 +145,6 @@
           "country": "EG"
         },
         {
-          "firstName": "“Envii”",
-          "lastName": "",
-          "username": "",
-          "country": "CA"
-        },
-        {
           "firstName": "“akilmaf”",
           "lastName": "",
           "username": "",
@@ -231,6 +212,12 @@
           "lastName": "",
           "username": "",
           "country": "BE"
+        },
+        {
+          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
+          "lastName": "",
+          "username": "",
+          "country": "DE"
         },
         {
           "firstName": "Lucas “Lukita” Cerqueira",
