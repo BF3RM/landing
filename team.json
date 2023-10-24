@@ -33,30 +33,17 @@
           "country": "US"
         },
         {
-          "firstName": "“BloodhoundNLD”",
+          "firstName": "Max “BloodhoundNLD” de Groot",
           "lastName": "",
           "username": "",
           "country": "NL"
         },
         {
-          "firstName": "Fulgen “FoolHen” Ruiz",
+          "firstName": "Eric “PickleRicci” Ricci",
           "lastName": "",
           "username": "",
-          "country": "ES"
-        },
-        {
-          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
-        },
-        {
-          "firstName": "Paul “paulhobbel” Hobbel",
-          "lastName": "",
-          "username": "",
-          "country": "NL"
+          "country": "US"
         }
-
       ]
     },
     {
@@ -73,12 +60,6 @@
           "lastName": "",
           "username": "",
           "country": "DE"
-        },
-        {
-          "firstName": "Dylan “Dyl.” Duunk",
-          "lastName": "",
-          "username": "",
-          "country": "NL"
         },
         {
           "firstName": "Tymur “Tymur” Pysarevych",
@@ -111,34 +92,28 @@
           "country": "CY"
         },
         {
-          "firstName": "Michael “Furyo” Cabilao",
+          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
           "lastName": "",
           "username": "",
-          "country": "CA"
+          "country": "DE"
         },
         {
-          "firstName": "“TheAssassin71”",
+          "firstName": "Paul “paulhobbel” Hobbel",
           "lastName": "",
           "username": "",
-          "country": "FR"
+          "country": "NL"
         },
         {
-          "firstName": "Eric “PickleRicci” Ricci",
+          "firstName": "Ori “Ori-buhbut” Buhbut",
           "lastName": "",
           "username": "",
-          "country": "US"
+          "country": "IS"
         }
       ]
     },
     {
       "name": "Quality Assurance",
       "members": [
-        {
-          "firstName": "“TheMaxXHD”",
-          "lastName": "",
-          "username": "",
-          "country": "US"
-        },
         {
           "firstName": "Kamil “MurasaS” Brągiel",
           "lastName": "",
@@ -158,22 +133,22 @@
           "country": "EG"
         },
         {
-          "firstName": "“Envii”",
+          "firstName": "“kappa007”",
           "lastName": "",
           "username": "",
-          "country": "CA"
+          "country": "NL"
+        },
+        {
+          "firstName": "“Jusubbi”",
+          "lastName": "",
+          "username": "",
+          "country": "FI"
         },
         {
           "firstName": "“akilmaf”",
           "lastName": "",
           "username": "",
           "country": "TR"
-        },
-        {
-          "firstName": "Brandon “Sickcallranger” Gilbert",
-          "lastName": "",
-          "username": "",
-          "country": "US"
         }
       ]
     },
@@ -231,6 +206,30 @@
           "lastName": "",
           "username": "",
           "country": "BE"
+        },
+        {
+          "firstName": "Dylan “Dyl.” Duunk",
+          "lastName": "",
+          "username": "",
+          "country": "NL"
+        },
+        {
+          "firstName": "Michael “Furyo” Cabilao",
+          "lastName": "",
+          "username": "",
+          "country": "CA"
+        },
+        {
+          "firstName": "“TheMaxXHD”",
+          "lastName": "",
+          "username": "",
+          "country": "US"
+        },
+        {
+          "firstName": "Brandon “Sickcallranger” Gilbert",
+          "lastName": "",
+          "username": "",
+          "country": "US"
         },
         {
           "firstName": "Lucas “Lukita” Cerqueira",
@@ -507,12 +506,6 @@
             "lastName": "",
             "username": "",
             "country": "GB"
-        },
-        {
-            "firstName": "“kappa007”",
-            "lastName": "",
-            "username": "",
-            "country": "NL"
         },
         {
             "firstName": "Victor “Lapointe3” Gillier",
