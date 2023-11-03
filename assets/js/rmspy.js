@@ -99,7 +99,7 @@ function createServerDiv(server) {
     const levelName = server.roundLevelName.substring(server.roundLevelName.lastIndexOf("/") + 1);
 
     const serverMapImage = document.createElement('img');
-    serverMapImage.src = `https://s3.bf3reality.com/assets/loadingscreens/${levelName.toLowerCase()}.png`;
+    serverMapImage.src = `https://cdn.bf3reality.com/assets/loadingscreens/${levelName.toLowerCase()}.png`;
     serverMapImage.height = 95;
     serverDiv.append(serverMapImage);
 
