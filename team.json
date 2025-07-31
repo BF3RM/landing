@@ -78,6 +78,12 @@
           "lastName": "",
           "username": "",
           "country": "MA"
+        },
+        {
+          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
+          "lastName": "",
+          "username": "",
+          "country": "DE"
         }
       ]
     },
@@ -85,26 +91,13 @@
       "name": "Quality Assurance",
       "members": [
         {
-          "firstName": "Kamil “MurasaS” Brągiel",
+          "firstName": "Seif “Golden_Pilot” El-Bakry",
           "lastName": "",
           "username": "",
-          "country": "PL"
+          "country": "EG"
         },
-
         {
           "firstName": "“Jusubbi”",
-          "lastName": "",
-          "username": "",
-          "country": "FI"
-        },
-        {
-          "firstName": "“akilmaf”",
-          "lastName": "",
-          "username": "",
-          "country": "TR"
-        },
-        {
-          "firstName": "“Friado”",
           "lastName": "",
           "username": "",
           "country": "FI"
@@ -144,6 +137,24 @@
           "country": "LB"
         },
         {
+          "firstName": "Kamil “MurasaS” Brągiel",
+          "lastName": "",
+          "username": "",
+          "country": "PL"
+        },
+        {
+          "firstName": "“Friado”",
+          "lastName": "",
+          "username": "",
+          "country": "FI"
+        },
+        {
+          "firstName": "“akilmaf”",
+          "lastName": "",
+          "username": "",
+          "country": "TR"
+        },
+        {
           "firstName": "Kálóczi “KVN” Kevin ",
           "lastName": "",
           "username": "",
@@ -160,12 +171,6 @@
           "lastName": "",
           "username": "",
           "country": "NL"
-        },
-        {
-          "firstName": "Seif “Golden_Pilot” El-Bakry",
-          "lastName": "",
-          "username": "",
-          "country": "EG"
         },
         {
           "firstName": "B. “Prophet” Birol",
@@ -616,12 +621,6 @@
           "lastName": "",
           "username": "",
           "country": "ES"
-        },
-        {
-          "firstName": "Daniel “IllustrisJack” Handayan Mayer",
-          "lastName": "",
-          "username": "",
-          "country": "DE"
         }
       ]
     },
