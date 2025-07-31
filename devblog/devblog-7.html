@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 7 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 7">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="I can’t believe it is Reality Mod!?">
+<meta property="og:description" content="I can’t believe it is Reality Mod!?">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-7">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-7">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-7/devblog-7.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-10-24T16:20:00+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-7/devblog-7.png">
+<meta property="twitter:title" content="DEVBLOG 7">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-24T16:20:00+00:00","datePublished":"2023-10-24T16:20:00+00:00","description":"I can’t believe it is Reality Mod!?","headline":"DEVBLOG 7","image":"https://bf3reality.com/assets/posts/devblog-7/devblog-7.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-7"},"url":"https://bf3reality.com/devblog/devblog-7"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-7/devblog-7.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 7</h1>
+          <p>I can’t believe it is Reality Mod!?</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2023-10-24T16:20:00+00:00" itemprop="datePublished">
+        Oct 24, 2023
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">BloodhoundNLD, Desertshadow</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<h1 id="devblog-7">Devblog 7</h1>
+
+<p>Our last Dev-blog was focussed on the aftermath of the 0.2 release and showed some of the work that is already released and a sneak-peak at what vehicles are going to be in Reality Mod. In this Devblog we will glance over what is on patch ALPHA 0.3 and get a bit more in-depth on how Reality Mod is being made.
+
+</p>
+<h2 id="stability">Stability</h2>
+
+<p>One of the reasons this patch took so long to get out was the persistent issues with clients’ UI crashing during the round or immediately after a round switch. This patch has deployed a variety of fixes and optimizations.</p>
+
+<ul>
+  <li>Updated PixiJS</li>
+  <li>Moved all map related images to a single spritesheet</li>
+  <li>Reduced events sent to the UI, more on that later.</li>
+</ul>
+
+<p>Overall crashes still do happen from time to time, but the number of UI issues should be drastically reduced. Offering a better experience for longer. We will continue to investigate if more improvements can be made.</p>
+
+<p>Another thing that might help for people still experiencing issues is deleting the following folders:</p>
+
+<ul>
+  <li>C:\Users\YOU\AppData\Local\VeniceUnleashed\webui_cache</li>
+  <li>C:\Users\YOU\AppData\Local\VeniceUnleashed\mods\realitymod</li>
+</ul>
+
+<h2 id="bmp-2-and-lav25">BMP-2 and LAV25</h2>
+
+<p>Teased for a while now, but they are finally here. The BMP-2 and LAV25. Lots of hard work went into these vehicles and Desertshadow is here to explain what and how:</p>
+
+<h3 id="unique-weapons">Unique weapons:</h3>
+
+<p>Vehicles have unique weapon containers but point to the same firing logic. So if you open the LAV HE cannon and modify its firing logic, it will apply to all IFV HE cannons.
+To get around this we cloned the firing logic, modified the clone, and then attached the clone to the weapon container.</p>
+
+<p>This became a problem because firing logic loaded in different order depending on the map, which made the cloning cause server crashes. Jassent pointed us in the right direction from here.</p>
+
+<p>First attempt involved WaitForInstances to wait till the particular logic loaded, and then run our changes once.
+The good: Changes worked and no more server crashes.
+The bad: The changes would be destroyed when switching to a map without that vehicle. AKA we’d be stuck with vanilla weapons.</p>
+
+<p>Next attempt involved waiting until Level:RegisterEntityResources event (every time level loads), and then running changes. If the vehicle doesn’t exist on that map then we skip the changes.
+This works every time so problem solved. Thanks Jassent!</p>
+
+<h3 id="weapon-stats">Weapon stats</h3>
+
+<p>Here is the starting point for BMP-2 and LAV25. Balancing will happen with feedback.</p>
+
+<p>Both vehicles take 2 sec to equip cannon and 0.5 sec to equip coax.</p>
+
+<p>BMP fires at 250rpm, loses accuracy at 5th shot, and overheats in 4 seconds with 17 consecutive shots.
+LAV fires at 200rpm, loses accuracy at 9th shot, and overheats in 6.5 seconds with 22 consecutive shots.</p>
+
+<p>Coax fires at 550RPM in both cases, losing accuracy in ~1.5sec, overheating in 5.5sec.</p>
+
+<p>AP rounds LAV TTK at 10m: ~4.5s (auto)
+AP rounds BMP TTK at 10m: ~3.5s (auto)</p>
+
+<p>AP rounds BMP TTK at 750m: ~15 seconds (4 shots, wait 2 sec)
+AP rounds LAV TTK at 750m: ~11 seconds (8 shots, wait 1 sec)</p>
+
+<h3 id="vehicle-seats">Vehicle seats</h3>
+
+<p><strong>Driver (SEAT 1):</strong>
+Vehicle player slots are defined by things called PlayerEntryComponent or SoldierEntryComponent. Drivers’ PlayerEntryComponents are located at the root of the vehicle. There is usually one in the turret as well, but its <code class="language-plaintext highlighter-rouge">excluded</code> property is set to true. If we change it to false, voila: split driver/gunner controls.</p>
+
+<p>Next we add a camera to the driver and a viewport mesh from the passenger. Lots of trial and error moving those around, but it looks okay now.</p>
+
+<p>To counter soloing vehicles, Ori made the screen black for all occupants unless someone is in the driver seat.</p>
+
+<p><strong>Gunner (SEAT 2):</strong>
+Our gunner was initially in seat 1, to make the HUD direction indicators work properly.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Vehicle orientation HUD marker" href="/assets/posts/devblog-7/VehicleDirection.png"><img src="/assets/posts/devblog-7/VehicleDirection.png" alt="Vehicle orientation HUD marker"></a><small>Vehicle orientation HUD marker</small>
+</div>
+
+<p>Everything looked good until vehicle movement; the entire HUD ghosts, or seems to have 2 HUDs with 1 trying to catch up to vehicle position. Very disorienting.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=zoMYHudcZTw" data-videoid="zoMYHudcZTw" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>The closest examples of split driver/gunner were the AAV and the commander seat 50cals. Those have a property called lockMeshToRenderView set to true. So we tried that. It micro-stutters but is better than ghosting. So what’s the problem?</p>
+
+<p>Cannons in BF3 are dynamic; they respond to vehicle orientation (pitch/roll). The HUDs account for the dynamic cannons: The entire frame, screen, and reticles move depending on the vehicle’s orientation (Pitch, Roll).</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Entire HUD moving on different slope" href="/assets/posts/devblog-7/HudSlope1.png"><img src="/assets/posts/devblog-7/HudSlope1.png" alt="Entire HUD moving on different slope"></a><small>Entire HUD moving on different slope</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Entire HUD moving on different slope" href="/assets/posts/devblog-7/HudSlope2.png"><img src="/assets/posts/devblog-7/HudSlope2.png" alt="Entire HUD moving on different slope"></a><small>Entire HUD moving on different slope</small>
+</div>
+
+<p>A locked mesh is static (does not move), and therefore cannot account for the dynamic cannon. So it’ll aim properly in only one condition.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle1.png"><img src="/assets/posts/devblog-7/TracerReticle1.png" alt="IFV accuracy issues"></a><small>IFV accuracy issues</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle2.png"><img src="/assets/posts/devblog-7/TracerReticle2.png" alt="IFV accuracy issues"></a><small>IFV accuracy issues</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle3.png"><img src="/assets/posts/devblog-7/TracerReticle3.png" alt="IFV accuracy issues"></a><small>IFV accuracy issues</small>
+</div>
+
+<p>We shifted the mesh around to make the reticle at least match for flat terrain, and compromised by locking normal view.</p>
+
+<p>Normal view: locked to remove ghosting but sacrifice accuracy. Vehicle will just so happen to show where it’s truly aiming, but only on perfectly flat ground.
+Zoomed view: unlocked to prioritize accuracy but has ghosting. Vehicle will show where its truly aiming, on any pitch/roll.</p>
+
+<p>After having gone down this rabbit hole, the solution to the ghosting was to undo our HUD indicator fix. Gunner goes back to seat 2 and aiming is perfect in all situations. No locking nonsense to deal with.</p>
+
+<p><strong>Commander (SEAT 3):</strong>
+We have for now “removed” the 50cal gun for the commander. We hid the visual model and set the ammo to 0. Then we tweaked the zoomed FOV and sensitivity so it’s more comfortable to pan the camera. We also added a smoke launcher weapon to the commander seat: Fire with “X”, and reload with “R”. That might come in handy when HAT lockons arrive in the future.</p>
+
+<h2 id="another-map-bandar-desert">Another Map, Bandar Desert</h2>
+
+<p>While not completely finished yet, the Skirmish layer for this map is done. One of the bigger maps in BF3 and certainly the biggest map so far in Reality Mod. Bandar Desert Skirmish will feature US and RU forces who fight over Bandar Village located in the center of the map. Scenic beach walk is a must, that is of course until the bullets start flying. For AAS and other gamemodes using the full map, the forces will fight over military camps, villages, construction sites and desert, <em>lots of desert</em>. In the future you can also expect the long awaited Helicopters and eventually jets. We are really excited and are working hard to bring the first 4x4km map to Reality Mod! Here are some pictures of the Skirmish area, while we keep developing the rest of the map.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="RU Main base Bandar" href="/assets/posts/devblog-7/bandar-1.png"><img src="/assets/posts/devblog-7/bandar-1.png" alt="RU Main base Bandar"></a><small>RU Main base Bandar</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="US Main base US" href="/assets/posts/devblog-7/bandar-2.png"><img src="/assets/posts/devblog-7/bandar-2.png" alt="US Main base US"></a><small>US Main base US</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Bandar City" href="/assets/posts/devblog-7/bandar-3.png"><img src="/assets/posts/devblog-7/bandar-3.png" alt="Bandar City"></a><small>Bandar City</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Bandar Gas Station" href="/assets/posts/devblog-7/bandar-4.png"><img src="/assets/posts/devblog-7/bandar-4.png" alt="Bandar Gas Station"></a><small>Bandar Gas Station</small>
+</div>
+
+<h2 id="stamina-suppression-weapon-handling-and-ballistics">Stamina, Suppression, Weapon Handling and Ballistics</h2>
+
+<h3 id="ballistics">Ballistics</h3>
+
+<p>Let’s start with ballistics. This one was on the need to change list for way too long. And honestly after working on this, we now know why. First, what was the ballistics system before this patch? Well, all the functionality was there, but it didn’t function when we made bullet speed match real-life values. The slower bullet speeds don’t really matter in vanilla BF3 because the maps are substantially more compact. At distance in Reality Mod though, you would be able to literally side step and avoid the bullet. Bumping the initial speed of the bullets resulted in pretty flat shooting guns even at distances beyond 300 meters. Gravity just couldn’t get a hold of the bullet and in BF3 there is no such thing as wind resistance or a bullet drag coefficient. Desertshadow spent hours upon hours researching options to make bullets behave as realistic as we can. He made a test range in MapEditor with targets every 50m. He changed gravity, initial directions, and initial speeds of bullets.
+After an all-nighter tweaking numbers and noticing the changes on the range sucked, He realized he should stop avoiding the math. So he made an excel doc with basic kinematic equations, couple graphs and tables; the starting point of ballistics changes.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Oman Dev Firing Range" href="/assets/posts/devblog-7/firing-range-1.png"><img src="/assets/posts/devblog-7/firing-range-1.png" alt="Oman Dev Firing Range"></a><small>Oman Dev Firing Range</small>
+</div>
+
+<p>Once he figured out the math behind it and created a cheat sheet, it was time to pass this issue over to Bloodhound. He also spent <del>a lot</del> too much time fine tuning the ballistics system and made it as close as possible to real life. Matching scopes to bullet trajectories was the last painful hurdle, but we now have bullet drop and the zoomed scopes have accurate indicators up to 600 meters out. This unfortunately means that we have to leave the true sight pictures for the optics. Reticles will look slightly different than their real-life counterparts. All sights are zeroed for 100 meters. Currently there is no option to zero for a different distance. For more info check out the community guide:</p>
+
+<p><a href="https://wiki.bf3reality.com/en/guides/community-guide#the-basic-in-game-player-mechanics">https://wiki.bf3reality.com/en/guides/community-guide#the-basic-in-game-player-mechanics</a></p>
+
+<h3 id="stamina">Stamina</h3>
+
+<p>In the bottom right of your screen you will find the stamina bar. This indicator shows you how much stamina is left. Previously stamina felt pretty infinite, but as we move further away from alpha 0.1, infantry gameplay changes were needed. So far we have increased the top sprint from 17 kph to 20 kph. Out of stamina sprint speed has stayed the same at 10 kph. So with a full stamina bar you will start sprinting 20kph and as your stamina runs out you will gradually slow down to 10kph. Walking speed has been reduced from 10 kph to 6 kph. These values bring you capabilities more in-line with what you can realistically expect from humans.</p>
+
+<p>Speed is not the only thing that is affected by the status of your stamina. Recoil, breath control and sway control are now all tied to stamina. Increasing the need to plan your movements and disencouraging running and gunning. The lower you are on stamina the more recoil you will experience. Your stance also influences your recoil so crouching and going prone might help you get off consecutive shots on target. The increased sway on low stamina is only vertical. This simulates you, the player breathing heavily. You can compensate for the sway with mouse movement and also it lowers on stance. Crouching and going prone reduces the sway. The last thing tied to stamina is the Hold breath/stabilize function (default key: L. Shift if zoomed). The lower you are on stamina the shorter the time will be that you can hold breath to stabilize your aim.</p>
+
+<h3 id="suppression">Suppression</h3>
+
+<p>Another aspect of the gunplay in Reality Mod that we gave another look is the suppression effect. Suppression has been increased but it will take more incoming rounds to set in. It will also be reduced faster to balance things out. So overall getting suppressed feels more intense while not being ridiculous and using your LMG, MMG to suppress enemy targets is a more viable strategy now.</p>
+
+<h2 id="minimap-changes">Minimap Changes</h2>
+
+<p>Some of you have tested this with us on the playtests, for those who don’t know: you are no longer able to see all friendly players on the minimap. You will see your squadmates and SL, other SL’s, dead and downed friendlies and friendlies that are in vehicles. The reasoning behind this has two sides. On the one side and the main reason why we did this, is the simple fact that we can reduce the events we send to the UI by an average of 30%. This becomes higher the more people there are on the server. And this applies 4 times per second! On the other side there is the gameplay aspect. Less info on the minimap increases the fog of war. The need to stick with your Squad in order for the team to somewhat know your position and not accidentally dropping arty on your head. This change requires more teamwork, more coordination and be sure to ID your target before you shoot. It could be a friendly wandering around.</p>
+
+<h2 id="max-player-count">Max. Player Count</h2>
+
+<p>Yeah, we are not excited about this one but for now the max player is reduced from 80 to 64. At least for now. With the current content 64 players is still more than enough to have an enjoyable experience. We have made some other changes to accommodate for it as well. Max. Squad size has been reduced and the kit limitations have had a look over too. Most notably the medic which is now limited to 1 per squad instead of 2. To get the latest info check out the community guide on the wiki:</p>
+
+<p><a href="https://wiki.bf3reality.com/en/guides/community-guide#joining-a-game">https://wiki.bf3reality.com/en/guides/community-guide#joining-a-game</a></p>
+
+<h2 id="fob-construction-and-destruction">FOB Construction and Destruction</h2>
+
+<p>Although in the pipeline for some time, we finally got around and completed the first iteration of modular construction. When an FOB is placed it will no longer just <em>plop</em> be there. It will gradually build up. Foundation first, walls second, then the camonet and last the radio beacon which completes the FOB and makes it spawnable for the team. To place a FOB you will need 2 squadmates and the Squadleader with less than 40 players on the server. You will need 3 Squadmates and SL with 40 and more players on the server. Friendly presence is required to finish construction! Good thing to know, you have 2 minutes and 50 seconds to finish construction otherwise the FOB is considered lost and will be deleted. You can still overrun an FOB like you normally would. However, enemies now need to outnumber or equal the number of friendlies in a given radius to trigger the overrun. Stay on it for 2 minutes, 30 seconds and the FOB will start to deconstruct. Once deconstruction starts there is no way to save the FOB, so make sure you get there before the overrun is complete. Another new way to get rid of an enemy FOB is to blow it up! To do so, you place 3x C4 on or very near the radio beacon inside the FOB. Again once the radio beacon is blown up the deconstruction starts. Good thing to know the radio beacon keeps beeping when an FOB is overrun so make sure you control it when trying to overrun it.</p>
+
+<h2 id="kit-change-on-fob">Kit Change on FOB</h2>
+
+<p>With the construction fixed we also managed to get another nice feature for the FOBs in. You can now inside an FOB access your Tac-Rose and change your kit. Kit limitations still apply and you can only change your kit every 2 and 30 seconds. Situation change on the battlefield? Wrong kit after revive? You now have a way to solve your kit issues with ease!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Kit change on FOB" href="/assets/posts/devblog-7/tac-rose-1.png"><img src="/assets/posts/devblog-7/tac-rose-1.png" alt="Kit change on FOB"></a><small>Kit change on FOB</small>
+</div>
+
+<h2 id="beyond-030">Beyond 0.3.0</h2>
+
+<p>The roadmap has been long gone and abandoned and we need to update it again soon. But here is an overview of some of the issues you can expect us to work on next.</p>
+
+<h3 id="fob-mechanics">FOB Mechanics</h3>
+
+<p>With the first iteration of FOB construction implemented it is time to experiment expanding it. The first focus will be constructable/placeable cover. Think sandbags, razor wire and hesco blocks. Ori-buhbut already started experimenting with this and results are promising! A hint of his progress is already visible in the Tac-Rose. Something also high on the priority list is bringing back the ammo resupply back to the FOBs. To do so we are also looking into bringing a first iteration for logistics, construction and ammo points. With this we can limit the amount of emplacements and ammunition in a natural way while also providing the team with incentive to actively care for the FOBs.</p>
+
+<p>Below this on our to do list are of course the weapon emplacements. This is going to require some research. Not only are we dependent on bundles but also we need to convert the actual weapons into emplacements. A tough task but with promising results so far.</p>
+
+<h3 id="second-vehicle-iteration">Second Vehicle iteration</h3>
+
+<p>With the release of the IFVs and all the transport options we have entered the vehicle territory, or rather dipped our toes in. After this patch we are going to expand multi-crew vehicles. With the following being planned first:</p>
+
+<ul>
+  <li>BTR 90</li>
+  <li>AAV</li>
+  <li>Littlebird scout helicopter</li>
+  <li>Z11 scout helicopter</li>
+</ul>
+
+<p>With these new helicopters also comes the need for counter-measures, already teased in the leaks but the Scout helicopter release is coupled with the release of the Anti-Air kit. Both teams will have access to a shoulder fired guided missile to counter the deadly potential of these scout helicopters.</p>
+
+<p>While it is nice to not have to worry about crewing vehicles with special kits, we are going to move away from that by introducing Squadtypes. These Squadtypes will determine what vehicles you can crew and what kits you will have access to. Some of you might have seen the MP7 tease for the US pilot kit. There are 3 Squadtypes planned: Armor, Air and Infantry. - The Armor squads will be able to crew IFVs and in the future tanks and other wheeled or tracked vehicles with weapons.</p>
+
+<ul>
+  <li>The Air squads will be able to operate the Helicopters and Jets</li>
+  <li>The Infantry squads will be able to operate Jeeps, Buggies and the other smaller transport vehicles.</li>
+</ul>
+
+<p>All these squads will be able to hop in the passenger seats of all vehicles.</p>
+
+<h3 id="maps">Maps</h3>
+
+<p>With the introduction of Bandar Desert Skirmish, the first step in unlocking the potential of the full map has been set. Next is expanding the playable area far and beyond the vanilla map area. New POI have already been created outside the skirmish area but there is still lots of room to improve and dress-up the map.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="COP Hawkeye" href="/assets/posts/devblog-7/bandar-5.png"><img src="/assets/posts/devblog-7/bandar-5.png" alt="COP Hawkeye"></a><small>COP Hawkeye</small>
+</div>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="RU main base" href="/assets/posts/devblog-7/bandar-6.png"><img src="/assets/posts/devblog-7/bandar-6.png" alt="RU main base"></a><small>RU main base</small>
+</div>
+
+<p>Another map that is in the pipeline is ‘Alborz Mountains’. Teased before and initially scheduled to be released with 0.3, this map needed a lot more work because of some missing collision. Luckily we have revamped the Ministry of Forestation and trees are being planted as we speak. While we are redoing the trees, we also are beautifying the existing POI with some props, objects and other stuff.</p>
+
+<h3 id="we-are-still-recruiting">We are (still) Recruiting</h3>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=1Y3XJuJBCOM" data-videoid="1Y3XJuJBCOM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Reality Mod is nowhere without contributors to the project and we are pretty much always open to new people. We are looking for:</p>
+
+<ul>
+  <li>Community Manager</li>
+  <li>Project RIME (C# and experience with WPF, knowledge of DirectX would be a plus)</li>
+  <li>Requirements Engineer / Business Analyst</li>
+  <li>Game / Backend Developer (Lua / Java)</li>
+  <li>UI / Web Developer (TS/JS/Vue)</li>
+  <li>Discord Bot Developer (Discord API, TS/JS, Postgres)</li>
+  <li>Level Designer</li>
+  <li>Visual Environmental Designer</li>
+  <li>Lead Quality Assurance</li>
+  <li>Quality Assurance Member</li>
+  <li>Game Marketing Expert</li>
+  <li>Content Manager</li>
+</ul>
+
+<p>If you think you fit any of the above titles, please make sure to fill out this application and a team member will be with you shortly. Please do not reach out to a team member directly unless there is no response within a week.
+<a href="https://forms.gle/6ewSyXZDCD5Vax7VA">https://forms.gle/6ewSyXZDCD5Vax7VA</a></p>
+
+<h2 id="full-changelog">Full Changelog:</h2>
+
+<p><strong>UI:</strong></p>
+
+<ul>
+  <li>Implemented tips and tricks to Loading screen and Player menu</li>
+  <li>Mines will be auto-marked on the map for friendlies. SLs should still delete these markers.</li>
+  <li>Limited the number of updates from the UI by a <strong>very large amount</strong>. You will notice that on the Mini map you can only see squad members, other squad leaders, and vehicles. You can <u><b>no longer see other team members</b></u> unless they are wounded. Not only will this improve stability for the UI, it will also require Teams to communicate better on their positions and needs from others. We are aware that this will take some time for players to get used to and will lead to more Team Kills. <u><b>Think before you shoot!</b></u> <u><b>Visually confirm</b></u> that the player you are about to shoot is in fact an enemy,<u><b>Ask your Squadleader</b></u> if he knows about friendlies in the area, <u><b>Stick with your Squadleader</b></u>, to avoid getting shot by friendly fire.</li>
+  <li>Lots of other fixes and optimizing to the UI including resizing those huge vehicle images and adding Quad and Dirt bike images.</li>
+</ul>
+
+<p><strong>Vehicles:</strong></p>
+
+<ul>
+  <li>Implemented modified multi crew LAV.</li>
+  <li>Implemented modified multi crew BMP.</li>
+  <li>Implemented modified Dirt Bike.</li>
+  <li>Implemented modified Quad Bike.</li>
+  <li>Venom has been tweaked.</li>
+  <li>Disabled vehicle suppression for IFV crew.</li>
+  <li>Humvee and Vodnik passengers will now be protected from explosions.</li>
+  <li>Disabled IFV hit markers.</li>
+</ul>
+
+<p><strong>Maps:</strong></p>
+
+<ul>
+  <li>Added Scrap Metal Skirmish.</li>
+  <li>Added Donya Fortress Skirmish.</li>
+  <li>Added Ziba Tower Skirmish.</li>
+  <li>Added Bandar Desert Skirmish</li>
+  <li>Added Alt AAS Layouts to Gulf of Oman, Sabalan Pipeline, and Armored Shield.</li>
+  <li>Added new VE presets for Azadi Palace, Ziba Tower, Donya Fortress, and Scrap Metal</li>
+  <li>Fixed a Culling issue on Scrap Metal.</li>
+  <li>Updated Karkand Apartments, more entry points and other surprises.</li>
+  <li>Implement training game mode</li>
+</ul>
+
+<p><strong>Gameplay:</strong></p>
+
+<ul>
+  <li>Implemented Rifleman AP kit.</li>
+  <li>Implemented a backblast for LAT.</li>
+  <li>Added a min arm distance to LAT and GL.</li>
+  <li>Score system overhaul</li>
+  <li>RPK buff to match M249 SAW</li>
+  <li>Ballistics for bullets has been added</li>
+  <li>All weapon-sights are zeroed at a 100m, indicators up to 600m</li>
+  <li>Created backblast for rocket launchers</li>
+  <li>Stamina and Movement Overhaul</li>
+  <li>Suppression overhaul</li>
+  <li>Fix Auto-team switch on round end</li>
+  <li>FOBs will now be constructed/Demolished over time.</li>
+  <li>FOBs will now require squad members for construction.</li>
+  <li>FOBs will now be overrun or have construction prevented when enemies outnumber or equal the friendlies in a given radius.</li>
+  <li>FOBs will now require 3 c4s placed on the radio beacon to destroy</li>
+  <li>Squad members need to stay in the fob radius to construct it. Enemies need to stay in the radius until its destroyed</li>
+  <li>Max players have been reduced from 80 to 64 for maximum stability.</li>
+  <li>Max players per squad is now 6 instead of 8.</li>
+  <li>All kits have been re-balanced for these new player number changes. Most notably the medic which is now limited to 1 per squad instead of 2.</li>
+  <li>Players can now change their kit at a FOB (Use the Tac-Rose while in FOB).</li>
+  <li>AT Mines and Claymores will now affect everyone regardless of team.</li>
+  <li>Vehicle explosions are now more deadly to surrounding players.</li>
+  <li>Started collecting player stats</li>
+</ul>
+
+<p><strong>Other Fixes:</strong></p>
+
+<ul>
+  <li>Fixed an issue where players could lose all their weapons and gadgets if they swapped kits too many times.</li>
+  <li>Fixed an issue with not being able to pick up all the claymores the player placed down.</li>
+  <li>Fixed an issue where players could sometimes reload gadgets more than the intended amount.</li>
+  <li>Fix Riverside Skirmish capture logic</li>
+  <li>Fix spawn radius on XP2 maps</li>
+  <li>Fix issue with Smoke grenades</li>
+  <li>Fix explosion effect from impacts that are below TimeToArm distance</li>
+  <li>Fix gadgets resupply more than the amount in the kit definition.</li>
+  <li>Fix an issue with calculating the number of players within a certain distance from a FOB and overall improvement to overrun logic.</li>
+  <li>Fix issue with VOIP position not updating</li>
+</ul>
+
+<p><strong>Known Issues:</strong></p>
+
+<ul>
+  <li>Venom Flares cause choppy flight. Possibly due to supply sphere logic</li>
+</ul>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

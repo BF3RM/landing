@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 6 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 6">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Update on development of Reality Mod beyond the 0.2.0 release">
+<meta property="og:description" content="Update on development of Reality Mod beyond the 0.2.0 release">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-6">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-6">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-6/devblog-6.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-07-17T14:20:00+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-6/devblog-6.png">
+<meta property="twitter:title" content="DEVBLOG 6">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-17T14:20:00+00:00","datePublished":"2023-07-17T14:20:00+00:00","description":"Update on development of Reality Mod beyond the 0.2.0 release","headline":"DEVBLOG 6","image":"https://bf3reality.com/assets/posts/devblog-6/devblog-6.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-6"},"url":"https://bf3reality.com/devblog/devblog-6"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-6/devblog-6.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 6</h1>
+          <p>Update on development of Reality Mod beyond the 0.2.0 release</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2023-07-17T14:20:00+00:00" itemprop="datePublished">
+        Jul 17, 2023
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">BloodhoundNLD, Dumpy</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<h1 id="devblog-6">Devblog 6</h1>
+
+<p>With the dust settled around the 0.2.0 release and the first fixes and small updates out and about. It is time to update you guys with what has been going on behind the scenes. And it is quite a lot actually.
+
+</p>
+<h2 id="team-update">Team update</h2>
+
+<p>As with any volunteer project, people come to help out and people leave. Let’s start with the people that have “left” the project. Although they haven’t really left but chosen a role more in the background. Foolhen, Undefined and IllustrisJack all have stepped down from their project management positions. All three of them have been core members of the project for a while and it is really sad to see them take a step back. With that out of the way we would like to introduce some new members to the team. Some of them joined a while ago, some of them more recent.</p>
+
+<ul>
+  <li>Desertshadow, initially started out as a level-designer but now is also working on game-development</li>
+  <li>FortisFA, started as UI-developer</li>
+  <li>Hristian179, started as game-developer</li>
+  <li>FaberTheCatgirl, started as game-developer</li>
+  <li>Furyo, started as level-designer</li>
+  <li>g23, started as QA but is interested in becoming game-developer</li>
+  <li>Lincolnlogs, started as composer</li>
+  <li>PickleRicci, started as game-developer</li>
+  <li>Sickcallranger, started as QA but is interested in becoming game-developer</li>
+  <li>VividMind, started as graphic-designer</li>
+</ul>
+
+<p>We are very glad to welcome them to the team and are excited to see what they will bring to Reality Mod. If you check the #git channel in discord you can see some of the projects they already have taken on.</p>
+
+<p>Of course we are still looking for more developers and specifically Lua developers, but that doesn’t mean that if you don’t know Lua you can’t apply. In our experience Lua is a pretty easy language to get a hold on. So don’t feel discouraged if you don’t have any Lua experience, but apply!</p>
+
+<h2 id="new-maps">New Maps</h2>
+
+<p>Speaking of cool projects our level-design team has been off to a good start. Some of you might already have seen it but the team released an updated Karkand. The map has had a complete overhaul. US Main is unrecognizable as goes for the first flag “Gas Station”, the coastal area has had a rework and it even includes a new flag “Apartments”. Speaking for myself it was really refreshing to see a vanilla map expanded with a completely new area even as we are still quite limited in our tools. And most importantly I had a joy fighting over these new areas!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="US Main base Karkand" href="/assets/posts/devblog-6/karkand-1.png"><img src="/assets/posts/devblog-6/karkand-1.png" alt="US Main base Karkand"></a><small>US Main base Karkand</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Coastal area Karkand" href="/assets/posts/devblog-6/karkand-2.png"><img src="/assets/posts/devblog-6/karkand-2.png" alt="Coastal area Karkand"></a><small>Coastal area Karkand</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Apartments Karkand" href="/assets/posts/devblog-6/karkand-3.png"><img src="/assets/posts/devblog-6/karkand-3.png" alt="Apartments Karkand"></a><small>Apartments Karkand</small>
+</div>
+
+<p>Karkand is not the only map that the team has been working on. Sabalan pipeline also had a rework. Furyo redesigned both US and RU main to represent “real” staging areas. Not only is he working on the main bases, he reworked the areas surrounding them. Providing the level with more detailed POIs, variety in cover and approaches to use. With Furyo’s part done, Dumpy did the rest of the chores to finish it for release. We can’t wait for your response to this.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="RU Main base Sabalan" href="/assets/posts/devblog-6/sabalan-6.png"><img src="/assets/posts/devblog-6/sabalan-6.png" alt="RU Main base Sabalan"></a><small>RU Main base Sabalan</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="US Main base Sabalan" href="/assets/posts/devblog-6/sabalan-7.png"><img src="/assets/posts/devblog-6/sabalan-7.png" alt="US Main base Sabalan"></a><small>US Main base Sabalan</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Crashsite flag Sabalan" href="/assets/posts/devblog-6/sabalan-8.png"><img src="/assets/posts/devblog-6/sabalan-8.png" alt="Crashsite flag Sabalan"></a><small>Crashsite flag Sabalan</small>
+</div>
+
+<h2 id="new-vehicles">New Vehicles</h2>
+
+<p>Talking about vehicles. Dumpy has picked up the tedious task to start working on adding more vehicles options to Reality Mod. Together with his almost completely new team of devs they have been working on some of the key elements that define Reality Mod.</p>
+
+<p><strong>BMP-2</strong>
+The first vehicle we have been working on is the Russian BMP-2. Dumpy has been working on this for a while now and there sure was a lot to do.He changed the seat arrangement so the BMP has a driver, gunner and a commander seat, and a total of 6 dismounts now. A rework of the health has been passed to ensure the BMP is a little more resilient than in vanilla for the first iteration. Vehicle handling had an overhaul to make it feel and drive like an armored vehicle. Gunner now has 30mm AP, HE, and a 7.62 Coax. It is just too much to name and better to experience for yourself. When you ask? SoonTM ;)</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="BMP-2 Overview" href="/assets/posts/devblog-6/bmp-1.png"><img src="/assets/posts/devblog-6/bmp-1.png" alt="BMP-2 Overview"></a><small>BMP-2 Overview</small>
+</div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=f_R2ETuyvFQ" data-videoid="f_R2ETuyvFQ" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p><strong>Helicopters</strong>
+While Dumpy is focussing on light armor assets, Desertshadow has been tweaking and adjusting the helicopters. The first focus is the CAS helicopters, because who doesn’t like CAS right? Starting out with the Russian Mi-28 Havoc. Desertshadow has been perfecting the flight model so it actually represents a helicopter that has some real weight to it. Changing the top-speed, cruise speed and handling to represent the real version better while keeping it balanced for the sake of gameplay. Not only is the flight model going to be more in-line with realistic values, the armament of the Havoc is also getting improvements. The rocket pods have increased capacity and a higher Rate of Fire, while the rockets themselves have a more realistic spread pattern and flight time. He also tweaked the flares to have an increased Rate of Fire and limited capacity, this to counter AA capabilities of the enemy. The co-pilot will have access to the 30mm autocannon and a guided missile. The real ones with a real sharp ear will notice that the 30mm will have a slightly decreased RoF compared to a real 2A42 30mm autocannon, BF3 wont keep up with the audio of 800RPM. Further tweaking on the armament is still a WIP but it is getting along nicely!</p>
+
+<p>Two other helicopters that are being worked on by Desertshadow are the Littlebird CAS and the Z11 CAS scout helicopters. Again bringing a unique and more realistic flight model, armaments and flares. The flightmodel most noticeably is faster. While a real Littlebird will do around 170 kph and for the Z11 it is even around 250 kph, the vanilla scout helicopter could hardly go over 80 kph. We got it so it is more inline with the real values. The Littlebird doing around 160 kph cruise speed, while still having its characteristic maneuverability. The Z11 is doing around 250 kph cruise speed but still has maneuverability at the lower speed levels. Both helicopters have the reworked flares with the increased RoF and limited ammo. For the armament adjustments are still being made, but both helicopters will be as close as we can in terms of weapon choices to their real life counterparts. Again when will you be able to use these in-game? Well, with CAS comes also the need for counter measures, dynamic map borders and some other mechanics. So this will be a little longer since we are still working on finalizing the vehicles themselves. Although we can reveal that AA is being worked on. So maybe SoonTMer than you think?</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="CAS Helicopters" href="/assets/posts/devblog-6/helicopter-1.png"><img src="/assets/posts/devblog-6/helicopter-1.png" alt="CAS Helicopters"></a><small>CAS Helicopters</small>
+</div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=k4XKv82vgEU" data-videoid="k4XKv82vgEU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p><strong>Buggies</strong>
+The final vehicles that we can talk about are the buggies. 
+They are added with patch 0.2.3. Christian and Dumpy have been working hard on them. Removing the guns in this case but adding seats and tweaking the handling and behavior. The Russians now have access to the VDV Buggy on some maps, for the US the Growler ITV has been added. We think these are a lot of fun to drive and are curious on how you will use/abuse these in-game. Oh, one thing though, they removed the guns so we can use these vehicles as infantry transport vehicles, which in turn opens the possibility to add guns to the HMMWV and the Vodnik in the future.. That is until we figure out how to clone vehicles. <em>insert smooth transition here</em></p>
+
+<h2 id="cloning-vehicles">Cloning Vehicles</h2>
+<p>Who can better explain than the man that is working on this, Dumpy:
+Cloning vehicles is actually a pretty simple concept. Let me first explain the problem. In Vanilla Battlefield 3 vehicles share weapon components. This means when we make a change to the BMP 30mm cannon it will also change the LAV 25mm. Same thing for the Havoc and the Viper, the Humvee and Vodnik, Little Bird and Z11. This is how BF3 was designed, I think the decision was meant for efficiency. While it may be efficient, it sure isn’t realistic. The 25mm cannon of the LAV for example has a way slower rate of fire compared to a BMP-2. Anyways we are still researching on how to do this properly and this is one of the main bottlenecks of the project currently along with stability.</p>
+
+<p>We can pretty much clone or copy many things in Venice Unleashed right now except for vehicles. For example to make the Havoc have a laser guided missile we cloned the TOW and placed it on the havoc. Not the whole TOW of course but just the guided missile. While we were at it, we made the missle engine more inline with realistic values.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=DrC5_ywLNco" data-videoid="DrC5_ywLNco" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>What we can’t do at the moment is cloning a whole vehicle. What we mean by this is that we can have a transport HMMWV and a HMMWV with a .50 cal. It is one of the two at the moment. While this is going on we have been learning more and more about the engine and what our capabilities and limitations are. The engine of BF3 continues to blow everyone’s mind on how detailed it is and how deep some of the physics are embedded in the game.</p>
+
+<h2 id="a-final-word">A final word</h2>
+
+<p>As you can see a lot of our focus has been vehicle development. And although we are making great progress, it has not been easy and there is still loads of work to do.These vehicles and how the player can interact with them are going to define the gameplay so we want to get that right before we touch other aspects of gameplay. With our dev-team being greener than ever this is work that we think we are able to put in Reality Mod right now. A lot of the other planned features will require us to do more research and still need a lot of code, but we are learning and improving. Again we are not going to set a timeframe for the next big update because being a volunteer-project our dev capacity tends to fluctuate. But you can be sure that we do everything within our reach to get there. Exactly one year ago we released alpha 0.1.0 and currently we are on 0.2.3 We soldier on! And give the devs some love in our discord they sure will appreciate it!</p>
+
+<h2 id="changelist-for-patch-alpha-023">Changelist for patch ALPHA 0.2.3</h2>
+
+<p><strong>UI</strong></p>
+
+<ul>
+  <li>Kit Menu expanded for future use</li>
+</ul>
+
+<p><strong>Maps</strong></p>
+
+<ul>
+  <li>Sablan Pipeline has been reworked. Main base zones have been created along with POI improvements.</li>
+  <li>Riverside AAS has been reintroduced with transport vehicles.</li>
+  <li>Riverside Skirmish has been added.</li>
+</ul>
+
+<p><strong>Gameplay</strong></p>
+
+<ul>
+  <li>All weapons except Machinegun can now remove the foregrip in the kit selection menu</li>
+</ul>
+
+<p><strong>Vehicles</strong></p>
+
+<ul>
+  <li>Humvee and Vodnik have received an overhaul and have been fixed/tweaked. They will no longer flip too easily. They have better handling.</li>
+  <li>Passengers in the back Humvee and vodnik are now protected from explosions.</li>
+  <li>Implemented the VDV Buggy for the Russians</li>
+  <li>Implemented the Growler for US</li>
+  <li>Implemented the DPV Buggy for US</li>
+</ul>
+
+<p><strong>Bug fixes</strong></p>
+
+<ul>
+  <li>Grenade counter has been fixed. Medics should now have 6 smoke grenades again</li>
+</ul>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

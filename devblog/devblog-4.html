@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 4 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 4">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Audio Improvements, Vehicles and Dev Spotlight">
+<meta property="og:description" content="Audio Improvements, Vehicles and Dev Spotlight">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-4">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-4">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-4/header.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-10-02T15:49:34+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-4/header.png">
+<meta property="twitter:title" content="DEVBLOG 4">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-10-02T15:49:34+00:00","datePublished":"2021-10-02T15:49:34+00:00","description":"Audio Improvements, Vehicles and Dev Spotlight","headline":"DEVBLOG 4","image":"https://bf3reality.com/assets/posts/devblog-4/header.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-4"},"url":"https://bf3reality.com/devblog/devblog-4"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-4/header.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 4</h1>
+          <p>Audio Improvements, Vehicles and Dev Spotlight</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2021-10-02T15:49:34+00:00" itemprop="datePublished">
+        Oct 2, 2021
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Alphacore</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Joe</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Janssent</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Josephus</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<p>We hope you all have been doing well! The team has made some nice progress, which means we are one step closer to release!
+
+</p>
+<p>While VoIP is still being worked on we still wanted to share some exciting insights into what’s new with Reality Mod. First off we have Audio Improvements with Joe, followed by A closer look at Vehicles with Janssent and last, but not least, our Dev Spotlight with Joe again!</p>
+
+<p>Let’s get right to it!</p>
+
+<h1 id="audio-improvements">Audio Improvements</h1>
+
+<div class="tag">
+        Joe 
+      </div>
+
+<p>Hey all, Joe here again! You may remember me from the artillery article in the second Dev Blog. I’ve been working hard (as always) on various tasks since then; mainly, I’ve been working on improving the audio to make the player experience more immersive.</p>
+
+<h2 id="what-is-wrong-with-the-vanilla-audio">What is wrong with the vanilla audio?</h2>
+
+<p>In vanilla BF3 the audio does not travel very far. During playtesting we discovered that the vanilla system works well for distances of 50-100m, but outside of that it is impossible to tell where you are getting shot from since the sounds quickly fade outside of that. For us that was problematic, since we substantially increased the range of engagements in Reality Mod to more realistic standards and removed vanilla UI indicators showing the direction you are taking shots from. So in order to really hear what is going on in the battlefield around you, we needed to somewhat revamp the audio system.</p>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+
+<p>Frostbite’s audio system is rather complex, using a series of output nodes to control effects and determine how a sound should be heard in the world. These output nodes respond to events and other logic nodes (such as random number generators).</p>
+
+<p>Frostbite supports plenty of different output nodes. There is the FlatOutputNode which has a radius that the sound can be heard within and, as the player gets further away from the source, the sound will get quieter until eventually, they are outside of the radius and can no longer hear the sound.</p>
+
+<p>Another node is the ConeOutputNode that has a radius, similar to the FlatOutputNode, but it will also project a sound in a given direction. The player then must be within the radius and within a given angle of the output direction to be able to hear the sound. That is the reason why it is called Cone, since it will project audio into a certain direction in a cone shape.</p>
+
+<p>Here is a video demonstrating the ConeOutputNode functionality (best heard using headphones). Notice how the sound changes as the angle changes. Be aware that this is a Proof of Concept with exaggerated values, where small changes in the angle heavily impact the resulting audio. This does not represent the final values.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=U4Pf_8LYJHU" data-videoid="U4Pf_8LYJHU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>So far, I’ve been working on improving the gun sounds so that players can hear them from much further away, for the sake of both immersion and situational awareness. This had been attempted before, but Frostbite’s HDR (High Dynamic Range) audio system proved to be problematic - the problem being that when you make a sound louder, the HDR audio system prioritises that sound above others and will therefore duck other sounds (such as ambient background sounds).</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-4/dev_graph.png"><img src="/assets/posts/devblog-4/dev_graph.png" alt=""></a><small></small>
+</div>
+
+<p>This prioritizing and ducking of sounds is handled by the “Radius” and “Loudness” values that can be seen in the screenshot above and is the whole point of HDR audio. If used correctly it can lead to an incredibly rich and immersive audio landscape. Unfortunately it would appear that this was not a correct use of the system and ended up sounding very strange, as someone would shoot a few hundred meters away and all other sounds would be made quieter until the gunshot audio clip had finished playing.</p>
+
+<p>I spent hours upon hours digging through the audio files trying to figure out how to mitigate against this, until eventually I found a little thing known as an “attenuation curve”. From my experience in Unity I knew that attenuation curves are used to control the volume and audibility distance of an audio source. This means that we can now control how loud a sound is and how far it travels - which is exactly what we needed. I found this in each of the output nodes - some nodes had different values to others.</p>
+
+<p>Below is a screenshot of the default attenuation curve for the M16A3 gunshot sounds where the X value is the distance from the local player, the Y value is the volume of the clip in decibels and the K value is a modifier used to control the slope of the curve.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-4/attenuation_curve.png"><img src="/assets/posts/devblog-4/attenuation_curve.png" alt=""></a><small></small>
+</div>
+
+<p>For RM, I have increased both the distance at which you can hear the sounds and increased the volume of each of the sounds too.</p>
+
+<p>Below you can see a Proof of Concept for the changed gun sounds</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=ICJWXuBRNgA" data-videoid="ICJWXuBRNgA" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>After that I wrote a system that allowed me to easily edit the attenuation curves for each gun in the game, so we can have different curves for different sounds. Once that was done, I played around with the values and after a while, I got some very nice sounding guns and looking at how the system works, it’s more than likely to mix and match different sounds.</p>
+
+<p>Here is a video of gun sounds in their current state, note how much further they can be heard compared to vanilla sounds:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=b7gG1-LycYI" data-videoid="b7gG1-LycYI" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>And finally, here are two clips from a recent playtest, showcasing the new gun sounds in action - clips courtesy of Wonder, one of our QA testers (please excuse the subpar quality of the video).</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=B2YOPiU9iuk" data-videoid="B2YOPiU9iuk" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=P0iIHZ1_A_I" data-videoid="P0iIHZ1_A_I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Of course, these values are a work in progress and will almost definitely be changed before release.</p>
+
+<p>With all that said, at the end of the day, RM is still a game and having realistic values for guns, explosions, etc. just wouldn’t work in this scenario. I do still intend to increase the gunshot distances further though - basically, we want players to know where they’re being shot from using audio, which is impossible using the vanilla values.</p>
+
+<p>Many more improvements are going to be coming to the audio for Reality Mod too. We plan to introduce “bullet cracks” (which is the sonic-boom caused by the bullet breaking the sound barrier) to most guns that will be heard as a bullet whizzes past your head.</p>
+
+<p>Fortunately the marksman rifles in BF3 already have this so it’s just a matter of porting that over to the other guns in the game.</p>
+
+<p>I believe this will be a huge improvement since it’ll show that you are indeed the target of that bulletstorm coming your way and you might want to keep your head down. We also plan to make improvements to the volume and audibility distance of explosions and vehicles. I, personally, have always found it annoying that games seem to forget just how loud helicopters really are!</p>
+
+<p>I’m very excited for players to be able to experience the changes to the audio system!</p>
+
+<p>Thanks for your time and have a good one!
+~ Joe</p>
+
+<h1 id="vehicles">Vehicles</h1>
+
+<div class="tag">
+        Janssent 
+      </div>
+
+<p>What’s up everyone, I’m Janssent. I’m a 22 year old Applied IT student from Belgium. At first I joined the team as a contributor with very little coding experience, mostly modifying the vanilla vehicles to make them more suited for Reality Mod.</p>
+
+<p>While working on vehicles I gained a lot of experience with VeniceEXT, VU’s scripting system. It’s what lets you modify control game behavior, allowing you to create new experiences. I used that experience to research and create Proof of Concept mods for the artillery strike, texture modifications, material grid tweaks and more.</p>
+
+<h2 id="why-are-the-vanilla-vehicles-unsuited-for-reality-mod">Why are the vanilla vehicles unsuited for Reality Mod?</h2>
+
+<p>Like most things in BF3, the vanilla vehicles do not satisfy our needs for Reality Mod. We want them to look and behave like their real world counterparts. In order to achieve that the flight/driving physics and damage model have to be tweaked. For example the vanilla helicopter physics are very responsive, but do not resemble how helicopters move at all. There is no startup time and it is not possible to roll/loop with the helicopter. Some vehicles also need to be able to carry more passengers to adjust for the increased player count and squad sizes.</p>
+
+<h2 id="how-do-you-go-about-modifying-vehicles">How do you go about modifying vehicles?</h2>
+
+<p>Every vehicle has set attributes which dictate how it behaves in the game.A lot of the tweaks made to the vehicles are simple changes to these attributes. We can modify them relatively easily by assigning new values. This example shows how the minimum collision speed for the heli to take damage was reduced:</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Reduced the minimum collision speed for the heli to take damage" href="/assets/posts/devblog-4/minumum_collision_sp.png"><img src="/assets/posts/devblog-4/minumum_collision_sp.png" alt="Reduced the minimum collision speed for the heli to take damage"></a><small>Reduced the minimum collision speed for the heli to take damage</small>
+</div>
+
+<p>Another good example would be the changes to the flight model. This is what happens when you try to roll the heli in vanilla:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=44wbqH9lqh4" data-videoid="44wbqH9lqh4" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Trying to roll the heli in vanilla, forces the heli down.</p>
+
+<p>For the Venom flight physics we wanted to find what was keeping helis from looping. The culprit turned out to be vehicleEntityData.motionDamping (MotionDampingData), after setting it to nil this was the result:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=nDMJ34BjDAs" data-videoid="nDMJ34BjDAs" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>The helicopter can loop and roll after adjusting the flight model.</p>
+
+<p>Things get a bit more complicated when trying to add more components to a vehicle. Components define physical parts (like wheels or rotors), player entries (driver and passenger seats), weapons, cameras etc. One such component is the Browning M2 as you can see in this clip:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=X88S0J4aWLM" data-videoid="X88S0J4aWLM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>DICE devs added a M2 to EOD bot for lols, the component was disabled (componentData.excluded = true), but the data was kept.</p>
+
+<p>In the Frostbite engine vehicles are created from VehicleEntityData instances. This is where a lot of the common vehicle properties are defined. Aside from these common properties, the VehicleEntityData also has an array field of ComponentData types, this is where the individual components of each vehicle are defined. Below you can see the component layout of the venom helicopter both as structured in the game data, and as separate components in-game.</p>
+
+<p>Example of a Venom Component Data: <a href="https://pastebin.com/seiXju7c">https://pastebin.com/seiXju7c</a></p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Components seen in-game using the Component Visualiser Mod by txt" href="/assets/posts/devblog-4/venom_components.png"><img src="/assets/posts/devblog-4/venom_components.png" alt="Components seen in-game using the Component Visualiser Mod by txt"></a><small>Components seen in-game using the Component Visualiser Mod by txt</small>
+</div>
+
+<p>In order to add extra components to a vehicle, new component instances have to be created and added to the VehicleEntityData in the same manner as vanilla BF3. For example in Reality Mod, six SoldierEntryComponentData instances were added to the Venom to allow for more passengers. However, you need to ensure the passenger and co-pilot sitting animations are working properly or character models end up clipping through the vehicle model or end up misplaced.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Researching passenger animations, adding a co-pilot to the Venom" href="/assets/posts/devblog-4/veno_passenger_anima.png"><img src="/assets/posts/devblog-4/veno_passenger_anima.png" alt="Researching passenger animations, adding a co-pilot to the Venom"></a><small>Researching passenger animations, adding a co-pilot to the Venom</small>
+</div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=7d4bj2Z0AVk" data-videoid="7d4bj2Z0AVk" data-width="480" data-height="360">YouTube Video</a></div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="That is not the correct placement for a passenger?!" href="/assets/posts/devblog-4/incorrect_placement.png"><img src="/assets/posts/devblog-4/incorrect_placement.png" alt="That is not the correct placement for a passenger?!"></a><small>That is not the correct placement for a passenger?!</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Experimented with closing doors by removing miniguns and moving door components" href="/assets/posts/devblog-4/closed_doors.png"><img src="/assets/posts/devblog-4/closed_doors.png" alt="Experimented with closing doors by removing miniguns and moving door components"></a><small>Experimented with closing doors by removing miniguns and moving door components</small>
+</div>
+
+<p>The modularity of these components is what makes modifying vehicles a lot of fun, as it allows for infinite combinations. No one can stop you from adding 6 weapon components to a scout helicopter.</p>
+
+<p>Unlimited POWER!!!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=coPm0h9NUMw" data-videoid="coPm0h9NUMw" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>You can even add a passenger to tip of the main rotor for some epic cinematics:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=eanyMgQURMo" data-videoid="eanyMgQURMo" data-width="480" data-height="360">YouTube Video</a></div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=UUhaSTFUsbc" data-videoid="UUhaSTFUsbc" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="how-are-vehicles-in-reality-mod-different-from-the-ones-in-vanilla">How are vehicles in Reality Mod different from the ones in vanilla?</h2>
+
+<p>Some of the modifications done to all the vehicles in RM include a wider FOV, a smaller entry radius and a longer startup time. The vehicles were also set up so the opposing faction could not enter them.</p>
+
+<h3 id="m1114-hmmwv-humvee-transport">M1114 HMMWV ‘Humvee’ Transport</h3>
+<p>Ground Vehicle</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/hmv_trans.png"><img src="/assets/posts/devblog-4/hmv_trans.png" alt="Left: Vanilla; right: Reality Mod"></a><small>Left: Vanilla; right: Reality Mod</small>
+</div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed CROWS turret (and added regular passenger entry in its place)</li>
+  <li>Disabled lights</li>
+</ul>
+
+<h3 id="m1114-hmmwv-humvee-transport-1">M1114 HMMWV ‘Humvee’ Transport</h3>
+<p>Ground Vehicle</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/hmv_50_cal.png"><img src="/assets/posts/devblog-4/hmv_50_cal.png" alt="Left: Vanilla; right: Reality Mod"></a><small>Left: Vanilla; right: Reality Mod</small>
+</div>
+
+<p>Changes:</p>
+<ul>
+  <li>Added disabled state when on low health</li>
+  <li>Added a horn to match the transport humvee</li>
+  <li>Disabled light components and changed blinker shader to a dim shader</li>
+  <li>Adjusted speed to match the transport humvee</li>
+  <li>Modified cameras to use input curves (the camera position mimics realistic eye movement when turning your head instead of pivoting on a single point)</li>
+  <li>Added 5th passenger entry</li>
+</ul>
+
+<h3 id="uh-1y-venom">UH-1Y ‘Venom’</h3>
+<p>Airborne Vehicle</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/venom_side.png"><img src="/assets/posts/devblog-4/venom_side.png" alt="Left: Vanilla; right: Reality Mod"></a><small>Left: Vanilla; right: Reality Mod</small>
+</div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed minigun and gunner entries</li>
+  <li>Added 6 passenger entries</li>
+  <li>Added copilot entry</li>
+  <li>Adjusted flight physics</li>
+  <li>Adjusted damage model</li>
+  <li>Enabled small arms fire damage</li>
+</ul>
+
+<h3 id="rhib">RHIB</h3>
+<p>Sea Vehicle</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/rhib.png"><img src="/assets/posts/devblog-4/rhib.png" alt="Left: Vanilla; right: Reality Mod"></a><small>Left: Vanilla; right: Reality Mod</small>
+</div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed vanilla passenger entries</li>
+  <li>Added 6 passenger entries</li>
+  <li>Enabled small arms fire damage</li>
+</ul>
+
+<p>That is all for the vehicles for now! We hope to launch with these vehicles already included so you guys have something to use the Light Anti Tank kit for. In the future we will address the Russian vehicles and hopefully even some heavier machinery.</p>
+
+<p>Until then,
+~ Janssent</p>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        Josephus 
+      </div>
+
+<p>Hi all, I’m Josephus but you can call me Joe. I’m a 23-year-old Software Developer from England. My role in Reality Mod is to implement new features that you guys will hopefully enjoy. Last year I finished university where I studied Software Development for Computer Games. I joined the Reality Mod team back in June of 2020 - I’ve always loved the Battlefield series (especially 3 and 4) and thought it would be a lot of fun to work on a project revolving around that.</p>
+
+<p>I’ve been programming for almost as long as I can remember - I first started around the age of 13, while I was still in school. I remember downloading Unity 2.6 and building some truly awful things that barely worked (so I guess not much has changed really) using the old UnityScript. As well as programming, in my spare time, I also play computer games, the drums, a little bit of guitar and will often nerd out over a good bit of medieval or classical history.</p>
+
+<p>The first feature I worked on for RM was revamping the FOB and Rallypoint systems. I also created the FOB model that we have in place today! I have worked on plenty of features for this project over the last few months but I think my two favourites were the artillery (because who doesn’t love explosions?) and the new audio design.</p>
+
+<h2 id="software-development-for-computer-games-sounds-fun-did-that-degree-help-you-in-designing-features-for-rm">Software development for Computer Games sounds fun. Did that degree help you in designing features for RM?</h2>
+
+<p>Joe: I wouldn’t necessarily say it helped me design features for this project but it certainly helped me land the role and work well with the rest of the team. In the course, we did a lot of teamwork units revolving around different development methodologies such as waterfall, agile and scrum.</p>
+
+<h2 id="how-did-you-get-the-idea-to-study-something-unconventional">How did you get the idea to study something “unconventional”?</h2>
+
+<p>Joe: I’ve been programming and developing games from a very young age and I always knew that I wanted to get into some kind of software development. I decided to enroll on a course that I knew I’d enjoy but would also leave me with transferable skills to get into other sectors (I’m currently working as a Software Development at a finance company).</p>
+
+<h2 id="which-games-shaped-the-person-you-are-today-which-features-made-them-special-why-are-they-not-your-favorite">Which games shaped the person you are today? Which features made them special? Why are they (not) your favorite?</h2>
+
+<p>Joe: The first game I remember really enjoying was Call of Duty 4 when I got my first Xbox 360 back in 2009. My dad and I used to play it together because I didn’t have Xbox Live at that point. I’d spend hours learning the maps just to get the advantage over him.</p>
+
+<p>After that, I got into the Battlefield franchise with Bad Company 2, quickly followed by 3 and 4 - Battlefield 4, to this day, is the game I’ve got the most playtime in.</p>
+
+<p>On a slightly different genre, I absolutely adore the older Assassin’s Creed games with my favourites being AC2, AC Brotherhood and Black Flag. Thanks to them, I’ve become a massive history nerd!</p>
+
+<h2 id="do-any-of-these-gamesfeatures-influence-in-how-you-approach-designing-rm">Do any of these games/features influence in how you approach designing RM?</h2>
+
+<p>Joe: They do not lol. Could you imagine being 360 noscoped in Reality Mod?</p>
+
+<h2 id="what-do-you-love-or-hate-about-working-on-rm">What do you love (or hate!) about working on RM?</h2>
+
+<p>Joe: The team! I can’t stand them! Nah just joking, they’re all great! I think the only frustrating thing about working on this mod is the Frostbite engine and DICE’s inability to do anything consistently.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod">What do you think makes RM a one of a kind mod?</h2>
+
+<p>Joe: Something I’ve always found annoying about tactical games is that the player controls and animations always feel very clunky but thanks to RM being built upon BF3, that isn’t a problem here. Oh yeah, and the destruction.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future-maybe-some-features-from-other-games-or-original-designs">Which features would you like to see in RM in the future? Maybe some features from other games? Or original designs?</h2>
+
+<p>Joe: I think tanks would be good to see and maybe air vehicles with weapons - like a minigun on transport heli (add them back Janssent!) or something.</p>
+
+<h2 id="thank-you-for-your-time-it-was-very-nice-to-get-to-know-you-a-bit-better">Thank you for your time, it was very nice to get to know you a bit better!</h2>
+
+<p>Joe: You’re welcome, I hope you liked it. Have a good one!</p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 1 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 1">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Brief history, decision for the delay and roadmap towards release">
+<meta property="og:description" content="Brief history, decision for the delay and roadmap towards release">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-1">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-1">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-1/header.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-12-09T15:49:34+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-1/header.png">
+<meta property="twitter:title" content="DEVBLOG 1">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-12-09T15:49:34+00:00","datePublished":"2020-12-09T15:49:34+00:00","description":"Brief history, decision for the delay and roadmap towards release","headline":"DEVBLOG 1","image":"https://bf3reality.com/assets/posts/devblog-1/header.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-1"},"url":"https://bf3reality.com/devblog/devblog-1"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-1/header.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 1</h1>
+          <p>Brief history, decision for the delay and roadmap towards release</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2020-12-09T15:49:34+00:00" itemprop="datePublished">
+        Dec 9, 2020
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Alphacore</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">3ti65</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Powback</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<p>Hey everyone!
+
+</p>
+<p>Welcome to our very first Devblog! Today we want to talk about the brief history of the project, the roadmap towards release, our biggest issues / top priorities and a little surprise at the end.</p>
+
+<p>You can expect a new Devblog every 3 - 4 weeks, depending on the pace of development with a detailed recap on our progress.
+That being said, let’s jump right into it!</p>
+
+<h1 id="brief-history-of-bf3-reality-mod">Brief history of BF3: Reality Mod</h1>
+
+<div class="tag">
+        3ti65  
+      </div>
+
+<p>More than 5 years ago, 3ti65 and Powback got together with the idea to build a Project Reality style mod on top of the Venice Unleashed (VU) modding platform (<a href="https://veniceunleashed.net/about">https://veniceunleashed.net/about</a>). Since VU was quite rudimentary and not well documented back then, it took about a year of developing different proofs of concept (modifying player movements / weapon stats etc), before the actual development could start. The two of them got joined by FoolHen shortly after and together they started building the actual implementation of the mod.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/pasted_image_0.png"><img src="/assets/posts/devblog-1/pasted_image_0.png" alt=""></a><small></small>
+</div>
+
+<p>The project was initially supposed to go live way back in 2016 / 2017, but after more and more people joined and more modding possibilities opened up, it was decided to increase the scope and take it a couple of steps further, namely a total conversion mod. The UI got a complete rewrite based on dedicated design concepts and more and more features got polished or added. That and the fact that modding the frostbite engine with self made modding tools is a rather complicated thing to do, resulted in way more development time than initially anticipated.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/Edit--6.jpg"><img src="/assets/posts/devblog-1/Edit--6.jpg" alt=""></a><small></small>
+</div>
+
+<p>In the meantime, the team grew at an incredible pace, as more and more people decided to join and contribute to this first ever total conversion mod built on self made modding tools to a closed source engine. As it stands now at the end of 2020, it evolved into a true passion project involving an incredible amount of 35 contributors, 15 of which are developers.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/Edit-.jpg"><img src="/assets/posts/devblog-1/Edit-.jpg" alt=""></a><small></small>
+</div>
+
+<p>With the thousands of hours that we put into this project, we want to release BF3: Reality Mod in a state which the team can be proud of and which the community can actually play. With this in mind and being so close to reaching our goal, we decided to delay the release just a bit more to Q1 2021.</p>
+
+<p>Next up we will get into what issues we’re still facing and what’s actually keeping us from releasing in our current state.</p>
+
+<h1 id="roadmap-towards-release">Roadmap towards Release</h1>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/SPOILER_RM_announcem.png"><img src="/assets/posts/devblog-1/SPOILER_RM_announcem.png" alt=""></a><small></small>
+</div>
+
+<p>As you might have seen it in our delay announcement on Discord already - we are still facing game breaking issues in the form of frequent crashes and bugs that often require server and / or client restarts. We believe that releasing RM without addressing these issues would render it unplayable.</p>
+
+<p>With the release being delayed, there is also more time to implement and polish a good amount of other, smaller features (UI, Quality of Life) that otherwise would not have made it into the release version.</p>
+
+<p>Let’s take a closer look at our biggest issues / top priorities.</p>
+
+<h2 id="game-breaking-bugs--crashes">Game breaking bugs / crashes</h2>
+
+<p>The main reason why we decided to delay the December release were the critical bugs we were encountering. There are not many, but they are quite game breaking (literally).</p>
+
+<h3 id="destruction-mass-crash">Destruction Mass Crash</h3>
+
+<p>The destruction mass crash is related to Havok, the physics engine. When some of the destruction gets triggered, Havok causes a crash related to the handling of debris effects and as a result kicks out almost every player from the server.</p>
+
+<p>We could disable destruction, but we feel like destruction is a key part of Reality Mod, so you can see why we want to fix this one as soon as possible. Unfortunately the Havok part of the engine is extremely complicated to deal with so it’s rather time consuming to find the cause, but certainly not impossible.</p>
+
+<h3 id="loading-crash">Loading Crash</h3>
+
+<p>The Loading Crash is another critical one often encountered when loading into a server. It’s the most common crash we currently have. The good thing about it occurring so often is that it allowed us to gather a good amount of crash reports which have led to a potential fix that is going to be tested in this week’s playtest.</p>
+
+<h3 id="tac-rose-crash">Tac Rose Crash</h3>
+
+<p>Last but not least is a crash sometimes occurring when performing a custom action via the Tac Rose.It is used to bandage yourself, create rallies and FOBs and give orders to your Squad as a Squad Leader.</p>
+
+<p>The crash occurring when using the Tac Rose is hard to track down since unlike the two crashes above, it is a “silent crash”. That means it does not create an error dump so investigating what went wrong is significantly more complicated than investigating crashes that do cause an error dump.</p>
+
+<p>All the crashes that happen for no obvious reasons require a cooperation with the developers of Venice Unleashed. This consumes more time, since they’re also very busy working on VU itself, which is still due to release in December.</p>
+
+<p>Four years ago, when we first started this project we had more issues and crashes than we could count, as VU was in its infancy and lacked stability and features. Since the very beginning we have been working closely with the Venice Unleashed devs to provide issue reports and API requests, which has led to a more complete and robust framework. Along the way, we managed to solve each and every issue we encountered so far, some way harder than the ones we currently face. In light of that we’re very optimistic that our current ones can be resolved rather soon.</p>
+
+<h2 id="implementing-vu-voip--ditching-rm-mumble">Implementing VU VoIP / ditching RM Mumble</h2>
+
+<p>We are currently using a custom implementation of Mumble (called RM Mumble) as our VoIP solution since BF3 vanilla doesn’t offer such functionality. If you played Project Reality you should be familiar with Mumble. For us, it proved to be extremely annoying and a constant struggle to work with.</p>
+
+<p>Other than being annoying to enhance it, it’s also causing an incredible amount of issues during development and playtesting, but luckily the VU devs are working on implementing their own, custom built-in VoIP solution which we will gladly adapt for Reality Mod.</p>
+
+<p>This is mostly implemented and will be ready soon. We will have to test and polish it properly but once that is done, it will not require any downloads and it’s easier to deal with in general, so we are looking forward to that.</p>
+
+<h2 id="server-hosting-and-improved-server-administration-functionalities">Server Hosting and improved Server Administration functionalities</h2>
+
+<p>We think that community hosted servers are the backbone of Reality Mod, just as they were for Project Reality. That’s why we want to make it possible for all communities to host and admin their own servers running BF3: Reality Mod.</p>
+
+<p>For that, we are working on providing a holistic framework to support community servers, both in terms of hosting and administration. While being able to take advantage of already existing BF3 server administration tools, we are also enabling admins to manage their servers from within the game. The goal is to make it as convenient as possible for admins to moderate their servers.</p>
+
+<p>However, what these tools encompass will be revealed in another Devblog, once they’re ready to be shown.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=QjZNPm8pXHo" data-videoid="QjZNPm8pXHo" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h1 id="fireworks">Fireworks</h1>
+
+<p>Despite what it may look like, development is not only about fixing bugs and crashes, but also about implementing cool features and improvements to the gameplay. That being said, we want to show you a feature that will have quite the impact (pun intended) to the gameplay. Video and implementation by our Dev Josephus</p>
+
+<p>The effects, duration and damage intensity are still subject to change. The Artillery Strike can be called in by Squad Leaders every 20 minutes. The goal is to be able to flatten enemy defenses (literally), whenever the battlefield becomes a stalemate, or to use it before an attack as a means of suppression and concealment of own movements. More details about this exciting feature including more footage will come in another Devblog.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=uRrEUNuIoII" data-videoid="uRrEUNuIoII" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>
