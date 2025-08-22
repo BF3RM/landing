@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 3 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 3">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Yet another Release delay, Feature List, Dev Spotlight and Tech Insight">
+<meta property="og:description" content="Yet another Release delay, Feature List, Dev Spotlight and Tech Insight">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-3">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-3">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-3/header.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-04-01T15:49:34+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-3/header.png">
+<meta property="twitter:title" content="DEVBLOG 3">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-04-01T15:49:34+00:00","datePublished":"2021-04-01T15:49:34+00:00","description":"Yet another Release delay, Feature List, Dev Spotlight and Tech Insight","headline":"DEVBLOG 3","image":"https://bf3reality.com/assets/posts/devblog-3/header.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-3"},"url":"https://bf3reality.com/devblog/devblog-3"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-3/header.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 3</h1>
+          <p>Yet another Release delay, Feature List, Dev Spotlight and Tech Insight</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2021-04-01T15:49:34+00:00" itemprop="datePublished">
+        Apr 1, 2021
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Alphacore</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Lukita</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Paul</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Janssent</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<p>Hey everyone!
+
+</p>
+<p>It has been a while since our last Devblog but we finally have some updates for you guys!
+First and most importantly, we have updated our Release Plans, next we will take a closer look at our Feature List and what you can expect for Reality Mod, an in-depth look on the damage model adjustments written by Lukita and last but not least this edition’s Dev Spotlight with Paul!</p>
+
+<p>I know you are itching to know about release so let’s just get straight to the point.</p>
+
+<h1 id="yet-another-release-delay">Yet another Release delay</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>Many of you might have suspected this already: we are forced to delay the release once again. For how long? To be honest, we can’t tell exactly. Here’s why:</p>
+
+<p>Feature wise, Reality Mod is complete for its first release. But the most substantial key feature is missing: VoIP.</p>
+
+<p>For the past 3 years and up until today we’ve been using a custom Mumble implementation as our VoIP solution, but it has been causing us more trouble than joy. Picture mumble as a very old, overengineered pile of spaghetti code that’s incredible time consuming for any enhancements whatsoever. In fact, it was causing so much trouble that we decided to stop fixing it and instead work on a better yet easier to work with alternative which can be directly integrated into VU.</p>
+
+<p>After all, teamwork and communication are the center point of Reality Mod and as such shipping with a defective or no VoIP solution at all is out of the question for us. It would be like shipping a car without an engine. That is why we decided against releasing with Mumble.</p>
+
+<p>However, there is a light at the end of the tunnel. We are working closely together with the Venice Unleashed devs to ensure that it can be finalized as soon as possible. But by the nature of that and the VU code not being open source, we are dependent on the VU devs in this case. That is also why we can’t really give a good estimate on when we will be launching - it could be finished tomorrow or in a month. We were expecting the VU VoIP implementation to be finished way sooner (hence the previous Q1 estimation), unfortunately that was not the case. But you can rest assured, once we are set on a date we will make sure you will know about it first.</p>
+
+<p>In addition to that, we’re also still having issues with the UI rendering / performance, there seems to be an odd bug in the version of the chromium framework, that we’re using to display the UI, which causes the UI to at times have a slow reaction time or render incorrectly. We have however gained enough data to track it down and we’re already trying out some potential fixes together with the VU devs.</p>
+
+<p>If you feel like you can live with those issues and you can’t wait to try Reality Mod already, feel free to apply for Early Access on our <a href="https://discord.gg/sNwbeHC">Discord</a>!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=_crXhhbKJ8I" data-videoid="_crXhhbKJ8I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h1 id="feature-list">Feature List</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>Not all is lost in the realm of Reality Mod though. To prepare you for the hopefully timely release we have prepared a feature list so you can already mentally prepare for the battles to come.</p>
+
+<p>Key features (these will be available on release)</p>
+
+<ul>
+  <li>Completely reworked gameplay, aimed for a more tactical™ squad-/ teamwork-based experience compared to vanilla Battlefield 3</li>
+  <li>Completely custom minimalistic UI</li>
+  <li>Immersive™, atmospheric visuals - Frostbite 2 Engine’s destruction, VFX &amp; physics</li>
+  <li>100+ players on a server</li>
+  <li>Custom VoIP - multiple ingame radio channels, including positional audio</li>
+  <li>No vanilla blue tint. ;-)</li>
+</ul>
+
+<h2 id="release-feature-list">Release Feature List</h2>
+
+<p>Reality Mod will ship with these features, but keep in mind that this is an overview rather than a detailed change log. The full change log will be available on release.</p>
+
+<h3 id="player--game-pace">Player / game pace</h3>
+
+<ul>
+  <li>Slowed down player movement speed</li>
+  <li>Slowed down weapon handling</li>
+  <li>Prevented bunny hopping</li>
+</ul>
+
+<h3 id="new-spawn-system">New spawn system</h3>
+
+<ul>
+  <li>All spawn points are deployed by Squad Leaders:</li>
+  <li>Rally Points serve as a spawn point for the whole squad</li>
+  <li>FOBs - team-wide spawn points</li>
+</ul>
+
+<h3 id="completely-reworked-weapon-mechanics">Completely reworked weapon mechanics</h3>
+
+<ul>
+  <li>Tweaked bullet ballistics and weapon handling towards more realistic values.</li>
+  <li>Full mag reloads</li>
+  <li>Removed vanilla RNG deviation upon suppression, suppression is only visual now, but the visual effect is increased by a lot</li>
+  <li>Tweaked damage values for projectiles and explosions across the board. Everything is a lot more deadly now</li>
+  <li>Tweaked damage dealt to different objects, buildings can now withstand more damage in general, but are still very much destructible, if you put in some effort</li>
+</ul>
+
+<h3 id="new-medical-system">New Medical system</h3>
+
+<ul>
+  <li>Bleeding mechanic when getting hit, bandage fast or risk bleeding out!</li>
+  <li>Equipped players with field dressings for bleedings, applied over tac rose</li>
+  <li>Increased wounded time to 5 minutes</li>
+  <li>New healing system, medics need to manually heal injured players with a medic bag now</li>
+  <li>Very limited health after revive</li>
+  <li>Custom bleeding effects / visuals, drastically reducing visibility and player effectiveness when low on health</li>
+</ul>
+
+<h3 id="brand-new-ui">Brand new UI</h3>
+
+<ul>
+  <li>Minimalistic HUD with only a compass and mag counter</li>
+  <li>New spawn screen with map overview, spawn selection and additional information</li>
+  <li>Squad selection menu, join up to 9 squads with up to 8 people each</li>
+  <li>Kit selection menu, choose between 9 different kits (more details below)</li>
+  <li>Custom loading screen, end screen and scoreboard</li>
+</ul>
+
+<h3 id="role-based-kit-system">Role based kit system</h3>
+
+<ul>
+  <li>Variety of predefined kits with different roles / purposes and weapons</li>
+  <li>Kit limitation based on the amount of people in squad and issued kits per team</li>
+  <li>Limited attachment customization (Different sights, bipod vs. foregrip, etc.)</li>
+</ul>
+
+<h3 id="venice-unleashed-voip">Venice Unleashed VoIP</h3>
+
+<ul>
+  <li>Squad channel to talk to the whole squad</li>
+  <li>Squad Leader / HQ channel</li>
+  <li>Proximity / positional (team only) channel</li>
+</ul>
+
+<h3 id="custom-visual-effects--visual-environment--weather">Custom visual effects / visual environment / weather</h3>
+
+<ul>
+  <li>No blue tint</li>
+  <li>Custom bleeding effects / visuals</li>
+  <li>Modified FX (muzzle flashes / smoke effects / impacts)</li>
+  <li>Visual suppression</li>
+  <li>Different daytime settings per map</li>
+  <li>Dynamic weather and time changes (Fog, sandstorms, night time etc.)</li>
+</ul>
+
+<h3 id="factions">Factions</h3>
+
+<ul>
+  <li>US Marine Corps</li>
+  <li>Russian Army</li>
+</ul>
+
+<h3 id="server--client-improvements">Server / Client improvements</h3>
+<ul>
+  <li>100+ players on a server, vanilla only has 64 players per server</li>
+  <li>Option for higher tickrate</li>
+</ul>
+
+<h3 id="new-gameplay-elements">New gameplay elements</h3>
+
+<ul>
+  <li>Artillery Strike called in by Squad Leaders</li>
+</ul>
+
+<h3 id="small-variety-of-land-and-air-assets-modified-vanilla-with-additional-seats-and-partially-removed-guns">Small variety of land and air assets (modified vanilla) with additional seats and partially removed guns</h3>
+
+<ul>
+  <li>Boats</li>
+  <li>Jeeps (Transport / Armed)</li>
+  <li>Helicopters (Transport)</li>
+</ul>
+
+<h3 id="vehicle-physics-and-controls">Vehicle physics and controls</h3>
+
+<ul>
+  <li>Advanced flight models / vehicle handling</li>
+</ul>
+
+<h2 id="future-features">Future Features</h2>
+
+<p>These features will be shipped in future updates, however, some of these are already close to being tested and finished.</p>
+
+<h3 id="custom-content">Custom content</h3>
+
+<ul>
+  <li>Large scale maps &amp; gamemodes</li>
+  <li>New weapon models, assets &amp; skins once VU supports imports</li>
+  <li>More content to be announced</li>
+</ul>
+
+<h3 id="new-gameplay-element">New gameplay element</h3>
+
+<ul>
+  <li>Deployable Assets for FOBs like Mortars, TOWs, AAs, Sandbags, etc.</li>
+  <li>Commander role with UAV</li>
+</ul>
+
+<h3 id="multiple-land-and-air-assets">Multiple land and air assets</h3>
+
+<ul>
+  <li>Jeeps / Trucks (Logistics / Transport / Armed)</li>
+  <li>Helicopters (Transport / CAS)</li>
+  <li>Jets (CAS)</li>
+  <li>APCs / IFVs</li>
+  <li>Tanks</li>
+</ul>
+
+<h3 id="advanced-vehicle-physics-and-controls">Advanced vehicle physics and controls</h3>
+
+<ul>
+  <li>Multi person crew with different roles</li>
+  <li>Advanced flight models / vehicle handling</li>
+  <li>Tweaked damage model (Material / HP based)</li>
+</ul>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        Paul 
+      </div>
+
+<p>Hi, I’m Paul, a 21 years old student located in the Netherlands. Right now I’m studying Computer Science and started graduating very recently. I am the UI Lead Developer.</p>
+
+<p>Roughly 2 years ago I got in contact with 3ti65. The team was looking for a web developer that could help finish the UI. I was supposed to fix some bugs and add a scoreboard. I remember telling 3ti65 it would take me around 3 months to finish. Boy oh boy was I wrong.</p>
+
+<p>When I started I quickly noticed it was a mess and I suggested cleaning it up and moving to a reactive web framework to make our lives easier (especially mine). Ever since I had been working on rewriting the UI and slowly getting Foolhen and others involved in the process. Half a year ago we got two new awesome web developers on board, Mayson and Dylan. Because of the knowledge I had built up during my stay at RM the team decided to make me the UI lead developer.</p>
+
+<p>Last year I ran my internship at a very interesting company. They taught me a lot about project management, testing and continuous integration. Especially the last skill I learned there is what I’m really utilising in Reality Mod. We now have automated builds that we use for each QA and EA test. Since then this project has also taught me other technologies/techniques I’m using at work and school.</p>
+
+<p>Since I started I’ve grown from a simple web developer into a lead developer. At first this was very challenging as I now had to responsibility manage the people working on the UI. Review code, help people where needed, etc. Now it feels like it’s part of my daily routine and I really enjoy doing it.</p>
+
+<h2 id="what-was-your-main-motivation-to-join-the-rm-team">What was your main motivation to join the RM team?</h2>
+
+<p>Paul: I didn’t know anything about Project Reality yet before I joined the RM team. It just seemed like a challenging project to be part of. In the past I was part of a Call of Duty modding community. Unfortunately because I had only experience with making websites I couldn’t do much else apart from work on the forum and website. When 3ti65 told me they already replaced a huge part of the Battlefield 3 UI I was sold.</p>
+
+<h2 id="how-did-computer-science-help-you-with-programming--designing-the-ui">How did Computer Science help you with programming / designing the UI?</h2>
+
+<p>Paul: I learned most programming outside of Computer Science. My study is mostly focussed on embedded hardware. I still love programming, hence why I learned it in my free time. I started programming when I was 14 years old if I remember correctly. A friend of mine introduced me into some simple web technologies and that’s where it all started for me really.</p>
+
+<h2 id="which-challenges-did-you-face-working-on-the-ui-was-it-harder-than-anticipated">Which challenges did you face working on the UI? Was it harder than anticipated?</h2>
+
+<p>Paul: I totally underestimated the UI. When I joined I told the team it would take me 3 months max to fix some of the bugs and add a scoreboard. Now we are still actively doing work on it.</p>
+
+<h2 id="what-do-you-love-about-working-on-rm">What do you love about working on RM?</h2>
+
+<p>Paul: The thing I love the most about working for RM is the team. Everyone is very passionate about their work and effort they put into RM. This is just something we do in our free time, yet we’re better managed than the company I work at, amazing!</p>
+
+<p>It’s also really nice to see the things you work on, come back in the game. Seeing others use and play what you’ve worked on feels really good. Besides, if players find new bugs it motivates me to fix them for the next playtest.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod-what-is-your-favourite-feature">What do you think makes RM a one of a kind mod? What is your favourite feature?</h2>
+
+<p>Paul: The thing I love the most is the fact that the mod forces you to work closely with your squad members. Coming from games like Call of Duty this is a big eye opener for me and allows me to think in a more strategic way.</p>
+
+<p>Besides the mod itself, I also love our awesome team, consisting of testers, designers, developers, community &amp; marketing people. Everyone is contributing their own speciality into the project. We have a weekly meeting where everyone shares what they did, what they will work on and what their capacity will be for the next couple of days. We also have an awesome Quality Assurance team whose job it is to test newly added features and help us find and reproduce bugs.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future">Which features would you like to see in RM in the future?</h2>
+
+<p>Paul: I would really like to see custom maps, it would be so nice if we can make the maps, coming out of Map Editor, work with Reality Mod. Currently we are still having some issues making them work properly. I would also like to see support for custom assets, but for that we’ll have to wait for the Venice Unleashed team.</p>
+
+<h2 id="which-games-do-you-like-to-play-in-your-free-time-which-games-have-you-learned-the-most-from-do-any-of-those-inspire-your-work-on-rm">Which games do you like to play in your free time? Which games have you learned the most from? Do any of those inspire your work on RM?</h2>
+
+<p>Paul: I used to play a lot of Call of Duty, but ever since I started working on RM I noticed I wanted to play more strategic shooters. Until this day I’m actually still searching, but really want to look into Escape from Tarkov. I also used to play games like Runescape &amp; League of Legends, but nowadays I don’t have a lot of free time, and the time I have left usually goes into Reality Mod.</p>
+
+<p>Besides gaming I do spend quite some time mixing house, tech house and techno music. My goal is to throw some parties here and there when COVID clears up, let’s hope it won’t take that long anymore.</p>
+
+<h2 id="that-was-very-interesting-thank-you-for-your-time-and-insights">That was very interesting! Thank you for your time and insights!</h2>
+
+<p>Paul: Any time, thanks for your interest!</p>
+
+<h1 id="tech-insight-adjusting-damage-values">Tech insight: adjusting damage values</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>My name is Lucas, I am a Lua developer in the Reality Mod team since May/2020, I work as a Data Scientist at my full-time job and I love game programming. I have contributed to the mod with the new medic system, damage, and destruction tweaks. I also developed a mod called <a href="https://github.com/BF3RM/TestRange">TestRange</a> where you can spawn bots in a variety of ways and distances and it displays how much damage they take every time you shoot them.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_8.png"><img src="/assets/posts/devblog-3/pasted_image_0_8.png" alt=""></a><small></small>
+</div>
+
+<h2 id="how-do-bullet-damage-and-destruction-work-in-vanilla-bf3">How do bullet damage and destruction work in vanilla BF3?</h2>
+
+<p>In vanilla Battlefield 3, each weapon shoots a projectile and each projectile has a material pair and attributes that define its damage and how it decays over distance. The following image shows an example for the M16A4 using <a href="http://webx.powback.com/#/Weapons/m16a4/M16A4.json">Powback’s WebX</a>.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_9.png"><img src="/assets/posts/devblog-3/pasted_image_0_9.png" alt=""></a><small></small>
+</div>
+
+<ul>
+  <li>The M16A4 shoots a 5.56x45mm NATO projectile.</li>
+  <li>Its base damage starts at 25 and decays linearly to 18.4. The decay starts at 8 meters and ends at 50 meters.</li>
+</ul>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_10.png"><img src="/assets/posts/devblog-3/pasted_image_0_10.png" alt=""></a><small></small>
+</div>
+
+<ul>
+  <li>Its projectile’s material pair has the following attributes:</li>
+</ul>
+
+<h2 id="but-what-are-those-material-pair-values-and-how-are-they-used">But what are those material pair values and how are they used?</h2>
+
+<p>Battlefield 3 has the concept of a Material Grid which defines how materials interact with each other: either what happens when one material hits another and also when two physical objects collide.</p>
+
+<p>An image will make it more clear. I will use <a href="https://github.com/J4nssent">Janssent</a>’s spreadsheet (download below) because it has all the information we need in the same place. I usually open it in Google Sheets although some formulas get broken.</p>
+
+<p><a href="https://drive.google.com/file/d/1SwkEu6MmSC2eXcqlIrlnaMIe8Uw7UFiR/view?usp=sharing">VENICE_MATERIALGRID.xlsx</a></p>
+
+<p>When you open it you will see there is a sheet for every map and one called “MaterialNames”. Let’s look at this one first.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_11.png"><img src="/assets/posts/devblog-3/pasted_image_0_11.png" alt=""></a><small></small>
+</div>
+
+<p>In there you will find two columns: A contains the IDs and B has the material names. Let’s decode the M16A4’s projectile’s material pair then:</p>
+
+<ul>
+  <li>PhysicsPropertyIndex: 77 → BulletDamage</li>
+  <li>PhysicsMaterialIndex: 1 → Bullet</li>
+</ul>
+
+<p>Now let’s check how these two materials interact with “Concrete” (ID 8), for example. If you open any of the map sheets you will notice it will have a symmetric matrix where each row/column corresponds to a material. Each cell contains data about the <a href="https://docs.veniceunleashed.net/vext/ref/fb/materialrelationpropertypair/">MaterialRelationPropertyPair</a> regarding the interaction between the materials in the row/column pair.</p>
+
+<p>In Frostbite, a MaterialRelationPropertyPair has two attributes:</p>
+
+<ul>
+  <li>physicsMaterialProperties: array of <a href="https://docs.veniceunleashed.net/vext/ref/fb/physicsmaterialrelationpropertydata">PhysicsMaterialRelationPropertyData</a>. Related with FX triggered when two materials collide (decal of bullet impact in the concrete, sound of the bullet when it hits metal, particles, etc.)</li>
+  <li>physicsPropertyProperties: array of <a href="https://docs.veniceunleashed.net/vext/ref/fb/physicspropertyrelationpropertydata/">PhysicsPropertyRelationPropertyData</a>. Related with penetration properties, damage, terrain destruction, etc.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Look at the cell H4 (Bullet x Concrete) in the sheet XP1_002 (Gulf of Oman map) below. Its value shows that when a bullet hits a concrete material it produces a decal, a visual effect, and a sound. Those three form the array of <a href="https://docs.veniceunleashed.net/vext/ref/fb/physicsmaterialrelationpropertydata">PhysicsMaterialRelationPropertyData</a> (before the</td>
+      <td>in the cell value) for this pair of materials.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_12.png"><img src="/assets/posts/devblog-3/pasted_image_0_12.png" alt=""></a><small></small>
+</div>
+
+<p>Check the cell AP48 (BulletDamage x Head) now, it contains <code class="language-plaintext highlighter-rouge">"*nullMat*|Damage(335D1BCF-FD1D-4BA4-9594-90C2C5425A7F)"</code>. This means its physicsMaterialProperties array is not defined (null) and its physicsPropertyProperties array has a (MaterialRelationDamageData)[https://docs.veniceunleashed.net/vext/ref/fb/materialrelationdamagedata/] data container, with the given GUID. This is the only thing we need for tweaking the damage between materials.</p>
+
+<p>A MaterialRelationDamageData instance has 7 attributes in total, but I will focus on 3 of them related to damage:</p>
+
+<ul>
+  <li>damageProtectionMultiplier: how much of the incoming damage will be applied to the material. Ex: M16A4 projectile at 50 meters causes 18.4 damage. If damageProtectionMultiplier = 0.1, then the damaged material would be hit with 1.84 damage.</li>
+  <li>damageProtectionThreshold: minimum damage necessary to actually inflict damage on the material. Following the example from above, if the material gets hit with 1.84 damage and damageProtectionThreshold = 2, then the 1.84 damage is ignored. Otherwise, if this threshold is below 1.84, then the damage would be applied to the material.</li>
+  <li>damagePenetrationMultiplier: how much of the absorbed damage (after the damageProtectionMultiplier) is retained after penetrating the material.</li>
+</ul>
+
+<p>All of this explanation applies from a bullet hitting a soldier to an RPG hitting a wall.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_13.png"><img src="/assets/posts/devblog-3/pasted_image_0_13.png" alt=""></a><small></small>
+</div>
+
+<h2 id="how-and-why-do-we-use-that-in-reality-mod">How (and why) do we use that in Reality Mod?</h2>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_14.png"><img src="/assets/posts/devblog-3/pasted_image_0_14.png" alt=""></a><small></small>
+</div>
+
+<p>As the mod name says, we’d like to make BF3 feel more realistic and part of it requires to increase the damage dealt to players when they get shot. But it is not all about increasing damage. We felt that the grenade launchers were destroying building walls too easily, with a single shell, so we decided to tune it down a bit using the MaterialGrid.</p>
+
+<p>But that is not only about increasing or decreasing damage. By using the MaterialGrid we made it possible to deal damage to vehicles with standard rifle bullets, which is disabled in vanilla BF3. This way a helicopter can be taken down by getting shot (a lot!).</p>
+
+<p>Basically, we created a class in Lua that let us define a material grid modification that will replace (or be appended to) an existing material grid relation pair. The image below shows our modification for the pair BulletDamage x HelicopterDamage, used to make normal bullets deal damage to our Venom helicopter. Originally, the damageProtectionMultiplier was 0, preventing the chopper from getting damage. We set it to 0.1, meaning that only 10% of the bullet damage would be applied to the helicopter. And when talking about air vehicles they are usually farther so the bullet damage will likely be small, requiring a lot of bullets!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_15.png"><img src="/assets/posts/devblog-3/pasted_image_0_15.png" alt=""></a><small></small>
+</div>
+
+<p>We did the same thing for the grenade launcher (GL) and the building walls. The walls use materials called DamageClass_1, DamageClass_2, up to DamageClass_5. The most common material, used for almost every building wall, is the DamageClass_4. The vanilla damageProtectionMultiplier for GL and these walls is 1.5. We decreased it to 0.2, requiring now three shells to fully destroy the wall. This way the buildings feel a bit safer inside.</p>
+
+<p>By using the MaterialGrid it is really easy to tweak the damage but it has a major downside for quick testing values: it requires a server restart to apply the new values. Due to that and for faster iterations, we decided to tweak the bullet damage to soldiers using the callback (Soldier:Damage)[https://docs.veniceunleashed.net/vext/ref/server/hook/soldier_damage/] on the server-side, which requires simply to reload the mod and restart the round, which is much quicker than restarting the server.</p>
+
+<p>But with great power comes great responsibility. You can turn a simple pistol into a devastating weapon (literally):</p>
+
+<p><a href="https://streamable.com/xb67fk">https://streamable.com/xb67fk</a></p>
+
+<p><strong>Lukita</strong></p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

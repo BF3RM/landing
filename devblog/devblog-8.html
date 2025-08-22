@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 8 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 8">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Pull things together for the upcoming v1.0.0 relaunch">
+<meta property="og:description" content="Pull things together for the upcoming v1.0.0 relaunch">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-8">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-8">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-8/devblog-8.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-08-15T22:00:00+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-8/devblog-8.png">
+<meta property="twitter:title" content="DEVBLOG 8">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-15T22:00:00+00:00","datePublished":"2025-08-15T22:00:00+00:00","description":"Pull things together for the upcoming v1.0.0 relaunch","headline":"DEVBLOG 8","image":"https://bf3reality.com/assets/posts/devblog-8/devblog-8.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-8"},"url":"https://bf3reality.com/devblog/devblog-8"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-8/devblog-8.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 8</h1>
+          <p>Pull things together for the upcoming v1.0.0 relaunch</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2025-08-15T22:00:00+00:00" itemprop="datePublished">
+        Aug 15, 2025
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">BloodhoundNLD, Bebox45, OriBuhbut</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<h1 id="devblog-8">Devblog 8</h1>
+
+<p>The last devblog was posted more than a year ago. During that time a lot has happened, a lot has changed. The massive amount of work that Ori and DesertShadow put into making Reality Mod to what it is today I can not leave unmentioned. The amount of features that were added is huge, progress really took off! And not only have we been developing more features. During the last few months massive progress is made with the UI, the UI we had massive issues with. Pour yourself a cup, because this is going to be a long one.
+
+</p>
+<h2 id="stability">Stability</h2>
+
+<p>We have some truly exciting news to share about a long-standing challenge in Reality Mod. As many of you know, both Reality Mod and VU have suffered from persistent crashes and UI glitches, primarily due to memory-related issues. These problems often arose under heavy client load, disrupting gameplay and frustrating players. However, thanks to the relentless dedication of our teams and collaboration with key partners, we have finally turned a corner. While the occasional crash to desktop remains, we are confident that the major UI issues are a thing of the past. Solving the remaining crashes and ironing out the last UI issues is our main focus right now.</p>
+
+<h3 id="a-collective-effort">A Collective Effort</h3>
+
+<p>This breakthrough would not have been possible without the unmatched persistence and expertise of Ori, Paul, “[UKF] Cromebull,” and NoFaTe. Through extensive testing, debugging, and optimization, we have managed to get a firm grip on the UI instability issues that have plagued the player experience for too long.</p>
+
+<p>A major milestone in this process has been our partnership with Coherent Labs. Together, we have worked on refining the interface, addressing inefficiencies, and significantly improving performance. By leveraging a trial version of the Coherent Labs interface, we conducted several play tests that yielded incredibly promising results. The UI is now more stable than ever, and the overall memory footprint has been dramatically reduced.</p>
+
+<h3 id="what-this-means-for-players">What This Means for Players</h3>
+<p>The impact of these improvements is substantial. Players can expect a far more stable experience with significantly fewer crashes and no UI glitches. The optimizations have restored much-needed performance, leading to smoother gameplay and better responsiveness. With this we are back at 100 player servers and full squads!</p>
+
+<p>Additionally, these improvements open up new possibilities for Reality Mod. Features that were previously sidelined due to stability concerns may now be reconsidered, and we are eager to explore what this means for future updates. Performance gains also mean that we can push the boundaries of what Reality Mod can achieve without overwhelming the client.</p>
+
+<p>While we are thrilled about these advancements, we are not stopping here. Further refinements and optimizations are on the horizon, as we continue to work with Coherent Labs and the VU team to ensure the best possible experience for our community. Your feedback will be instrumental in shaping the next steps, so please share your experiences as we roll out these changes.</p>
+
+<p>This marks the beginning of a new era for Reality Mod, where stability and performance are no longer bottlenecks but foundations for growth and innovation. Thank you for your continued support—we can’t wait to see you on the battlefield with an even more refined Reality Mod experience!</p>
+
+<h2 id="new-features">New features</h2>
+
+<p>Like any volunteer based project our team has seen some changes, with members coming and going. Over the past year, we saw most of the active development team leave until it was just DesertShadow and Ori. At one point, Ori was the only one working on the project. Despite the persistent UI issues, he continued to push Reality Mod towards feature completeness. Thankfully, with the recent breakthroughs, a spark has been reignited, and some old-timers have returned to contribute again. The number of additions since our last devblog is too long to list in full, but here are some of the most exciting updates.</p>
+
+<h3 id="fobs">FOBs</h3>
+<p>We have had the ability to construct and destroy FOBs for a while now, but some things have changed and new mechanics have been added. Let’s go over what’s currently implemented and what’s yet to come.</p>
+
+<h4 id="placing-an-fob-requires">Placing an FOB requires:</h4>
+<ul>
+  <li>Two supply crates within 100 meters (Three for Emplacements)</li>
+  <li>A squad leader to place the initial FOB</li>
+  <li>The FOB Radio spawns with 5% health</li>
+  <li>Riflemen, Automatic Riflemen, MG gunners, Crewmen, and Combat Engineers can build and repair the FOB Radio with a repair torch.</li>
+</ul>
+
+<h4 id="overrunning-an-fob-requires">Overrunning an FOB requires:</h4>
+<ul>
+  <li>The FOB radio’s health to be below 50%</li>
+  <li>Standard overrun mechanics still apply</li>
+</ul>
+
+<h4 id="destroying-an-fob-requires">Destroying an FOB requires:</h4>
+<ul>
+  <li>Three C4 detonations on the FOB Radio</li>
+</ul>
+
+<h3 id="emplacements">Emplacements</h3>
+<p>The FOB is no longer just a spawn point! It can now be reinforced with sandbag walls, razor wire sections, and weapon emplacements. All emplacements are destructible, and razor wire actually hurts when touched. ;)</p>
+
+<ul>
+  <li>
+<strong>Sandbags:</strong> 20</li>
+  <li>
+<strong>ATGM:</strong> 1</li>
+  <li>
+<strong>Mortars:</strong> 2</li>
+  <li>
+<strong>Razor Wire:</strong> 20</li>
+</ul>
+
+<p>For emplacements such as the TOW and Mortar, a full ammo box is required to stock them with ammo. A full ammo box will supply a TOW with 2 rockets and Mortar with 10 mortars. 
+To supply emplacements simply throw an ammo box down next to one.
+You can now move your emplacements by selecting Construct&gt;Demolish in your tac-rose and then placing them at a new location.
+We are continuing to develop .50 cal machine gun emplacements, a vehicle repair station, and potentially a destructible Hesco bunker.</p>
+
+<h3 id="logistics">Logistics</h3>
+
+<p>To build an FOB, supply crates are now required. Squad leaders can call for supplies through the comm rose, and each faction has dedicated vehicles to transport them. If you run out of crates, return to the main base to resupply at designated locations marked with a wrench icon on the mini-map, which also serves as a vehicle repair point. These crates also contain ammo. You can use that ammo to resupply your current kit, but can also use it to swap for another kit.</p>
+
+<h4 id="supply-vehicles">Supply Vehicles:</h4>
+<ul>
+  <li>Littlebird (1 crate)</li>
+  <li>Huey (2 crates)</li>
+  <li>Z11 (1 crate)</li>
+  <li>KA-60 (2 crates)</li>
+  <li>Humvee (3 crates)</li>
+  <li>Vodnik (3 crates)</li>
+</ul>
+
+<h3 id="comm-rose">Comm Rose</h3>
+
+<p>Mentioned a little bit above here and a highly requested feature by Project Reality veterans! We were finally able to implement a first iteration of the famous BF2 comm rose function. Currently, the system uses the classic Battlefield voice lines with each faction having its own localization, but we are exploring options for custom ones.</p>
+
+<p>Accessible via the tac-rose (default: T), clicking on the radio icon allows you to issue:</p>
+<ul>
+  <li>Roger That</li>
+  <li>Negative</li>
+  <li>Need Medic</li>
+  <li>Need Ammo</li>
+  <li>Request Supplies</li>
+  <li>Request Pick-up</li>
+</ul>
+
+<p>Sound implementation is still in progress with the new UI interface. So at the time of writing the voice lines may or may not play audio. But other than just playing audio, it also puts a message in chat and highlights the player icon on the mini-map.</p>
+
+<h2 id="ui-changes">UI Changes</h2>
+
+<p>The UI has undergone some significant changes, both in functionality and usability. We’ve expanded its capabilities, optimized its performance, and refined the overall player experience. Whether you’re coordinating with your squad or tracking objectives, these updates make everything smoother and more intuitive.</p>
+
+<p><strong>Key UI Enhancements:</strong></p>
+<ul>
+  <li>Interactive vehicle list on the mini-map</li>
+  <li>Squad types per map tailored to vehicle access</li>
+  <li>Clearer mini-map coordinates</li>
+  <li>Squad list displaying vehicle type for better coordination</li>
+  <li>Real-time scoreboard updates every 30 seconds</li>
+  <li>Main base spawn protection indicator to prevent base camping</li>
+  <li>Detailed kit information screen</li>
+  <li>Streamlined kit change interface at supply crates</li>
+  <li>Improved resupply ammo interface for better logistics</li>
+  <li>Mini-map resizing for vehicle drivers for enhanced situational awareness</li>
+  <li>On-screen localization markers for easier navigation</li>
+</ul>
+
+<p>If you haven’t played in a while, you’ll definitely notice the difference. Join a Sunday event and check it out!</p>
+
+<h2 id="insurgency-game-mode">Insurgency Game Mode</h2>
+
+<p>Or counter Insurgency if you are on the BLUFOR-Side. We all know and love this game mode for a while now, but for those who don’t lets break it down.</p>
+
+<h3 id="goals">Goals</h3>
+
+<p><em>BLUFOR</em>: Destroy 3 caches before tickets or time runs out.
+<em>Insurgents</em>: Prevent destruction of caches and reduce enemy tickets to 0.</p>
+
+<h3 id="caches">Caches</h3>
+
+<p>There is 1 Cache at a time in play, spawnable for the first 5 minutes, with unlimited arm points. It starts hidden, with a purple marker on the mini-map (for insurgents).
+Red cache color means the cache is known to conventional forces. Once 1 cache is destroyed a new cache will go active and again be spawnable for 5 min for insurgents.
+If enemy is nearby you cant spawn there just like FOB.</p>
+
+<h3 id="intel-points">Intel Points</h3>
+
+<p>Caches are revealed to conventional forces on the mini-map based on intelligence points.</p>
+
+<ul>
+  <li>20 intel points or 15 minutes needed for revealing cache location</li>
+  <li>Per insurgent killed 1 intel point</li>
+  <li>You get 5 intel points per destroyed insurgent vehicle</li>
+</ul>
+
+<h2 id="special-surprise">Special Surprise</h2>
+
+<p>Much to the dismay of the conventional forces, The Insurgents have a very special surprise…</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-8/sucicdebomber2.gif"><img src="/assets/posts/devblog-8/sucicdebomber2.gif" alt=""></a><small></small>
+</div>
+
+<h2 id="others">Others</h2>
+
+<p>While not limited to, here a some of the other changes that deserve a mention that we haven’t spoken about.</p>
+
+<h3 id="new-map-vote-system">New Map Vote System</h3>
+
+<p>Players can now choose the game mode before the map for easier decisions on what to play.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="New Map Vote System" href="/assets/posts/devblog-8/mapvote.png"><img src="/assets/posts/devblog-8/mapvote.png" alt="New Map Vote System"></a><small>New Map Vote System</small>
+</div>
+
+<h3 id="main-base-protection">Main Base Protection</h3>
+
+<p>The most frustration thing ever, your team is losing. Enemy is about the take the last flag and you.. You get constantly spawn killed at main. Well not anymore! We got the work done and put in a system that protects players within their main base.</p>
+
+<h3 id="vehicles">Vehicles</h3>
+
+<p>Through the hard work of Dumpy and DesertShadow, most BF3 vanilla vehicles have been modified and added to Reality Mod. Jeeps, buggies, Light armor, Tanks, Transport helicopters, and Jets are all in play depending on the map. The work they put into this had been mentioned before for other vehicles and helicopters but the amount of changes is just too much to list. While there are still option for us to try out and implement within Reality Mod, the focus is right now is refining the vehicles and explore the possibilities for a more in-depth armor system rather than a point-based health system. Work continues to improve the flight-models for the helicopters and tweaks to AA are being made to make sure there is some balance.</p>
+
+<h3 id="the-other-others">The other others</h3>
+<ul>
+  <li>Iron sights for Mounted weapons have been fixed and work</li>
+  <li>More kits, gadgets and weapons have been added</li>
+  <li>All the small tweaks, fixes that I forgot</li>
+</ul>
+
+<h2 id="maps">Maps</h2>
+<p>The team also saw some new additions in the level design department, so not only more features but also a couple of maps that have been improved for Reality Mod!</p>
+
+<h2 id="kandahar">Kandahar</h2>
+
+<p>Ever wondered what it’s like to step into the heart of Afghanistan in the Battlefield 3 Reality Mod?
+One big challenge was authentically filling the open spaces. We carefully chose elements that reflect Afghanistan’s rugged terrain and architecture, even renaming the map from Nabandan Flats to Kandahar to underscore our commitment to realism. We added strategic spots for dynamic gameplay, allowing you to navigate canyons and engage in rooftop skirmishes with your team.
+A big thanks to JAM and Luz for their support in this project of creating the map. We’re excited for you to explore Kandahar! Dive in, share your thoughts, and enjoy the scenery!</p>
+
+<h2 id="bandar-desert">Bandar Desert</h2>
+<p>Done! Finished! A joint effort from Maddog, BloodhoundNLD, and Dumpy that took way too much of our time and souls. Announced as the first 4x4km map for Reality Mod, it ended up a little bit bigger. But don’t worry my infantry grunts, a considerable area will be for the pilots amongst us to worry about. While still a desert map it now has really come to life. Plantations, abandoned airfields, military bases, and more; this map has a lot more to it than just sand. Now there are proper main bases for both teams, with helipads, a runway and plenty of vehicles to get around this vast map. In that vastness lie various POIs for you to discover, some small, some stick out like a rock. The center area of the map is more developed with of course Bandar itself. The surrounding area was marked by previous conflict in development.</p>
+
+<h2 id="wake-island">Wake Island</h2>
+
+<p>Vanilla Wake Island comes to the game, providing an interesting change of pace from the rest of the maps.</p>
+
+<h2 id="karkand">Karkand</h2>
+
+<p>Remember this iconic map that we have been fighting over ever since Reality Mod went into Open Alpha? Let’s just say things have changed - pretty much the whole team behind Reality Mod contributed to this, and the results speak for themselves. Karkand has been expanded with new areas, and numerous improvements were made throughout. The map feels bigger, provides better cover, and offers a variety of POIs to fight over! Both main bases got an overhaul and now provide more routes with cover to the actual objectives. The Apartments area was added - this area represents a lively neighborhood filled with a market and, you guessed it, apartments. But there’s more to discover there ;)</p>
+
+<h2 id="golf-of-oman">Golf of Oman</h2>
+
+<p>Another classic map that got an overhaul. It now has a more similar layout to its BF2 counter-part but with a brand new city location! Thanks to JAM and all of his hard work, the map offers a huge sense of scale; especially with all of the new vehicles and logistics systems.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="New Gulf of Oman map" href="/assets/posts/devblog-8/xp1_002_v7.png"><img src="/assets/posts/devblog-8/xp1_002_v7.png" alt="New Gulf of Oman map"></a><small>New Gulf of Oman map</small>
+</div>
+
+<h2 id="factions">Factions</h2>
+
+<p>Since our last devblog, four new factions have been added.</p>
+
+<h2 id="bundeswehr-german-army">Bundeswehr (German Army)</h2>
+
+<p>Though currently only active on three different maps, The Bundeswehr is the most prominent alternate faction aside from The Insurgents. With their Flecktarn camouflage and precise German weaponry, they are the most played conventional faction besides Russia or The US.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="German Sniper and Spotter together" href="/assets/posts/devblog-8/BundeswehrSniper-Spotter.png"><img src="/assets/posts/devblog-8/BundeswehrSniper-Spotter.png" alt="German Sniper and Spotter together"></a><small>German Sniper and Spotter together</small>
+</div>
+
+<h2 id="middle-eastern-coalition">Middle Eastern Coalition</h2>
+
+<p>The iconic faction from Battlefield 2 returns! Though their arsenal boasts somewhat different arms and armor, they retain their immense presence on the battlefield.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="MEC troops on Gulf of Oman's new mosque" href="/assets/posts/devblog-8/MEC.png"><img src="/assets/posts/devblog-8/MEC.png" alt="MEC troops on Gulf of Oman's new mosque"></a><small>MEC troops on Gulf of Oman's new mosque</small>
+</div>
+
+<h2 id="israeli-defense-force">Israeli Defense Force</h2>
+
+<p>the next faction after the MEC to be added is the IDF. Like the MEC, they use both their own weapons and weapons provided by their allies. The IDF has the full might of The LORD (and NATO) on their side and they show it!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="IDF troops combating Azadi Palace's Insurgent Forces" href="/assets/posts/devblog-8/IDF-2.png"><img src="/assets/posts/devblog-8/IDF-2.png" alt="IDF troops combating Azadi Palace's Insurgent Forces"></a><small>IDF troops combating Azadi Palace's Insurgent Forces</small>
+</div>
+
+<h2 id="british-army">British Army</h2>
+
+<p>The UK shows up, sporting their classic SA80s, L96s, MTP camos and SUSAT! Fighting on Sharqi Peninsula and Wake Island for her majesty the queen, they bring the tea-bags!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="British Forces in Wake Island" href="/assets/posts/devblog-8/UK.png"><img src="/assets/posts/devblog-8/UK.png" alt="British Forces in Wake Island"></a><small>British Forces in Wake Island</small>
+</div>
+
+<h2 id="jets">Jets</h2>
+
+<p>Thanks to even more amazing work by DesertShadow, jets are now playable in Reality Mod!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Jets have a rear-view camera to aid in dog-fighting" href="/assets/posts/devblog-8/A10-rearview.png"><img src="/assets/posts/devblog-8/A10-rearview.png" alt="Jets have a rear-view camera to aid in dog-fighting"></a><small>Jets have a rear-view camera to aid in dog-fighting</small>
+</div>
+
+<p>For The US, The A-10 Thunderbolt and F18 Super-Hornet provide support on the ground and in the air.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="A-10 Thunderbolt (aka Warthog), the iconic American CAS jet" href="/assets/posts/devblog-8/A10.png"><img src="/assets/posts/devblog-8/A10.png" alt="A-10 Thunderbolt (aka Warthog), the iconic American CAS jet"></a><small>A-10 Thunderbolt (aka Warthog), the iconic American CAS jet</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="F18 Super-Hornet, the American air-superiority fighter" href="/assets/posts/devblog-8/F18.png"><img src="/assets/posts/devblog-8/F18.png" alt="F18 Super-Hornet, the American air-superiority fighter"></a><small>F18 Super-Hornet, the American air-superiority fighter</small>
+</div>
+
+<p>The Russians have their SU-25 Frogfoot and SU-35 Flanker E.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="SU-25 Frogfoot, Russia's CAS jet" href="/assets/posts/devblog-8/SU25.png"><img src="/assets/posts/devblog-8/SU25.png" alt="SU-25 Frogfoot, Russia's CAS jet"></a><small>SU-25 Frogfoot, Russia's CAS jet</small>
+</div>
+
+<p>Games with jets have now become battles of air-superiority and close-air support. Reigning the skies now brings a huge advantage but only when the CAS knows what to hit…</p>
+
+<h2 id="lasing">Lasing</h2>
+
+<p>Battlefield 3 Vanilla’s SOFLAM vehicle lasing returns; this time with some new applications. For the CAS and Scout helicopters, an infantry lase is required for both air-to-ground and air-to-air missile locks.</p>
+
+<p>For jets, however, visibility is a big deal. Infantry lasing vehicles both on land and in the air greatly increases CAS’s ability to hit their target.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Enemy CAS helicopter lased by friendly Spotter" href="/assets/posts/devblog-8/Fighter_Veh_Lase.png"><img src="/assets/posts/devblog-8/Fighter_Veh_Lase.png" alt="Enemy CAS helicopter lased by friendly Spotter"></a><small>Enemy CAS helicopter lased by friendly Spotter</small>
+</div>
+
+<p>But what about infantry targets? Well thanks to DesertShadow and Ori, a completely new ground lasing feature has been implemented in order to mark targets for both helicopters and jets.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="CAS view of ground target marked by Spotter" href="/assets/posts/devblog-8/CAS_Ground_Lase.png"><img src="/assets/posts/devblog-8/CAS_Ground_Lase.png" alt="CAS view of ground target marked by Spotter"></a><small>CAS view of ground target marked by Spotter</small>
+</div>
+
+<h2 id="a-brief-side-note">A Brief Side-Note</h2>
+
+<p>If you’ve tried to play RM in the past few months and have had problems with your UI including but not limited to: being unable to send messages in chat, kit selection being squished, or some crashes, your problem has more than likely been that you were not on the dev-branch. We moved to an experimental UI engine [when coherent labs started] and the mod was run on Venice Unleashed’s dev-branch. The experiment was a great success and many of our previous crashes are now gone!  But one major side effect is that right now if you try to join an RM game your UI for the most part will not work.</p>
+
+<p>The time is coming very soon when we’ll be on the production branch.</p>
+
+<h2 id="we-are-still-recruiting">We are (still) Recruiting</h2>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=1Y3XJuJBCOM" data-videoid="1Y3XJuJBCOM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Reality Mod is nowhere without contributors to the project and we are pretty much always open to new people. We are looking for:</p>
+
+<ul>
+  <li>Project RIME (C# and experience with WPF, knowledge of DirectX would be a plus)</li>
+  <li>Game / Backend Developer (Lua / Java)</li>
+  <li>UI / Web Developer (TS/JS/Vue)</li>
+  <li>Discord Bot Developer (Discord API, TS/JS, Postgres)</li>
+  <li>Level Designer</li>
+  <li>Visual Environmental Designer</li>
+  <li>Game Marketing</li>
+  <li>Content Manager</li>
+</ul>
+
+<p>If you think you fit any of the above titles, please make sure to fill out this application and a team member will be with you shortly. Please do not reach out to a team member directly unless there is no response within a week.
+<a href="https://forms.gle/6ewSyXZDCD5Vax7VA">https://forms.gle/6ewSyXZDCD5Vax7VA</a></p>
+
+<h2 id="thank-you">Thank you</h2>
+
+<p>We are ending this devblog with a huge thank you to our patrons who have been financially supporting us, some for a long-time. Without them none of this would have been able to happen. As we are now 10 years from the point when this project started and almost 2 years after the public 0.1 alpha release we have truly come a long way. If you want to help us continue future development consider a donation or a subscription through buymeacoffee or patreon. We use this money to pay for various servers, UI engines ;) and other costs that are unavoidable with a project like this. None of the money goes towards paying team members.</p>
+
+<p><a href="https://www.patreon.com/bf3realitymod">https://www.patreon.com/bf3realitymod</a></p>
+
+<p><a href="https://www.buymeacoffee.com/bf3reality">https://www.buymeacoffee.com/bf3reality</a></p>
+
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

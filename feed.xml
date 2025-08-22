@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://bf3reality.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bf3reality.com/" rel="alternate" type="text/html" /><updated>2025-08-22T19:24:49+00:00</updated><id>https://bf3reality.com/feed.xml</id><title type="html">Bf3: Reality Mod</title><subtitle>BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms
+</subtitle><author><name>Bf3: Reality Mod team</name></author><entry><title type="html">DEVBLOG 8</title><link href="https://bf3reality.com/devblog/devblog-8" rel="alternate" type="text/html" title="DEVBLOG 8" /><published>2025-08-15T22:00:00+00:00</published><updated>2025-08-15T22:00:00+00:00</updated><id>https://bf3reality.com/devblog/devblog-8</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-8"><![CDATA[<p>Pull things together for the upcoming v1.0.0 relaunch</p>
+
+<!--more-->
+
+<h1 id="devblog-8">Devblog 8</h1>
+
+<p>The last devblog was posted more than a year ago. During that time a lot has happened, a lot has changed. The massive amount of work that Ori and DesertShadow put into making Reality Mod to what it is today I can not leave unmentioned. The amount of features that were added is huge, progress really took off! And not only have we been developing more features. During the last few months massive progress is made with the UI, the UI we had massive issues with. Pour yourself a cup, because this is going to be a long one.</p>
+
+<h2 id="stability">Stability</h2>
+
+<p>We have some truly exciting news to share about a long-standing challenge in Reality Mod. As many of you know, both Reality Mod and VU have suffered from persistent crashes and UI glitches, primarily due to memory-related issues. These problems often arose under heavy client load, disrupting gameplay and frustrating players. However, thanks to the relentless dedication of our teams and collaboration with key partners, we have finally turned a corner. While the occasional crash to desktop remains, we are confident that the major UI issues are a thing of the past. Solving the remaining crashes and ironing out the last UI issues is our main focus right now.</p>
+
+<h3 id="a-collective-effort">A Collective Effort</h3>
+
+<p>This breakthrough would not have been possible without the unmatched persistence and expertise of Ori, Paul, “[UKF] Cromebull,” and NoFaTe. Through extensive testing, debugging, and optimization, we have managed to get a firm grip on the UI instability issues that have plagued the player experience for too long.</p>
+
+<p>A major milestone in this process has been our partnership with Coherent Labs. Together, we have worked on refining the interface, addressing inefficiencies, and significantly improving performance. By leveraging a trial version of the Coherent Labs interface, we conducted several play tests that yielded incredibly promising results. The UI is now more stable than ever, and the overall memory footprint has been dramatically reduced.</p>
+
+<h3 id="what-this-means-for-players">What This Means for Players</h3>
+<p>The impact of these improvements is substantial. Players can expect a far more stable experience with significantly fewer crashes and no UI glitches. The optimizations have restored much-needed performance, leading to smoother gameplay and better responsiveness. With this we are back at 100 player servers and full squads!</p>
+
+<p>Additionally, these improvements open up new possibilities for Reality Mod. Features that were previously sidelined due to stability concerns may now be reconsidered, and we are eager to explore what this means for future updates. Performance gains also mean that we can push the boundaries of what Reality Mod can achieve without overwhelming the client.</p>
+
+<p>While we are thrilled about these advancements, we are not stopping here. Further refinements and optimizations are on the horizon, as we continue to work with Coherent Labs and the VU team to ensure the best possible experience for our community. Your feedback will be instrumental in shaping the next steps, so please share your experiences as we roll out these changes.</p>
+
+<p>This marks the beginning of a new era for Reality Mod, where stability and performance are no longer bottlenecks but foundations for growth and innovation. Thank you for your continued support—we can’t wait to see you on the battlefield with an even more refined Reality Mod experience!</p>
+
+<h2 id="new-features">New features</h2>
+
+<p>Like any volunteer based project our team has seen some changes, with members coming and going. Over the past year, we saw most of the active development team leave until it was just DesertShadow and Ori. At one point, Ori was the only one working on the project. Despite the persistent UI issues, he continued to push Reality Mod towards feature completeness. Thankfully, with the recent breakthroughs, a spark has been reignited, and some old-timers have returned to contribute again. The number of additions since our last devblog is too long to list in full, but here are some of the most exciting updates.</p>
+
+<h3 id="fobs">FOBs</h3>
+<p>We have had the ability to construct and destroy FOBs for a while now, but some things have changed and new mechanics have been added. Let’s go over what’s currently implemented and what’s yet to come.</p>
+
+<h4 id="placing-an-fob-requires">Placing an FOB requires:</h4>
+<ul>
+  <li>Two supply crates within 100 meters (Three for Emplacements)</li>
+  <li>A squad leader to place the initial FOB</li>
+  <li>The FOB Radio spawns with 5% health</li>
+  <li>Riflemen, Automatic Riflemen, MG gunners, Crewmen, and Combat Engineers can build and repair the FOB Radio with a repair torch.</li>
+</ul>
+
+<h4 id="overrunning-an-fob-requires">Overrunning an FOB requires:</h4>
+<ul>
+  <li>The FOB radio’s health to be below 50%</li>
+  <li>Standard overrun mechanics still apply</li>
+</ul>
+
+<h4 id="destroying-an-fob-requires">Destroying an FOB requires:</h4>
+<ul>
+  <li>Three C4 detonations on the FOB Radio</li>
+</ul>
+
+<h3 id="emplacements">Emplacements</h3>
+<p>The FOB is no longer just a spawn point! It can now be reinforced with sandbag walls, razor wire sections, and weapon emplacements. All emplacements are destructible, and razor wire actually hurts when touched. ;)</p>
+
+<ul>
+  <li><strong>Sandbags:</strong> 20</li>
+  <li><strong>ATGM:</strong> 1</li>
+  <li><strong>Mortars:</strong> 2</li>
+  <li><strong>Razor Wire:</strong> 20</li>
+</ul>
+
+<p>For emplacements such as the TOW and Mortar, a full ammo box is required to stock them with ammo. A full ammo box will supply a TOW with 2 rockets and Mortar with 10 mortars. 
+To supply emplacements simply throw an ammo box down next to one.
+You can now move your emplacements by selecting Construct&gt;Demolish in your tac-rose and then placing them at a new location.
+We are continuing to develop .50 cal machine gun emplacements, a vehicle repair station, and potentially a destructible Hesco bunker.</p>
+
+<h3 id="logistics">Logistics</h3>
+
+<p>To build an FOB, supply crates are now required. Squad leaders can call for supplies through the comm rose, and each faction has dedicated vehicles to transport them. If you run out of crates, return to the main base to resupply at designated locations marked with a wrench icon on the mini-map, which also serves as a vehicle repair point. These crates also contain ammo. You can use that ammo to resupply your current kit, but can also use it to swap for another kit.</p>
+
+<h4 id="supply-vehicles">Supply Vehicles:</h4>
+<ul>
+  <li>Littlebird (1 crate)</li>
+  <li>Huey (2 crates)</li>
+  <li>Z11 (1 crate)</li>
+  <li>KA-60 (2 crates)</li>
+  <li>Humvee (3 crates)</li>
+  <li>Vodnik (3 crates)</li>
+</ul>
+
+<h3 id="comm-rose">Comm Rose</h3>
+
+<p>Mentioned a little bit above here and a highly requested feature by Project Reality veterans! We were finally able to implement a first iteration of the famous BF2 comm rose function. Currently, the system uses the classic Battlefield voice lines with each faction having its own localization, but we are exploring options for custom ones.</p>
+
+<p>Accessible via the tac-rose (default: T), clicking on the radio icon allows you to issue:</p>
+<ul>
+  <li>Roger That</li>
+  <li>Negative</li>
+  <li>Need Medic</li>
+  <li>Need Ammo</li>
+  <li>Request Supplies</li>
+  <li>Request Pick-up</li>
+</ul>
+
+<p>Sound implementation is still in progress with the new UI interface. So at the time of writing the voice lines may or may not play audio. But other than just playing audio, it also puts a message in chat and highlights the player icon on the mini-map.</p>
+
+<h2 id="ui-changes">UI Changes</h2>
+
+<p>The UI has undergone some significant changes, both in functionality and usability. We’ve expanded its capabilities, optimized its performance, and refined the overall player experience. Whether you’re coordinating with your squad or tracking objectives, these updates make everything smoother and more intuitive.</p>
+
+<p><strong>Key UI Enhancements:</strong></p>
+<ul>
+  <li>Interactive vehicle list on the mini-map</li>
+  <li>Squad types per map tailored to vehicle access</li>
+  <li>Clearer mini-map coordinates</li>
+  <li>Squad list displaying vehicle type for better coordination</li>
+  <li>Real-time scoreboard updates every 30 seconds</li>
+  <li>Main base spawn protection indicator to prevent base camping</li>
+  <li>Detailed kit information screen</li>
+  <li>Streamlined kit change interface at supply crates</li>
+  <li>Improved resupply ammo interface for better logistics</li>
+  <li>Mini-map resizing for vehicle drivers for enhanced situational awareness</li>
+  <li>On-screen localization markers for easier navigation</li>
+</ul>
+
+<p>If you haven’t played in a while, you’ll definitely notice the difference. Join a Sunday event and check it out!</p>
+
+<h2 id="insurgency-game-mode">Insurgency Game Mode</h2>
+
+<p>Or counter Insurgency if you are on the BLUFOR-Side. We all know and love this game mode for a while now, but for those who don’t lets break it down.</p>
+
+<h3 id="goals">Goals</h3>
+
+<p><em>BLUFOR</em>: Destroy 3 caches before tickets or time runs out.
+<em>Insurgents</em>: Prevent destruction of caches and reduce enemy tickets to 0.</p>
+
+<h3 id="caches">Caches</h3>
+
+<p>There is 1 Cache at a time in play, spawnable for the first 5 minutes, with unlimited arm points. It starts hidden, with a purple marker on the mini-map (for insurgents).
+Red cache color means the cache is known to conventional forces. Once 1 cache is destroyed a new cache will go active and again be spawnable for 5 min for insurgents.
+If enemy is nearby you cant spawn there just like FOB.</p>
+
+<h3 id="intel-points">Intel Points</h3>
+
+<p>Caches are revealed to conventional forces on the mini-map based on intelligence points.</p>
+
+<ul>
+  <li>20 intel points or 15 minutes needed for revealing cache location</li>
+  <li>Per insurgent killed 1 intel point</li>
+  <li>You get 5 intel points per destroyed insurgent vehicle</li>
+</ul>
+
+<h2 id="special-surprise">Special Surprise</h2>
+
+<p>Much to the dismay of the conventional forces, The Insurgents have a very special surprise…</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-8/sucicdebomber2.gif"><img src="/assets/posts/devblog-8/sucicdebomber2.gif" alt="" /></a><small></small></div>
+
+<h2 id="others">Others</h2>
+
+<p>While not limited to, here a some of the other changes that deserve a mention that we haven’t spoken about.</p>
+
+<h3 id="new-map-vote-system">New Map Vote System</h3>
+
+<p>Players can now choose the game mode before the map for easier decisions on what to play.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="New Map Vote System" href="/assets/posts/devblog-8/mapvote.png"><img src="/assets/posts/devblog-8/mapvote.png" alt="New Map Vote System" /></a><small>New Map Vote System</small></div>
+
+<h3 id="main-base-protection">Main Base Protection</h3>
+
+<p>The most frustration thing ever, your team is losing. Enemy is about the take the last flag and you.. You get constantly spawn killed at main. Well not anymore! We got the work done and put in a system that protects players within their main base.</p>
+
+<h3 id="vehicles">Vehicles</h3>
+
+<p>Through the hard work of Dumpy and DesertShadow, most BF3 vanilla vehicles have been modified and added to Reality Mod. Jeeps, buggies, Light armor, Tanks, Transport helicopters, and Jets are all in play depending on the map. The work they put into this had been mentioned before for other vehicles and helicopters but the amount of changes is just too much to list. While there are still option for us to try out and implement within Reality Mod, the focus is right now is refining the vehicles and explore the possibilities for a more in-depth armor system rather than a point-based health system. Work continues to improve the flight-models for the helicopters and tweaks to AA are being made to make sure there is some balance.</p>
+
+<h3 id="the-other-others">The other others</h3>
+<ul>
+  <li>Iron sights for Mounted weapons have been fixed and work</li>
+  <li>More kits, gadgets and weapons have been added</li>
+  <li>All the small tweaks, fixes that I forgot</li>
+</ul>
+
+<h2 id="maps">Maps</h2>
+<p>The team also saw some new additions in the level design department, so not only more features but also a couple of maps that have been improved for Reality Mod!</p>
+
+<h2 id="kandahar">Kandahar</h2>
+
+<p>Ever wondered what it’s like to step into the heart of Afghanistan in the Battlefield 3 Reality Mod?
+One big challenge was authentically filling the open spaces. We carefully chose elements that reflect Afghanistan’s rugged terrain and architecture, even renaming the map from Nabandan Flats to Kandahar to underscore our commitment to realism. We added strategic spots for dynamic gameplay, allowing you to navigate canyons and engage in rooftop skirmishes with your team.
+A big thanks to JAM and Luz for their support in this project of creating the map. We’re excited for you to explore Kandahar! Dive in, share your thoughts, and enjoy the scenery!</p>
+
+<h2 id="bandar-desert">Bandar Desert</h2>
+<p>Done! Finished! A joint effort from Maddog, BloodhoundNLD, and Dumpy that took way too much of our time and souls. Announced as the first 4x4km map for Reality Mod, it ended up a little bit bigger. But don’t worry my infantry grunts, a considerable area will be for the pilots amongst us to worry about. While still a desert map it now has really come to life. Plantations, abandoned airfields, military bases, and more; this map has a lot more to it than just sand. Now there are proper main bases for both teams, with helipads, a runway and plenty of vehicles to get around this vast map. In that vastness lie various POIs for you to discover, some small, some stick out like a rock. The center area of the map is more developed with of course Bandar itself. The surrounding area was marked by previous conflict in development.</p>
+
+<h2 id="wake-island">Wake Island</h2>
+
+<p>Vanilla Wake Island comes to the game, providing an interesting change of pace from the rest of the maps.</p>
+
+<h2 id="karkand">Karkand</h2>
+
+<p>Remember this iconic map that we have been fighting over ever since Reality Mod went into Open Alpha? Let’s just say things have changed - pretty much the whole team behind Reality Mod contributed to this, and the results speak for themselves. Karkand has been expanded with new areas, and numerous improvements were made throughout. The map feels bigger, provides better cover, and offers a variety of POIs to fight over! Both main bases got an overhaul and now provide more routes with cover to the actual objectives. The Apartments area was added - this area represents a lively neighborhood filled with a market and, you guessed it, apartments. But there’s more to discover there ;)</p>
+
+<h2 id="golf-of-oman">Golf of Oman</h2>
+
+<p>Another classic map that got an overhaul. It now has a more similar layout to its BF2 counter-part but with a brand new city location! Thanks to JAM and all of his hard work, the map offers a huge sense of scale; especially with all of the new vehicles and logistics systems.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="New Gulf of Oman map" href="/assets/posts/devblog-8/xp1_002_v7.png"><img src="/assets/posts/devblog-8/xp1_002_v7.png" alt="New Gulf of Oman map" /></a><small>New Gulf of Oman map</small></div>
+
+<h2 id="factions">Factions</h2>
+
+<p>Since our last devblog, four new factions have been added.</p>
+
+<h2 id="bundeswehr-german-army">Bundeswehr (German Army)</h2>
+
+<p>Though currently only active on three different maps, The Bundeswehr is the most prominent alternate faction aside from The Insurgents. With their Flecktarn camouflage and precise German weaponry, they are the most played conventional faction besides Russia or The US.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="German Sniper and Spotter together" href="/assets/posts/devblog-8/BundeswehrSniper-Spotter.png"><img src="/assets/posts/devblog-8/BundeswehrSniper-Spotter.png" alt="German Sniper and Spotter together" /></a><small>German Sniper and Spotter together</small></div>
+
+<h2 id="middle-eastern-coalition">Middle Eastern Coalition</h2>
+
+<p>The iconic faction from Battlefield 2 returns! Though their arsenal boasts somewhat different arms and armor, they retain their immense presence on the battlefield.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="MEC troops on Gulf of Oman's new mosque" href="/assets/posts/devblog-8/MEC.png"><img src="/assets/posts/devblog-8/MEC.png" alt="MEC troops on Gulf of Oman's new mosque" /></a><small>MEC troops on Gulf of Oman's new mosque</small></div>
+
+<h2 id="israeli-defense-force">Israeli Defense Force</h2>
+
+<p>the next faction after the MEC to be added is the IDF. Like the MEC, they use both their own weapons and weapons provided by their allies. The IDF has the full might of The LORD (and NATO) on their side and they show it!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="IDF troops combating Azadi Palace's Insurgent Forces" href="/assets/posts/devblog-8/IDF-2.png"><img src="/assets/posts/devblog-8/IDF-2.png" alt="IDF troops combating Azadi Palace's Insurgent Forces" /></a><small>IDF troops combating Azadi Palace's Insurgent Forces</small></div>
+
+<h2 id="british-army">British Army</h2>
+
+<p>The UK shows up, sporting their classic SA80s, L96s, MTP camos and SUSAT! Fighting on Sharqi Peninsula and Wake Island for her majesty the queen, they bring the tea-bags!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="British Forces in Wake Island" href="/assets/posts/devblog-8/UK.png"><img src="/assets/posts/devblog-8/UK.png" alt="British Forces in Wake Island" /></a><small>British Forces in Wake Island</small></div>
+
+<h2 id="jets">Jets</h2>
+
+<p>Thanks to even more amazing work by DesertShadow, jets are now playable in Reality Mod!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Jets have a rear-view camera to aid in dog-fighting" href="/assets/posts/devblog-8/A10-rearview.png"><img src="/assets/posts/devblog-8/A10-rearview.png" alt="Jets have a rear-view camera to aid in dog-fighting" /></a><small>Jets have a rear-view camera to aid in dog-fighting</small></div>
+
+<p>For The US, The A-10 Thunderbolt and F18 Super-Hornet provide support on the ground and in the air.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="A-10 Thunderbolt (aka Warthog), the iconic American CAS jet" href="/assets/posts/devblog-8/A10.png"><img src="/assets/posts/devblog-8/A10.png" alt="A-10 Thunderbolt (aka Warthog), the iconic American CAS jet" /></a><small>A-10 Thunderbolt (aka Warthog), the iconic American CAS jet</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="F18 Super-Hornet, the American air-superiority fighter" href="/assets/posts/devblog-8/F18.png"><img src="/assets/posts/devblog-8/F18.png" alt="F18 Super-Hornet, the American air-superiority fighter" /></a><small>F18 Super-Hornet, the American air-superiority fighter</small></div>
+
+<p>The Russians have their SU-25 Frogfoot and SU-35 Flanker E.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="SU-25 Frogfoot, Russia's CAS jet" href="/assets/posts/devblog-8/SU25.png"><img src="/assets/posts/devblog-8/SU25.png" alt="SU-25 Frogfoot, Russia's CAS jet" /></a><small>SU-25 Frogfoot, Russia's CAS jet</small></div>
+
+<p>Games with jets have now become battles of air-superiority and close-air support. Reigning the skies now brings a huge advantage but only when the CAS knows what to hit…</p>
+
+<h2 id="lasing">Lasing</h2>
+
+<p>Battlefield 3 Vanilla’s SOFLAM vehicle lasing returns; this time with some new applications. For the CAS and Scout helicopters, an infantry lase is required for both air-to-ground and air-to-air missile locks.</p>
+
+<p>For jets, however, visibility is a big deal. Infantry lasing vehicles both on land and in the air greatly increases CAS’s ability to hit their target.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Enemy CAS helicopter lased by friendly Spotter" href="/assets/posts/devblog-8/Fighter_Veh_Lase.png"><img src="/assets/posts/devblog-8/Fighter_Veh_Lase.png" alt="Enemy CAS helicopter lased by friendly Spotter" /></a><small>Enemy CAS helicopter lased by friendly Spotter</small></div>
+
+<p>But what about infantry targets? Well thanks to DesertShadow and Ori, a completely new ground lasing feature has been implemented in order to mark targets for both helicopters and jets.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="CAS view of ground target marked by Spotter" href="/assets/posts/devblog-8/CAS_Ground_Lase.png"><img src="/assets/posts/devblog-8/CAS_Ground_Lase.png" alt="CAS view of ground target marked by Spotter" /></a><small>CAS view of ground target marked by Spotter</small></div>
+
+<h2 id="a-brief-side-note">A Brief Side-Note</h2>
+
+<p>If you’ve tried to play RM in the past few months and have had problems with your UI including but not limited to: being unable to send messages in chat, kit selection being squished, or some crashes, your problem has more than likely been that you were not on the dev-branch. We moved to an experimental UI engine [when coherent labs started] and the mod was run on Venice Unleashed’s dev-branch. The experiment was a great success and many of our previous crashes are now gone!  But one major side effect is that right now if you try to join an RM game your UI for the most part will not work.</p>
+
+<p>The time is coming very soon when we’ll be on the production branch.</p>
+
+<h2 id="we-are-still-recruiting">We are (still) Recruiting</h2>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=1Y3XJuJBCOM" data-videoid="1Y3XJuJBCOM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Reality Mod is nowhere without contributors to the project and we are pretty much always open to new people. We are looking for:</p>
+
+<ul>
+  <li>Project RIME (C# and experience with WPF, knowledge of DirectX would be a plus)</li>
+  <li>Game / Backend Developer (Lua / Java)</li>
+  <li>UI / Web Developer (TS/JS/Vue)</li>
+  <li>Discord Bot Developer (Discord API, TS/JS, Postgres)</li>
+  <li>Level Designer</li>
+  <li>Visual Environmental Designer</li>
+  <li>Game Marketing</li>
+  <li>Content Manager</li>
+</ul>
+
+<p>If you think you fit any of the above titles, please make sure to fill out this application and a team member will be with you shortly. Please do not reach out to a team member directly unless there is no response within a week.
+<a href="https://forms.gle/6ewSyXZDCD5Vax7VA">https://forms.gle/6ewSyXZDCD5Vax7VA</a></p>
+
+<h2 id="thank-you">Thank you</h2>
+
+<p>We are ending this devblog with a huge thank you to our patrons who have been financially supporting us, some for a long-time. Without them none of this would have been able to happen. As we are now 10 years from the point when this project started and almost 2 years after the public 0.1 alpha release we have truly come a long way. If you want to help us continue future development consider a donation or a subscription through buymeacoffee or patreon. We use this money to pay for various servers, UI engines ;) and other costs that are unavoidable with a project like this. None of the money goes towards paying team members.</p>
+
+<p><a href="https://www.patreon.com/bf3realitymod">https://www.patreon.com/bf3realitymod</a></p>
+
+<p><a href="https://www.buymeacoffee.com/bf3reality">https://www.buymeacoffee.com/bf3reality</a></p>]]></content><author><name>[&quot;BloodhoundNLD, Bebox45, OriBuhbut&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Pull things together for the upcoming v1.0.0 relaunch]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-8/devblog-8.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-8/devblog-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 7</title><link href="https://bf3reality.com/devblog/devblog-7" rel="alternate" type="text/html" title="DEVBLOG 7" /><published>2023-10-24T16:20:00+00:00</published><updated>2023-10-24T16:20:00+00:00</updated><id>https://bf3reality.com/devblog/devblog-7</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-7"><![CDATA[<p>I can’t believe it is Reality Mod!?</p>
+
+<!--more-->
+
+<h1 id="devblog-7">Devblog 7</h1>
+
+<p>Our last Dev-blog was focussed on the aftermath of the 0.2 release and showed some of the work that is already released and a sneak-peak at what vehicles are going to be in Reality Mod. In this Devblog we will glance over what is on patch ALPHA 0.3 and get a bit more in-depth on how Reality Mod is being made.</p>
+
+<h2 id="stability">Stability</h2>
+
+<p>One of the reasons this patch took so long to get out was the persistent issues with clients’ UI crashing during the round or immediately after a round switch. This patch has deployed a variety of fixes and optimizations.</p>
+
+<ul>
+  <li>Updated PixiJS</li>
+  <li>Moved all map related images to a single spritesheet</li>
+  <li>Reduced events sent to the UI, more on that later.</li>
+</ul>
+
+<p>Overall crashes still do happen from time to time, but the number of UI issues should be drastically reduced. Offering a better experience for longer. We will continue to investigate if more improvements can be made.</p>
+
+<p>Another thing that might help for people still experiencing issues is deleting the following folders:</p>
+
+<ul>
+  <li>C:\Users\YOU\AppData\Local\VeniceUnleashed\webui_cache</li>
+  <li>C:\Users\YOU\AppData\Local\VeniceUnleashed\mods\realitymod</li>
+</ul>
+
+<h2 id="bmp-2-and-lav25">BMP-2 and LAV25</h2>
+
+<p>Teased for a while now, but they are finally here. The BMP-2 and LAV25. Lots of hard work went into these vehicles and Desertshadow is here to explain what and how:</p>
+
+<h3 id="unique-weapons">Unique weapons:</h3>
+
+<p>Vehicles have unique weapon containers but point to the same firing logic. So if you open the LAV HE cannon and modify its firing logic, it will apply to all IFV HE cannons.
+To get around this we cloned the firing logic, modified the clone, and then attached the clone to the weapon container.</p>
+
+<p>This became a problem because firing logic loaded in different order depending on the map, which made the cloning cause server crashes. Jassent pointed us in the right direction from here.</p>
+
+<p>First attempt involved WaitForInstances to wait till the particular logic loaded, and then run our changes once.
+The good: Changes worked and no more server crashes.
+The bad: The changes would be destroyed when switching to a map without that vehicle. AKA we’d be stuck with vanilla weapons.</p>
+
+<p>Next attempt involved waiting until Level:RegisterEntityResources event (every time level loads), and then running changes. If the vehicle doesn’t exist on that map then we skip the changes.
+This works every time so problem solved. Thanks Jassent!</p>
+
+<h3 id="weapon-stats">Weapon stats</h3>
+
+<p>Here is the starting point for BMP-2 and LAV25. Balancing will happen with feedback.</p>
+
+<p>Both vehicles take 2 sec to equip cannon and 0.5 sec to equip coax.</p>
+
+<p>BMP fires at 250rpm, loses accuracy at 5th shot, and overheats in 4 seconds with 17 consecutive shots.
+LAV fires at 200rpm, loses accuracy at 9th shot, and overheats in 6.5 seconds with 22 consecutive shots.</p>
+
+<p>Coax fires at 550RPM in both cases, losing accuracy in ~1.5sec, overheating in 5.5sec.</p>
+
+<p>AP rounds LAV TTK at 10m: ~4.5s (auto)
+AP rounds BMP TTK at 10m: ~3.5s (auto)</p>
+
+<p>AP rounds BMP TTK at 750m: ~15 seconds (4 shots, wait 2 sec)
+AP rounds LAV TTK at 750m: ~11 seconds (8 shots, wait 1 sec)</p>
+
+<h3 id="vehicle-seats">Vehicle seats</h3>
+
+<p><strong>Driver (SEAT 1):</strong>
+Vehicle player slots are defined by things called PlayerEntryComponent or SoldierEntryComponent. Drivers’ PlayerEntryComponents are located at the root of the vehicle. There is usually one in the turret as well, but its <code class="language-plaintext highlighter-rouge">excluded</code> property is set to true. If we change it to false, voila: split driver/gunner controls.</p>
+
+<p>Next we add a camera to the driver and a viewport mesh from the passenger. Lots of trial and error moving those around, but it looks okay now.</p>
+
+<p>To counter soloing vehicles, Ori made the screen black for all occupants unless someone is in the driver seat.</p>
+
+<p><strong>Gunner (SEAT 2):</strong>
+Our gunner was initially in seat 1, to make the HUD direction indicators work properly.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Vehicle orientation HUD marker" href="/assets/posts/devblog-7/VehicleDirection.png"><img src="/assets/posts/devblog-7/VehicleDirection.png" alt="Vehicle orientation HUD marker" /></a><small>Vehicle orientation HUD marker</small></div>
+
+<p>Everything looked good until vehicle movement; the entire HUD ghosts, or seems to have 2 HUDs with 1 trying to catch up to vehicle position. Very disorienting.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=zoMYHudcZTw" data-videoid="zoMYHudcZTw" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>The closest examples of split driver/gunner were the AAV and the commander seat 50cals. Those have a property called lockMeshToRenderView set to true. So we tried that. It micro-stutters but is better than ghosting. So what’s the problem?</p>
+
+<p>Cannons in BF3 are dynamic; they respond to vehicle orientation (pitch/roll). The HUDs account for the dynamic cannons: The entire frame, screen, and reticles move depending on the vehicle’s orientation (Pitch, Roll).</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Entire HUD moving on different slope" href="/assets/posts/devblog-7/HudSlope1.png"><img src="/assets/posts/devblog-7/HudSlope1.png" alt="Entire HUD moving on different slope" /></a><small>Entire HUD moving on different slope</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Entire HUD moving on different slope" href="/assets/posts/devblog-7/HudSlope2.png"><img src="/assets/posts/devblog-7/HudSlope2.png" alt="Entire HUD moving on different slope" /></a><small>Entire HUD moving on different slope</small></div>
+
+<p>A locked mesh is static (does not move), and therefore cannot account for the dynamic cannon. So it’ll aim properly in only one condition.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle1.png"><img src="/assets/posts/devblog-7/TracerReticle1.png" alt="IFV accuracy issues" /></a><small>IFV accuracy issues</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle2.png"><img src="/assets/posts/devblog-7/TracerReticle2.png" alt="IFV accuracy issues" /></a><small>IFV accuracy issues</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="IFV accuracy issues" href="/assets/posts/devblog-7/TracerReticle3.png"><img src="/assets/posts/devblog-7/TracerReticle3.png" alt="IFV accuracy issues" /></a><small>IFV accuracy issues</small></div>
+
+<p>We shifted the mesh around to make the reticle at least match for flat terrain, and compromised by locking normal view.</p>
+
+<p>Normal view: locked to remove ghosting but sacrifice accuracy. Vehicle will just so happen to show where it’s truly aiming, but only on perfectly flat ground.
+Zoomed view: unlocked to prioritize accuracy but has ghosting. Vehicle will show where its truly aiming, on any pitch/roll.</p>
+
+<p>After having gone down this rabbit hole, the solution to the ghosting was to undo our HUD indicator fix. Gunner goes back to seat 2 and aiming is perfect in all situations. No locking nonsense to deal with.</p>
+
+<p><strong>Commander (SEAT 3):</strong>
+We have for now “removed” the 50cal gun for the commander. We hid the visual model and set the ammo to 0. Then we tweaked the zoomed FOV and sensitivity so it’s more comfortable to pan the camera. We also added a smoke launcher weapon to the commander seat: Fire with “X”, and reload with “R”. That might come in handy when HAT lockons arrive in the future.</p>
+
+<h2 id="another-map-bandar-desert">Another Map, Bandar Desert</h2>
+
+<p>While not completely finished yet, the Skirmish layer for this map is done. One of the bigger maps in BF3 and certainly the biggest map so far in Reality Mod. Bandar Desert Skirmish will feature US and RU forces who fight over Bandar Village located in the center of the map. Scenic beach walk is a must, that is of course until the bullets start flying. For AAS and other gamemodes using the full map, the forces will fight over military camps, villages, construction sites and desert, <em>lots of desert</em>. In the future you can also expect the long awaited Helicopters and eventually jets. We are really excited and are working hard to bring the first 4x4km map to Reality Mod! Here are some pictures of the Skirmish area, while we keep developing the rest of the map.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="RU Main base Bandar" href="/assets/posts/devblog-7/bandar-1.png"><img src="/assets/posts/devblog-7/bandar-1.png" alt="RU Main base Bandar" /></a><small>RU Main base Bandar</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="US Main base US" href="/assets/posts/devblog-7/bandar-2.png"><img src="/assets/posts/devblog-7/bandar-2.png" alt="US Main base US" /></a><small>US Main base US</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Bandar City" href="/assets/posts/devblog-7/bandar-3.png"><img src="/assets/posts/devblog-7/bandar-3.png" alt="Bandar City" /></a><small>Bandar City</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Bandar Gas Station" href="/assets/posts/devblog-7/bandar-4.png"><img src="/assets/posts/devblog-7/bandar-4.png" alt="Bandar Gas Station" /></a><small>Bandar Gas Station</small></div>
+
+<h2 id="stamina-suppression-weapon-handling-and-ballistics">Stamina, Suppression, Weapon Handling and Ballistics</h2>
+
+<h3 id="ballistics">Ballistics</h3>
+
+<p>Let’s start with ballistics. This one was on the need to change list for way too long. And honestly after working on this, we now know why. First, what was the ballistics system before this patch? Well, all the functionality was there, but it didn’t function when we made bullet speed match real-life values. The slower bullet speeds don’t really matter in vanilla BF3 because the maps are substantially more compact. At distance in Reality Mod though, you would be able to literally side step and avoid the bullet. Bumping the initial speed of the bullets resulted in pretty flat shooting guns even at distances beyond 300 meters. Gravity just couldn’t get a hold of the bullet and in BF3 there is no such thing as wind resistance or a bullet drag coefficient. Desertshadow spent hours upon hours researching options to make bullets behave as realistic as we can. He made a test range in MapEditor with targets every 50m. He changed gravity, initial directions, and initial speeds of bullets.
+After an all-nighter tweaking numbers and noticing the changes on the range sucked, He realized he should stop avoiding the math. So he made an excel doc with basic kinematic equations, couple graphs and tables; the starting point of ballistics changes.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Oman Dev Firing Range" href="/assets/posts/devblog-7/firing-range-1.png"><img src="/assets/posts/devblog-7/firing-range-1.png" alt="Oman Dev Firing Range" /></a><small>Oman Dev Firing Range</small></div>
+
+<p>Once he figured out the math behind it and created a cheat sheet, it was time to pass this issue over to Bloodhound. He also spent <del>a lot</del> too much time fine tuning the ballistics system and made it as close as possible to real life. Matching scopes to bullet trajectories was the last painful hurdle, but we now have bullet drop and the zoomed scopes have accurate indicators up to 600 meters out. This unfortunately means that we have to leave the true sight pictures for the optics. Reticles will look slightly different than their real-life counterparts. All sights are zeroed for 100 meters. Currently there is no option to zero for a different distance. For more info check out the community guide:</p>
+
+<p><a href="https://wiki.bf3reality.com/en/guides/community-guide#the-basic-in-game-player-mechanics">https://wiki.bf3reality.com/en/guides/community-guide#the-basic-in-game-player-mechanics</a></p>
+
+<h3 id="stamina">Stamina</h3>
+
+<p>In the bottom right of your screen you will find the stamina bar. This indicator shows you how much stamina is left. Previously stamina felt pretty infinite, but as we move further away from alpha 0.1, infantry gameplay changes were needed. So far we have increased the top sprint from 17 kph to 20 kph. Out of stamina sprint speed has stayed the same at 10 kph. So with a full stamina bar you will start sprinting 20kph and as your stamina runs out you will gradually slow down to 10kph. Walking speed has been reduced from 10 kph to 6 kph. These values bring you capabilities more in-line with what you can realistically expect from humans.</p>
+
+<p>Speed is not the only thing that is affected by the status of your stamina. Recoil, breath control and sway control are now all tied to stamina. Increasing the need to plan your movements and disencouraging running and gunning. The lower you are on stamina the more recoil you will experience. Your stance also influences your recoil so crouching and going prone might help you get off consecutive shots on target. The increased sway on low stamina is only vertical. This simulates you, the player breathing heavily. You can compensate for the sway with mouse movement and also it lowers on stance. Crouching and going prone reduces the sway. The last thing tied to stamina is the Hold breath/stabilize function (default key: L. Shift if zoomed). The lower you are on stamina the shorter the time will be that you can hold breath to stabilize your aim.</p>
+
+<h3 id="suppression">Suppression</h3>
+
+<p>Another aspect of the gunplay in Reality Mod that we gave another look is the suppression effect. Suppression has been increased but it will take more incoming rounds to set in. It will also be reduced faster to balance things out. So overall getting suppressed feels more intense while not being ridiculous and using your LMG, MMG to suppress enemy targets is a more viable strategy now.</p>
+
+<h2 id="minimap-changes">Minimap Changes</h2>
+
+<p>Some of you have tested this with us on the playtests, for those who don’t know: you are no longer able to see all friendly players on the minimap. You will see your squadmates and SL, other SL’s, dead and downed friendlies and friendlies that are in vehicles. The reasoning behind this has two sides. On the one side and the main reason why we did this, is the simple fact that we can reduce the events we send to the UI by an average of 30%. This becomes higher the more people there are on the server. And this applies 4 times per second! On the other side there is the gameplay aspect. Less info on the minimap increases the fog of war. The need to stick with your Squad in order for the team to somewhat know your position and not accidentally dropping arty on your head. This change requires more teamwork, more coordination and be sure to ID your target before you shoot. It could be a friendly wandering around.</p>
+
+<h2 id="max-player-count">Max. Player Count</h2>
+
+<p>Yeah, we are not excited about this one but for now the max player is reduced from 80 to 64. At least for now. With the current content 64 players is still more than enough to have an enjoyable experience. We have made some other changes to accommodate for it as well. Max. Squad size has been reduced and the kit limitations have had a look over too. Most notably the medic which is now limited to 1 per squad instead of 2. To get the latest info check out the community guide on the wiki:</p>
+
+<p><a href="https://wiki.bf3reality.com/en/guides/community-guide#joining-a-game">https://wiki.bf3reality.com/en/guides/community-guide#joining-a-game</a></p>
+
+<h2 id="fob-construction-and-destruction">FOB Construction and Destruction</h2>
+
+<p>Although in the pipeline for some time, we finally got around and completed the first iteration of modular construction. When an FOB is placed it will no longer just <em>plop</em> be there. It will gradually build up. Foundation first, walls second, then the camonet and last the radio beacon which completes the FOB and makes it spawnable for the team. To place a FOB you will need 2 squadmates and the Squadleader with less than 40 players on the server. You will need 3 Squadmates and SL with 40 and more players on the server. Friendly presence is required to finish construction! Good thing to know, you have 2 minutes and 50 seconds to finish construction otherwise the FOB is considered lost and will be deleted. You can still overrun an FOB like you normally would. However, enemies now need to outnumber or equal the number of friendlies in a given radius to trigger the overrun. Stay on it for 2 minutes, 30 seconds and the FOB will start to deconstruct. Once deconstruction starts there is no way to save the FOB, so make sure you get there before the overrun is complete. Another new way to get rid of an enemy FOB is to blow it up! To do so, you place 3x C4 on or very near the radio beacon inside the FOB. Again once the radio beacon is blown up the deconstruction starts. Good thing to know the radio beacon keeps beeping when an FOB is overrun so make sure you control it when trying to overrun it.</p>
+
+<h2 id="kit-change-on-fob">Kit Change on FOB</h2>
+
+<p>With the construction fixed we also managed to get another nice feature for the FOBs in. You can now inside an FOB access your Tac-Rose and change your kit. Kit limitations still apply and you can only change your kit every 2 and 30 seconds. Situation change on the battlefield? Wrong kit after revive? You now have a way to solve your kit issues with ease!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Kit change on FOB" href="/assets/posts/devblog-7/tac-rose-1.png"><img src="/assets/posts/devblog-7/tac-rose-1.png" alt="Kit change on FOB" /></a><small>Kit change on FOB</small></div>
+
+<h2 id="beyond-030">Beyond 0.3.0</h2>
+
+<p>The roadmap has been long gone and abandoned and we need to update it again soon. But here is an overview of some of the issues you can expect us to work on next.</p>
+
+<h3 id="fob-mechanics">FOB Mechanics</h3>
+
+<p>With the first iteration of FOB construction implemented it is time to experiment expanding it. The first focus will be constructable/placeable cover. Think sandbags, razor wire and hesco blocks. Ori-buhbut already started experimenting with this and results are promising! A hint of his progress is already visible in the Tac-Rose. Something also high on the priority list is bringing back the ammo resupply back to the FOBs. To do so we are also looking into bringing a first iteration for logistics, construction and ammo points. With this we can limit the amount of emplacements and ammunition in a natural way while also providing the team with incentive to actively care for the FOBs.</p>
+
+<p>Below this on our to do list are of course the weapon emplacements. This is going to require some research. Not only are we dependent on bundles but also we need to convert the actual weapons into emplacements. A tough task but with promising results so far.</p>
+
+<h3 id="second-vehicle-iteration">Second Vehicle iteration</h3>
+
+<p>With the release of the IFVs and all the transport options we have entered the vehicle territory, or rather dipped our toes in. After this patch we are going to expand multi-crew vehicles. With the following being planned first:</p>
+
+<ul>
+  <li>BTR 90</li>
+  <li>AAV</li>
+  <li>Littlebird scout helicopter</li>
+  <li>Z11 scout helicopter</li>
+</ul>
+
+<p>With these new helicopters also comes the need for counter-measures, already teased in the leaks but the Scout helicopter release is coupled with the release of the Anti-Air kit. Both teams will have access to a shoulder fired guided missile to counter the deadly potential of these scout helicopters.</p>
+
+<p>While it is nice to not have to worry about crewing vehicles with special kits, we are going to move away from that by introducing Squadtypes. These Squadtypes will determine what vehicles you can crew and what kits you will have access to. Some of you might have seen the MP7 tease for the US pilot kit. There are 3 Squadtypes planned: Armor, Air and Infantry. - The Armor squads will be able to crew IFVs and in the future tanks and other wheeled or tracked vehicles with weapons.</p>
+
+<ul>
+  <li>The Air squads will be able to operate the Helicopters and Jets</li>
+  <li>The Infantry squads will be able to operate Jeeps, Buggies and the other smaller transport vehicles.</li>
+</ul>
+
+<p>All these squads will be able to hop in the passenger seats of all vehicles.</p>
+
+<h3 id="maps">Maps</h3>
+
+<p>With the introduction of Bandar Desert Skirmish, the first step in unlocking the potential of the full map has been set. Next is expanding the playable area far and beyond the vanilla map area. New POI have already been created outside the skirmish area but there is still lots of room to improve and dress-up the map.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="COP Hawkeye" href="/assets/posts/devblog-7/bandar-5.png"><img src="/assets/posts/devblog-7/bandar-5.png" alt="COP Hawkeye" /></a><small>COP Hawkeye</small></div>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="RU main base" href="/assets/posts/devblog-7/bandar-6.png"><img src="/assets/posts/devblog-7/bandar-6.png" alt="RU main base" /></a><small>RU main base</small></div>
+
+<p>Another map that is in the pipeline is ‘Alborz Mountains’. Teased before and initially scheduled to be released with 0.3, this map needed a lot more work because of some missing collision. Luckily we have revamped the Ministry of Forestation and trees are being planted as we speak. While we are redoing the trees, we also are beautifying the existing POI with some props, objects and other stuff.</p>
+
+<h3 id="we-are-still-recruiting">We are (still) Recruiting</h3>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=1Y3XJuJBCOM" data-videoid="1Y3XJuJBCOM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Reality Mod is nowhere without contributors to the project and we are pretty much always open to new people. We are looking for:</p>
+
+<ul>
+  <li>Community Manager</li>
+  <li>Project RIME (C# and experience with WPF, knowledge of DirectX would be a plus)</li>
+  <li>Requirements Engineer / Business Analyst</li>
+  <li>Game / Backend Developer (Lua / Java)</li>
+  <li>UI / Web Developer (TS/JS/Vue)</li>
+  <li>Discord Bot Developer (Discord API, TS/JS, Postgres)</li>
+  <li>Level Designer</li>
+  <li>Visual Environmental Designer</li>
+  <li>Lead Quality Assurance</li>
+  <li>Quality Assurance Member</li>
+  <li>Game Marketing Expert</li>
+  <li>Content Manager</li>
+</ul>
+
+<p>If you think you fit any of the above titles, please make sure to fill out this application and a team member will be with you shortly. Please do not reach out to a team member directly unless there is no response within a week.
+<a href="https://forms.gle/6ewSyXZDCD5Vax7VA">https://forms.gle/6ewSyXZDCD5Vax7VA</a></p>
+
+<h2 id="full-changelog">Full Changelog:</h2>
+
+<p><strong>UI:</strong></p>
+
+<ul>
+  <li>Implemented tips and tricks to Loading screen and Player menu</li>
+  <li>Mines will be auto-marked on the map for friendlies. SLs should still delete these markers.</li>
+  <li>Limited the number of updates from the UI by a <strong>very large amount</strong>. You will notice that on the Mini map you can only see squad members, other squad leaders, and vehicles. You can <u><b>no longer see other team members</b></u> unless they are wounded. Not only will this improve stability for the UI, it will also require Teams to communicate better on their positions and needs from others. We are aware that this will take some time for players to get used to and will lead to more Team Kills. <u><b>Think before you shoot!</b></u> <u><b>Visually confirm</b></u> that the player you are about to shoot is in fact an enemy,<u><b>Ask your Squadleader</b></u> if he knows about friendlies in the area, <u><b>Stick with your Squadleader</b></u>, to avoid getting shot by friendly fire.</li>
+  <li>Lots of other fixes and optimizing to the UI including resizing those huge vehicle images and adding Quad and Dirt bike images.</li>
+</ul>
+
+<p><strong>Vehicles:</strong></p>
+
+<ul>
+  <li>Implemented modified multi crew LAV.</li>
+  <li>Implemented modified multi crew BMP.</li>
+  <li>Implemented modified Dirt Bike.</li>
+  <li>Implemented modified Quad Bike.</li>
+  <li>Venom has been tweaked.</li>
+  <li>Disabled vehicle suppression for IFV crew.</li>
+  <li>Humvee and Vodnik passengers will now be protected from explosions.</li>
+  <li>Disabled IFV hit markers.</li>
+</ul>
+
+<p><strong>Maps:</strong></p>
+
+<ul>
+  <li>Added Scrap Metal Skirmish.</li>
+  <li>Added Donya Fortress Skirmish.</li>
+  <li>Added Ziba Tower Skirmish.</li>
+  <li>Added Bandar Desert Skirmish</li>
+  <li>Added Alt AAS Layouts to Gulf of Oman, Sabalan Pipeline, and Armored Shield.</li>
+  <li>Added new VE presets for Azadi Palace, Ziba Tower, Donya Fortress, and Scrap Metal</li>
+  <li>Fixed a Culling issue on Scrap Metal.</li>
+  <li>Updated Karkand Apartments, more entry points and other surprises.</li>
+  <li>Implement training game mode</li>
+</ul>
+
+<p><strong>Gameplay:</strong></p>
+
+<ul>
+  <li>Implemented Rifleman AP kit.</li>
+  <li>Implemented a backblast for LAT.</li>
+  <li>Added a min arm distance to LAT and GL.</li>
+  <li>Score system overhaul</li>
+  <li>RPK buff to match M249 SAW</li>
+  <li>Ballistics for bullets has been added</li>
+  <li>All weapon-sights are zeroed at a 100m, indicators up to 600m</li>
+  <li>Created backblast for rocket launchers</li>
+  <li>Stamina and Movement Overhaul</li>
+  <li>Suppression overhaul</li>
+  <li>Fix Auto-team switch on round end</li>
+  <li>FOBs will now be constructed/Demolished over time.</li>
+  <li>FOBs will now require squad members for construction.</li>
+  <li>FOBs will now be overrun or have construction prevented when enemies outnumber or equal the friendlies in a given radius.</li>
+  <li>FOBs will now require 3 c4s placed on the radio beacon to destroy</li>
+  <li>Squad members need to stay in the fob radius to construct it. Enemies need to stay in the radius until its destroyed</li>
+  <li>Max players have been reduced from 80 to 64 for maximum stability.</li>
+  <li>Max players per squad is now 6 instead of 8.</li>
+  <li>All kits have been re-balanced for these new player number changes. Most notably the medic which is now limited to 1 per squad instead of 2.</li>
+  <li>Players can now change their kit at a FOB (Use the Tac-Rose while in FOB).</li>
+  <li>AT Mines and Claymores will now affect everyone regardless of team.</li>
+  <li>Vehicle explosions are now more deadly to surrounding players.</li>
+  <li>Started collecting player stats</li>
+</ul>
+
+<p><strong>Other Fixes:</strong></p>
+
+<ul>
+  <li>Fixed an issue where players could lose all their weapons and gadgets if they swapped kits too many times.</li>
+  <li>Fixed an issue with not being able to pick up all the claymores the player placed down.</li>
+  <li>Fixed an issue where players could sometimes reload gadgets more than the intended amount.</li>
+  <li>Fix Riverside Skirmish capture logic</li>
+  <li>Fix spawn radius on XP2 maps</li>
+  <li>Fix issue with Smoke grenades</li>
+  <li>Fix explosion effect from impacts that are below TimeToArm distance</li>
+  <li>Fix gadgets resupply more than the amount in the kit definition.</li>
+  <li>Fix an issue with calculating the number of players within a certain distance from a FOB and overall improvement to overrun logic.</li>
+  <li>Fix issue with VOIP position not updating</li>
+</ul>
+
+<p><strong>Known Issues:</strong></p>
+
+<ul>
+  <li>Venom Flares cause choppy flight. Possibly due to supply sphere logic</li>
+</ul>]]></content><author><name>[&quot;BloodhoundNLD, Desertshadow&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[I can’t believe it is Reality Mod!?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-7/devblog-7.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-7/devblog-7.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 6</title><link href="https://bf3reality.com/devblog/devblog-6" rel="alternate" type="text/html" title="DEVBLOG 6" /><published>2023-07-17T14:20:00+00:00</published><updated>2023-07-17T14:20:00+00:00</updated><id>https://bf3reality.com/devblog/devblog-6</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-6"><![CDATA[<p>Update on development of Reality Mod beyond the 0.2.0 release</p>
+
+<!--more-->
+
+<h1 id="devblog-6">Devblog 6</h1>
+
+<p>With the dust settled around the 0.2.0 release and the first fixes and small updates out and about. It is time to update you guys with what has been going on behind the scenes. And it is quite a lot actually.</p>
+
+<h2 id="team-update">Team update</h2>
+
+<p>As with any volunteer project, people come to help out and people leave. Let’s start with the people that have “left” the project. Although they haven’t really left but chosen a role more in the background. Foolhen, Undefined and IllustrisJack all have stepped down from their project management positions. All three of them have been core members of the project for a while and it is really sad to see them take a step back. With that out of the way we would like to introduce some new members to the team. Some of them joined a while ago, some of them more recent.</p>
+
+<ul>
+  <li>Desertshadow, initially started out as a level-designer but now is also working on game-development</li>
+  <li>FortisFA, started as UI-developer</li>
+  <li>Hristian179, started as game-developer</li>
+  <li>FaberTheCatgirl, started as game-developer</li>
+  <li>Furyo, started as level-designer</li>
+  <li>g23, started as QA but is interested in becoming game-developer</li>
+  <li>Lincolnlogs, started as composer</li>
+  <li>PickleRicci, started as game-developer</li>
+  <li>Sickcallranger, started as QA but is interested in becoming game-developer</li>
+  <li>VividMind, started as graphic-designer</li>
+</ul>
+
+<p>We are very glad to welcome them to the team and are excited to see what they will bring to Reality Mod. If you check the #git channel in discord you can see some of the projects they already have taken on.</p>
+
+<p>Of course we are still looking for more developers and specifically Lua developers, but that doesn’t mean that if you don’t know Lua you can’t apply. In our experience Lua is a pretty easy language to get a hold on. So don’t feel discouraged if you don’t have any Lua experience, but apply!</p>
+
+<h2 id="new-maps">New Maps</h2>
+
+<p>Speaking of cool projects our level-design team has been off to a good start. Some of you might already have seen it but the team released an updated Karkand. The map has had a complete overhaul. US Main is unrecognizable as goes for the first flag “Gas Station”, the coastal area has had a rework and it even includes a new flag “Apartments”. Speaking for myself it was really refreshing to see a vanilla map expanded with a completely new area even as we are still quite limited in our tools. And most importantly I had a joy fighting over these new areas!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="US Main base Karkand" href="/assets/posts/devblog-6/karkand-1.png"><img src="/assets/posts/devblog-6/karkand-1.png" alt="US Main base Karkand" /></a><small>US Main base Karkand</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Coastal area Karkand" href="/assets/posts/devblog-6/karkand-2.png"><img src="/assets/posts/devblog-6/karkand-2.png" alt="Coastal area Karkand" /></a><small>Coastal area Karkand</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Apartments Karkand" href="/assets/posts/devblog-6/karkand-3.png"><img src="/assets/posts/devblog-6/karkand-3.png" alt="Apartments Karkand" /></a><small>Apartments Karkand</small></div>
+
+<p>Karkand is not the only map that the team has been working on. Sabalan pipeline also had a rework. Furyo redesigned both US and RU main to represent “real” staging areas. Not only is he working on the main bases, he reworked the areas surrounding them. Providing the level with more detailed POIs, variety in cover and approaches to use. With Furyo’s part done, Dumpy did the rest of the chores to finish it for release. We can’t wait for your response to this.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="RU Main base Sabalan" href="/assets/posts/devblog-6/sabalan-6.png"><img src="/assets/posts/devblog-6/sabalan-6.png" alt="RU Main base Sabalan" /></a><small>RU Main base Sabalan</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="US Main base Sabalan" href="/assets/posts/devblog-6/sabalan-7.png"><img src="/assets/posts/devblog-6/sabalan-7.png" alt="US Main base Sabalan" /></a><small>US Main base Sabalan</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Crashsite flag Sabalan" href="/assets/posts/devblog-6/sabalan-8.png"><img src="/assets/posts/devblog-6/sabalan-8.png" alt="Crashsite flag Sabalan" /></a><small>Crashsite flag Sabalan</small></div>
+
+<h2 id="new-vehicles">New Vehicles</h2>
+
+<p>Talking about vehicles. Dumpy has picked up the tedious task to start working on adding more vehicles options to Reality Mod. Together with his almost completely new team of devs they have been working on some of the key elements that define Reality Mod.</p>
+
+<p><strong>BMP-2</strong>
+The first vehicle we have been working on is the Russian BMP-2. Dumpy has been working on this for a while now and there sure was a lot to do.He changed the seat arrangement so the BMP has a driver, gunner and a commander seat, and a total of 6 dismounts now. A rework of the health has been passed to ensure the BMP is a little more resilient than in vanilla for the first iteration. Vehicle handling had an overhaul to make it feel and drive like an armored vehicle. Gunner now has 30mm AP, HE, and a 7.62 Coax. It is just too much to name and better to experience for yourself. When you ask? SoonTM ;)</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="BMP-2 Overview" href="/assets/posts/devblog-6/bmp-1.png"><img src="/assets/posts/devblog-6/bmp-1.png" alt="BMP-2 Overview" /></a><small>BMP-2 Overview</small></div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=f_R2ETuyvFQ" data-videoid="f_R2ETuyvFQ" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p><strong>Helicopters</strong>
+While Dumpy is focussing on light armor assets, Desertshadow has been tweaking and adjusting the helicopters. The first focus is the CAS helicopters, because who doesn’t like CAS right? Starting out with the Russian Mi-28 Havoc. Desertshadow has been perfecting the flight model so it actually represents a helicopter that has some real weight to it. Changing the top-speed, cruise speed and handling to represent the real version better while keeping it balanced for the sake of gameplay. Not only is the flight model going to be more in-line with realistic values, the armament of the Havoc is also getting improvements. The rocket pods have increased capacity and a higher Rate of Fire, while the rockets themselves have a more realistic spread pattern and flight time. He also tweaked the flares to have an increased Rate of Fire and limited capacity, this to counter AA capabilities of the enemy. The co-pilot will have access to the 30mm autocannon and a guided missile. The real ones with a real sharp ear will notice that the 30mm will have a slightly decreased RoF compared to a real 2A42 30mm autocannon, BF3 wont keep up with the audio of 800RPM. Further tweaking on the armament is still a WIP but it is getting along nicely!</p>
+
+<p>Two other helicopters that are being worked on by Desertshadow are the Littlebird CAS and the Z11 CAS scout helicopters. Again bringing a unique and more realistic flight model, armaments and flares. The flightmodel most noticeably is faster. While a real Littlebird will do around 170 kph and for the Z11 it is even around 250 kph, the vanilla scout helicopter could hardly go over 80 kph. We got it so it is more inline with the real values. The Littlebird doing around 160 kph cruise speed, while still having its characteristic maneuverability. The Z11 is doing around 250 kph cruise speed but still has maneuverability at the lower speed levels. Both helicopters have the reworked flares with the increased RoF and limited ammo. For the armament adjustments are still being made, but both helicopters will be as close as we can in terms of weapon choices to their real life counterparts. Again when will you be able to use these in-game? Well, with CAS comes also the need for counter measures, dynamic map borders and some other mechanics. So this will be a little longer since we are still working on finalizing the vehicles themselves. Although we can reveal that AA is being worked on. So maybe SoonTMer than you think?</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="CAS Helicopters" href="/assets/posts/devblog-6/helicopter-1.png"><img src="/assets/posts/devblog-6/helicopter-1.png" alt="CAS Helicopters" /></a><small>CAS Helicopters</small></div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=k4XKv82vgEU" data-videoid="k4XKv82vgEU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p><strong>Buggies</strong>
+The final vehicles that we can talk about are the buggies. 
+They are added with patch 0.2.3. Christian and Dumpy have been working hard on them. Removing the guns in this case but adding seats and tweaking the handling and behavior. The Russians now have access to the VDV Buggy on some maps, for the US the Growler ITV has been added. We think these are a lot of fun to drive and are curious on how you will use/abuse these in-game. Oh, one thing though, they removed the guns so we can use these vehicles as infantry transport vehicles, which in turn opens the possibility to add guns to the HMMWV and the Vodnik in the future.. That is until we figure out how to clone vehicles. <em>insert smooth transition here</em></p>
+
+<h2 id="cloning-vehicles">Cloning Vehicles</h2>
+<p>Who can better explain than the man that is working on this, Dumpy:
+Cloning vehicles is actually a pretty simple concept. Let me first explain the problem. In Vanilla Battlefield 3 vehicles share weapon components. This means when we make a change to the BMP 30mm cannon it will also change the LAV 25mm. Same thing for the Havoc and the Viper, the Humvee and Vodnik, Little Bird and Z11. This is how BF3 was designed, I think the decision was meant for efficiency. While it may be efficient, it sure isn’t realistic. The 25mm cannon of the LAV for example has a way slower rate of fire compared to a BMP-2. Anyways we are still researching on how to do this properly and this is one of the main bottlenecks of the project currently along with stability.</p>
+
+<p>We can pretty much clone or copy many things in Venice Unleashed right now except for vehicles. For example to make the Havoc have a laser guided missile we cloned the TOW and placed it on the havoc. Not the whole TOW of course but just the guided missile. While we were at it, we made the missle engine more inline with realistic values.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=DrC5_ywLNco" data-videoid="DrC5_ywLNco" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>What we can’t do at the moment is cloning a whole vehicle. What we mean by this is that we can have a transport HMMWV and a HMMWV with a .50 cal. It is one of the two at the moment. While this is going on we have been learning more and more about the engine and what our capabilities and limitations are. The engine of BF3 continues to blow everyone’s mind on how detailed it is and how deep some of the physics are embedded in the game.</p>
+
+<h2 id="a-final-word">A final word</h2>
+
+<p>As you can see a lot of our focus has been vehicle development. And although we are making great progress, it has not been easy and there is still loads of work to do.These vehicles and how the player can interact with them are going to define the gameplay so we want to get that right before we touch other aspects of gameplay. With our dev-team being greener than ever this is work that we think we are able to put in Reality Mod right now. A lot of the other planned features will require us to do more research and still need a lot of code, but we are learning and improving. Again we are not going to set a timeframe for the next big update because being a volunteer-project our dev capacity tends to fluctuate. But you can be sure that we do everything within our reach to get there. Exactly one year ago we released alpha 0.1.0 and currently we are on 0.2.3 We soldier on! And give the devs some love in our discord they sure will appreciate it!</p>
+
+<h2 id="changelist-for-patch-alpha-023">Changelist for patch ALPHA 0.2.3</h2>
+
+<p><strong>UI</strong></p>
+
+<ul>
+  <li>Kit Menu expanded for future use</li>
+</ul>
+
+<p><strong>Maps</strong></p>
+
+<ul>
+  <li>Sablan Pipeline has been reworked. Main base zones have been created along with POI improvements.</li>
+  <li>Riverside AAS has been reintroduced with transport vehicles.</li>
+  <li>Riverside Skirmish has been added.</li>
+</ul>
+
+<p><strong>Gameplay</strong></p>
+
+<ul>
+  <li>All weapons except Machinegun can now remove the foregrip in the kit selection menu</li>
+</ul>
+
+<p><strong>Vehicles</strong></p>
+
+<ul>
+  <li>Humvee and Vodnik have received an overhaul and have been fixed/tweaked. They will no longer flip too easily. They have better handling.</li>
+  <li>Passengers in the back Humvee and vodnik are now protected from explosions.</li>
+  <li>Implemented the VDV Buggy for the Russians</li>
+  <li>Implemented the Growler for US</li>
+  <li>Implemented the DPV Buggy for US</li>
+</ul>
+
+<p><strong>Bug fixes</strong></p>
+
+<ul>
+  <li>Grenade counter has been fixed. Medics should now have 6 smoke grenades again</li>
+</ul>]]></content><author><name>[&quot;BloodhoundNLD, Dumpy&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Update on development of Reality Mod beyond the 0.2.0 release]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-6/devblog-6.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-6/devblog-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 5</title><link href="https://bf3reality.com/devblog/devblog-5" rel="alternate" type="text/html" title="DEVBLOG 5" /><published>2023-04-14T14:20:00+00:00</published><updated>2023-04-14T14:20:00+00:00</updated><id>https://bf3reality.com/devblog/devblog-5</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-5"><![CDATA[<p>Reality Mod launch recap, update v0.2.0, a look into the future</p>
+
+<!--more-->
+
+<p>It’s been a while since we last wrote a devblog. We were so focused on getting a release out that we never took the time to write a new blog. Now that Reality Mod has been out for more than a while, it’s time we share some insights on what’s been going on after release.</p>
+
+<h2 id="release-of-v010">Release of v0.1.0</h2>
+
+<p>So what happened after v0.1.0 released? Many contributors spent many hours on Reality Mod after release. Many bugs and quality of life features were fixed. Community servers had to be set up, administrative tools had to be added.</p>
+
+<p>One of the things we unfortunately weren’t able to solve are the crashes many of our players experienced. These crashes were the main reason we postponed the main release before. You might wonder why we didn’t delay again. The last 3 times we delayed, the team fell apart a bit. People would lose motivation or move on to another thing. This time we had strong beliefs we would be able to solve the crashes in a timely manner after release.</p>
+
+<p>After release we were happy to see many people from the community enjoying themselves. Actually more than <strong>50 thousand</strong> of you have tried Reality Mod, which makes us extremely happy. We got feedback, which allowed us to set new goals and move forward. We have lost some good contributors to the team unfortunately. Some of you might already have expected it, but 3ti65 is no-longer part of the team, at least for the time being. This put us in a bad spot as we had to reinvent the entire way of working on Reality Mod. All documentation and processes had to be re-written.</p>
+
+<p>It did however allow us all to take a step back as well and reconsider the way we want to work on this project. It also made us realize that you should never be dependent on one person. We’ve since then split the team up into separate workforces.</p>
+
+<ul>
+  <li>Game Dev: Focused on everything related to Reality Mod itself.</li>
+  <li>Game Design: Focused on anything design related. Game mode design, UI design, Gameplay mechanics, etc..</li>
+  <li>UI: Focused on the UI of Reality Mod and other UI projects we have.</li>
+  <li>Tools: Focused on the backend of Reality Mod and other tools like Venice Unleashed Mod Manager and our Discord Bot.</li>
+  <li>Mappers: Focused on creating our custom maps and fixing the existing maps.</li>
+  <li>Quality Assurance : Focuses on testing the game but also helps the rest of the team with many other tasks.</li>
+</ul>
+
+<p>Oh and if you feel like helping us out, we are always looking for Developers, Quality Assurance, Marketing, Level-designers. More info on that is in our Discord.</p>
+
+<p>Furthermore we’ve also started to put some focus on documentation. Not only for our own team, but also for the community. You can check it out here: <a href="https://wiki.bf3reality.com">https://wiki.bf3reality.com</a>. We would be lying if we said we have it all figured out, but we can assure you that we’re getting better every day. At the end of this devblog you will find the first hint of that in the updated roadmap for Reality Mod.</p>
+
+<h1 id="update-v020">Update v0.2.0</h1>
+
+<p>That was more than enough of the past, it is time to look at the present and forward into the future! Starting with some of the major features that come with 0.2.0.</p>
+
+<h2 id="a-new-ui">A new UI</h2>
+
+<p>One of the most noticeable changes on Reality Mod is the new UI. Now that we have built a solid foundation for Reality Mod, it was time to update the mod with a new fresh look. The UI-team did a complete overhaul, starting basically from scratch and changing:</p>
+
+<ul>
+  <li>The loading screen for maps</li>
+  <li>The spawn screen</li>
+  <li>Map style</li>
+  <li>The Esc menu</li>
+  <li>The HUD (Compass, chat, weapon selection)</li>
+  <li>Message boxes</li>
+  <li>All images on the map were replaced with newer/better ones</li>
+  <li>New font</li>
+</ul>
+
+<p>We also made the UI fit better on widescreens, everything is now within the 16:9 aspect ratio. No more twisting your neck to find out how many mags are left in your inventory! We are really proud of this and we are curious to find out what you think!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="ESC menu" href="/assets/posts/devblog-5/image14.png"><img src="/assets/posts/devblog-5/image14.png" alt="ESC menu" /></a><small>ESC menu</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Loading screen" href="/assets/posts/devblog-5/image12.png"><img src="/assets/posts/devblog-5/image12.png" alt="Loading screen" /></a><small>Loading screen</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Squads screen" href="/assets/posts/devblog-5/image7.png"><img src="/assets/posts/devblog-5/image7.png" alt="Squads screen" /></a><small>Squads screen</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Alert box" href="/assets/posts/devblog-5/image1.png"><img src="/assets/posts/devblog-5/image1.png" alt="Alert box" /></a><small>Alert box</small></div>
+
+<h2 id="armored-transport-jeeps">Armored Transport Jeeps</h2>
+
+<p>The most noticeable new feature of course will be the addition of vehicles. This should help teams get around the map in a more efficient way. For the US forces we have the HMMWVs and for the Russian forces there will be Vodniks. With this first iteration of vehicles we have put down a solid foundation to work from in the future. We are excited to see how you guys will be using these assets. We have given both vehicles an additional 3 seats with 6 total. The vehicles will now feel like actual armored vehicles with a health buff. The vehicles have been modified to simulate real military vehicles.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Vodnik and HMMWV" href="/assets/posts/devblog-5/image6.png"><img src="/assets/posts/devblog-5/image6.png" alt="Vodnik and HMMWV" /></a><small>Vodnik and HMMWV</small></div>
+
+<h2 id="combat-engineer-class">Combat Engineer class</h2>
+
+<p>To counter the vehicles that come with this patch, we have added the Combat Engineer class. We added AT mines, and a repair torch to the mod. The Combat Engineer kit will have a standard issued rifle, frag grenades, C4, repair torch, and AT Mines. The frontend or UI part of this task was done by our UI team. They created a nice wrench icon for the kit and of course a way to mark those damned mines on the map.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Combat Engineer class" href="/assets/posts/devblog-5/image11.png"><img src="/assets/posts/devblog-5/image11.png" alt="Combat Engineer class" /></a><small>Combat Engineer class</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="AT mine icon" href="/assets/posts/devblog-5/image2.png"><img src="/assets/posts/devblog-5/image2.png" alt="AT mine icon" /></a><small>AT mine icon</small></div>
+
+<h2 id="skirmish-game-mode">Skirmish game mode</h2>
+
+<p>Every full server starts with one guy joining the server and wanting to play. Gradually more and more players join the fight. With the current maps in Reality Mod the process of seeding a server was a tough process, long walks and huge areas to cover. With the addition of the Skirmish gamemode we give server administrators more control over those early gaming hours and the experience people have on lower population counts. So what exactly is Skirmish:</p>
+
+<p>In Skirmish the map sizes are greatly reduced to prevent the endless walking we all have that love/hate relationship with. Each map will come with 3 flags to capture and hold. Both teams start out with 250 tickets,the goal is to drain all enemy tickets. FOBs are not in this gamemode but squads can place rally points. Rally points will still last only a minute. To compensate for the lack of FOBs squads will be able to place one every 2 minutes and 30 seconds compared to 5 minutes in AAS. No artillery support is available. With this we aim to provide a tactical, intense experience at lower player counts.</p>
+
+<div class="image-gallery">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image10.png">
+            <img src="/assets/posts/devblog-5/skirmish/image10.png" alt="" />
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image13.png">
+            <img src="/assets/posts/devblog-5/skirmish/image13.png" alt="" />
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image3.png">
+            <img src="/assets/posts/devblog-5/skirmish/image3.png" alt="" />
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image4.png">
+            <img src="/assets/posts/devblog-5/skirmish/image4.png" alt="" />
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image5.png">
+            <img src="/assets/posts/devblog-5/skirmish/image5.png" alt="" />
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image8.png">
+            <img src="/assets/posts/devblog-5/skirmish/image8.png" alt="" />
+        </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+
+<h2 id="freelook">Freelook</h2>
+
+<p>Although it may seem as a small feature we believe freelook will change the way you will play Reality Mod. Being able to freely look around with your head grants the player a wider field of view which you can access now more easily while still following the same path. The default key for this is L.Alt. It’s not perfect like triple AAA games however it gets the job done.</p>
+
+<div style="position:relative; padding-bottom:calc(41.67% + 44px)"><iframe src="https://gfycat.com/ifr/WillingShoddyImpala" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+
+<h2 id="magazines-and-the-bullet-count">Magazines and the bullet count</h2>
+
+<p>We have implemented our own system solution for magazines as vanilla frostbite does not allow us to do a “realistic” implementation of magazines. A magazine will now keep its “bullet state”. This means when you reload and you still have bullets in the magazine, you won’t just drop the magazine and lose the ammo (as in the current implementation) but rather store it for usage later. The newly added ammo check feature (Hold F with default setting) plays nicely into this.</p>
+
+<p>Now that you don’t waste ammo anymore by reloading with bullets left in the magazine, we felt it was time to make the Rifleman kits more important on the battlefield. What sets apart the rifleman from the rest of the kits? That’s right, the ammo bag. With the removal of the ammobox from the FOB, rifleman will be your only source for more ammo. Make sure you have one in your squad before entering the battlefield!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=4X438oWPrC8" data-videoid="4X438oWPrC8" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="capture-indicator">Capture indicator</h2>
+
+<p>A lot of players have mentioned that the current capture indicator is a mess as you have to open the squad menu (Caps-Lock) to view the capture status. We have heard you and implemented a new UI element for it. The capture status will now additionally be displayed on the top-center of your screen when you are in a capture zone. Giving you quick access to the information you need without reducing your situational awareness.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Capture indicator" href="/assets/posts/devblog-5/image15.png"><img src="/assets/posts/devblog-5/image15.png" alt="Capture indicator" /></a><small>Capture indicator</small></div>
+
+<h2 id="medic-radar">Medic radar</h2>
+
+<p>One of the goals for Reality Mod is to increase the value of a player’s life. To aid this we have added the “Medic radar” to the UI. This feature shows any medics in range when you are downed. You can find the information in the bottom right corner. We hope that players will consider not giving up instantly and saving the team a ticket when a medic is in range. The medic radar works both ways, it also displays downed players on the medic’s compass.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Medic radar on the bottom right corner" href="/assets/posts/devblog-5/image9.png"><img src="/assets/posts/devblog-5/image9.png" alt="Medic radar on the bottom right corner" /></a><small>Medic radar on the bottom right corner</small></div>
+
+<h2 id="recoil-adjustments">Recoil adjustments</h2>
+
+<p>We have adjusted the recoil system, adding compensation for the first bullet/bursts and improved the feeling of weapons in full auto encouraging a more diverse usage of firemodes in response to the current single shot meta. This should also make using the bipod on the LMGs more viable. What more can we say? Switch your rifle to full auto and experience it for yourself.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=wXYwSDXLF-I" data-videoid="wXYwSDXLF-I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="low-health-visual-environments">Low health visual environments</h2>
+
+<p>We changed the low health visual environment to be a little more forgiving. We even called it the Fucked Up State. It will still limit your vision at a distance, but at closer distances it clears up a bit. This will make it a little easier to get yourself to cover and yell for the medic!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=pa_YN82oCLU" data-videoid="pa_YN82oCLU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="low-health-visual-bug-fixed">Low health visual bug fixed</h2>
+
+<p>One of the most annoying bugs in Reality Mod was the low health visuals sticking with you even though you were brought back to full health by a medic. The changes mentioned above
+fixed the blurred vision bug after getting treatment from your medic! No more need to get stabbed by a medic to fix this yourself.</p>
+
+<h3 id="full-changelog-v020">Full changelog v0.2.0</h3>
+
+<p><strong>Changes:</strong></p>
+
+<ul>
+  <li>Added music to the loading screen</li>
+  <li>Added a new capture indicator that makes following the current capture progress more easy</li>
+  <li>Added Freelook feature</li>
+  <li>Added Vodniks &amp; HMMWVs</li>
+  <li>Added UI magazine checking feature</li>
+  <li>Added settings for the new features</li>
+  <li>Added additional squad member markers to the compass</li>
+  <li>Added kit icons to players on the map</li>
+  <li>Added recoil compensation for controlled fire bursts</li>
+  <li>Added a “medic radar” showing close by medics on the death screen, downed player on compass</li>
+  <li>Added overheating to machine guns</li>
+  <li>Added a distance display for squad leader markers</li>
+  <li>Added Skirmish gamemode</li>
+  <li>Added statistics collection (to be expanded)</li>
+  <li>Added additional VOIP settings (Volume &amp; left/right balance sliders for all channels)</li>
+  <li>Added FOB requirement scaling
+    <ul>
+      <li>&lt;20 Players: 3 players total needed</li>
+      <li>20-29 Players: 4 players total needed</li>
+      <li>30+ Players: 5 players total needed</li>
+    </ul>
+  </li>
+  <li>Added a new messaging feature for administrators for server-wide announcements</li>
+  <li>Added a chat command auto-completion feature for admins</li>
+  <li>Changed ADS speed for iron sights and CQB optics</li>
+  <li>Changed player icons on the map to update in real time even after death</li>
+  <li>Changed FOBs to now apply a 25 ticket penalty on being destroyed by enemy forces</li>
+  <li>Changed defibrillators to have limited charges and deal damage</li>
+  <li>Changed recoil/sway model</li>
+  <li>Removed seagull sound on Azadi Palace</li>
+  <li>Removed Venom sound modifications</li>
+  <li>Removed Ammobag from FOBs</li>
+</ul>
+
+<p><strong>Fixes:</strong></p>
+<ul>
+  <li>Fixed a bug regarding vanilla tickets</li>
+  <li>Fixed a bug with the squad menu capture indicator flags</li>
+  <li>Fixed a bug with visual environments getting stuck</li>
+  <li>Fixed a bug that lead to squads being displayed as “Unknown Squad”</li>
+  <li>Fixed a bug that prevented players from placing/removing markers if a artillery strike was displayed in the map</li>
+</ul>
+
+<h1 id="roadmap">Roadmap</h1>
+
+<p>With everything said about the past and present, it is time for us to look into what the future is going to bring for Reality Mod. To start we would like to share with you the updated roadmap.</p>
+
+<h3 id="v020">v0.2.0</h3>
+<ul>
+  <li>Added Vodniks &amp; HMMWVs</li>
+  <li>Added Combat Engineer Class</li>
+  <li>Added a new capture indicator</li>
+  <li>Added Skirmish gamemode</li>
+  <li>Added freelook</li>
+  <li>Added Medic Radar &amp; Icons</li>
+  <li>Changed recoil/sway model</li>
+  <li>Changed low health visual environments</li>
+  <li>Magazine and persistent ammo overhaul</li>
+</ul>
+
+<h3 id="v030">v0.3.0</h3>
+<ul>
+  <li>New map</li>
+  <li>Armed Jeeps/Light Armor</li>
+  <li>Communications Rose</li>
+  <li>Day/Night cycle</li>
+  <li>Modular building for FOBs</li>
+  <li>Rework FOB overrunning mechanics</li>
+  <li>Tips and tricks</li>
+  <li>Colored smoke grenade</li>
+  <li>Map vote system</li>
+  <li>Custom skyboxes</li>
+</ul>
+
+<h3 id="v040">v0.4.0+</h3>
+<ul>
+  <li>Basic logistical system</li>
+  <li>More modular building for FOB Fortifications</li>
+  <li>New gamemode</li>
+  <li>New map</li>
+  <li>Weather presets</li>
+  <li>Binoculars</li>
+  <li>Dynamic Footstep sound effects</li>
+  <li>Expand off-map fire support, Smoke Artillery, Call-In Airstrike</li>
+  <li>End of round map vote system</li>
+  <li>Add transport helicopters to large maps (KA-60 KASATKA)</li>
+  <li>More attachments and optics for RU and US</li>
+  <li>Dynamic player movement system</li>
+  <li>Stamina tweak</li>
+  <li>More features to be announced</li>
+</ul>
+
+<p>We are going with a different approach on the roadmap. The end goal of Reality Mod, a more immersive, tactical, combined arms warfare experience is still the same, but certain aspects of that are dependent on reverse engineering BF3. With the new format, which will be updated as more features become available to us, we are looking to create an honest representation of what we can achieve in the near future. In addition to the updated roadmap we will do our best to provide you with devblogs highlighting the projects of the various teams working on Reality Mod.</p>
+
+<p>For now all that is left for us is to wish you guys all the fun with the update and we hope to see you soon on the Battlefield.</p>
+
+<h2 id="watch-the-release-trailer-for-v020">Watch the release trailer for v0.2.0</h2>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=jz-Hsmn3zKA" data-videoid="jz-Hsmn3zKA" data-width="480" data-height="360">YouTube Video</a></div>]]></content><author><name>[&quot;Reality Mod Team&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Reality Mod launch recap, update v0.2.0, a look into the future]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-5/image6.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-5/image6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 4</title><link href="https://bf3reality.com/devblog/devblog-4" rel="alternate" type="text/html" title="DEVBLOG 4" /><published>2021-10-02T15:49:34+00:00</published><updated>2021-10-02T15:49:34+00:00</updated><id>https://bf3reality.com/devblog/devblog-4</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-4"><![CDATA[<p>Audio Improvements, Vehicles and Dev Spotlight</p>
+
+<!--more-->
+
+<p>We hope you all have been doing well! The team has made some nice progress, which means we are one step closer to release!</p>
+
+<p>While VoIP is still being worked on we still wanted to share some exciting insights into what’s new with Reality Mod. First off we have Audio Improvements with Joe, followed by A closer look at Vehicles with Janssent and last, but not least, our Dev Spotlight with Joe again!</p>
+
+<p>Let’s get right to it!</p>
+
+<h1 id="audio-improvements">Audio Improvements</h1>
+
+<div class="tag">
+        Joe 
+      </div>
+
+<p>Hey all, Joe here again! You may remember me from the artillery article in the second Dev Blog. I’ve been working hard (as always) on various tasks since then; mainly, I’ve been working on improving the audio to make the player experience more immersive.</p>
+
+<h2 id="what-is-wrong-with-the-vanilla-audio">What is wrong with the vanilla audio?</h2>
+
+<p>In vanilla BF3 the audio does not travel very far. During playtesting we discovered that the vanilla system works well for distances of 50-100m, but outside of that it is impossible to tell where you are getting shot from since the sounds quickly fade outside of that. For us that was problematic, since we substantially increased the range of engagements in Reality Mod to more realistic standards and removed vanilla UI indicators showing the direction you are taking shots from. So in order to really hear what is going on in the battlefield around you, we needed to somewhat revamp the audio system.</p>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+
+<p>Frostbite’s audio system is rather complex, using a series of output nodes to control effects and determine how a sound should be heard in the world. These output nodes respond to events and other logic nodes (such as random number generators).</p>
+
+<p>Frostbite supports plenty of different output nodes. There is the FlatOutputNode which has a radius that the sound can be heard within and, as the player gets further away from the source, the sound will get quieter until eventually, they are outside of the radius and can no longer hear the sound.</p>
+
+<p>Another node is the ConeOutputNode that has a radius, similar to the FlatOutputNode, but it will also project a sound in a given direction. The player then must be within the radius and within a given angle of the output direction to be able to hear the sound. That is the reason why it is called Cone, since it will project audio into a certain direction in a cone shape.</p>
+
+<p>Here is a video demonstrating the ConeOutputNode functionality (best heard using headphones). Notice how the sound changes as the angle changes. Be aware that this is a Proof of Concept with exaggerated values, where small changes in the angle heavily impact the resulting audio. This does not represent the final values.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=U4Pf_8LYJHU" data-videoid="U4Pf_8LYJHU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>So far, I’ve been working on improving the gun sounds so that players can hear them from much further away, for the sake of both immersion and situational awareness. This had been attempted before, but Frostbite’s HDR (High Dynamic Range) audio system proved to be problematic - the problem being that when you make a sound louder, the HDR audio system prioritises that sound above others and will therefore duck other sounds (such as ambient background sounds).</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-4/dev_graph.png"><img src="/assets/posts/devblog-4/dev_graph.png" alt="" /></a><small></small></div>
+
+<p>This prioritizing and ducking of sounds is handled by the “Radius” and “Loudness” values that can be seen in the screenshot above and is the whole point of HDR audio. If used correctly it can lead to an incredibly rich and immersive audio landscape. Unfortunately it would appear that this was not a correct use of the system and ended up sounding very strange, as someone would shoot a few hundred meters away and all other sounds would be made quieter until the gunshot audio clip had finished playing.</p>
+
+<p>I spent hours upon hours digging through the audio files trying to figure out how to mitigate against this, until eventually I found a little thing known as an “attenuation curve”. From my experience in Unity I knew that attenuation curves are used to control the volume and audibility distance of an audio source. This means that we can now control how loud a sound is and how far it travels - which is exactly what we needed. I found this in each of the output nodes - some nodes had different values to others.</p>
+
+<p>Below is a screenshot of the default attenuation curve for the M16A3 gunshot sounds where the X value is the distance from the local player, the Y value is the volume of the clip in decibels and the K value is a modifier used to control the slope of the curve.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-4/attenuation_curve.png"><img src="/assets/posts/devblog-4/attenuation_curve.png" alt="" /></a><small></small></div>
+
+<p>For RM, I have increased both the distance at which you can hear the sounds and increased the volume of each of the sounds too.</p>
+
+<p>Below you can see a Proof of Concept for the changed gun sounds</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=ICJWXuBRNgA" data-videoid="ICJWXuBRNgA" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>After that I wrote a system that allowed me to easily edit the attenuation curves for each gun in the game, so we can have different curves for different sounds. Once that was done, I played around with the values and after a while, I got some very nice sounding guns and looking at how the system works, it’s more than likely to mix and match different sounds.</p>
+
+<p>Here is a video of gun sounds in their current state, note how much further they can be heard compared to vanilla sounds:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=b7gG1-LycYI" data-videoid="b7gG1-LycYI" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>And finally, here are two clips from a recent playtest, showcasing the new gun sounds in action - clips courtesy of Wonder, one of our QA testers (please excuse the subpar quality of the video).</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=B2YOPiU9iuk" data-videoid="B2YOPiU9iuk" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=P0iIHZ1_A_I" data-videoid="P0iIHZ1_A_I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Of course, these values are a work in progress and will almost definitely be changed before release.</p>
+
+<p>With all that said, at the end of the day, RM is still a game and having realistic values for guns, explosions, etc. just wouldn’t work in this scenario. I do still intend to increase the gunshot distances further though - basically, we want players to know where they’re being shot from using audio, which is impossible using the vanilla values.</p>
+
+<p>Many more improvements are going to be coming to the audio for Reality Mod too. We plan to introduce “bullet cracks” (which is the sonic-boom caused by the bullet breaking the sound barrier) to most guns that will be heard as a bullet whizzes past your head.</p>
+
+<p>Fortunately the marksman rifles in BF3 already have this so it’s just a matter of porting that over to the other guns in the game.</p>
+
+<p>I believe this will be a huge improvement since it’ll show that you are indeed the target of that bulletstorm coming your way and you might want to keep your head down. We also plan to make improvements to the volume and audibility distance of explosions and vehicles. I, personally, have always found it annoying that games seem to forget just how loud helicopters really are!</p>
+
+<p>I’m very excited for players to be able to experience the changes to the audio system!</p>
+
+<p>Thanks for your time and have a good one!
+~ Joe</p>
+
+<h1 id="vehicles">Vehicles</h1>
+
+<div class="tag">
+        Janssent 
+      </div>
+
+<p>What’s up everyone, I’m Janssent. I’m a 22 year old Applied IT student from Belgium. At first I joined the team as a contributor with very little coding experience, mostly modifying the vanilla vehicles to make them more suited for Reality Mod.</p>
+
+<p>While working on vehicles I gained a lot of experience with VeniceEXT, VU’s scripting system. It’s what lets you modify control game behavior, allowing you to create new experiences. I used that experience to research and create Proof of Concept mods for the artillery strike, texture modifications, material grid tweaks and more.</p>
+
+<h2 id="why-are-the-vanilla-vehicles-unsuited-for-reality-mod">Why are the vanilla vehicles unsuited for Reality Mod?</h2>
+
+<p>Like most things in BF3, the vanilla vehicles do not satisfy our needs for Reality Mod. We want them to look and behave like their real world counterparts. In order to achieve that the flight/driving physics and damage model have to be tweaked. For example the vanilla helicopter physics are very responsive, but do not resemble how helicopters move at all. There is no startup time and it is not possible to roll/loop with the helicopter. Some vehicles also need to be able to carry more passengers to adjust for the increased player count and squad sizes.</p>
+
+<h2 id="how-do-you-go-about-modifying-vehicles">How do you go about modifying vehicles?</h2>
+
+<p>Every vehicle has set attributes which dictate how it behaves in the game.A lot of the tweaks made to the vehicles are simple changes to these attributes. We can modify them relatively easily by assigning new values. This example shows how the minimum collision speed for the heli to take damage was reduced:</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Reduced the minimum collision speed for the heli to take damage" href="/assets/posts/devblog-4/minumum_collision_sp.png"><img src="/assets/posts/devblog-4/minumum_collision_sp.png" alt="Reduced the minimum collision speed for the heli to take damage" /></a><small>Reduced the minimum collision speed for the heli to take damage</small></div>
+
+<p>Another good example would be the changes to the flight model. This is what happens when you try to roll the heli in vanilla:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=44wbqH9lqh4" data-videoid="44wbqH9lqh4" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>Trying to roll the heli in vanilla, forces the heli down.</p>
+
+<p>For the Venom flight physics we wanted to find what was keeping helis from looping. The culprit turned out to be vehicleEntityData.motionDamping (MotionDampingData), after setting it to nil this was the result:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=nDMJ34BjDAs" data-videoid="nDMJ34BjDAs" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>The helicopter can loop and roll after adjusting the flight model.</p>
+
+<p>Things get a bit more complicated when trying to add more components to a vehicle. Components define physical parts (like wheels or rotors), player entries (driver and passenger seats), weapons, cameras etc. One such component is the Browning M2 as you can see in this clip:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=X88S0J4aWLM" data-videoid="X88S0J4aWLM" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>DICE devs added a M2 to EOD bot for lols, the component was disabled (componentData.excluded = true), but the data was kept.</p>
+
+<p>In the Frostbite engine vehicles are created from VehicleEntityData instances. This is where a lot of the common vehicle properties are defined. Aside from these common properties, the VehicleEntityData also has an array field of ComponentData types, this is where the individual components of each vehicle are defined. Below you can see the component layout of the venom helicopter both as structured in the game data, and as separate components in-game.</p>
+
+<p>Example of a Venom Component Data: <a href="https://pastebin.com/seiXju7c">https://pastebin.com/seiXju7c</a></p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Components seen in-game using the Component Visualiser Mod by txt" href="/assets/posts/devblog-4/venom_components.png"><img src="/assets/posts/devblog-4/venom_components.png" alt="Components seen in-game using the Component Visualiser Mod by txt" /></a><small>Components seen in-game using the Component Visualiser Mod by txt</small></div>
+
+<p>In order to add extra components to a vehicle, new component instances have to be created and added to the VehicleEntityData in the same manner as vanilla BF3. For example in Reality Mod, six SoldierEntryComponentData instances were added to the Venom to allow for more passengers. However, you need to ensure the passenger and co-pilot sitting animations are working properly or character models end up clipping through the vehicle model or end up misplaced.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Researching passenger animations, adding a co-pilot to the Venom" href="/assets/posts/devblog-4/veno_passenger_anima.png"><img src="/assets/posts/devblog-4/veno_passenger_anima.png" alt="Researching passenger animations, adding a co-pilot to the Venom" /></a><small>Researching passenger animations, adding a co-pilot to the Venom</small></div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=7d4bj2Z0AVk" data-videoid="7d4bj2Z0AVk" data-width="480" data-height="360">YouTube Video</a></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="That is not the correct placement for a passenger?!" href="/assets/posts/devblog-4/incorrect_placement.png"><img src="/assets/posts/devblog-4/incorrect_placement.png" alt="That is not the correct placement for a passenger?!" /></a><small>That is not the correct placement for a passenger?!</small></div>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Experimented with closing doors by removing miniguns and moving door components" href="/assets/posts/devblog-4/closed_doors.png"><img src="/assets/posts/devblog-4/closed_doors.png" alt="Experimented with closing doors by removing miniguns and moving door components" /></a><small>Experimented with closing doors by removing miniguns and moving door components</small></div>
+
+<p>The modularity of these components is what makes modifying vehicles a lot of fun, as it allows for infinite combinations. No one can stop you from adding 6 weapon components to a scout helicopter.</p>
+
+<p>Unlimited POWER!!!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=coPm0h9NUMw" data-videoid="coPm0h9NUMw" data-width="480" data-height="360">YouTube Video</a></div>
+
+<p>You can even add a passenger to tip of the main rotor for some epic cinematics:</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=eanyMgQURMo" data-videoid="eanyMgQURMo" data-width="480" data-height="360">YouTube Video</a></div>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=UUhaSTFUsbc" data-videoid="UUhaSTFUsbc" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="how-are-vehicles-in-reality-mod-different-from-the-ones-in-vanilla">How are vehicles in Reality Mod different from the ones in vanilla?</h2>
+
+<p>Some of the modifications done to all the vehicles in RM include a wider FOV, a smaller entry radius and a longer startup time. The vehicles were also set up so the opposing faction could not enter them.</p>
+
+<h3 id="m1114-hmmwv-humvee-transport">M1114 HMMWV ‘Humvee’ Transport</h3>
+<p>Ground Vehicle</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/hmv_trans.png"><img src="/assets/posts/devblog-4/hmv_trans.png" alt="Left: Vanilla; right: Reality Mod" /></a><small>Left: Vanilla; right: Reality Mod</small></div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed CROWS turret (and added regular passenger entry in its place)</li>
+  <li>Disabled lights</li>
+</ul>
+
+<h3 id="m1114-hmmwv-humvee-transport-1">M1114 HMMWV ‘Humvee’ Transport</h3>
+<p>Ground Vehicle</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/hmv_50_cal.png"><img src="/assets/posts/devblog-4/hmv_50_cal.png" alt="Left: Vanilla; right: Reality Mod" /></a><small>Left: Vanilla; right: Reality Mod</small></div>
+
+<p>Changes:</p>
+<ul>
+  <li>Added disabled state when on low health</li>
+  <li>Added a horn to match the transport humvee</li>
+  <li>Disabled light components and changed blinker shader to a dim shader</li>
+  <li>Adjusted speed to match the transport humvee</li>
+  <li>Modified cameras to use input curves (the camera position mimics realistic eye movement when turning your head instead of pivoting on a single point)</li>
+  <li>Added 5th passenger entry</li>
+</ul>
+
+<h3 id="uh-1y-venom">UH-1Y ‘Venom’</h3>
+<p>Airborne Vehicle</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/venom_side.png"><img src="/assets/posts/devblog-4/venom_side.png" alt="Left: Vanilla; right: Reality Mod" /></a><small>Left: Vanilla; right: Reality Mod</small></div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed minigun and gunner entries</li>
+  <li>Added 6 passenger entries</li>
+  <li>Added copilot entry</li>
+  <li>Adjusted flight physics</li>
+  <li>Adjusted damage model</li>
+  <li>Enabled small arms fire damage</li>
+</ul>
+
+<h3 id="rhib">RHIB</h3>
+<p>Sea Vehicle</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="Left: Vanilla; right: Reality Mod" href="/assets/posts/devblog-4/rhib.png"><img src="/assets/posts/devblog-4/rhib.png" alt="Left: Vanilla; right: Reality Mod" /></a><small>Left: Vanilla; right: Reality Mod</small></div>
+
+<p>Changes:</p>
+<ul>
+  <li>Removed vanilla passenger entries</li>
+  <li>Added 6 passenger entries</li>
+  <li>Enabled small arms fire damage</li>
+</ul>
+
+<p>That is all for the vehicles for now! We hope to launch with these vehicles already included so you guys have something to use the Light Anti Tank kit for. In the future we will address the Russian vehicles and hopefully even some heavier machinery.</p>
+
+<p>Until then,
+~ Janssent</p>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        Josephus 
+      </div>
+
+<p>Hi all, I’m Josephus but you can call me Joe. I’m a 23-year-old Software Developer from England. My role in Reality Mod is to implement new features that you guys will hopefully enjoy. Last year I finished university where I studied Software Development for Computer Games. I joined the Reality Mod team back in June of 2020 - I’ve always loved the Battlefield series (especially 3 and 4) and thought it would be a lot of fun to work on a project revolving around that.</p>
+
+<p>I’ve been programming for almost as long as I can remember - I first started around the age of 13, while I was still in school. I remember downloading Unity 2.6 and building some truly awful things that barely worked (so I guess not much has changed really) using the old UnityScript. As well as programming, in my spare time, I also play computer games, the drums, a little bit of guitar and will often nerd out over a good bit of medieval or classical history.</p>
+
+<p>The first feature I worked on for RM was revamping the FOB and Rallypoint systems. I also created the FOB model that we have in place today! I have worked on plenty of features for this project over the last few months but I think my two favourites were the artillery (because who doesn’t love explosions?) and the new audio design.</p>
+
+<h2 id="software-development-for-computer-games-sounds-fun-did-that-degree-help-you-in-designing-features-for-rm">Software development for Computer Games sounds fun. Did that degree help you in designing features for RM?</h2>
+
+<p>Joe: I wouldn’t necessarily say it helped me design features for this project but it certainly helped me land the role and work well with the rest of the team. In the course, we did a lot of teamwork units revolving around different development methodologies such as waterfall, agile and scrum.</p>
+
+<h2 id="how-did-you-get-the-idea-to-study-something-unconventional">How did you get the idea to study something “unconventional”?</h2>
+
+<p>Joe: I’ve been programming and developing games from a very young age and I always knew that I wanted to get into some kind of software development. I decided to enroll on a course that I knew I’d enjoy but would also leave me with transferable skills to get into other sectors (I’m currently working as a Software Development at a finance company).</p>
+
+<h2 id="which-games-shaped-the-person-you-are-today-which-features-made-them-special-why-are-they-not-your-favorite">Which games shaped the person you are today? Which features made them special? Why are they (not) your favorite?</h2>
+
+<p>Joe: The first game I remember really enjoying was Call of Duty 4 when I got my first Xbox 360 back in 2009. My dad and I used to play it together because I didn’t have Xbox Live at that point. I’d spend hours learning the maps just to get the advantage over him.</p>
+
+<p>After that, I got into the Battlefield franchise with Bad Company 2, quickly followed by 3 and 4 - Battlefield 4, to this day, is the game I’ve got the most playtime in.</p>
+
+<p>On a slightly different genre, I absolutely adore the older Assassin’s Creed games with my favourites being AC2, AC Brotherhood and Black Flag. Thanks to them, I’ve become a massive history nerd!</p>
+
+<h2 id="do-any-of-these-gamesfeatures-influence-in-how-you-approach-designing-rm">Do any of these games/features influence in how you approach designing RM?</h2>
+
+<p>Joe: They do not lol. Could you imagine being 360 noscoped in Reality Mod?</p>
+
+<h2 id="what-do-you-love-or-hate-about-working-on-rm">What do you love (or hate!) about working on RM?</h2>
+
+<p>Joe: The team! I can’t stand them! Nah just joking, they’re all great! I think the only frustrating thing about working on this mod is the Frostbite engine and DICE’s inability to do anything consistently.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod">What do you think makes RM a one of a kind mod?</h2>
+
+<p>Joe: Something I’ve always found annoying about tactical games is that the player controls and animations always feel very clunky but thanks to RM being built upon BF3, that isn’t a problem here. Oh yeah, and the destruction.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future-maybe-some-features-from-other-games-or-original-designs">Which features would you like to see in RM in the future? Maybe some features from other games? Or original designs?</h2>
+
+<p>Joe: I think tanks would be good to see and maybe air vehicles with weapons - like a minigun on transport heli (add them back Janssent!) or something.</p>
+
+<h2 id="thank-you-for-your-time-it-was-very-nice-to-get-to-know-you-a-bit-better">Thank you for your time, it was very nice to get to know you a bit better!</h2>
+
+<p>Joe: You’re welcome, I hope you liked it. Have a good one!</p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>]]></content><author><name>[&quot;Alphacore&quot;, &quot;Joe&quot;, &quot;Janssent&quot;, &quot;Josephus&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Audio Improvements, Vehicles and Dev Spotlight]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-4/header.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-4/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 3</title><link href="https://bf3reality.com/devblog/devblog-3" rel="alternate" type="text/html" title="DEVBLOG 3" /><published>2021-04-01T15:49:34+00:00</published><updated>2021-04-01T15:49:34+00:00</updated><id>https://bf3reality.com/devblog/devblog-3</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-3"><![CDATA[<p>Yet another Release delay, Feature List, Dev Spotlight and Tech Insight</p>
+
+<!--more-->
+
+<p>Hey everyone!</p>
+
+<p>It has been a while since our last Devblog but we finally have some updates for you guys!
+First and most importantly, we have updated our Release Plans, next we will take a closer look at our Feature List and what you can expect for Reality Mod, an in-depth look on the damage model adjustments written by Lukita and last but not least this edition’s Dev Spotlight with Paul!</p>
+
+<p>I know you are itching to know about release so let’s just get straight to the point.</p>
+
+<h1 id="yet-another-release-delay">Yet another Release delay</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>Many of you might have suspected this already: we are forced to delay the release once again. For how long? To be honest, we can’t tell exactly. Here’s why:</p>
+
+<p>Feature wise, Reality Mod is complete for its first release. But the most substantial key feature is missing: VoIP.</p>
+
+<p>For the past 3 years and up until today we’ve been using a custom Mumble implementation as our VoIP solution, but it has been causing us more trouble than joy. Picture mumble as a very old, overengineered pile of spaghetti code that’s incredible time consuming for any enhancements whatsoever. In fact, it was causing so much trouble that we decided to stop fixing it and instead work on a better yet easier to work with alternative which can be directly integrated into VU.</p>
+
+<p>After all, teamwork and communication are the center point of Reality Mod and as such shipping with a defective or no VoIP solution at all is out of the question for us. It would be like shipping a car without an engine. That is why we decided against releasing with Mumble.</p>
+
+<p>However, there is a light at the end of the tunnel. We are working closely together with the Venice Unleashed devs to ensure that it can be finalized as soon as possible. But by the nature of that and the VU code not being open source, we are dependent on the VU devs in this case. That is also why we can’t really give a good estimate on when we will be launching - it could be finished tomorrow or in a month. We were expecting the VU VoIP implementation to be finished way sooner (hence the previous Q1 estimation), unfortunately that was not the case. But you can rest assured, once we are set on a date we will make sure you will know about it first.</p>
+
+<p>In addition to that, we’re also still having issues with the UI rendering / performance, there seems to be an odd bug in the version of the chromium framework, that we’re using to display the UI, which causes the UI to at times have a slow reaction time or render incorrectly. We have however gained enough data to track it down and we’re already trying out some potential fixes together with the VU devs.</p>
+
+<p>If you feel like you can live with those issues and you can’t wait to try Reality Mod already, feel free to apply for Early Access on our <a href="https://discord.gg/sNwbeHC">Discord</a>!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=_crXhhbKJ8I" data-videoid="_crXhhbKJ8I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h1 id="feature-list">Feature List</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>Not all is lost in the realm of Reality Mod though. To prepare you for the hopefully timely release we have prepared a feature list so you can already mentally prepare for the battles to come.</p>
+
+<p>Key features (these will be available on release)</p>
+
+<ul>
+  <li>Completely reworked gameplay, aimed for a more tactical™ squad-/ teamwork-based experience compared to vanilla Battlefield 3</li>
+  <li>Completely custom minimalistic UI</li>
+  <li>Immersive™, atmospheric visuals - Frostbite 2 Engine’s destruction, VFX &amp; physics</li>
+  <li>100+ players on a server</li>
+  <li>Custom VoIP - multiple ingame radio channels, including positional audio</li>
+  <li>No vanilla blue tint. ;-)</li>
+</ul>
+
+<h2 id="release-feature-list">Release Feature List</h2>
+
+<p>Reality Mod will ship with these features, but keep in mind that this is an overview rather than a detailed change log. The full change log will be available on release.</p>
+
+<h3 id="player--game-pace">Player / game pace</h3>
+
+<ul>
+  <li>Slowed down player movement speed</li>
+  <li>Slowed down weapon handling</li>
+  <li>Prevented bunny hopping</li>
+</ul>
+
+<h3 id="new-spawn-system">New spawn system</h3>
+
+<ul>
+  <li>All spawn points are deployed by Squad Leaders:</li>
+  <li>Rally Points serve as a spawn point for the whole squad</li>
+  <li>FOBs - team-wide spawn points</li>
+</ul>
+
+<h3 id="completely-reworked-weapon-mechanics">Completely reworked weapon mechanics</h3>
+
+<ul>
+  <li>Tweaked bullet ballistics and weapon handling towards more realistic values.</li>
+  <li>Full mag reloads</li>
+  <li>Removed vanilla RNG deviation upon suppression, suppression is only visual now, but the visual effect is increased by a lot</li>
+  <li>Tweaked damage values for projectiles and explosions across the board. Everything is a lot more deadly now</li>
+  <li>Tweaked damage dealt to different objects, buildings can now withstand more damage in general, but are still very much destructible, if you put in some effort</li>
+</ul>
+
+<h3 id="new-medical-system">New Medical system</h3>
+
+<ul>
+  <li>Bleeding mechanic when getting hit, bandage fast or risk bleeding out!</li>
+  <li>Equipped players with field dressings for bleedings, applied over tac rose</li>
+  <li>Increased wounded time to 5 minutes</li>
+  <li>New healing system, medics need to manually heal injured players with a medic bag now</li>
+  <li>Very limited health after revive</li>
+  <li>Custom bleeding effects / visuals, drastically reducing visibility and player effectiveness when low on health</li>
+</ul>
+
+<h3 id="brand-new-ui">Brand new UI</h3>
+
+<ul>
+  <li>Minimalistic HUD with only a compass and mag counter</li>
+  <li>New spawn screen with map overview, spawn selection and additional information</li>
+  <li>Squad selection menu, join up to 9 squads with up to 8 people each</li>
+  <li>Kit selection menu, choose between 9 different kits (more details below)</li>
+  <li>Custom loading screen, end screen and scoreboard</li>
+</ul>
+
+<h3 id="role-based-kit-system">Role based kit system</h3>
+
+<ul>
+  <li>Variety of predefined kits with different roles / purposes and weapons</li>
+  <li>Kit limitation based on the amount of people in squad and issued kits per team</li>
+  <li>Limited attachment customization (Different sights, bipod vs. foregrip, etc.)</li>
+</ul>
+
+<h3 id="venice-unleashed-voip">Venice Unleashed VoIP</h3>
+
+<ul>
+  <li>Squad channel to talk to the whole squad</li>
+  <li>Squad Leader / HQ channel</li>
+  <li>Proximity / positional (team only) channel</li>
+</ul>
+
+<h3 id="custom-visual-effects--visual-environment--weather">Custom visual effects / visual environment / weather</h3>
+
+<ul>
+  <li>No blue tint</li>
+  <li>Custom bleeding effects / visuals</li>
+  <li>Modified FX (muzzle flashes / smoke effects / impacts)</li>
+  <li>Visual suppression</li>
+  <li>Different daytime settings per map</li>
+  <li>Dynamic weather and time changes (Fog, sandstorms, night time etc.)</li>
+</ul>
+
+<h3 id="factions">Factions</h3>
+
+<ul>
+  <li>US Marine Corps</li>
+  <li>Russian Army</li>
+</ul>
+
+<h3 id="server--client-improvements">Server / Client improvements</h3>
+<ul>
+  <li>100+ players on a server, vanilla only has 64 players per server</li>
+  <li>Option for higher tickrate</li>
+</ul>
+
+<h3 id="new-gameplay-elements">New gameplay elements</h3>
+
+<ul>
+  <li>Artillery Strike called in by Squad Leaders</li>
+</ul>
+
+<h3 id="small-variety-of-land-and-air-assets-modified-vanilla-with-additional-seats-and-partially-removed-guns">Small variety of land and air assets (modified vanilla) with additional seats and partially removed guns</h3>
+
+<ul>
+  <li>Boats</li>
+  <li>Jeeps (Transport / Armed)</li>
+  <li>Helicopters (Transport)</li>
+</ul>
+
+<h3 id="vehicle-physics-and-controls">Vehicle physics and controls</h3>
+
+<ul>
+  <li>Advanced flight models / vehicle handling</li>
+</ul>
+
+<h2 id="future-features">Future Features</h2>
+
+<p>These features will be shipped in future updates, however, some of these are already close to being tested and finished.</p>
+
+<h3 id="custom-content">Custom content</h3>
+
+<ul>
+  <li>Large scale maps &amp; gamemodes</li>
+  <li>New weapon models, assets &amp; skins once VU supports imports</li>
+  <li>More content to be announced</li>
+</ul>
+
+<h3 id="new-gameplay-element">New gameplay element</h3>
+
+<ul>
+  <li>Deployable Assets for FOBs like Mortars, TOWs, AAs, Sandbags, etc.</li>
+  <li>Commander role with UAV</li>
+</ul>
+
+<h3 id="multiple-land-and-air-assets">Multiple land and air assets</h3>
+
+<ul>
+  <li>Jeeps / Trucks (Logistics / Transport / Armed)</li>
+  <li>Helicopters (Transport / CAS)</li>
+  <li>Jets (CAS)</li>
+  <li>APCs / IFVs</li>
+  <li>Tanks</li>
+</ul>
+
+<h3 id="advanced-vehicle-physics-and-controls">Advanced vehicle physics and controls</h3>
+
+<ul>
+  <li>Multi person crew with different roles</li>
+  <li>Advanced flight models / vehicle handling</li>
+  <li>Tweaked damage model (Material / HP based)</li>
+</ul>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        Paul 
+      </div>
+
+<p>Hi, I’m Paul, a 21 years old student located in the Netherlands. Right now I’m studying Computer Science and started graduating very recently. I am the UI Lead Developer.</p>
+
+<p>Roughly 2 years ago I got in contact with 3ti65. The team was looking for a web developer that could help finish the UI. I was supposed to fix some bugs and add a scoreboard. I remember telling 3ti65 it would take me around 3 months to finish. Boy oh boy was I wrong.</p>
+
+<p>When I started I quickly noticed it was a mess and I suggested cleaning it up and moving to a reactive web framework to make our lives easier (especially mine). Ever since I had been working on rewriting the UI and slowly getting Foolhen and others involved in the process. Half a year ago we got two new awesome web developers on board, Mayson and Dylan. Because of the knowledge I had built up during my stay at RM the team decided to make me the UI lead developer.</p>
+
+<p>Last year I ran my internship at a very interesting company. They taught me a lot about project management, testing and continuous integration. Especially the last skill I learned there is what I’m really utilising in Reality Mod. We now have automated builds that we use for each QA and EA test. Since then this project has also taught me other technologies/techniques I’m using at work and school.</p>
+
+<p>Since I started I’ve grown from a simple web developer into a lead developer. At first this was very challenging as I now had to responsibility manage the people working on the UI. Review code, help people where needed, etc. Now it feels like it’s part of my daily routine and I really enjoy doing it.</p>
+
+<h2 id="what-was-your-main-motivation-to-join-the-rm-team">What was your main motivation to join the RM team?</h2>
+
+<p>Paul: I didn’t know anything about Project Reality yet before I joined the RM team. It just seemed like a challenging project to be part of. In the past I was part of a Call of Duty modding community. Unfortunately because I had only experience with making websites I couldn’t do much else apart from work on the forum and website. When 3ti65 told me they already replaced a huge part of the Battlefield 3 UI I was sold.</p>
+
+<h2 id="how-did-computer-science-help-you-with-programming--designing-the-ui">How did Computer Science help you with programming / designing the UI?</h2>
+
+<p>Paul: I learned most programming outside of Computer Science. My study is mostly focussed on embedded hardware. I still love programming, hence why I learned it in my free time. I started programming when I was 14 years old if I remember correctly. A friend of mine introduced me into some simple web technologies and that’s where it all started for me really.</p>
+
+<h2 id="which-challenges-did-you-face-working-on-the-ui-was-it-harder-than-anticipated">Which challenges did you face working on the UI? Was it harder than anticipated?</h2>
+
+<p>Paul: I totally underestimated the UI. When I joined I told the team it would take me 3 months max to fix some of the bugs and add a scoreboard. Now we are still actively doing work on it.</p>
+
+<h2 id="what-do-you-love-about-working-on-rm">What do you love about working on RM?</h2>
+
+<p>Paul: The thing I love the most about working for RM is the team. Everyone is very passionate about their work and effort they put into RM. This is just something we do in our free time, yet we’re better managed than the company I work at, amazing!</p>
+
+<p>It’s also really nice to see the things you work on, come back in the game. Seeing others use and play what you’ve worked on feels really good. Besides, if players find new bugs it motivates me to fix them for the next playtest.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod-what-is-your-favourite-feature">What do you think makes RM a one of a kind mod? What is your favourite feature?</h2>
+
+<p>Paul: The thing I love the most is the fact that the mod forces you to work closely with your squad members. Coming from games like Call of Duty this is a big eye opener for me and allows me to think in a more strategic way.</p>
+
+<p>Besides the mod itself, I also love our awesome team, consisting of testers, designers, developers, community &amp; marketing people. Everyone is contributing their own speciality into the project. We have a weekly meeting where everyone shares what they did, what they will work on and what their capacity will be for the next couple of days. We also have an awesome Quality Assurance team whose job it is to test newly added features and help us find and reproduce bugs.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future">Which features would you like to see in RM in the future?</h2>
+
+<p>Paul: I would really like to see custom maps, it would be so nice if we can make the maps, coming out of Map Editor, work with Reality Mod. Currently we are still having some issues making them work properly. I would also like to see support for custom assets, but for that we’ll have to wait for the Venice Unleashed team.</p>
+
+<h2 id="which-games-do-you-like-to-play-in-your-free-time-which-games-have-you-learned-the-most-from-do-any-of-those-inspire-your-work-on-rm">Which games do you like to play in your free time? Which games have you learned the most from? Do any of those inspire your work on RM?</h2>
+
+<p>Paul: I used to play a lot of Call of Duty, but ever since I started working on RM I noticed I wanted to play more strategic shooters. Until this day I’m actually still searching, but really want to look into Escape from Tarkov. I also used to play games like Runescape &amp; League of Legends, but nowadays I don’t have a lot of free time, and the time I have left usually goes into Reality Mod.</p>
+
+<p>Besides gaming I do spend quite some time mixing house, tech house and techno music. My goal is to throw some parties here and there when COVID clears up, let’s hope it won’t take that long anymore.</p>
+
+<h2 id="that-was-very-interesting-thank-you-for-your-time-and-insights">That was very interesting! Thank you for your time and insights!</h2>
+
+<p>Paul: Any time, thanks for your interest!</p>
+
+<h1 id="tech-insight-adjusting-damage-values">Tech insight: adjusting damage values</h1>
+
+<div class="tag">
+        Lukita 
+      </div>
+
+<p>My name is Lucas, I am a Lua developer in the Reality Mod team since May/2020, I work as a Data Scientist at my full-time job and I love game programming. I have contributed to the mod with the new medic system, damage, and destruction tweaks. I also developed a mod called <a href="https://github.com/BF3RM/TestRange">TestRange</a> where you can spawn bots in a variety of ways and distances and it displays how much damage they take every time you shoot them.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_8.png"><img src="/assets/posts/devblog-3/pasted_image_0_8.png" alt="" /></a><small></small></div>
+
+<h2 id="how-do-bullet-damage-and-destruction-work-in-vanilla-bf3">How do bullet damage and destruction work in vanilla BF3?</h2>
+
+<p>In vanilla Battlefield 3, each weapon shoots a projectile and each projectile has a material pair and attributes that define its damage and how it decays over distance. The following image shows an example for the M16A4 using <a href="http://webx.powback.com/#/Weapons/m16a4/M16A4.json">Powback’s WebX</a>.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_9.png"><img src="/assets/posts/devblog-3/pasted_image_0_9.png" alt="" /></a><small></small></div>
+
+<ul>
+  <li>The M16A4 shoots a 5.56x45mm NATO projectile.</li>
+  <li>Its base damage starts at 25 and decays linearly to 18.4. The decay starts at 8 meters and ends at 50 meters.</li>
+</ul>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_10.png"><img src="/assets/posts/devblog-3/pasted_image_0_10.png" alt="" /></a><small></small></div>
+
+<ul>
+  <li>Its projectile’s material pair has the following attributes:</li>
+</ul>
+
+<h2 id="but-what-are-those-material-pair-values-and-how-are-they-used">But what are those material pair values and how are they used?</h2>
+
+<p>Battlefield 3 has the concept of a Material Grid which defines how materials interact with each other: either what happens when one material hits another and also when two physical objects collide.</p>
+
+<p>An image will make it more clear. I will use <a href="https://github.com/J4nssent">Janssent</a>’s spreadsheet (download below) because it has all the information we need in the same place. I usually open it in Google Sheets although some formulas get broken.</p>
+
+<p><a href="https://drive.google.com/file/d/1SwkEu6MmSC2eXcqlIrlnaMIe8Uw7UFiR/view?usp=sharing">VENICE_MATERIALGRID.xlsx</a></p>
+
+<p>When you open it you will see there is a sheet for every map and one called “MaterialNames”. Let’s look at this one first.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_11.png"><img src="/assets/posts/devblog-3/pasted_image_0_11.png" alt="" /></a><small></small></div>
+
+<p>In there you will find two columns: A contains the IDs and B has the material names. Let’s decode the M16A4’s projectile’s material pair then:</p>
+
+<ul>
+  <li>PhysicsPropertyIndex: 77 → BulletDamage</li>
+  <li>PhysicsMaterialIndex: 1 → Bullet</li>
+</ul>
+
+<p>Now let’s check how these two materials interact with “Concrete” (ID 8), for example. If you open any of the map sheets you will notice it will have a symmetric matrix where each row/column corresponds to a material. Each cell contains data about the <a href="https://docs.veniceunleashed.net/vext/ref/fb/materialrelationpropertypair/">MaterialRelationPropertyPair</a> regarding the interaction between the materials in the row/column pair.</p>
+
+<p>In Frostbite, a MaterialRelationPropertyPair has two attributes:</p>
+
+<ul>
+  <li>physicsMaterialProperties: array of <a href="https://docs.veniceunleashed.net/vext/ref/fb/physicsmaterialrelationpropertydata">PhysicsMaterialRelationPropertyData</a>. Related with FX triggered when two materials collide (decal of bullet impact in the concrete, sound of the bullet when it hits metal, particles, etc.)</li>
+  <li>physicsPropertyProperties: array of <a href="https://docs.veniceunleashed.net/vext/ref/fb/physicspropertyrelationpropertydata/">PhysicsPropertyRelationPropertyData</a>. Related with penetration properties, damage, terrain destruction, etc.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Look at the cell H4 (Bullet x Concrete) in the sheet XP1_002 (Gulf of Oman map) below. Its value shows that when a bullet hits a concrete material it produces a decal, a visual effect, and a sound. Those three form the array of [PhysicsMaterialRelationPropertyData](https://docs.veniceunleashed.net/vext/ref/fb/physicsmaterialrelationpropertydata) (before the</td>
+      <td>in the cell value) for this pair of materials.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_12.png"><img src="/assets/posts/devblog-3/pasted_image_0_12.png" alt="" /></a><small></small></div>
+
+<p>Check the cell AP48 (BulletDamage x Head) now, it contains <code class="language-plaintext highlighter-rouge">"*nullMat*|Damage(335D1BCF-FD1D-4BA4-9594-90C2C5425A7F)"</code>. This means its physicsMaterialProperties array is not defined (null) and its physicsPropertyProperties array has a (MaterialRelationDamageData)[https://docs.veniceunleashed.net/vext/ref/fb/materialrelationdamagedata/] data container, with the given GUID. This is the only thing we need for tweaking the damage between materials.</p>
+
+<p>A MaterialRelationDamageData instance has 7 attributes in total, but I will focus on 3 of them related to damage:</p>
+
+<ul>
+  <li>damageProtectionMultiplier: how much of the incoming damage will be applied to the material. Ex: M16A4 projectile at 50 meters causes 18.4 damage. If damageProtectionMultiplier = 0.1, then the damaged material would be hit with 1.84 damage.</li>
+  <li>damageProtectionThreshold: minimum damage necessary to actually inflict damage on the material. Following the example from above, if the material gets hit with 1.84 damage and damageProtectionThreshold = 2, then the 1.84 damage is ignored. Otherwise, if this threshold is below 1.84, then the damage would be applied to the material.</li>
+  <li>damagePenetrationMultiplier: how much of the absorbed damage (after the damageProtectionMultiplier) is retained after penetrating the material.</li>
+</ul>
+
+<p>All of this explanation applies from a bullet hitting a soldier to an RPG hitting a wall.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_13.png"><img src="/assets/posts/devblog-3/pasted_image_0_13.png" alt="" /></a><small></small></div>
+
+<h2 id="how-and-why-do-we-use-that-in-reality-mod">How (and why) do we use that in Reality Mod?</h2>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_14.png"><img src="/assets/posts/devblog-3/pasted_image_0_14.png" alt="" /></a><small></small></div>
+
+<p>As the mod name says, we’d like to make BF3 feel more realistic and part of it requires to increase the damage dealt to players when they get shot. But it is not all about increasing damage. We felt that the grenade launchers were destroying building walls too easily, with a single shell, so we decided to tune it down a bit using the MaterialGrid.</p>
+
+<p>But that is not only about increasing or decreasing damage. By using the MaterialGrid we made it possible to deal damage to vehicles with standard rifle bullets, which is disabled in vanilla BF3. This way a helicopter can be taken down by getting shot (a lot!).</p>
+
+<p>Basically, we created a class in Lua that let us define a material grid modification that will replace (or be appended to) an existing material grid relation pair. The image below shows our modification for the pair BulletDamage x HelicopterDamage, used to make normal bullets deal damage to our Venom helicopter. Originally, the damageProtectionMultiplier was 0, preventing the chopper from getting damage. We set it to 0.1, meaning that only 10% of the bullet damage would be applied to the helicopter. And when talking about air vehicles they are usually farther so the bullet damage will likely be small, requiring a lot of bullets!</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-3/pasted_image_0_15.png"><img src="/assets/posts/devblog-3/pasted_image_0_15.png" alt="" /></a><small></small></div>
+
+<p>We did the same thing for the grenade launcher (GL) and the building walls. The walls use materials called DamageClass_1, DamageClass_2, up to DamageClass_5. The most common material, used for almost every building wall, is the DamageClass_4. The vanilla damageProtectionMultiplier for GL and these walls is 1.5. We decreased it to 0.2, requiring now three shells to fully destroy the wall. This way the buildings feel a bit safer inside.</p>
+
+<p>By using the MaterialGrid it is really easy to tweak the damage but it has a major downside for quick testing values: it requires a server restart to apply the new values. Due to that and for faster iterations, we decided to tweak the bullet damage to soldiers using the callback (Soldier:Damage)[https://docs.veniceunleashed.net/vext/ref/server/hook/soldier_damage/] on the server-side, which requires simply to reload the mod and restart the round, which is much quicker than restarting the server.</p>
+
+<p>But with great power comes great responsibility. You can turn a simple pistol into a devastating weapon (literally):</p>
+
+<p><a href="https://streamable.com/xb67fk">https://streamable.com/xb67fk</a></p>
+
+<p><strong>Lukita</strong></p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>]]></content><author><name>[&quot;Alphacore&quot;, &quot;Lukita&quot;, &quot;Paul&quot;, &quot;Janssent&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Yet another Release delay, Feature List, Dev Spotlight and Tech Insight]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-3/header.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-3/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 2</title><link href="https://bf3reality.com/devblog/devblog-2" rel="alternate" type="text/html" title="DEVBLOG 2" /><published>2021-01-04T15:49:34+00:00</published><updated>2021-01-04T15:49:34+00:00</updated><id>https://bf3reality.com/devblog/devblog-2</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-2"><![CDATA[<p>Artillery in Detail, UI and Dev Spotlight</p>
+
+<!--more-->
+
+<p>Hey everyone!</p>
+
+<p>Welcome to our first Devblog in 2021! Today we have a lot of special guests with us. We have one of our programmers, Josephus, with a look at Artillery in Detail, our UI Designer milk with the Evolution of our UI, some progress in Fixing Crashes with Project Lead 3ti65 and the very first Dev Spotlight with one of our Lead Devs, FoolHen!</p>
+
+<p>Over the years, Reality Mod has managed to gather a variety of incredibly talented individuals contributing in various ways, with currently more than 30 contributors, 15 of which are developers.
+With the Dev Spotlight at the end of the Dev Blog we wanted to give our members a chance to express themselves beyond their work on Reality Mod and for you to get to know the people behind the screens and for them to get to know you as well, so leave some questions you would like to have answered in the next Dev Spotlight below!</p>
+
+<p>That being said, let’s jump right into it!</p>
+
+<h1 id="artillery-in-detail">Artillery in Detail</h1>
+
+<div class="tag">
+        Josephus 
+      </div>
+
+<p>Hey, I’m Joe (aka Josephus)! I’m from England and I joined the Reality Mod Team as a Programmer around June of 2020. My first task was to rework the FOB and Rallypoint systems; so any issues you find with that, you’ll know I’m to blame</p>
+
+<p>In the <a href="/devblog/2020/12/09/devblog-1.html">previous blog</a>, Alpha showed you a preview of the artillery strike feature for the first time and in this blog, I will be explaining how it was conceptualized, developed and how it works in its current state.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/abbf7ff743abdf13be74.gif"><img src="/assets/posts/devblog-2/abbf7ff743abdf13be74.gif" alt="" /></a><small></small></div>
+
+<p>I think the artillery strike is actually a very important gameplay mechanic as it allows squad leaders to break stalemates. Calling in an artillery strike is easy
+Of course, this feature without any limitations would be OP and so, to call in an artillery strike, these conditions must be met: You must be a Squad Leader; it must have been at least 20 minutes since the round started and it must have been at least 20 minutes since the last artillery strike was called in.</p>
+
+<p>The first version of the artillery strike was actually written by Janssent (one of our Devs) as a separate Proof of Concept mod:</p>
+
+<p><a href="https://imgur.com/v4O6lJR">https://imgur.com/v4O6lJR</a></p>
+
+<p>Janssent’s original concept behaved very differently to how it does now. Firstly, the strike was not placed on the minimap, but simply by looking at where you want it to impact (although, this logic was never actually meant for RM). Additionally, it also used TV Missiles (Hellfires / AGM-114) for the projectiles but we decided to change it because you could actually see the missile spawn in the air and come down, which was not very immersive to watch.</p>
+
+<p>Instead, we are now using the mortar projectile, modified to use a different, much bigger and dustier explosion. Damage wise, Janssent’s concept proved too weak. A missile would have to land directly on a player to actually kill them.
+The current damage model is way more devastating: If you are in the strike radius and not in hard cover, you are going to die. Of course this is all still likely to change for balancing and performance reasons.</p>
+
+<p>After some experimentation, I changed the explosion to the one that occurs when a tank is destroyed. At first, the team really liked it but after a playtest it was decided that the explosion and the lingering dust was too dark and didn’t really make sense for an artillery strike.</p>
+
+<p>Personally, I love the artillery feature because it’s very much in keeping with RM’s realistic design and while also allowing us to show off BF3’s destruction (which no other tactical shooter has)</p>
+
+<p>Anyway, I think that’s enough rambling about things exploding for me!</p>
+
+<p>I hope to see you all on the battlefield soon!</p>
+
+<p>~ Joe</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=uRrEUNuIoII" data-videoid="uRrEUNuIoII" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=oYFWcasAxP0" data-videoid="oYFWcasAxP0" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=x1qIG9YpRlc" data-videoid="x1qIG9YpRlc" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=-M2-Yr7iaKI" data-videoid="-M2-Yr7iaKI" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="m777-155mm-howitzer-impact">M777 155mm Howitzer impact</h2>
+
+<p>We are going to be using this most recent version from here on out (probably with a few tweaks). The reasoning for this is that artillery doesn’t create some big cinematic fireball like you’d see in a film, instead it’s much dustier.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image21.png"><img src="/assets/posts/devblog-2/pasted_image21.png" alt="" /></a><small></small></div>
+
+<h1 id="evolution-of-ui">Evolution of UI</h1>
+
+<div class="tag">
+        milk 
+      </div>
+
+<p>Hi, my name is Marien or milk and I live in the US. I currently work as an Art Director for a small gaming studio that creates City Builders and Management type games. I am a big fan of FPS games in general, especially the Battlefield franchise, so in my spare time I work on RM as a UI designer.</p>
+
+<p>I mainly base my workflow on personal experience and games in general that I have played. If I were to pick a specific game that is used as inspiration I would have to say Battlefield in general, due to it being the foundation of RM.
+When I create mockups I usually start with screenshots from RM or the Battlefield games as a temporary background and evolve it from there, that is why you might find some screenshots of other games in older mockups.</p>
+
+<h3 id="hud---old-note-the-background-is-from-bf-4-not-bf-3">HUD - old (Note: The background is from BF 4, not BF 3)</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_1.png"><img src="/assets/posts/devblog-2/pasted_image_0_1.png" alt="" /></a><small></small></div>
+
+<h3 id="hud---current">HUD - current</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0.png"><img src="/assets/posts/devblog-2/pasted_image_0.png" alt="" /></a><small></small></div>
+
+<p>The best UI design for me has an easily recognizable and navigable UI in terms of functionality. Also having an aesthetic that fits the theme of the game is a big plus.It’s very easy to be different, but very difficult to be better</p>
+
+<h2 id="squad-selection-menu">Squad Selection menu</h2>
+
+<h3 id="squad-selection---old-note-the-background-is-from-bf-4-not-bf-3">Squad Selection - old (Note: The background is from BF 4, not BF 3)</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_2.png"><img src="/assets/posts/devblog-2/pasted_image_0_2.png" alt="" /></a><small></small></div>
+
+<h3 id="squad-selection---current">Squad Selection - current</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_3.png"><img src="/assets/posts/devblog-2/pasted_image_0_3.png" alt="" /></a><small></small></div>
+
+<h3 id="squad-selection---planned">Squad Selection - planned</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_4.png"><img src="/assets/posts/devblog-2/pasted_image_0_4.png" alt="" /></a><small></small></div>
+
+<p>The main difficulty during the initial design process was creating something for a Project Reality style mod that didn’t show too much info, yet did show enough. Deciding what was important for a player and what isn’t. Basically moving away from a more casual UI but making sure brand new players aren’t totally lost.</p>
+
+<p>An example I can think of was the debate on whether or not to show too much info on a flag being capped either through UI, using audio cues, or another way of providing this info to the player. Another one was the compass, on the top, on the bottom? Ultimately we wanted to provide players both options due to different preferences even in our own team.</p>
+
+<p>The design philosophy in short: Taking the Project Reality feel and limitations and translating it into a usable interface for the player. Keeping it simple and attractive at the same time. No fluff, but also not too basic.</p>
+
+<p>That’s all for now and I’m looking forward to sharing further Design stories in the future!</p>
+
+<h2 id="kit-selection-menu">Kit Selection menu</h2>
+
+<h3 id="kit-selection---old">Kit Selection - old</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_5.png"><img src="/assets/posts/devblog-2/pasted_image_0_5.png" alt="" /></a><small></small></div>
+
+<h3 id="kit-selection---current">Kit Selection - current</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_6.png"><img src="/assets/posts/devblog-2/pasted_image_0_6.png" alt="" /></a><small></small></div>
+
+<h3 id="kit-selection---future-planned">Kit Selection - future planned</h3>
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_7.png"><img src="/assets/posts/devblog-2/pasted_image_0_7.png" alt="" /></a><small></small></div>
+
+<h1 id="recap-fixing-crashes">Recap: Fixing Crashes</h1>
+
+<div class="tag">
+        3ti65 
+      </div>
+
+<p>Hey folks, my name is Stefan aka 3ti65 and I’m the Co-Founder of BF3: Reality Mod. Powback and I started this project more than 5 years ago and since then I’ve been working mainly as Project Lead and Lead Dev. As such it’s my task to address the biggest issues that we are struggling with, and right now, these are the crashes that are plaguing RM. In the last Dev Blog we went into detail about some of them and I’m proud to say that we are making progress in this regard.</p>
+
+<p>For example, the mass crash issue has been fixed by the developers of VU.
+<a href="https://docs.veniceunleashed.net/general/changelog/#17335">https://docs.veniceunleashed.net/general/changelog/#17335</a></p>
+
+<p>It was related to us hitting engine limitations. However, we are not sure what exactly caused this specific issue in the first place, but we have not encountered it since the hotpatch deployed to VU so we assume it must have been mitigated.
+If you are interested in further information you can view the GitHub issue here: <a href="https://github.com/EmulatorNexus/VeniceUnleashed/issues/542">https://github.com/EmulatorNexus/VeniceUnleashed/issues/542</a></p>
+
+<p>Another crash, appearing when loading into the server, has been fixed as well. Apparently it was related to entities and solved by adjusting the garbage collection / destroy callbacks of everything we do with entities.</p>
+
+<p>Generally put: We are basically changing the engine in ways that DICE did not anticipate (obviously) and that can have unforeseen side effects. We also have to deal with a lot of inconsistency and hacky DICE code (DICE pls), and sometimes it becomes quite difficult to find a workaround, etc. But the more we work on it, the better we understand how everything works and the better we can address things.</p>
+
+<p>That being said, we are not quite done here yet, there are more crashes that need to be fixed. Stay tuned for further good news.</p>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        FoolHen 
+      </div>
+
+<p>Hello everybody, I’m FoolHen. I’m 26 years old, from Spain, currently studying Industrial Engineering. I’ve been working on RealityMod and <strong>MapEditor</strong> since 2017.</p>
+
+<p>Around 8 years ago I started learning programming in my spare time, starting with web and Android development, but also branched out to other technologies that interested me. But I was looking for a goal, a project that was challenging but fun, which could help me improve my skills. I wanted to collaborate with other people, which helps learn quite a bit as well.</p>
+
+<p>Since it came out, Battlefield 3 has been one of my favourite games. I was new to FPS games, and used to play CS:S, so BF3 blew me away. When I found out about the Venice Unleashed project some years later, I finally found what I wanted to do: Modding BF3. Back then VU was closed and barebones, so there weren’t many people in the modding community.</p>
+
+<p>In early 2017 I met Powback and 3ti65, which were looking for programmers to start building RM. The project seemed like an interesting challenge and still was in its infancy. They had created some PoC (Proof of Concept) mods, but the mod itself didn’t exist yet, so it was exciting to start building it from the ground up.</p>
+
+<p>Since then I’ve been working on both the scripting side and the UI, as well as Project Management. I started with modifications of the soldier mechanics (weapons, movements, basic player mechanics, etc), but as time went on the scope of the project grew, so we overhauled and created new systems and mechanics. Over the years I’ve worked on most of the core features we currently have, some more than others. UI, round logic, custom smoke grenades, recoil, are some of the areas I’ve worked more on.</p>
+
+<p>We have grown quite big since our small beginnings, so part of my responsibility is managing the project and people, ensuring that new developers can learn the tools and structure we follow, reviewing code, reviewing feedback and crash reports, etc.</p>
+
+<h2 id="how-did-industrial-engineering-help-you-with-programming-and-designing-reality-mod">How did Industrial Engineering help you with programming and designing Reality Mod?</h2>
+
+<p>FoolHen: I’ve had some programming subjects in university, but most of what I know I learned by myself, with online guides and courses. But I’ve had a lot of math subjects that have helped me greatly. One of those subjects, mechanics, has been a life saver. It wasn’t about gears and springs as it might sound like, but about 3D coordinate systems: matrices, positions, translations, rotations, etc which are the foundation of 3D games. That said, so far, I haven’t had to use integrals or differential equations, thankfully.</p>
+
+<h2 id="which-challenges-do-you-regularly-face-working-on-rm">Which challenges do you regularly face working on RM?</h2>
+
+<p>FoolHen: One of the hardest challenges is managing our resources. We are quite a big team for a modding project, and by its nature we all work on it in our free time. That means that it is hard to predict when each member will have time and when things will get finished, and sometimes unexpected issues will block this process. Sometimes the tools we have available are lacking and we need to build them or request help from VU developers, or sometimes we are challenged by issues caused by us not understanding how the engine works and it takes time to learn and figure it out. This means that estimations are usually not good ones, and we must be careful and intelligent on what to focus on if we want to meet internal goals.
+On the development side, the biggest challenge is trying to understand how Frostbite, the BF3 engine, works. A lot of the time it’s a lot of trial and error, to see what works and what doesn’t, and it can be time consuming.</p>
+
+<h2 id="what-do-you-love-about-working-on-rm">What do you love about working on RM?</h2>
+
+<p>FoolHen: Playing it. Playing something you’ve worked on and seeing other people enjoy it is really satisfactory.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod">What do you think makes RM a one of a kind mod?</h2>
+
+<p>FoolHen: I think one of the best points is that we part from a really solid game that has aged quite well, runs great and looks beautiful. But in my opinion our best asset is the team we have. It’s well structured, separated into different categories, and we follow development strategies used in the software development industry. We have quality assurance, UI designers, developers with experience in different fields, community management, marketing guys, testers etc. All these sectors managed with the same goal, with regular meetings that assure that we are all on the same page.</p>
+
+<h2 id="what-was-your-main-motivation-to-join-the-rm-team">What was your main motivation to join the RM team?</h2>
+
+<p>FoolHen: As I previously said, I wanted to improve my programming skills and work alongside other people, but I also had other motives. Back then I was starting to be interested in game development. I started building some simple 2D arcade games, like asteroids and snake, to learn the basic math and structure behind game engines, implementing basic algorithms like drawing lines on screen.
+For a more academic purpose, I also wanted to improve my English, which working with people around the world ensured me.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future">Which features would you like to see in RM in the future?</h2>
+
+<p>FoolHen: Improved gameplay mechanics, which are the hardest things to do and nail. For example, I would love to implement leaning, but it might be too ambitious, especially the animations and their syncing. Body dragging with good animations, like in some single player missions, is also something I would like to add in the future.
+But the thing I look forward to the most are custom maps. Frostbite allows for big maps with good performance and looks. As of now we are still working on MapEditor, but I’m sure when we finish it we will see some awesome, custom maps.</p>
+
+<h2 id="which-games-do-you-like-to-play-in-your-free-time-which-games-have-you-learned-the-most-from-do-any-of-those-inspire-your-work-on-rm">Which games do you like to play in your free time? Which games have you learned the most from? Do any of those inspire your work on RM?</h2>
+
+<p>FoolHen: Mainly shooters. I started with Counter Strike and Battlefield, but also branched out to more realistic games. DayZ has been one of the games I’ve spent more time on, even with the amount of issues it has. The detail and realism of the mechanics, especially in regards to bullet physics and the in-depth of the weapons and their handling, is something that made me get into more realistic games like PR and Squad. But nowadays I don’t usually play games, as my free time is more sparse and I spend it on RM or on other side projects and hobbies.</p>
+
+<h2 id="thank-you-for-your-time-it-was-very-interesting-to-find-out-some-things-about-you">Thank you for your time, it was very interesting to find out some things about you.</h2>
+
+<p>FoolHen: Of course, and I hope I can see you all in game soon!</p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>]]></content><author><name>[&quot;Alphacore&quot;, &quot;3ti65&quot;, &quot;Josephus&quot;, &quot;milk&quot;, &quot;FoolHen&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Artillery in Detail, UI and Dev Spotlight]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-2/header.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-2/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DEVBLOG 1</title><link href="https://bf3reality.com/devblog/devblog-1" rel="alternate" type="text/html" title="DEVBLOG 1" /><published>2020-12-09T15:49:34+00:00</published><updated>2020-12-09T15:49:34+00:00</updated><id>https://bf3reality.com/devblog/devblog-1</id><content type="html" xml:base="https://bf3reality.com/devblog/devblog-1"><![CDATA[<p>Brief history, decision for the delay and roadmap towards release</p>
+
+<!--more-->
+
+<p>Hey everyone!</p>
+
+<p>Welcome to our very first Devblog! Today we want to talk about the brief history of the project, the roadmap towards release, our biggest issues / top priorities and a little surprise at the end.</p>
+
+<p>You can expect a new Devblog every 3 - 4 weeks, depending on the pace of development with a detailed recap on our progress.
+That being said, let’s jump right into it!</p>
+
+<h1 id="brief-history-of-bf3-reality-mod">Brief history of BF3: Reality Mod</h1>
+
+<div class="tag">
+        3ti65  
+      </div>
+
+<p>More than 5 years ago, 3ti65 and Powback got together with the idea to build a Project Reality style mod on top of the Venice Unleashed (VU) modding platform (<a href="https://veniceunleashed.net/about">https://veniceunleashed.net/about</a>). Since VU was quite rudimentary and not well documented back then, it took about a year of developing different proofs of concept (modifying player movements / weapon stats etc), before the actual development could start. The two of them got joined by FoolHen shortly after and together they started building the actual implementation of the mod.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/pasted_image_0.png"><img src="/assets/posts/devblog-1/pasted_image_0.png" alt="" /></a><small></small></div>
+
+<p>The project was initially supposed to go live way back in 2016 / 2017, but after more and more people joined and more modding possibilities opened up, it was decided to increase the scope and take it a couple of steps further, namely a total conversion mod. The UI got a complete rewrite based on dedicated design concepts and more and more features got polished or added. That and the fact that modding the frostbite engine with self made modding tools is a rather complicated thing to do, resulted in way more development time than initially anticipated.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/Edit--6.jpg"><img src="/assets/posts/devblog-1/Edit--6.jpg" alt="" /></a><small></small></div>
+
+<p>In the meantime, the team grew at an incredible pace, as more and more people decided to join and contribute to this first ever total conversion mod built on self made modding tools to a closed source engine. As it stands now at the end of 2020, it evolved into a true passion project involving an incredible amount of 35 contributors, 15 of which are developers.</p>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/Edit-.jpg"><img src="/assets/posts/devblog-1/Edit-.jpg" alt="" /></a><small></small></div>
+
+<p>With the thousands of hours that we put into this project, we want to release BF3: Reality Mod in a state which the team can be proud of and which the community can actually play. With this in mind and being so close to reaching our goal, we decided to delay the release just a bit more to Q1 2021.</p>
+
+<p>Next up we will get into what issues we’re still facing and what’s actually keeping us from releasing in our current state.</p>
+
+<h1 id="roadmap-towards-release">Roadmap towards Release</h1>
+
+<div class="lightbox-wrapper"><a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-1/SPOILER_RM_announcem.png"><img src="/assets/posts/devblog-1/SPOILER_RM_announcem.png" alt="" /></a><small></small></div>
+
+<p>As you might have seen it in our delay announcement on Discord already - we are still facing game breaking issues in the form of frequent crashes and bugs that often require server and / or client restarts. We believe that releasing RM without addressing these issues would render it unplayable.</p>
+
+<p>With the release being delayed, there is also more time to implement and polish a good amount of other, smaller features (UI, Quality of Life) that otherwise would not have made it into the release version.</p>
+
+<p>Let’s take a closer look at our biggest issues / top priorities.</p>
+
+<h2 id="game-breaking-bugs--crashes">Game breaking bugs / crashes</h2>
+
+<p>The main reason why we decided to delay the December release were the critical bugs we were encountering. There are not many, but they are quite game breaking (literally).</p>
+
+<h3 id="destruction-mass-crash">Destruction Mass Crash</h3>
+
+<p>The destruction mass crash is related to Havok, the physics engine. When some of the destruction gets triggered, Havok causes a crash related to the handling of debris effects and as a result kicks out almost every player from the server.</p>
+
+<p>We could disable destruction, but we feel like destruction is a key part of Reality Mod, so you can see why we want to fix this one as soon as possible. Unfortunately the Havok part of the engine is extremely complicated to deal with so it’s rather time consuming to find the cause, but certainly not impossible.</p>
+
+<h3 id="loading-crash">Loading Crash</h3>
+
+<p>The Loading Crash is another critical one often encountered when loading into a server. It’s the most common crash we currently have. The good thing about it occurring so often is that it allowed us to gather a good amount of crash reports which have led to a potential fix that is going to be tested in this week’s playtest.</p>
+
+<h3 id="tac-rose-crash">Tac Rose Crash</h3>
+
+<p>Last but not least is a crash sometimes occurring when performing a custom action via the Tac Rose.It is used to bandage yourself, create rallies and FOBs and give orders to your Squad as a Squad Leader.</p>
+
+<p>The crash occurring when using the Tac Rose is hard to track down since unlike the two crashes above, it is a “silent crash”. That means it does not create an error dump so investigating what went wrong is significantly more complicated than investigating crashes that do cause an error dump.</p>
+
+<p>All the crashes that happen for no obvious reasons require a cooperation with the developers of Venice Unleashed. This consumes more time, since they’re also very busy working on VU itself, which is still due to release in December.</p>
+
+<p>Four years ago, when we first started this project we had more issues and crashes than we could count, as VU was in its infancy and lacked stability and features. Since the very beginning we have been working closely with the Venice Unleashed devs to provide issue reports and API requests, which has led to a more complete and robust framework. Along the way, we managed to solve each and every issue we encountered so far, some way harder than the ones we currently face. In light of that we’re very optimistic that our current ones can be resolved rather soon.</p>
+
+<h2 id="implementing-vu-voip--ditching-rm-mumble">Implementing VU VoIP / ditching RM Mumble</h2>
+
+<p>We are currently using a custom implementation of Mumble (called RM Mumble) as our VoIP solution since BF3 vanilla doesn’t offer such functionality. If you played Project Reality you should be familiar with Mumble. For us, it proved to be extremely annoying and a constant struggle to work with.</p>
+
+<p>Other than being annoying to enhance it, it’s also causing an incredible amount of issues during development and playtesting, but luckily the VU devs are working on implementing their own, custom built-in VoIP solution which we will gladly adapt for Reality Mod.</p>
+
+<p>This is mostly implemented and will be ready soon. We will have to test and polish it properly but once that is done, it will not require any downloads and it’s easier to deal with in general, so we are looking forward to that.</p>
+
+<h2 id="server-hosting-and-improved-server-administration-functionalities">Server Hosting and improved Server Administration functionalities</h2>
+
+<p>We think that community hosted servers are the backbone of Reality Mod, just as they were for Project Reality. That’s why we want to make it possible for all communities to host and admin their own servers running BF3: Reality Mod.</p>
+
+<p>For that, we are working on providing a holistic framework to support community servers, both in terms of hosting and administration. While being able to take advantage of already existing BF3 server administration tools, we are also enabling admins to manage their servers from within the game. The goal is to make it as convenient as possible for admins to moderate their servers.</p>
+
+<p>However, what these tools encompass will be revealed in another Devblog, once they’re ready to be shown.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=QjZNPm8pXHo" data-videoid="QjZNPm8pXHo" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h1 id="fireworks">Fireworks</h1>
+
+<p>Despite what it may look like, development is not only about fixing bugs and crashes, but also about implementing cool features and improvements to the gameplay. That being said, we want to show you a feature that will have quite the impact (pun intended) to the gameplay. Video and implementation by our Dev Josephus</p>
+
+<p>The effects, duration and damage intensity are still subject to change. The Artillery Strike can be called in by Squad Leaders every 20 minutes. The goal is to be able to flatten enemy defenses (literally), whenever the battlefield becomes a stalemate, or to use it before an attack as a means of suppression and concealment of own movements. More details about this exciting feature including more footage will come in another Devblog.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=uRrEUNuIoII" data-videoid="uRrEUNuIoII" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>]]></content><author><name>[&quot;Alphacore&quot;, &quot;3ti65&quot;, &quot;Powback&quot;]</name></author><category term="devblog" /><summary type="html"><![CDATA[Brief history, decision for the delay and roadmap towards release]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://bf3reality.com/assets/posts/devblog-1/header.png" /><media:content medium="image" url="https://bf3reality.com/assets/posts/devblog-1/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

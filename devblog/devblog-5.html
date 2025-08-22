@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 5 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 5">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Reality Mod launch recap, update v0.2.0, a look into the future">
+<meta property="og:description" content="Reality Mod launch recap, update v0.2.0, a look into the future">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-5">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-5">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-5/image6.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-04-14T14:20:00+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-5/image6.png">
+<meta property="twitter:title" content="DEVBLOG 5">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-14T14:20:00+00:00","datePublished":"2023-04-14T14:20:00+00:00","description":"Reality Mod launch recap, update v0.2.0, a look into the future","headline":"DEVBLOG 5","image":"https://bf3reality.com/assets/posts/devblog-5/image6.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-5"},"url":"https://bf3reality.com/devblog/devblog-5"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-5/image6.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 5</h1>
+          <p>Reality Mod launch recap, update v0.2.0, a look into the future</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2023-04-14T14:20:00+00:00" itemprop="datePublished">
+        Apr 14, 2023
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Reality Mod Team</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<p>It’s been a while since we last wrote a devblog. We were so focused on getting a release out that we never took the time to write a new blog. Now that Reality Mod has been out for more than a while, it’s time we share some insights on what’s been going on after release.
+
+</p>
+<h2 id="release-of-v010">Release of v0.1.0</h2>
+
+<p>So what happened after v0.1.0 released? Many contributors spent many hours on Reality Mod after release. Many bugs and quality of life features were fixed. Community servers had to be set up, administrative tools had to be added.</p>
+
+<p>One of the things we unfortunately weren’t able to solve are the crashes many of our players experienced. These crashes were the main reason we postponed the main release before. You might wonder why we didn’t delay again. The last 3 times we delayed, the team fell apart a bit. People would lose motivation or move on to another thing. This time we had strong beliefs we would be able to solve the crashes in a timely manner after release.</p>
+
+<p>After release we were happy to see many people from the community enjoying themselves. Actually more than <strong>50 thousand</strong> of you have tried Reality Mod, which makes us extremely happy. We got feedback, which allowed us to set new goals and move forward. We have lost some good contributors to the team unfortunately. Some of you might already have expected it, but 3ti65 is no-longer part of the team, at least for the time being. This put us in a bad spot as we had to reinvent the entire way of working on Reality Mod. All documentation and processes had to be re-written.</p>
+
+<p>It did however allow us all to take a step back as well and reconsider the way we want to work on this project. It also made us realize that you should never be dependent on one person. We’ve since then split the team up into separate workforces.</p>
+
+<ul>
+  <li>Game Dev: Focused on everything related to Reality Mod itself.</li>
+  <li>Game Design: Focused on anything design related. Game mode design, UI design, Gameplay mechanics, etc..</li>
+  <li>UI: Focused on the UI of Reality Mod and other UI projects we have.</li>
+  <li>Tools: Focused on the backend of Reality Mod and other tools like Venice Unleashed Mod Manager and our Discord Bot.</li>
+  <li>Mappers: Focused on creating our custom maps and fixing the existing maps.</li>
+  <li>Quality Assurance : Focuses on testing the game but also helps the rest of the team with many other tasks.</li>
+</ul>
+
+<p>Oh and if you feel like helping us out, we are always looking for Developers, Quality Assurance, Marketing, Level-designers. More info on that is in our Discord.</p>
+
+<p>Furthermore we’ve also started to put some focus on documentation. Not only for our own team, but also for the community. You can check it out here: <a href="https://wiki.bf3reality.com">https://wiki.bf3reality.com</a>. We would be lying if we said we have it all figured out, but we can assure you that we’re getting better every day. At the end of this devblog you will find the first hint of that in the updated roadmap for Reality Mod.</p>
+
+<h1 id="update-v020">Update v0.2.0</h1>
+
+<p>That was more than enough of the past, it is time to look at the present and forward into the future! Starting with some of the major features that come with 0.2.0.</p>
+
+<h2 id="a-new-ui">A new UI</h2>
+
+<p>One of the most noticeable changes on Reality Mod is the new UI. Now that we have built a solid foundation for Reality Mod, it was time to update the mod with a new fresh look. The UI-team did a complete overhaul, starting basically from scratch and changing:</p>
+
+<ul>
+  <li>The loading screen for maps</li>
+  <li>The spawn screen</li>
+  <li>Map style</li>
+  <li>The Esc menu</li>
+  <li>The HUD (Compass, chat, weapon selection)</li>
+  <li>Message boxes</li>
+  <li>All images on the map were replaced with newer/better ones</li>
+  <li>New font</li>
+</ul>
+
+<p>We also made the UI fit better on widescreens, everything is now within the 16:9 aspect ratio. No more twisting your neck to find out how many mags are left in your inventory! We are really proud of this and we are curious to find out what you think!</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="ESC menu" href="/assets/posts/devblog-5/image14.png"><img src="/assets/posts/devblog-5/image14.png" alt="ESC menu"></a><small>ESC menu</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Loading screen" href="/assets/posts/devblog-5/image12.png"><img src="/assets/posts/devblog-5/image12.png" alt="Loading screen"></a><small>Loading screen</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Squads screen" href="/assets/posts/devblog-5/image7.png"><img src="/assets/posts/devblog-5/image7.png" alt="Squads screen"></a><small>Squads screen</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Alert box" href="/assets/posts/devblog-5/image1.png"><img src="/assets/posts/devblog-5/image1.png" alt="Alert box"></a><small>Alert box</small>
+</div>
+
+<h2 id="armored-transport-jeeps">Armored Transport Jeeps</h2>
+
+<p>The most noticeable new feature of course will be the addition of vehicles. This should help teams get around the map in a more efficient way. For the US forces we have the HMMWVs and for the Russian forces there will be Vodniks. With this first iteration of vehicles we have put down a solid foundation to work from in the future. We are excited to see how you guys will be using these assets. We have given both vehicles an additional 3 seats with 6 total. The vehicles will now feel like actual armored vehicles with a health buff. The vehicles have been modified to simulate real military vehicles.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Vodnik and HMMWV" href="/assets/posts/devblog-5/image6.png"><img src="/assets/posts/devblog-5/image6.png" alt="Vodnik and HMMWV"></a><small>Vodnik and HMMWV</small>
+</div>
+
+<h2 id="combat-engineer-class">Combat Engineer class</h2>
+
+<p>To counter the vehicles that come with this patch, we have added the Combat Engineer class. We added AT mines, and a repair torch to the mod. The Combat Engineer kit will have a standard issued rifle, frag grenades, C4, repair torch, and AT Mines. The frontend or UI part of this task was done by our UI team. They created a nice wrench icon for the kit and of course a way to mark those damned mines on the map.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Combat Engineer class" href="/assets/posts/devblog-5/image11.png"><img src="/assets/posts/devblog-5/image11.png" alt="Combat Engineer class"></a><small>Combat Engineer class</small>
+</div>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="AT mine icon" href="/assets/posts/devblog-5/image2.png"><img src="/assets/posts/devblog-5/image2.png" alt="AT mine icon"></a><small>AT mine icon</small>
+</div>
+
+<h2 id="skirmish-game-mode">Skirmish game mode</h2>
+
+<p>Every full server starts with one guy joining the server and wanting to play. Gradually more and more players join the fight. With the current maps in Reality Mod the process of seeding a server was a tough process, long walks and huge areas to cover. With the addition of the Skirmish gamemode we give server administrators more control over those early gaming hours and the experience people have on lower population counts. So what exactly is Skirmish:</p>
+
+<p>In Skirmish the map sizes are greatly reduced to prevent the endless walking we all have that love/hate relationship with. Each map will come with 3 flags to capture and hold. Both teams start out with 250 tickets,the goal is to drain all enemy tickets. FOBs are not in this gamemode but squads can place rally points. Rally points will still last only a minute. To compensate for the lack of FOBs squads will be able to place one every 2 minutes and 30 seconds compared to 5 minutes in AAS. No artillery support is available. With this we aim to provide a tactical, intense experience at lower player counts.</p>
+
+<div class="image-gallery">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image10.png">
+            <img src="/assets/posts/devblog-5/skirmish/image10.png" alt="">
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image13.png">
+            <img src="/assets/posts/devblog-5/skirmish/image13.png" alt="">
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image3.png">
+            <img src="/assets/posts/devblog-5/skirmish/image3.png" alt="">
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image4.png">
+            <img src="/assets/posts/devblog-5/skirmish/image4.png" alt="">
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image5.png">
+            <img src="/assets/posts/devblog-5/skirmish/image5.png" alt="">
+        </a>
+    
+  
+    
+        <a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-5/skirmish/image8.png">
+            <img src="/assets/posts/devblog-5/skirmish/image8.png" alt="">
+        </a>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+
+<h2 id="freelook">Freelook</h2>
+
+<p>Although it may seem as a small feature we believe freelook will change the way you will play Reality Mod. Being able to freely look around with your head grants the player a wider field of view which you can access now more easily while still following the same path. The default key for this is L.Alt. It’s not perfect like triple AAA games however it gets the job done.</p>
+
+<div style="position:relative; padding-bottom:calc(41.67% + 44px)"><iframe src="https://gfycat.com/ifr/WillingShoddyImpala" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen=""></iframe></div>
+
+<h2 id="magazines-and-the-bullet-count">Magazines and the bullet count</h2>
+
+<p>We have implemented our own system solution for magazines as vanilla frostbite does not allow us to do a “realistic” implementation of magazines. A magazine will now keep its “bullet state”. This means when you reload and you still have bullets in the magazine, you won’t just drop the magazine and lose the ammo (as in the current implementation) but rather store it for usage later. The newly added ammo check feature (Hold F with default setting) plays nicely into this.</p>
+
+<p>Now that you don’t waste ammo anymore by reloading with bullets left in the magazine, we felt it was time to make the Rifleman kits more important on the battlefield. What sets apart the rifleman from the rest of the kits? That’s right, the ammo bag. With the removal of the ammobox from the FOB, rifleman will be your only source for more ammo. Make sure you have one in your squad before entering the battlefield!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=4X438oWPrC8" data-videoid="4X438oWPrC8" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="capture-indicator">Capture indicator</h2>
+
+<p>A lot of players have mentioned that the current capture indicator is a mess as you have to open the squad menu (Caps-Lock) to view the capture status. We have heard you and implemented a new UI element for it. The capture status will now additionally be displayed on the top-center of your screen when you are in a capture zone. Giving you quick access to the information you need without reducing your situational awareness.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Capture indicator" href="/assets/posts/devblog-5/image15.png"><img src="/assets/posts/devblog-5/image15.png" alt="Capture indicator"></a><small>Capture indicator</small>
+</div>
+
+<h2 id="medic-radar">Medic radar</h2>
+
+<p>One of the goals for Reality Mod is to increase the value of a player’s life. To aid this we have added the “Medic radar” to the UI. This feature shows any medics in range when you are downed. You can find the information in the bottom right corner. We hope that players will consider not giving up instantly and saving the team a ticket when a medic is in range. The medic radar works both ways, it also displays downed players on the medic’s compass.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="Medic radar on the bottom right corner" href="/assets/posts/devblog-5/image9.png"><img src="/assets/posts/devblog-5/image9.png" alt="Medic radar on the bottom right corner"></a><small>Medic radar on the bottom right corner</small>
+</div>
+
+<h2 id="recoil-adjustments">Recoil adjustments</h2>
+
+<p>We have adjusted the recoil system, adding compensation for the first bullet/bursts and improved the feeling of weapons in full auto encouraging a more diverse usage of firemodes in response to the current single shot meta. This should also make using the bipod on the LMGs more viable. What more can we say? Switch your rifle to full auto and experience it for yourself.</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=wXYwSDXLF-I" data-videoid="wXYwSDXLF-I" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="low-health-visual-environments">Low health visual environments</h2>
+
+<p>We changed the low health visual environment to be a little more forgiving. We even called it the Fucked Up State. It will still limit your vision at a distance, but at closer distances it clears up a bit. This will make it a little easier to get yourself to cover and yell for the medic!</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=pa_YN82oCLU" data-videoid="pa_YN82oCLU" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="low-health-visual-bug-fixed">Low health visual bug fixed</h2>
+
+<p>One of the most annoying bugs in Reality Mod was the low health visuals sticking with you even though you were brought back to full health by a medic. The changes mentioned above
+fixed the blurred vision bug after getting treatment from your medic! No more need to get stabbed by a medic to fix this yourself.</p>
+
+<h3 id="full-changelog-v020">Full changelog v0.2.0</h3>
+
+<p><strong>Changes:</strong></p>
+
+<ul>
+  <li>Added music to the loading screen</li>
+  <li>Added a new capture indicator that makes following the current capture progress more easy</li>
+  <li>Added Freelook feature</li>
+  <li>Added Vodniks &amp; HMMWVs</li>
+  <li>Added UI magazine checking feature</li>
+  <li>Added settings for the new features</li>
+  <li>Added additional squad member markers to the compass</li>
+  <li>Added kit icons to players on the map</li>
+  <li>Added recoil compensation for controlled fire bursts</li>
+  <li>Added a “medic radar” showing close by medics on the death screen, downed player on compass</li>
+  <li>Added overheating to machine guns</li>
+  <li>Added a distance display for squad leader markers</li>
+  <li>Added Skirmish gamemode</li>
+  <li>Added statistics collection (to be expanded)</li>
+  <li>Added additional VOIP settings (Volume &amp; left/right balance sliders for all channels)</li>
+  <li>Added FOB requirement scaling
+    <ul>
+      <li>&lt;20 Players: 3 players total needed</li>
+      <li>20-29 Players: 4 players total needed</li>
+      <li>30+ Players: 5 players total needed</li>
+    </ul>
+  </li>
+  <li>Added a new messaging feature for administrators for server-wide announcements</li>
+  <li>Added a chat command auto-completion feature for admins</li>
+  <li>Changed ADS speed for iron sights and CQB optics</li>
+  <li>Changed player icons on the map to update in real time even after death</li>
+  <li>Changed FOBs to now apply a 25 ticket penalty on being destroyed by enemy forces</li>
+  <li>Changed defibrillators to have limited charges and deal damage</li>
+  <li>Changed recoil/sway model</li>
+  <li>Removed seagull sound on Azadi Palace</li>
+  <li>Removed Venom sound modifications</li>
+  <li>Removed Ammobag from FOBs</li>
+</ul>
+
+<p><strong>Fixes:</strong></p>
+<ul>
+  <li>Fixed a bug regarding vanilla tickets</li>
+  <li>Fixed a bug with the squad menu capture indicator flags</li>
+  <li>Fixed a bug with visual environments getting stuck</li>
+  <li>Fixed a bug that lead to squads being displayed as “Unknown Squad”</li>
+  <li>Fixed a bug that prevented players from placing/removing markers if a artillery strike was displayed in the map</li>
+</ul>
+
+<h1 id="roadmap">Roadmap</h1>
+
+<p>With everything said about the past and present, it is time for us to look into what the future is going to bring for Reality Mod. To start we would like to share with you the updated roadmap.</p>
+
+<h3 id="v020">v0.2.0</h3>
+<ul>
+  <li>Added Vodniks &amp; HMMWVs</li>
+  <li>Added Combat Engineer Class</li>
+  <li>Added a new capture indicator</li>
+  <li>Added Skirmish gamemode</li>
+  <li>Added freelook</li>
+  <li>Added Medic Radar &amp; Icons</li>
+  <li>Changed recoil/sway model</li>
+  <li>Changed low health visual environments</li>
+  <li>Magazine and persistent ammo overhaul</li>
+</ul>
+
+<h3 id="v030">v0.3.0</h3>
+<ul>
+  <li>New map</li>
+  <li>Armed Jeeps/Light Armor</li>
+  <li>Communications Rose</li>
+  <li>Day/Night cycle</li>
+  <li>Modular building for FOBs</li>
+  <li>Rework FOB overrunning mechanics</li>
+  <li>Tips and tricks</li>
+  <li>Colored smoke grenade</li>
+  <li>Map vote system</li>
+  <li>Custom skyboxes</li>
+</ul>
+
+<h3 id="v040">v0.4.0+</h3>
+<ul>
+  <li>Basic logistical system</li>
+  <li>More modular building for FOB Fortifications</li>
+  <li>New gamemode</li>
+  <li>New map</li>
+  <li>Weather presets</li>
+  <li>Binoculars</li>
+  <li>Dynamic Footstep sound effects</li>
+  <li>Expand off-map fire support, Smoke Artillery, Call-In Airstrike</li>
+  <li>End of round map vote system</li>
+  <li>Add transport helicopters to large maps (KA-60 KASATKA)</li>
+  <li>More attachments and optics for RU and US</li>
+  <li>Dynamic player movement system</li>
+  <li>Stamina tweak</li>
+  <li>More features to be announced</li>
+</ul>
+
+<p>We are going with a different approach on the roadmap. The end goal of Reality Mod, a more immersive, tactical, combined arms warfare experience is still the same, but certain aspects of that are dependent on reverse engineering BF3. With the new format, which will be updated as more features become available to us, we are looking to create an honest representation of what we can achieve in the near future. In addition to the updated roadmap we will do our best to provide you with devblogs highlighting the projects of the various teams working on Reality Mod.</p>
+
+<p>For now all that is left for us is to wish you guys all the fun with the update and we hope to see you soon on the Battlefield.</p>
+
+<h2 id="watch-the-release-trailer-for-v020">Watch the release trailer for v0.2.0</h2>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=jz-Hsmn3zKA" data-videoid="jz-Hsmn3zKA" data-width="480" data-height="360">YouTube Video</a></div>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

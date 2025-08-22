@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DEVBLOG 2 | Bf3: Reality Mod</title>
+<meta name="generator" content="Jekyll v4.3.2">
+<meta property="og:title" content="DEVBLOG 2">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Artillery in Detail, UI and Dev Spotlight">
+<meta property="og:description" content="Artillery in Detail, UI and Dev Spotlight">
+<link rel="canonical" href="https://bf3reality.com/devblog/devblog-2">
+<meta property="og:url" content="https://bf3reality.com/devblog/devblog-2">
+<meta property="og:site_name" content="Bf3: Reality Mod">
+<meta property="og:image" content="https://bf3reality.com/assets/posts/devblog-2/header.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-01-04T15:49:34+00:00">
+<meta name="twitter:card" content="BF3: RM is a BF3 modification with focus on teamplay, communication &amp; combined arms">
+<meta property="twitter:image" content="https://bf3reality.com/assets/posts/devblog-2/header.png">
+<meta property="twitter:title" content="DEVBLOG 2">
+<meta name="twitter:site" content="@Bf3RealityMod">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-01-04T15:49:34+00:00","datePublished":"2021-01-04T15:49:34+00:00","description":"Artillery in Detail, UI and Dev Spotlight","headline":"DEVBLOG 2","image":"https://bf3reality.com/assets/posts/devblog-2/header.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://bf3reality.com/devblog/devblog-2"},"url":"https://bf3reality.com/devblog/devblog-2"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="https://bf3reality.com/feed.xml" title="Bf3: Reality Mod">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9W8QTVD0NP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W8QTVD0NP');
+</script>
+<link rel="stylesheet" href="/assets/css/utils.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/youtube.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/header.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/footer.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/post.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-media.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-team.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-rmspy.css?v=1.0.4">
+    <link rel="stylesheet" href="/assets/css/page-error.css?v=1.0.4">
+</head>
+<body>
+<div class="main-menu">
+    <div class="main-menu-container">
+        <a href="/" class="logo">
+            <img src="/assets/img/rm.png" alt="Bf3: Reality Mod">
+        </a>
+        <div class="menu-left">
+            <a href="/#about" class="menu-item">About</a>
+            <a href="/#news" class="menu-item">News</a>
+            <a href="/media" class="menu-item ">Media</a>
+            <a href="/team" class="menu-item ">The team</a>
+            <a href="/servers" class="menu-item ">Servers</a>
+            <a href="https://wiki.bf3reality.com/en/guides" target="_blank" class="menu-item">Guides</a>
+            <a href="https://wiki.bf3reality.com/en/faq" target="_blank" class="menu-item">FAQ</a>
+        </div>
+        <div class="menu-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+            <a href="/#play" class="menu-item play">
+                Play RM
+            </a>
+            <a href="#" class="mobile-menu-toggle" id="mobile_menu_toggle" aria-label="Mobile menu">
+                <i class="las la-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile_menu">
+    <div class="items">
+        <a href="/#about" class="menu-item">About</a>
+        <a href="/#news" class="menu-item">News</a>
+        <a href="/media" class="menu-item ">Media</a>
+        <a href="/team" class="menu-item ">The team</a>
+        <a href="/servers" class="menu-item ">Servers</a>
+        <a href="https://wiki.bf3reality.com/en/guides" class="menu-item">Guides</a>
+        <a href="https://wiki.bf3reality.com/en/faq" class="menu-item">FAQ</a>
+    </div>
+    <div class="socials">
+        <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+            <i class="lab la-discord"></i>
+        </a>
+        <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+            <i class="lab la-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+            <i class="lab la-youtube"></i>
+        </a>
+        <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+            <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+            <i class="lab la-patreon"></i>
+        </a>
+        <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+            <i class="las la-coffee"></i>
+        </a>
+    </div>
+</div>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<header class="sub-page" style="background-image: url('/assets/posts/devblog-2/header.png');">
+  <div class="header-overlay">
+      <div class="container">
+          <h1>DEVBLOG 2</h1>
+          <p>Artillery in Detail, UI and Dev Spotlight</p>
+
+
+      </div>
+  </div>
+</header>
+<section class="post-details">
+  <div class="container">
+    <div class="post-meta">
+<time class="dt-published" datetime="2021-01-04T15:49:34+00:00" itemprop="datePublished">
+        Jan 4, 2021
+      </time>
+      <div class="authors">
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Alphacore</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">3ti65</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">Josephus</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">milk</span></span>, 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">FoolHen</span></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="post-content">
+  <div class="container">
+    
+
+<p>Hey everyone!
+
+</p>
+<p>Welcome to our first Devblog in 2021! Today we have a lot of special guests with us. We have one of our programmers, Josephus, with a look at Artillery in Detail, our UI Designer milk with the Evolution of our UI, some progress in Fixing Crashes with Project Lead 3ti65 and the very first Dev Spotlight with one of our Lead Devs, FoolHen!</p>
+
+<p>Over the years, Reality Mod has managed to gather a variety of incredibly talented individuals contributing in various ways, with currently more than 30 contributors, 15 of which are developers.
+With the Dev Spotlight at the end of the Dev Blog we wanted to give our members a chance to express themselves beyond their work on Reality Mod and for you to get to know the people behind the screens and for them to get to know you as well, so leave some questions you would like to have answered in the next Dev Spotlight below!</p>
+
+<p>That being said, let’s jump right into it!</p>
+
+<h1 id="artillery-in-detail">Artillery in Detail</h1>
+
+<div class="tag">
+        Josephus 
+      </div>
+
+<p>Hey, I’m Joe (aka Josephus)! I’m from England and I joined the Reality Mod Team as a Programmer around June of 2020. My first task was to rework the FOB and Rallypoint systems; so any issues you find with that, you’ll know I’m to blame</p>
+
+<p>In the <a href="/devblog/2020/12/09/devblog-1.html">previous blog</a>, Alpha showed you a preview of the artillery strike feature for the first time and in this blog, I will be explaining how it was conceptualized, developed and how it works in its current state.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/abbf7ff743abdf13be74.gif"><img src="/assets/posts/devblog-2/abbf7ff743abdf13be74.gif" alt=""></a><small></small>
+</div>
+
+<p>I think the artillery strike is actually a very important gameplay mechanic as it allows squad leaders to break stalemates. Calling in an artillery strike is easy
+Of course, this feature without any limitations would be OP and so, to call in an artillery strike, these conditions must be met: You must be a Squad Leader; it must have been at least 20 minutes since the round started and it must have been at least 20 minutes since the last artillery strike was called in.</p>
+
+<p>The first version of the artillery strike was actually written by Janssent (one of our Devs) as a separate Proof of Concept mod:</p>
+
+<p><a href="https://imgur.com/v4O6lJR">https://imgur.com/v4O6lJR</a></p>
+
+<p>Janssent’s original concept behaved very differently to how it does now. Firstly, the strike was not placed on the minimap, but simply by looking at where you want it to impact (although, this logic was never actually meant for RM). Additionally, it also used TV Missiles (Hellfires / AGM-114) for the projectiles but we decided to change it because you could actually see the missile spawn in the air and come down, which was not very immersive to watch.</p>
+
+<p>Instead, we are now using the mortar projectile, modified to use a different, much bigger and dustier explosion. Damage wise, Janssent’s concept proved too weak. A missile would have to land directly on a player to actually kill them.
+The current damage model is way more devastating: If you are in the strike radius and not in hard cover, you are going to die. Of course this is all still likely to change for balancing and performance reasons.</p>
+
+<p>After some experimentation, I changed the explosion to the one that occurs when a tank is destroyed. At first, the team really liked it but after a playtest it was decided that the explosion and the lingering dust was too dark and didn’t really make sense for an artillery strike.</p>
+
+<p>Personally, I love the artillery feature because it’s very much in keeping with RM’s realistic design and while also allowing us to show off BF3’s destruction (which no other tactical shooter has)</p>
+
+<p>Anyway, I think that’s enough rambling about things exploding for me!</p>
+
+<p>I hope to see you all on the battlefield soon!</p>
+
+<p>~ Joe</p>
+
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=uRrEUNuIoII" data-videoid="uRrEUNuIoII" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=oYFWcasAxP0" data-videoid="oYFWcasAxP0" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=x1qIG9YpRlc" data-videoid="x1qIG9YpRlc" data-width="480" data-height="360">YouTube Video</a></div>
+<div class="bt-video-container"><a class="youtube" href="http://www.youtube.com/watch?v=-M2-Yr7iaKI" data-videoid="-M2-Yr7iaKI" data-width="480" data-height="360">YouTube Video</a></div>
+
+<h2 id="m777-155mm-howitzer-impact">M777 155mm Howitzer impact</h2>
+
+<p>We are going to be using this most recent version from here on out (probably with a few tweaks). The reasoning for this is that artillery doesn’t create some big cinematic fireball like you’d see in a film, instead it’s much dustier.</p>
+
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image21.png"><img src="/assets/posts/devblog-2/pasted_image21.png" alt=""></a><small></small>
+</div>
+
+<h1 id="evolution-of-ui">Evolution of UI</h1>
+
+<div class="tag">
+        milk 
+      </div>
+
+<p>Hi, my name is Marien or milk and I live in the US. I currently work as an Art Director for a small gaming studio that creates City Builders and Management type games. I am a big fan of FPS games in general, especially the Battlefield franchise, so in my spare time I work on RM as a UI designer.</p>
+
+<p>I mainly base my workflow on personal experience and games in general that I have played. If I were to pick a specific game that is used as inspiration I would have to say Battlefield in general, due to it being the foundation of RM.
+When I create mockups I usually start with screenshots from RM or the Battlefield games as a temporary background and evolve it from there, that is why you might find some screenshots of other games in older mockups.</p>
+
+<h3 id="hud---old-note-the-background-is-from-bf-4-not-bf-3">HUD - old (Note: The background is from BF 4, not BF 3)</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_1.png"><img src="/assets/posts/devblog-2/pasted_image_0_1.png" alt=""></a><small></small>
+</div>
+
+<h3 id="hud---current">HUD - current</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0.png"><img src="/assets/posts/devblog-2/pasted_image_0.png" alt=""></a><small></small>
+</div>
+
+<p>The best UI design for me has an easily recognizable and navigable UI in terms of functionality. Also having an aesthetic that fits the theme of the game is a big plus.It’s very easy to be different, but very difficult to be better</p>
+
+<h2 id="squad-selection-menu">Squad Selection menu</h2>
+
+<h3 id="squad-selection---old-note-the-background-is-from-bf-4-not-bf-3">Squad Selection - old (Note: The background is from BF 4, not BF 3)</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_2.png"><img src="/assets/posts/devblog-2/pasted_image_0_2.png" alt=""></a><small></small>
+</div>
+
+<h3 id="squad-selection---current">Squad Selection - current</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_3.png"><img src="/assets/posts/devblog-2/pasted_image_0_3.png" alt=""></a><small></small>
+</div>
+
+<h3 id="squad-selection---planned">Squad Selection - planned</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_4.png"><img src="/assets/posts/devblog-2/pasted_image_0_4.png" alt=""></a><small></small>
+</div>
+
+<p>The main difficulty during the initial design process was creating something for a Project Reality style mod that didn’t show too much info, yet did show enough. Deciding what was important for a player and what isn’t. Basically moving away from a more casual UI but making sure brand new players aren’t totally lost.</p>
+
+<p>An example I can think of was the debate on whether or not to show too much info on a flag being capped either through UI, using audio cues, or another way of providing this info to the player. Another one was the compass, on the top, on the bottom? Ultimately we wanted to provide players both options due to different preferences even in our own team.</p>
+
+<p>The design philosophy in short: Taking the Project Reality feel and limitations and translating it into a usable interface for the player. Keeping it simple and attractive at the same time. No fluff, but also not too basic.</p>
+
+<p>That’s all for now and I’m looking forward to sharing further Design stories in the future!</p>
+
+<h2 id="kit-selection-menu">Kit Selection menu</h2>
+
+<h3 id="kit-selection---old">Kit Selection - old</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_5.png"><img src="/assets/posts/devblog-2/pasted_image_0_5.png" alt=""></a><small></small>
+</div>
+
+<h3 id="kit-selection---current">Kit Selection - current</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_6.png"><img src="/assets/posts/devblog-2/pasted_image_0_6.png" alt=""></a><small></small>
+</div>
+
+<h3 id="kit-selection---future-planned">Kit Selection - future planned</h3>
+<div class="lightbox-wrapper">
+<a data-fslightbox="gallery" data-alt="" href="/assets/posts/devblog-2/pasted_image_0_7.png"><img src="/assets/posts/devblog-2/pasted_image_0_7.png" alt=""></a><small></small>
+</div>
+
+<h1 id="recap-fixing-crashes">Recap: Fixing Crashes</h1>
+
+<div class="tag">
+        3ti65 
+      </div>
+
+<p>Hey folks, my name is Stefan aka 3ti65 and I’m the Co-Founder of BF3: Reality Mod. Powback and I started this project more than 5 years ago and since then I’ve been working mainly as Project Lead and Lead Dev. As such it’s my task to address the biggest issues that we are struggling with, and right now, these are the crashes that are plaguing RM. In the last Dev Blog we went into detail about some of them and I’m proud to say that we are making progress in this regard.</p>
+
+<p>For example, the mass crash issue has been fixed by the developers of VU.
+<a href="https://docs.veniceunleashed.net/general/changelog/#17335">https://docs.veniceunleashed.net/general/changelog/#17335</a></p>
+
+<p>It was related to us hitting engine limitations. However, we are not sure what exactly caused this specific issue in the first place, but we have not encountered it since the hotpatch deployed to VU so we assume it must have been mitigated.
+If you are interested in further information you can view the GitHub issue here: <a href="https://github.com/EmulatorNexus/VeniceUnleashed/issues/542">https://github.com/EmulatorNexus/VeniceUnleashed/issues/542</a></p>
+
+<p>Another crash, appearing when loading into the server, has been fixed as well. Apparently it was related to entities and solved by adjusting the garbage collection / destroy callbacks of everything we do with entities.</p>
+
+<p>Generally put: We are basically changing the engine in ways that DICE did not anticipate (obviously) and that can have unforeseen side effects. We also have to deal with a lot of inconsistency and hacky DICE code (DICE pls), and sometimes it becomes quite difficult to find a workaround, etc. But the more we work on it, the better we understand how everything works and the better we can address things.</p>
+
+<p>That being said, we are not quite done here yet, there are more crashes that need to be fixed. Stay tuned for further good news.</p>
+
+<h1 id="dev-spotlight">Dev Spotlight</h1>
+
+<div class="tag">
+        FoolHen 
+      </div>
+
+<p>Hello everybody, I’m FoolHen. I’m 26 years old, from Spain, currently studying Industrial Engineering. I’ve been working on RealityMod and <strong>MapEditor</strong> since 2017.</p>
+
+<p>Around 8 years ago I started learning programming in my spare time, starting with web and Android development, but also branched out to other technologies that interested me. But I was looking for a goal, a project that was challenging but fun, which could help me improve my skills. I wanted to collaborate with other people, which helps learn quite a bit as well.</p>
+
+<p>Since it came out, Battlefield 3 has been one of my favourite games. I was new to FPS games, and used to play CS:S, so BF3 blew me away. When I found out about the Venice Unleashed project some years later, I finally found what I wanted to do: Modding BF3. Back then VU was closed and barebones, so there weren’t many people in the modding community.</p>
+
+<p>In early 2017 I met Powback and 3ti65, which were looking for programmers to start building RM. The project seemed like an interesting challenge and still was in its infancy. They had created some PoC (Proof of Concept) mods, but the mod itself didn’t exist yet, so it was exciting to start building it from the ground up.</p>
+
+<p>Since then I’ve been working on both the scripting side and the UI, as well as Project Management. I started with modifications of the soldier mechanics (weapons, movements, basic player mechanics, etc), but as time went on the scope of the project grew, so we overhauled and created new systems and mechanics. Over the years I’ve worked on most of the core features we currently have, some more than others. UI, round logic, custom smoke grenades, recoil, are some of the areas I’ve worked more on.</p>
+
+<p>We have grown quite big since our small beginnings, so part of my responsibility is managing the project and people, ensuring that new developers can learn the tools and structure we follow, reviewing code, reviewing feedback and crash reports, etc.</p>
+
+<h2 id="how-did-industrial-engineering-help-you-with-programming-and-designing-reality-mod">How did Industrial Engineering help you with programming and designing Reality Mod?</h2>
+
+<p>FoolHen: I’ve had some programming subjects in university, but most of what I know I learned by myself, with online guides and courses. But I’ve had a lot of math subjects that have helped me greatly. One of those subjects, mechanics, has been a life saver. It wasn’t about gears and springs as it might sound like, but about 3D coordinate systems: matrices, positions, translations, rotations, etc which are the foundation of 3D games. That said, so far, I haven’t had to use integrals or differential equations, thankfully.</p>
+
+<h2 id="which-challenges-do-you-regularly-face-working-on-rm">Which challenges do you regularly face working on RM?</h2>
+
+<p>FoolHen: One of the hardest challenges is managing our resources. We are quite a big team for a modding project, and by its nature we all work on it in our free time. That means that it is hard to predict when each member will have time and when things will get finished, and sometimes unexpected issues will block this process. Sometimes the tools we have available are lacking and we need to build them or request help from VU developers, or sometimes we are challenged by issues caused by us not understanding how the engine works and it takes time to learn and figure it out. This means that estimations are usually not good ones, and we must be careful and intelligent on what to focus on if we want to meet internal goals.
+On the development side, the biggest challenge is trying to understand how Frostbite, the BF3 engine, works. A lot of the time it’s a lot of trial and error, to see what works and what doesn’t, and it can be time consuming.</p>
+
+<h2 id="what-do-you-love-about-working-on-rm">What do you love about working on RM?</h2>
+
+<p>FoolHen: Playing it. Playing something you’ve worked on and seeing other people enjoy it is really satisfactory.</p>
+
+<h2 id="what-do-you-think-makes-rm-a-one-of-a-kind-mod">What do you think makes RM a one of a kind mod?</h2>
+
+<p>FoolHen: I think one of the best points is that we part from a really solid game that has aged quite well, runs great and looks beautiful. But in my opinion our best asset is the team we have. It’s well structured, separated into different categories, and we follow development strategies used in the software development industry. We have quality assurance, UI designers, developers with experience in different fields, community management, marketing guys, testers etc. All these sectors managed with the same goal, with regular meetings that assure that we are all on the same page.</p>
+
+<h2 id="what-was-your-main-motivation-to-join-the-rm-team">What was your main motivation to join the RM team?</h2>
+
+<p>FoolHen: As I previously said, I wanted to improve my programming skills and work alongside other people, but I also had other motives. Back then I was starting to be interested in game development. I started building some simple 2D arcade games, like asteroids and snake, to learn the basic math and structure behind game engines, implementing basic algorithms like drawing lines on screen.
+For a more academic purpose, I also wanted to improve my English, which working with people around the world ensured me.</p>
+
+<h2 id="which-features-would-you-like-to-see-in-rm-in-the-future">Which features would you like to see in RM in the future?</h2>
+
+<p>FoolHen: Improved gameplay mechanics, which are the hardest things to do and nail. For example, I would love to implement leaning, but it might be too ambitious, especially the animations and their syncing. Body dragging with good animations, like in some single player missions, is also something I would like to add in the future.
+But the thing I look forward to the most are custom maps. Frostbite allows for big maps with good performance and looks. As of now we are still working on MapEditor, but I’m sure when we finish it we will see some awesome, custom maps.</p>
+
+<h2 id="which-games-do-you-like-to-play-in-your-free-time-which-games-have-you-learned-the-most-from-do-any-of-those-inspire-your-work-on-rm">Which games do you like to play in your free time? Which games have you learned the most from? Do any of those inspire your work on RM?</h2>
+
+<p>FoolHen: Mainly shooters. I started with Counter Strike and Battlefield, but also branched out to more realistic games. DayZ has been one of the games I’ve spent more time on, even with the amount of issues it has. The detail and realism of the mechanics, especially in regards to bullet physics and the in-depth of the weapons and their handling, is something that made me get into more realistic games like PR and Squad. But nowadays I don’t usually play games, as my free time is more sparse and I spend it on RM or on other side projects and hobbies.</p>
+
+<h2 id="thank-you-for-your-time-it-was-very-interesting-to-find-out-some-things-about-you">Thank you for your time, it was very interesting to find out some things about you.</h2>
+
+<p>FoolHen: Of course, and I hope I can see you all in game soon!</p>
+
+<h3 id="thats-all-for-today-folks-i-hope-you-enjoyed-this-dev-blog-join-our-discord-if-you-want-to-stay-up-to-date-or-to-sign-up-for-early-access">That’s all for today folks! I hope you enjoyed this Dev Blog, join our Discord if you want to stay up to date or to sign up for Early Access!.</h3>
+
+<p>Cheers &amp; stay tuned!</p>
+
+<p><strong>Alphacore</strong></p>
+
+<p>Head of Community Management</p>
+
+    <div class="tags">
+      
+          <a href="/devblog" class="tag devblog">
+              devblog
+          </a>
+      
+    </div>
+  </div>
+</section>
+      </div>
+    </main><footer>
+    <div class="container">
+        <div class="footer-left">
+            <p class="copyright">© <script>document.write(Date().split` `[3])</script>, BF3: Reality Mod</p>
+            <p class="project">This project is not affiliated with Electronic Arts Inc. or EA Digital Illusions CE AB. Battlefield and Origin are registered trademarks of Electronic Arts Inc. All company, product, and service names, logos, and brands, and any other copyrighted materials are property of their respective owners and are used for identification purposes only. Use of these materials does not imply endorsement.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://dsc.gg/bf3reality" target="_blank" class="menu-item-social" aria-label="Discord">
+                <i class="lab la-discord"></i>
+            </a>
+            <a href="https://twitter.com/Bf3RealityMod" target="_blank" class="menu-item-social" aria-label="Twitter">
+                <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@bf3realitymod" target="_blank" class="menu-item-social" aria-label="YouTube">
+                <i class="lab la-youtube"></i>
+            </a>
+            <a href="https://github.com/BF3RM" target="_blank" class="menu-item-social" aria-label="GitHub">
+                <i class="lab la-github"></i>
+            </a>
+            <a href="https://www.patreon.com/bf3realitymod" target="_blank" class="menu-item-social" aria-label="Patreon">
+                <i class="lab la-patreon"></i>
+            </a>
+            <a href="https://www.buymeacoffee.com/bf3reality" target="_blank" class="menu-item-social" aria-label="Buy Me a Coffee">
+                <i class="las la-coffee"></i>
+            </a>
+        </div>
+    </div>
+    <button id="scroll_to_top_button" title="Go to top">
+        <i class="las la-arrow-up"></i>
+    </button>
+</footer>
+<script type="text/javascript" src="/assets/js/youtube.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/fslightbox.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/mobilemenu.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/credits.js?v=1.0.4"></script>
+<script type="text/javascript" src="/assets/js/rmspy.js?v=1.0.4"></script>
+</body>
+
+</html>

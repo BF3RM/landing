@@ -1,0 +1,125 @@
+.post-details {
+  background: rgba(var(--color-primary-rgb), 0.075);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.5);
+  border-top: 1px solid rgba(var(--color-primary-rgb), 0.5);
+}
+.post-details .container {
+  max-width: 860px;
+}
+.post-details .post-meta {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.post-details .post-meta time {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.post-content-full,
+.post-content {
+  margin: 45px 0;
+}
+.post-content-full .container,
+.post-content .container {
+  max-width: 860px;
+}
+.post-content-full .tags,
+.post-content .tags {
+  margin-top: 30px;
+}
+.post-content-full iframe,
+.post-content iframe {
+  margin: 35px auto;
+  display: block;
+}
+.post-content-full h1,
+.post-content h1 {
+  margin: 5rem 0 0.75rem;
+  color: var(--color-red);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.post-content-full h2,
+.post-content h2 {
+  margin: 2.5rem 0 0.5rem;
+  font-size: 2rem;
+}
+.post-content-full h3,
+.post-content h3 {
+  margin: 2.5rem 0 0.25rem;
+  font-size: 1.5rem;
+  color: var(--color-yellow);
+}
+.post-content-full ul li,
+.post-content-full p,
+.post-content ul li,
+.post-content p {
+  opacity: 0.76;
+  line-height: 1.75rem;
+}
+.post-content-full .lightbox-wrapper,
+.post-content .lightbox-wrapper {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 3rem 0;
+}
+.post-content-full .lightbox-wrapper a[data-fslightbox=gallery],
+.post-content .lightbox-wrapper a[data-fslightbox=gallery] {
+  margin: 0 0 1rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.post-content-full .lightbox-wrapper a[data-fslightbox=gallery] img,
+.post-content .lightbox-wrapper a[data-fslightbox=gallery] img {
+  max-width: 700px;
+}
+.post-content-full .lightbox-wrapper a[data-fslightbox=gallery]:hover,
+.post-content .lightbox-wrapper a[data-fslightbox=gallery]:hover {
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+.post-content-full .lightbox-wrapper small,
+.post-content .lightbox-wrapper small {
+  margin-top: 0.85rem;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.post-content-full {
+  margin: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .post-details .container,
+  .post-content-full .container,
+  .post-content .container {
+    max-width: 80vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .post-details .post-meta {
+    font-size: 0.8rem;
+  }
+  .post-content-full .lightbox-wrapper a[data-fslightbox=gallery] img,
+  .post-content .lightbox-wrapper a[data-fslightbox=gallery] img {
+    max-width: 80vw;
+  }
+  .post-details .container,
+  .post-content-full .container,
+  .post-content .container {
+    max-width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=post.css.map */
