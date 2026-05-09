@@ -1,0 +1,2472 @@
+- name: XP1_001
+  displayName: "Strike At Karkand"
+  minimapCx: -48.688
+  minimapCz: -8.074
+  minimapWidth: 1000
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v4
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base - Garage"
+          x: 54.0
+          z: 341.0
+        - name: "Main Base - Helipad"
+          x: 32.0
+          z: 292.0
+        - name: "Main Base - Armored Vehicle Garage"
+          x: 254.0
+          z: 405.0
+      spawnPoints2:
+        - name: "Main Base"
+          x: 270.0
+          z: -222.0
+      boundaries1:
+        - [405.51, 334.9]
+        - [307.38, 396.64]
+        - [218.96, 487.29]
+        - [61.29, 329.0]
+        - [61.35, 365.24]
+        - [19.67, 364.3]
+        - [16.38, 268.21]
+        - [88.78, 269.55]
+        - [234.41, 351.93]
+        - [340.53, 269.14]
+      boundaries2:
+        - [243.95, -94.25]
+        - [243.57, -261.24]
+        - [243.44, -327.11]
+        - [309.85, -312.81]
+        - [418.85, -215.88]
+        - [349.74, -110.59]
+      boundariesN:
+        - [19.67, 364.3]
+        - [20.1, 403.91]
+        - [-51.88, 402.39]
+        - [-52.7, 427.19]
+        - [-207.14, 425.8]
+        - [-207.36, 371.48]
+        - [-268.1, 371.96]
+        - [-339.14, 351.87]
+        - [-363.73, 300.02]
+        - [-353.76, 268.74]
+        - [-353.07, 24.61]
+        - [-412.07, -142.24]
+        - [-420.79, -172.55]
+        - [-415.14, -213.34]
+        - [-360.22, -232.77]
+        - [-327.04, -275.22]
+        - [-318.02, -313.85]
+        - [-258.5, -325.66]
+        - [-236.48, -368.02]
+        - [-235.25, -453.9]
+        - [-196.31, -503.76]
+        - [-124.89, -507.28]
+        - [-55.17, -507.78]
+        - [93.85, -447.52]
+        - [311.18, -364.54]
+        - [309.85, -312.81]
+        - [243.44, -327.11]
+        - [243.57, -261.24]
+        - [243.95, -94.25]
+        - [349.74, -110.59]
+        - [447.49, 161.19]
+        - [405.51, 334.9]
+        - [340.53, 269.14]
+        - [234.41, 351.93]
+        - [88.78, 269.55]
+        - [16.38, 268.21]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BTR"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+    - name: INS
+      fullName: "Insurgency"
+      version: v4
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Main Base - Garage"
+          x: 54.0
+          z: 341.0
+        - name: "Main Base - Armored Vehicle Garage"
+          x: 254.0
+          z: 405.0
+      spawnPoints2:
+        - name: "Main Base"
+          x: 270.0
+          z: -222.0
+      boundaries1:
+        - [405.51, 334.9]
+        - [307.38, 396.64]
+        - [218.96, 487.29]
+        - [61.29, 329.0]
+        - [61.35, 365.24]
+        - [19.67, 364.3]
+        - [16.38, 268.21]
+        - [88.78, 269.55]
+        - [234.41, 351.93]
+        - [340.53, 269.14]
+      boundaries2:
+        - [243.95, -94.25]
+        - [243.57, -261.24]
+        - [243.44, -327.11]
+        - [309.85, -312.81]
+        - [418.85, -215.88]
+        - [349.74, -110.59]
+      boundariesN:
+        - [19.67, 364.3]
+        - [20.1, 403.91]
+        - [-51.88, 402.39]
+        - [-52.7, 427.19]
+        - [-207.14, 425.8]
+        - [-207.36, 371.48]
+        - [-268.1, 371.96]
+        - [-339.14, 351.87]
+        - [-363.73, 300.02]
+        - [-353.76, 268.74]
+        - [-353.07, 24.61]
+        - [-412.07, -142.24]
+        - [-420.79, -172.55]
+        - [-415.14, -213.34]
+        - [-360.22, -232.77]
+        - [-327.04, -275.22]
+        - [-318.02, -313.85]
+        - [-258.5, -325.66]
+        - [-236.48, -368.02]
+        - [-235.25, -453.9]
+        - [-196.31, -503.76]
+        - [-124.89, -507.28]
+        - [-55.17, -507.78]
+        - [93.85, -447.52]
+        - [311.18, -364.54]
+        - [309.85, -312.81]
+        - [243.44, -327.11]
+        - [243.57, -261.24]
+        - [243.95, -94.25]
+        - [349.74, -110.59]
+        - [447.49, 161.19]
+        - [405.51, 334.9]
+        - [340.53, 269.14]
+        - [234.41, 351.93]
+        - [88.78, 269.55]
+        - [16.38, 268.21]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v4
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Warehouse"
+          x: 45.49
+          z: -197.5
+      spawnPoints2:
+        - name: "Gas Station"
+          x: -150.01
+          z: 275.53
+      boundaries1:
+        - [75.21, -255.02]
+        - [75.21, -212.93]
+        - [74.28, -175.46]
+        - [31.72, -159.73]
+        - [29.41, -279.54]
+      boundaries2:
+        - [-89.94, 241.36]
+        - [-115.39, 307.97]
+        - [-153.32, 308.9]
+        - [-186.17, 308.44]
+        - [-215.78, 237.2]
+      boundariesN:
+        - [31.72, -159.73]
+        - [27.48, 119.86]
+        - [-89.94, 241.36]
+        - [-215.78, 237.2]
+        - [-243.42, 185.34]
+        - [-294.73, 61.0]
+        - [-348.67, 22.88]
+        - [-413.17, -172.2]
+        - [-320.31, -282.93]
+        - [29.41, -279.54]
+- name: XP1_002
+  displayName: "Gulf of Oman"
+  minimapCx: -58.547
+  minimapCz: -139.08
+  minimapWidth: 2100
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v7
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Middle Eastern Coalition"
+        short: "MEC"
+        icon: mec
+      spawnPoints1:
+        - name: "Carrier - Upper Deck"
+          x: 834.69
+          z: -866.4
+        - name: "Carrier - Lower Deck"
+          x: 907.21
+          z: -770.57
+      spawnPoints2:
+        - name: "Main Base"
+          x: -1010.33
+          z: 172.89
+      boundaries1:
+        - [991.45, -145.23]
+        - [181.39, -1187.03]
+        - [989.4, -1182.93]
+        - [989.4, -645.62]
+      boundaries2:
+        - [-927.94, 346.72]
+        - [-1108.19, 222.7]
+        - [-1108.19, 30.91]
+        - [-942.36, 23.7]
+        - [-932.26, 189.53]
+      boundariesN:
+        - [-942.36, 23.7]
+        - [181.39, -1187.03]
+        - [991.45, -145.23]
+        - [284.4, 697.25]
+        - [76.6, 561.48]
+        - [-441.72, 584.69]
+        - [-927.94, 346.72]
+        - [-932.26, 189.53]
+      vehicles:
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "AH-1Z Viper"
+          team: 1
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BTR"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BTR"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Havoc"
+          team: 2
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "AAVSP"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: INS
+      fullName: "Insurgency"
+      version: v7
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Carrier - Upper Deck"
+          x: 834.69
+          z: -866.4
+        - name: "Carrier - Lower Deck"
+          x: 907.21
+          z: -770.57
+      spawnPoints2:
+        - name: "Main Base"
+          x: -1010.33
+          z: 172.89
+      boundaries1:
+        - [991.45, -145.23]
+        - [181.39, -1187.03]
+        - [989.4, -1182.93]
+        - [989.4, -645.62]
+      boundaries2:
+        - [-927.94, 346.72]
+        - [-1108.19, 222.7]
+        - [-1108.19, 30.91]
+        - [-942.36, 23.7]
+        - [-932.26, 189.53]
+      boundariesN:
+        - [-942.36, 23.7]
+        - [181.39, -1187.03]
+        - [991.45, -145.23]
+        - [284.4, 697.25]
+        - [76.6, 561.48]
+        - [-441.72, 584.69]
+        - [-927.94, 346.72]
+        - [-932.26, 189.53]
+      vehicles:
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "AAVSP"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+    - name: SKR
+      fullName: "Skirmish"
+      version: v8
+      tickets1: 100
+      tickets2: 100
+      minimapCx: 243.948
+      minimapCz: 318.623
+      minimapWidth: 500
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Middle Eastern Coalition"
+        short: "MEC"
+        icon: mec
+      spawnPoints1:
+        - name: "Main"
+          x: 411.25
+          z: 101.85
+      spawnPoints2:
+        - name: "Main"
+          x: 261.06
+          z: 525.38
+      boundaries1:
+        - [433.89, 69.11]
+        - [484.67, 69.6]
+        - [468.56, 147.24]
+        - [345.51, 86.69]
+        - [368.95, 69.11]
+      boundaries2:
+        - [290.74, 494.99]
+        - [261.93, 536.65]
+        - [224.04, 510.28]
+        - [251.07, 470.61]
+      boundariesN:
+        - [468.56, 147.24]
+        - [392.66, 355.3]
+        - [290.74, 494.99]
+        - [251.07, 470.61]
+        - [224.04, 510.28]
+        - [174.25, 478.92]
+        - [156.18, 504.34]
+        - [60.69, 439.63]
+        - [66.89, 239.5]
+        - [345.51, 86.69]
+- name: XP1_003
+  displayName: "Sharqi Peninsula"
+  minimapCx: 240.119
+  minimapCz: -168.368
+  minimapWidth: 2000
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v1
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "British Armed Forces"
+        short: "BAF"
+        icon: uk
+      team2:
+        name: "Peoples Liberation Army"
+        short: "PLA"
+        icon: pla
+      spawnPoints1:
+        - name: "Dock"
+          x: -49.8
+          z: 286.01
+      spawnPoints2:
+        - name: "Main Base"
+          x: 82.05
+          z: -1088.78
+        - name: "Boats"
+          x: -71.57
+          z: -1024.61
+      boundaries1:
+        - [87.48, 242.09]
+        - [41.29, 302.56]
+        - [-67.47, 333.21]
+        - [-96.02, 332.37]
+        - [-174.54, 308.02]
+        - [-173.7, 116.54]
+      boundaries2:
+        - [-177.92, -911.41]
+        - [-295.29, -1166.78]
+        - [-31.99, -1166.78]
+        - [120.28, -1166.78]
+        - [207.52, -971.68]
+      boundariesN:
+        - [207.52, -971.68]
+        - [683.37, -803.55]
+        - [910.2, -391.14]
+        - [965.71, 168.77]
+        - [815.03, 539.94]
+        - [653.24, 530.42]
+        - [396.28, 532.01]
+        - [386.76, 346.43]
+        - [41.29, 302.56]
+        - [87.48, 242.09]
+        - [-173.7, 116.54]
+        - [-415.09, -59.4]
+        - [-419.8, -657.44]
+        - [-177.92, -911.41]
+      vehicles:
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Growler"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+    - name: INS
+      fullName: "Insurgency"
+      version: v1
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      team1:
+        name: "British Armed Forces"
+        short: "BAF"
+        icon: uk
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Carrier - Upper Deck"
+          x: -593.37
+          z: -317.88
+        - name: "Carrier - Lower Deck"
+          x: -584.08
+          z: -312.09
+      spawnPoints2:
+        - name: "Main Base"
+          x: 308.71
+          z: -837.56
+      boundaries1:
+        - [-759.36, -138.14]
+        - [-759.73, -234.8]
+        - [-759.74, -370.24]
+        - [-759.64, -532.56]
+        - [-438.73, -658.65]
+        - [-451.99, 78.45]
+      boundaries2:
+        - [190.94, -821.92]
+        - [181.09, -860.16]
+        - [237.86, -898.98]
+        - [379.47, -838.49]
+        - [327.08, -752.98]
+      boundariesN:
+        - [-438.73, -658.65]
+        - [190.94, -821.92]
+        - [327.08, -752.98]
+        - [379.47, -838.49]
+        - [733.67, -818.7]
+        - [1037.73, -215.94]
+        - [775.91, 528.46]
+        - [750.77, 517.65]
+        - [718.07, 515.82]
+        - [672.08, 516.48]
+        - [658.27, 512.7]
+        - [637.03, 493.02]
+        - [627.13, 490.94]
+        - [621.66, 493.16]
+        - [419.45, 443.36]
+        - [422.41, 395.01]
+        - [417.29, 374.48]
+        - [406.77, 355.41]
+        - [380.54, 334.88]
+        - [348.76, 311.94]
+        - [307.26, 300.11]
+        - [301.13, 292.43]
+        - [291.92, 288.63]
+        - [253.34, 290.02]
+        - [243.63, 292.8]
+        - [214.18, 294.26]
+        - [191.17, 293.97]
+        - [135.64, 296.09]
+        - [102.76, 299.81]
+        - [39.78, 300.4]
+        - [21.66, 309.02]
+        - [-26.7, 321.37]
+        - [-66.23, 331.52]
+        - [-95.82, 331.01]
+        - [-451.99, 78.45]
+      vehicles:
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "AAVSP"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+    - name: SKR
+      fullName: "Skirmish"
+      version: v1
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "British Armed Forces"
+        short: "BAF"
+        icon: uk
+      team2:
+        name: "Peoples Liberation Army"
+        short: "PLA"
+        icon: pla
+      spawnPoints1:
+        - name: "Broadcast Station"
+          x: 81.43
+          z: -134.03
+      spawnPoints2:
+        - name: "Apartments"
+          x: 644.98
+          z: -224.71
+      boundaries1:
+        - [162.56, 15.63]
+        - [-31.24, -67.48]
+        - [45.09, -278.67]
+        - [174.43, -210.82]
+      boundaries2:
+        - [652.79, -104.97]
+        - [528.63, -109.63]
+        - [526.99, -294.63]
+        - [667.04, -291.07]
+      boundariesN:
+        - [528.63, -109.63]
+        - [508.65, 48.01]
+        - [327.15, 88.42]
+        - [162.56, 15.63]
+        - [174.43, -210.82]
+        - [162.78, -331.42]
+        - [184.01, -378.0]
+        - [526.99, -294.63]
+- name: XP1_004
+  displayName: "Wake Island"
+  minimapCx: -5.067
+  minimapCz: -71.817
+  minimapWidth: 1800
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v2
+      tickets1: 350
+      tickets2: 350
+      minimapCx: 215.789
+      minimapCz: 167.271
+      minimapWidth: 2300
+      team1:
+        name: "British Armed Forces"
+        short: "BAF"
+        icon: uk
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Carrier - Upper Deck Transport"
+          x: -748.36
+          z: -570.43
+        - name: "Carrier - Lower Deck"
+          x: -767.98
+          z: -557.8
+        - name: "Carrier - Upper Deck CAS"
+          x: -683.51
+          z: -645.11
+      spawnPoints2:
+        - name: "Platfrom - Upper Deck"
+          x: 1109.53
+          z: 1047.62
+        - name: "Platform - Lower Deck"
+          x: 1063.54
+          z: 1088.65
+      boundaries1:
+        - [-333.72, -982.16]
+        - [-933.78, -112.12]
+        - [-934.1, -647.78]
+        - [-934.12, -982.62]
+      boundaries2:
+        - [1365.62, 609.94]
+        - [1365.79, 1317.22]
+        - [1067.54, 1317.16]
+        - [701.84, 1317.22]
+      boundariesN:
+        - [-333.72, -982.16]
+        - [1365.78, -982.7]
+        - [1365.62, 609.94]
+        - [701.84, 1317.22]
+        - [-934.21, 1317.27]
+        - [-933.78, -112.12]
+      vehicles:
+        - displayName: "Ka60"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Ka60"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "UH-1Y Venom"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "AH-1Z Viper"
+          team: 1
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Havoc"
+          team: 2
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "AAVSP"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v1
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "British Armed Forces"
+        short: "BAF"
+        icon: uk
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Bunker"
+          x: -148.76
+          z: -361.56
+      spawnPoints2:
+        - name: "Airfield"
+          x: 409.74
+          z: 317.84
+      boundaries1:
+        - [-83.3, -381.73]
+        - [-170.5, -316.17]
+        - [-203.63, -352.5]
+        - [-187.17, -419.27]
+        - [-122.57, -418.34]
+      boundaries2:
+        - [488.17, 335.23]
+        - [421.29, 395.49]
+        - [318.84, 379.83]
+        - [300.16, 290.64]
+        - [467.08, 261.11]
+      boundariesN:
+        - [-83.3, -381.73]
+        - [378.47, -253.09]
+        - [475.15, 33.13]
+        - [467.08, 261.11]
+        - [300.16, 290.64]
+        - [-136.73, -138.6]
+        - [-170.5, -316.17]
+- name: XP3_Desert
+  displayName: "Bandar Desert"
+  minimapCx: -508.0
+  minimapCz: 0.0
+  minimapWidth: 5000
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v4
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base"
+          x: 597.27
+          z: 2162.58
+      spawnPoints2:
+        - name: "Main Base"
+          x: -2589.62
+          z: -1251.69
+        - name: "Main Base - Airfield"
+          x: -2843.52
+          z: -1067.3
+      boundaries1:
+        - [1991.42, 2499.35]
+        - [183.54, 2498.6]
+        - [169.97, 1503.4]
+        - [1991.6, 1489.29]
+      boundaries2:
+        - [-2041.74, 252.09]
+        - [-3006.98, 229.53]
+        - [-3005.97, -2496.45]
+        - [-2028.7, -2496.82]
+      boundariesN:
+        - [169.97, 1503.4]
+        - [183.54, 2498.6]
+        - [-3005.17, 2499.66]
+        - [-3006.98, 229.53]
+        - [-2041.74, 252.09]
+        - [-2028.7, -2496.82]
+        - [1991.05, -2498.81]
+        - [1991.6, 1489.29]
+      vehicles:
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "RHIB"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "AH-1Z Viper"
+          team: 1
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "Havoc"
+          team: 2
+          initialSpawnDelay: 600
+          respawnDelay: 900
+    - name: INS
+      fullName: "Insurgency"
+      version: v4
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Main Base"
+          x: 597.27
+          z: 2162.58
+      spawnPoints2:
+        - name: "Airfield East"
+          x: -1151.28
+          z: -403.73
+      boundaries1:
+        - [1989.45, 2497.59]
+        - [1144.77, 2498.63]
+        - [279.05, 2498.65]
+        - [288.52, 1786.18]
+        - [1990.11, 1805.13]
+      boundaries2:
+        - [-988.69, -95.03]
+        - [-1395.9, -220.13]
+        - [-1378.03, -534.15]
+        - [-1358.88, -891.58]
+        - [-998.9, -1066.46]
+      boundariesN:
+        - [288.52, 1786.18]
+        - [-988.69, -95.03]
+        - [-998.9, -1066.46]
+        - [1340.0, -1212.0]
+        - [1856.0, -204.0]
+        - [1992.0, -4.8]
+        - [1990.11, 1805.13]
+      vehicles:
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Quad Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Quad Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Quad Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Quad Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "VDV"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "RHIB"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v5
+      tickets1: 100
+      tickets2: 100
+      minimapCx: -75.142
+      minimapCz: 184.81
+      minimapWidth: 700
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Northern Checkpoint"
+          x: 83.05
+          z: 493.86
+      spawnPoints2:
+        - name: "Southern Checkpoint"
+          x: -413.37
+          z: -49.83
+      boundaries1:
+        - [145.15, 467.05]
+        - [142.93, 534.73]
+        - [69.57, 534.73]
+        - [-44.96, 534.78]
+        - [-64.87, 483.95]
+      boundaries2:
+        - [-398.91, 24.18]
+        - [-425.12, 14.88]
+        - [-425.12, -49.37]
+        - [-424.69, -132.22]
+        - [-391.72, -145.75]
+      boundariesN:
+        - [-391.72, -145.75]
+        - [-334.5, -164.75]
+        - [-139.75, -164.75]
+        - [66.45, -97.34]
+        - [152.81, -22.43]
+        - [189.82, 63.92]
+        - [188.94, 195.66]
+        - [145.15, 467.05]
+        - [-64.87, 483.95]
+        - [-89.52, 318.59]
+        - [-156.49, 244.57]
+        - [-239.33, 155.57]
+        - [-398.91, 24.18]
+- name: XP3_Shield
+  displayName: "Armored Shield"
+  minimapCx: -51.709
+  minimapCz: -71.8175
+  minimapWidth: 2200
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v1
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base"
+          x: 511.3
+          z: 278.82
+      spawnPoints2:
+        - name: "Main Base"
+          x: -802.76
+          z: -432.31
+      boundaries1:
+        - [654.72, 267.75]
+        - [644.18, 318.12]
+        - [609.04, 345.06]
+        - [539.93, 380.2]
+        - [469.65, 382.54]
+        - [433.34, 334.52]
+        - [425.14, 267.75]
+        - [586.79, 199.81]
+      boundaries2:
+        - [-815.61, -507.63]
+        - [-697.38, -504.15]
+        - [-692.16, -377.22]
+        - [-746.06, -272.9]
+        - [-874.73, -264.21]
+        - [-937.32, -286.81]
+        - [-876.47, -389.4]
+      boundariesN:
+        - [-697.38, -504.15]
+        - [-315.14, -820.42]
+        - [399.37, -927.01]
+        - [569.22, -936.38]
+        - [907.73, -614.26]
+        - [973.33, -90.68]
+        - [877.28, 109.62]
+        - [654.72, 267.75]
+        - [586.79, 199.81]
+        - [425.14, 267.75]
+        - [433.34, 334.52]
+        - [289.19, 598.6]
+        - [-39.68, 593.66]
+        - [-319.08, 534.31]
+        - [-464.97, 331.55]
+        - [-556.46, 222.76]
+        - [-808.67, 71.93]
+        - [-966.92, -83.85]
+        - [-937.32, -286.81]
+        - [-874.73, -264.21]
+        - [-746.06, -272.9]
+        - [-692.16, -377.22]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Quad Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Quad Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v1
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base"
+          x: 551.71
+          z: 414.04
+      spawnPoints2:
+        - name: "Main Base"
+          x: -319.69
+          z: -315.83
+      boundaries1:
+        - [631.99, 353.04]
+        - [611.49, 447.65]
+        - [538.95, 465.0]
+        - [444.34, 487.07]
+        - [352.88, 394.04]
+      boundaries2:
+        - [-353.57, -216.22]
+        - [-356.72, -293.49]
+        - [-363.03, -395.99]
+        - [-287.34, -457.48]
+        - [-279.45, -151.57]
+      boundariesN:
+        - [-287.34, -457.48]
+        - [21.73, -569.44]
+        - [244.08, -591.52]
+        - [453.8, -575.75]
+        - [578.38, -413.33]
+        - [631.99, 353.04]
+        - [352.88, 394.04]
+        - [-68.15, 135.43]
+        - [-279.45, -151.57]
+- name: XP4_Parl
+  displayName: "Azadi Palace"
+  minimapCx: -281.988
+  minimapCz: 59.131
+  minimapWidth: 850
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v2
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "Israel Defence Forces"
+        short: "IDF"
+        icon: idf
+      team2:
+        name: "Middle Eastern Coalition"
+        short: "MEC"
+        icon: mec
+      spawnPoints1:
+        - name: "Main Base"
+          x: -354.97
+          z: 390.21
+      spawnPoints2:
+        - name: "Main Base"
+          x: -123.33
+          z: -172.7
+      boundaries1:
+        - [-152.32, 415.08]
+        - [-331.23, 458.82]
+        - [-425.91, 476.45]
+        - [-497.23, 369.06]
+        - [-404.19, 346.51]
+        - [-329.59, 339.54]
+        - [-194.32, 300.6]
+      boundaries2:
+        - [-5.84, -90.61]
+        - [-94.58, -134.07]
+        - [-222.06, -195.28]
+        - [-239.19, -271.46]
+        - [-220.16, -296.18]
+        - [-183.89, -319.36]
+        - [-125.9, -232.58]
+        - [25.68, -150.66]
+      boundariesN:
+        - [-497.23, 369.06]
+        - [-551.26, 303.23]
+        - [-598.05, 270.29]
+        - [-623.27, 183.51]
+        - [-630.84, 163.47]
+        - [-654.89, 132.57]
+        - [-666.9, 111.15]
+        - [-669.37, 103.51]
+        - [-674.69, 107.04]
+        - [-680.9, 97.94]
+        - [-682.06, 89.35]
+        - [-688.53, 78.83]
+        - [-690.05, 64.61]
+        - [-695.94, 49.39]
+        - [-702.62, 37.12]
+        - [-654.06, -14.01]
+        - [-579.0, -33.25]
+        - [-552.26, -154.52]
+        - [-553.66, -251.87]
+        - [-545.92, -282.13]
+        - [-507.45, -283.07]
+        - [-457.72, -289.63]
+        - [-436.66, -280.51]
+        - [-386.16, -264.79]
+        - [-380.05, -281.98]
+        - [-326.92, -264.17]
+        - [-308.46, -313.69]
+        - [-239.19, -271.46]
+        - [-222.06, -195.28]
+        - [-94.58, -134.07]
+        - [-5.84, -90.61]
+        - [-31.29, -79.05]
+        - [-37.45, -42.71]
+        - [-25.76, -8.89]
+        - [-27.97, 27.3]
+        - [-28.92, 58.59]
+        - [-50.25, 58.9]
+        - [-132.27, 58.43]
+        - [-173.51, 61.11]
+        - [-210.49, 61.43]
+        - [-250.0, 60.96]
+        - [-239.25, 126.06]
+        - [-230.23, 145.79]
+        - [-217.24, 193.29]
+        - [-217.1, 223.52]
+        - [-203.82, 270.19]
+        - [-194.32, 300.6]
+        - [-329.59, 339.54]
+        - [-404.19, 346.51]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: INS
+      fullName: "Insurgency"
+      version: v3
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      minimapCx: -453.388
+      minimapCz: -143.088
+      minimapWidth: 1150
+      team1:
+        name: "Israel Defence Forces"
+        short: "IDF"
+        icon: idf
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Main Base"
+          x: -354.97
+          z: 390.21
+      spawnPoints2:
+        - name: "Garages"
+          x: -123.33
+          z: -172.7
+      boundaries1:
+        - [-141.81, 431.3]
+        - [-306.68, 431.66]
+        - [-402.37, 431.66]
+        - [-453.98, 431.66]
+        - [-514.91, 352.09]
+        - [-177.65, 348.87]
+      boundaries2:
+        - [-36.08, -102.0]
+        - [-90.56, -127.8]
+        - [-158.66, -162.21]
+        - [-143.96, -193.75]
+        - [-93.43, -208.44]
+        - [-43.25, -188.37]
+        - [-24.97, -153.61]
+      boundariesN:
+        - [-36.08, -102.0]
+        - [-16.59, -49.03]
+        - [-18.51, -11.74]
+        - [-23.44, -7.08]
+        - [-25.09, 25.0]
+        - [-24.26, 62.84]
+        - [-131.2, 61.2]
+        - [-170.96, 64.76]
+        - [-237.05, 65.59]
+        - [-238.97, 98.76]
+        - [-227.72, 150.31]
+        - [-215.11, 195.28]
+        - [-215.11, 223.8]
+        - [-197.29, 283.03]
+        - [-177.65, 348.87]
+        - [-514.91, 352.09]
+        - [-549.82, 308.14]
+        - [-590.68, 279.4]
+        - [-605.15, 259.51]
+        - [-623.84, 189.96]
+        - [-653.99, 136.5]
+        - [-675.09, 117.01]
+        - [-709.26, 63.34]
+        - [-782.6, -4.49]
+        - [-854.69, -70.48]
+        - [-886.46, -134.02]
+        - [-913.34, -218.33]
+        - [-929.23, -342.96]
+        - [-939.0, -468.82]
+        - [-926.78, -555.57]
+        - [-917.01, -589.79]
+        - [-870.85, -579.81]
+        - [-820.21, -560.92]
+        - [-754.69, -535.19]
+        - [-723.93, -511.68]
+        - [-689.77, -547.65]
+        - [-668.86, -555.89]
+        - [-633.09, -556.9]
+        - [-626.66, -619.0]
+        - [-570.78, -616.19]
+        - [-475.92, -594.28]
+        - [-422.46, -542.63]
+        - [-408.19, -504.64]
+        - [-441.55, -429.87]
+        - [-432.53, -425.05]
+        - [-471.65, -394.06]
+        - [-471.97, -349.1]
+        - [-452.18, -338.01]
+        - [-375.83, -283.84]
+        - [-328.47, -269.7]
+        - [-312.48, -317.36]
+        - [-241.28, -277.85]
+        - [-214.53, -304.76]
+        - [-143.96, -193.75]
+        - [-158.66, -162.21]
+        - [-90.56, -127.8]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV .50cal"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Van"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Van"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v2
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "Israel Defence Forces"
+        short: "IDF"
+        icon: idf
+      team2:
+        name: "Middle Eastern Coalition"
+        short: "MEC"
+        icon: mec
+      spawnPoints1:
+        - name: "Main Base"
+          x: -357.41
+          z: 388.0
+      spawnPoints2:
+        - name: "Parking lot"
+          x: -370.58
+          z: -192.48
+      boundaries1:
+        - [-298.39, 365.11]
+        - [-324.64, 402.84]
+        - [-362.38, 402.02]
+        - [-401.75, 402.02]
+        - [-451.79, 361.01]
+      boundaries2:
+        - [-418.16, -226.34]
+        - [-386.99, -227.16]
+        - [-350.89, -224.7]
+        - [-315.62, -173.84]
+        - [-460.82, -174.66]
+      boundariesN:
+        - [-315.62, -173.84]
+        - [-250.82, -104.11]
+        - [-249.18, 59.95]
+        - [-221.28, 228.12]
+        - [-236.05, 310.15]
+        - [-298.39, 365.11]
+        - [-451.79, 361.01]
+        - [-512.5, 349.52]
+        - [-552.69, 303.58]
+        - [-593.71, 274.87]
+        - [-632.26, 162.49]
+        - [-663.43, 108.35]
+        - [-626.52, 14.83]
+        - [-460.82, -174.66]
+- name: XP5_001
+  displayName: "Operation Riverside"
+  minimapCx: 96.42
+  minimapCz: -34.81
+  minimapWidth: 2560
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v1
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base - Helipads"
+          x: -908.04
+          z: 582.18
+        - name: "Main Base - Warehouse"
+          x: -858.33
+          z: 599.05
+      spawnPoints2:
+        - name: "Main Base - Transport"
+          x: 900.71
+          z: -888.54
+        - name: "Main Base - Helipads"
+          x: 957.87
+          z: -841.97
+      boundaries1:
+        - [-1183.58, 1245.19]
+        - [-1183.57, 713.76]
+        - [-1183.58, 473.9]
+        - [-735.96, 470.92]
+        - [-726.78, 1245.19]
+      boundaries2:
+        - [737.87, -700.25]
+        - [737.32, -1314.79]
+        - [1193.72, -1314.8]
+        - [1376.42, -1314.81]
+        - [1376.42, -717.24]
+      boundariesN:
+        - [-1183.58, 473.9]
+        - [-1183.58, -1314.81]
+        - [737.32, -1314.79]
+        - [737.87, -700.25]
+        - [1376.42, -717.24]
+        - [1376.42, 1245.19]
+        - [-726.78, 1245.19]
+        - [-735.96, 470.92]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "BMP2_Para"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25_Para"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v1
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Camp"
+          x: 623.95
+          z: -211.57
+      spawnPoints2:
+        - name: "Road"
+          x: -365.11
+          z: -72.9
+      boundaries1:
+        - [535.68, -281.19]
+        - [660.49, -259.63]
+        - [674.1, -126.88]
+        - [642.33, -74.69]
+        - [571.99, -187.02]
+      boundaries2:
+        - [-277.83, -162.05]
+        - [-350.44, 47.85]
+        - [-423.06, -37.25]
+        - [-404.91, -126.88]
+        - [-391.29, -162.05]
+      boundariesN:
+        - [642.33, -74.69]
+        - [502.32, 232.96]
+        - [114.96, 328.96]
+        - [-350.44, 47.85]
+        - [-277.83, -162.05]
+        - [0.43, -390.19]
+        - [212.64, -462.61]
+        - [535.68, -281.19]
+- name: XP5_002
+  displayName: "Kandahar"
+  minimapCx: -1928.378
+  minimapCz: 283.85
+  minimapWidth: 3800
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v1
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base"
+          x: -206.88
+          z: -1035.94
+      spawnPoints2:
+        - name: "Main Base"
+          x: -3472.46
+          z: 1881.26
+      boundaries1:
+        - [-28.48, -469.26]
+        - [-904.09, -1616.11]
+        - [-442.15, -1616.09]
+        - [-28.38, -1616.14]
+        - [-28.39, -1077.04]
+      boundaries2:
+        - [-2891.98, 2183.84]
+        - [-3237.24, 2183.82]
+        - [-3828.37, 2183.85]
+        - [-3828.32, 1794.16]
+        - [-3828.36, 1249.06]
+      boundariesN:
+        - [-3828.36, 1249.06]
+        - [-3220.38, -1092.15]
+        - [-904.09, -1616.11]
+        - [-28.48, -469.26]
+        - [-872.38, 1667.85]
+        - [-2891.98, 2183.84]
+      vehicles:
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "AH-1Z Viper"
+          team: 1
+          initialSpawnDelay: 600
+          respawnDelay: 900
+        - displayName: "Havoc"
+          team: 2
+          initialSpawnDelay: 600
+          respawnDelay: 900
+    - name: INS
+      fullName: "Insurgency"
+      version: v1
+      tickets1: 150
+      tickets2: 150
+      cacheCount: 3
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Insurgents"
+        short: "INS"
+        icon: ins
+      spawnPoints1:
+        - name: "Main Base"
+          x: -206.88
+          z: -1035.94
+      spawnPoints2:
+        - name: "Main Base"
+          x: -3472.46
+          z: 1881.26
+      boundaries1:
+        - [-28.48, -469.26]
+        - [-904.09, -1616.11]
+        - [-442.15, -1616.09]
+        - [-28.38, -1616.14]
+        - [-28.39, -1077.04]
+      boundaries2:
+        - [-2891.98, 2183.84]
+        - [-3237.24, 2183.82]
+        - [-3828.37, 2183.85]
+        - [-3828.32, 1794.16]
+        - [-3828.36, 1249.06]
+      boundariesN:
+        - [-3828.36, 1249.06]
+        - [-3220.38, -1092.15]
+        - [-904.09, -1616.11]
+        - [-28.48, -469.26]
+        - [-872.38, 1667.85]
+        - [-2891.98, 2183.84]
+      vehicles:
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 180
+    - name: SKR
+      fullName: "Skirmish"
+      version: v1
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Checkpoint"
+          x: -1644.72
+          z: 379.48
+      spawnPoints2:
+        - name: "Village"
+          x: -2003.18
+          z: -425.53
+      boundaries1:
+        - [-1579.81, 346.66]
+        - [-1629.77, 452.42]
+        - [-1688.06, 454.09]
+        - [-1741.36, 451.59]
+        - [-1759.68, 359.15]
+      boundaries2:
+        - [-1902.81, -462.56]
+        - [-1914.52, -377.07]
+        - [-2095.47, -385.27]
+        - [-2084.93, -480.72]
+        - [-1987.72, -471.93]
+      boundariesN:
+        - [-1914.52, -377.07]
+        - [-1600.81, -310.57]
+        - [-1401.23, 90.88]
+        - [-1579.81, 346.66]
+        - [-1759.68, 359.15]
+        - [-1945.72, 197.97]
+        - [-2135.39, -129.76]
+        - [-2095.47, -385.27]
+- name: XP5_003
+  displayName: "Gdansk Bay"
+  minimapCx: -21.92
+  minimapCz: -192.23
+  minimapWidth: 3000
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v3
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "German Army"
+        short: "GER"
+        icon: bw
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Main Base"
+          x: -1163.31
+          z: 631.38
+      spawnPoints2:
+        - name: "Main Base"
+          x: 1203.71
+          z: 1071.22
+      boundaries1:
+        - [-572.16, 1307.76]
+        - [-869.52, 1307.51]
+        - [-1521.92, 1307.77]
+        - [-1521.89, 597.71]
+        - [-1521.88, 275.15]
+        - [-1081.92, 399.77]
+        - [-809.92, 839.77]
+      boundaries2:
+        - [1478.04, 697.8]
+        - [1478.08, 1041.48]
+        - [1478.08, 1307.75]
+        - [1173.51, 1307.73]
+        - [871.57, 1307.65]
+        - [955.17, 941.12]
+        - [1207.22, 790.64]
+      boundariesN:
+        - [1478.04, 697.8]
+        - [1207.22, 790.64]
+        - [955.17, 941.12]
+        - [871.57, 1307.65]
+        - [-572.16, 1307.76]
+        - [-809.92, 839.77]
+        - [-1081.92, 399.77]
+        - [-1521.88, 275.15]
+        - [-1521.92, -755.9]
+        - [-1383.26, -1015.53]
+        - [-1165.56, -1692.2]
+        - [906.53, -1692.16]
+        - [1250.08, -1020.23]
+        - [1478.06, -744.71]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2_Para"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25_Para"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Littlebird Transport"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Z11 Transport"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v3
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "German Army"
+        short: "GER"
+        icon: bw
+      team2:
+        name: "Russian Armed Forces"
+        short: "RUAF"
+        icon: ru
+      spawnPoints1:
+        - name: "Helipad - North"
+          x: -755.1
+          z: -1288.41
+        - name: " Helipad - South"
+          x: -654.91
+          z: -1481.52
+      spawnPoints2:
+        - name: "Container Depot"
+          x: 500.8
+          z: -728.39
+      boundaries1:
+        - [-549.72, -1455.74]
+        - [-608.2, -1325.88]
+        - [-739.77, -1230.43]
+        - [-862.75, -1316.43]
+        - [-828.35, -1436.82]
+        - [-715.69, -1546.9]
+      boundaries2:
+        - [566.78, -816.85]
+        - [589.95, -707.93]
+        - [294.49, -576.42]
+        - [221.49, -623.93]
+        - [403.99, -769.92]
+      boundariesN:
+        - [221.49, -623.93]
+        - [15.64, -646.4]
+        - [-144.06, -529.13]
+        - [-546.47, -657.24]
+        - [-759.78, -787.6]
+        - [-817.06, -996.97]
+        - [-739.77, -1230.43]
+        - [-608.2, -1325.88]
+        - [-549.72, -1455.74]
+        - [101.39, -1510.51]
+        - [518.15, -1172.76]
+        - [566.78, -816.85]
+        - [403.99, -769.92]
+- name: XP5_004
+  displayName: "Alaskan Pipeline"
+  minimapCx: -904.4895
+  minimapCz: -911.132
+  minimapWidth: 2560
+  gameModes:
+    - name: AAS
+      fullName: "Advance & Secure"
+      version: v2
+      tickets1: 350
+      tickets2: 350
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Peoples Liberation Army of China"
+        short: "PLA"
+        icon: pla
+      spawnPoints1:
+        - name: "Main Base"
+          x: -1754.0
+          z: -1105.0
+      spawnPoints2:
+        - name: "Main Base"
+          x: -60.0
+          z: -1196.0
+      boundaries1:
+        - [-1573.25, -784.06]
+        - [-2184.2, -844.89]
+        - [-2172.21, -1275.21]
+        - [-2184.26, -1766.91]
+        - [-1654.22, -1723.48]
+        - [-1524.31, -1155.02]
+      boundaries2:
+        - [374.57, -709.04]
+        - [-132.56, -859.68]
+        - [-166.58, -1232.39]
+        - [-70.9, -1565.44]
+        - [374.61, -1590.54]
+        - [369.24, -1218.53]
+      boundariesN:
+        - [374.57, -709.04]
+        - [374.72, 368.25]
+        - [-2184.39, 368.85]
+        - [-2184.2, -844.89]
+        - [-1573.25, -784.06]
+        - [-1524.31, -1155.02]
+        - [-1654.22, -1723.48]
+        - [-2184.26, -1766.91]
+        - [-2184.34, -2191.04]
+        - [375.49, -2191.11]
+        - [374.61, -1590.54]
+        - [-70.9, -1565.44]
+        - [-166.58, -1232.39]
+        - [-132.56, -859.68]
+      vehicles:
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "M1114 HMMWV"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 1
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "M1A2 Abrams"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "LAV25"
+          team: 1
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "GAZ-3937 Vodnik"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 600
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "Dirt Bike"
+          team: 2
+          initialSpawnDelay: 0
+          respawnDelay: 300
+        - displayName: "T90"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+        - displayName: "BMP2"
+          team: 2
+          initialSpawnDelay: 300
+          respawnDelay: 600
+    - name: SKR
+      fullName: "Skirmish"
+      version: v2
+      tickets1: 100
+      tickets2: 100
+      team1:
+        name: "United States Marine Corps"
+        short: "USMC"
+        icon: usmc
+      team2:
+        name: "Peoples Liberation Army"
+        short: "PLA"
+        icon: pla
+      spawnPoints1:
+        - name: "Huts"
+          x: -1130.4
+          z: -735.18
+      spawnPoints2:
+        - name: "Ground Pump"
+          x: -164.49
+          z: -1254.92
+      boundaries1:
+        - [-1109.25, -766.21]
+        - [-1077.33, -678.45]
+        - [-1163.5, -652.92]
+        - [-1216.95, -704.78]
+        - [-1245.68, -811.69]
+        - [-1173.87, -843.6]
+      boundaries2:
+        - [11.93, -1242.52]
+        - [-80.44, -1190.41]
+        - [-250.98, -1257.91]
+        - [-232.03, -1363.31]
+        - [-108.86, -1398.84]
+      boundariesN:
+        - [-80.44, -1190.41]
+        - [-86.99, -731.13]
+        - [-159.49, -536.13]
+        - [-451.99, -453.63]
+        - [-834.49, -496.13]
+        - [-1077.33, -678.45]
+        - [-1109.25, -766.21]
+        - [-1173.87, -843.6]
+        - [-1191.99, -1108.63]
+        - [-1096.99, -1298.63]
+        - [-944.49, -1378.63]
+        - [-636.99, -1421.13]
+        - [-232.03, -1363.31]
+        - [-250.98, -1257.91]

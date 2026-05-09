@@ -1,0 +1,28 @@
+---
+layout: page
+title: Maps
+permalink: /maps/
+---
+
+<div class="maps-grid">
+  {% for map in site.data.maps %}
+  {% assign firstMode = map.gameModes[0] %}
+  {% assign mapKey = map.name | downcase %}
+  <div class="map-card" data-map="{{ mapKey }}" data-display="{{ map.displayName }}" data-modes='{{ map.gameModes | jsonify }}' {% if map.minimapCx %}data-minimap='{"cx":{{ map.minimapCx }},"cz":{{ map.minimapCz }},"width":{{ map.minimapWidth }}}'{% endif %}>
+    <div class="map-card-image">
+      <img src="https://cdn.bf3reality.com/minimap/levels/{{ mapKey }}_{{ firstMode.version }}.png" alt="{{ map.displayName }}" loading="lazy">
+      <div class="map-card-name">{{ map.displayName }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="map-modal" id="map-modal">
+  <div class="map-modal-content">
+    <button class="map-modal-close" id="map-modal-close">&times;</button>
+    <h2 class="map-modal-title" id="map-modal-title"></h2>
+    <div class="map-modal-modes" id="map-modal-modes"></div>
+  </div>
+</div>
+
+<script src="{{ "/assets/js/maps.js" | relative_url }}"></script>
