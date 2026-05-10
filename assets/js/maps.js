@@ -201,10 +201,12 @@ function renderSpawnMarkers(mode, minimap, container, img) {
       `${(iL + u * iW).toFixed(1)},${(iT + v * iH).toFixed(1)}`;
 
     if (oobRect) {
-      oobRect.setAttribute('x', iL.toFixed(1));
-      oobRect.setAttribute('y', iT.toFixed(1));
-      oobRect.setAttribute('width',  iW.toFixed(1));
-      oobRect.setAttribute('height', iH.toFixed(1));
+      const rx = Math.floor(iL);
+      const ry = Math.floor(iT);
+      oobRect.setAttribute('x', rx);
+      oobRect.setAttribute('y', ry);
+      oobRect.setAttribute('width',  Math.ceil(iL + iW) - rx);
+      oobRect.setAttribute('height', Math.ceil(iT + iH) - ry);
     }
 
     const neutralPts = neutralUVs.map(toScreen).join(' ');
