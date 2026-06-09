@@ -49,7 +49,7 @@ puts "  #{timers.size} timer entries loaded"
 # ── Flags ────────────────────────────────────────────────────────────────────
 puts 'Fetching flags...'
 FileUtils.mkdir_p('assets/img/flags')
-%w[usmc ru ins mec pla uk bw idf neutral].each do |icon|
+%w[usmc ru ins mec pla uk bw idf pmc neutral].each do |icon|
   svg = fetch("#{RAW_BASE}/WebUI/src/assets/svg/flags/icn-flag-#{icon}.svg")
   File.write("assets/img/flags/#{icon}.svg", svg) if svg
 end
