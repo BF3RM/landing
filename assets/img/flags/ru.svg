@@ -1,0 +1,17 @@
+        <svg width="30" height="30" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="diamond-${this.flagIcon}">
+              <path d="M14,1.5L26.5,14L14,26.5L1.5,14L14,1.5z"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#diamond-${this.flagIcon})">
+            <!-- White stripe (top third) -->
+            <rect x="0" y="0" width="28" height="9.33" fill="#FFFFFF"/>
+            <!-- Blue stripe (middle third) -->
+            <rect x="0" y="9.33" width="28" height="9.33" fill="#0039A6"/>
+            <!-- Red stripe (bottom third) -->
+            <rect x="0" y="18.66" width="28" height="9.34" fill="#D52B1E"/>
+          </g>
+          <!-- Diamond border -->
+          <path d="M14,1.5L26.5,14L14,26.5L1.5,14L14,1.5z" fill="none" stroke="#000" stroke-width="0.5"/>
+        </svg>

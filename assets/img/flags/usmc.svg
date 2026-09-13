@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30"
+   height="30"
+   viewBox="0 0 28 28"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="icn-flag-usmc.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="13.433333"
+     inkscape:cx="26.315137"
+     inkscape:cy="12.617866"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="diamond-us">
+      <path
+         d="M14,1.5L26.5,14L14,26.5L1.5,14L14,1.5z"
+         id="path1" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#diamond-us)"
+     id="g26">
+    <!-- Red stripes -->
+    <rect
+       x="0"
+       y="0"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect1" />
+    <rect
+       x="0"
+       y="4.3"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect2" />
+    <rect
+       x="0"
+       y="8.6"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect3" />
+    <rect
+       x="0"
+       y="12.9"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect4" />
+    <rect
+       x="0"
+       y="17.2"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect5" />
+    <rect
+       x="0"
+       y="21.5"
+       width="28"
+       height="2.15"
+       fill="#B22234"
+       id="rect6" />
+    <rect
+       x="0"
+       y="25.8"
+       width="28"
+       height="2.2"
+       fill="#B22234"
+       id="rect7" />
+    <!-- White stripes -->
+    <rect
+       x="0"
+       y="2.15"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect8" />
+    <rect
+       x="0"
+       y="6.45"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect9" />
+    <rect
+       x="0"
+       y="10.75"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect10" />
+    <rect
+       x="0"
+       y="15.05"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect11" />
+    <rect
+       x="0"
+       y="19.35"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect12" />
+    <rect
+       x="0"
+       y="23.65"
+       width="28"
+       height="2.15"
+       fill="#FFFFFF"
+       id="rect13" />
+    <!-- Blue canton -->
+    <rect
+       x="2"
+       y="2"
+       width="10"
+       height="10"
+       fill="#3C3B6E"
+       id="rect14" />
+    <!-- Stars with proper star shape -->
+    <polygon
+       points="4,3.2 4.2,3.8 4.8,3.8 4.3,4.2 4.5,4.8 4,4.4 3.5,4.8 3.7,4.2 3.2,3.8 3.8,3.8"
+       fill="#FFFFFF"
+       id="polygon14" />
+    <polygon
+       points="6.5,3.2 6.7,3.8 7.3,3.8 6.8,4.2 7,4.8 6.5,4.4 6,4.8 6.2,4.2 5.7,3.8 6.3,3.8"
+       fill="#FFFFFF"
+       id="polygon15" />
+    <polygon
+       points="9,3.2 9.2,3.8 9.8,3.8 9.3,4.2 9.5,4.8 9,4.4 8.5,4.8 8.7,4.2 8.2,3.8 8.8,3.8"
+       fill="#FFFFFF"
+       id="polygon16" />
+    <polygon
+       points="5.25,4.7 5.45,5.3 6.05,5.3 5.55,5.7 5.75,6.3 5.25,5.9 4.75,6.3 4.95,5.7 4.45,5.3 5.05,5.3"
+       fill="#FFFFFF"
+       id="polygon17" />
+    <polygon
+       points="7.75,4.7 7.95,5.3 8.55,5.3 8.05,5.7 8.25,6.3 7.75,5.9 7.25,6.3 7.45,5.7 6.95,5.3 7.55,5.3"
+       fill="#FFFFFF"
+       id="polygon18" />
+    <polygon
+       points="4,6.2 4.2,6.8 4.8,6.8 4.3,7.2 4.5,7.8 4,7.4 3.5,7.8 3.7,7.2 3.2,6.8 3.8,6.8"
+       fill="#FFFFFF"
+       id="polygon19" />
+    <polygon
+       points="6.5,6.2 6.7,6.8 7.3,6.8 6.8,7.2 7,7.8 6.5,7.4 6,7.8 6.2,7.2 5.7,6.8 6.3,6.8"
+       fill="#FFFFFF"
+       id="polygon20" />
+    <polygon
+       points="9.2,6.8 9.8,6.8 9.3,7.2 9.5,7.8 9,7.4 8.5,7.8 8.7,7.2 8.2,6.8 8.8,6.8 9,6.2 "
+       fill="#ffffff"
+       id="polygon21"
+       transform="translate(1.6674938,-0.69478908)" />
+    <polygon
+       points="5.25,7.7 5.45,8.3 6.05,8.3 5.55,8.7 5.75,9.3 5.25,8.9 4.75,9.3 4.95,8.7 4.45,8.3 5.05,8.3"
+       fill="#FFFFFF"
+       id="polygon22" />
+    <polygon
+       points="7.75,8.9 7.25,9.3 7.45,8.7 6.95,8.3 7.55,8.3 7.75,7.7 7.95,8.3 8.55,8.3 8.05,8.7 8.25,9.3 "
+       fill="#ffffff"
+       id="polygon23"
+       transform="translate(0.191067,-0.38213396)" />
+    <polygon
+       points="4,9.2 4.2,9.8 4.8,9.8 4.3,10.2 4.5,10.8 4,10.4 3.5,10.8 3.7,10.2 3.2,9.8 3.8,9.8"
+       fill="#FFFFFF"
+       id="polygon24" />
+    <polygon
+       points="7.3,9.8 6.8,10.2 7,10.8 6.5,10.4 6,10.8 6.2,10.2 5.7,9.8 6.3,9.8 6.5,9.2 6.7,9.8 "
+       fill="#ffffff"
+       id="polygon25"
+       transform="translate(2.0322581,0.03473945)" />
+    <polygon
+       points="6.3,9.8 6.5,9.2 6.7,9.8 7.3,9.8 6.8,10.2 7,10.8 6.5,10.4 6,10.8 6.2,10.2 5.7,9.8 "
+       fill="#ffffff"
+       id="polygon25-7"
+       transform="translate(-0.07452457,0.02911472)" />
+    <polygon
+       points="8.7,10.2 8.2,9.8 8.8,9.8 9,9.2 9.2,9.8 9.8,9.8 9.3,10.2 9.5,10.8 9,10.4 8.5,10.8 "
+       fill="#ffffff"
+       id="polygon26-2"
+       transform="translate(1.821257,0.01051061)" />
+    <polygon
+       points="8.2,9.8 8.8,9.8 9,9.2 9.2,9.8 9.8,9.8 9.3,10.2 9.5,10.8 9,10.4 8.5,10.8 8.7,10.2 "
+       fill="#ffffff"
+       id="polygon26-2-8"
+       transform="translate(0.9121351,-1.8353187)" />
+  </g>
+  <!-- Diamond border -->
+  <path
+     d="M14,1.5L26.5,14L14,26.5L1.5,14L14,1.5z"
+     fill="none"
+     stroke="#000"
+     stroke-width="0.5"
+     id="path26"
+     style="stroke-width:0.8736;" />
+</svg>
